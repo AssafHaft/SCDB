@@ -1,0 +1,39 @@
+name: Update sessions data
+
+on:
+  schedule:
+    # Every 10 minutes during park hours (03:00–20:59 UTC ≈ 06:00–23:59 IDT).
+    - cron: "*/10 3-20 * * *"
+  workflow_dispatch: {} # manual run button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-sessions
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch and parse sessions
+        run: node scripts/parse-sessions.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "sessions-bot"
+          git config user.email "actions@github.com"
+          git add data/sessions.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update sessions data"
+            git push
+          fi

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRF Park TLV — Live</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ======================= CLOSED SCREEN ======================= -->
+  <div id="closed-screen">
+    <div class="closed-name">SRF Park TLV</div>
+    <div class="closed-sub" id="closed-sub"></div>
+    <div class="closed-clock" id="closed-clock"></div>
+  </div>
+
+  <!-- ======================= DASHBOARD =========================== -->
+  <div id="dashboard">
+
+    <header id="topbar">
+      <div class="brand">SRF <span>Park TLV</span></div>
+      <div class="datetime">
+        <div id="clock">--:--</div>
+        <div id="date"></div>
+      </div>
+      <div class="weather">
+        <div id="weather-temp">--°</div>
+        <div class="weather-meta">
+          <div id="weather-desc"></div>
+          <div id="weather-wind"></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-label">Now in the water</div>
+      <div class="hero-main">
+        <span class="hero-badge" id="now-level"></span>
+        <span class="hero-name" id="now-name">—</span>
+      </div>
+      <div class="hero-sub">
+        <span id="now-time"></span>
+        <span class="dot">·</span>
+        <span id="now-countdown"></span>
+      </div>
+    </section>
+
+    <section id="zones">
+      <div class="zone-card" id="zone-right">
+        <div class="zone-title">Reef Right</div>
+        <div class="zone-status"></div>
+        <div class="zone-program"></div>
+        <div class="zone-places"></div>
+        <div class="zone-time"></div>
+      </div>
+      <div class="zone-card" id="zone-left">
+        <div class="zone-title">Reef Left</div>
+        <div class="zone-status"></div>
+        <div class="zone-program"></div>
+        <div class="zone-places"></div>
+        <div class="zone-time"></div>
+      </div>
+      <div class="zone-card" id="zone-bay">
+        <div class="zone-title">The Bay</div>
+        <div class="zone-status"></div>
+        <div class="zone-program"></div>
+        <div class="zone-places"></div>
+        <div class="zone-time"></div>
+      </div>
+    </section>
+
+    <footer id="bottombar">
+      <div id="next">
+        <span class="next-label">Next up</span>
+        <span id="next-body">—</span>
+      </div>
+      <div id="updated"></div>
+    </footer>
+
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/strings.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
