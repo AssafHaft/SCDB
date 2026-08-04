@@ -1,18 +1,26 @@
 /* ---------------------------------------------------------------------------
- * TV dashboard — dark, high contrast, sized in viewport units so it fills
- * any 16:9 screen. No interaction, no scrolling.
+ * TV dashboard — SRF Park TLV brand skin, light like the website.
+ * Base colors straight from srfparktlv.co.il: sand #E1DAD0 (page), deep teal
+ * #243D44 (all text, hero panel — the brand primary), pale aqua #C2EAEA
+ * (accents/badges). White cards on the sand page, pill badges echoing the
+ * site's fully-rounded buttons, and the wave-mark logo in brand teal.
+ * Sized in viewport units to fill any 16:9 screen. No interaction.
  * ------------------------------------------------------------------------- */
 :root {
-  --bg: #0a1420;
-  --panel: #101f30;
-  --panel-edge: #1b3149;
-  --ink: #eef4fa;
-  --ink-2: #9fb3c8;
-  --ink-3: #5d7288;
-  --accent: #35b6e8;      /* surf cyan */
-  --good: #27b376;        /* open / places available */
-  --bad: #e0524f;         /* full */
-  --warn: #f0b429;        /* stale data */
+  --sand: #e1dad0;          /* brand sand — page background */
+  --teal: #243d44;          /* brand primary — text + hero panel */
+  --aqua: #c2eaea;          /* brand pale aqua — accents */
+  --card: #ffffff;
+  --card-edge: rgba(36, 61, 68, 0.14);
+  --ink: #243d44;
+  --ink-2: #587076;         /* secondary teal-gray */
+  --ink-3: #7f959a;         /* tertiary */
+  --on-teal: #f4f6f4;       /* text on the teal hero */
+  --on-teal-2: #c5d5d3;
+  --good: #38715e;          /* site's own sea green */
+  --bad: #bd4b38;           /* full — readable warm red on light */
+  --warn: #a5691f;          /* stale data — darkened brand orange */
+  --on-badge: #14282e;      /* dark teal text on aqua/pastel pills */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -21,9 +29,9 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: var(--bg);
+  background: linear-gradient(165deg, #eae4db 0%, var(--sand) 45%, #d5ddd8 100%);
   color: var(--ink);
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  font-family: "Assistant", "Segoe UI", system-ui, sans-serif;
   cursor: none;
 }
 
@@ -39,8 +47,8 @@ body.closed #closed-screen {
   height: 100%;
 }
 body.closed #dashboard { display: none; }
-.closed-name { font-size: 5vw; font-weight: 800; letter-spacing: 0.02em; color: var(--ink-2); }
-.closed-sub  { font-size: 2.2vw; color: var(--ink-3); }
+.closed-logo { width: 36vh; max-width: 42vw; height: auto; }
+.closed-sub  { font-size: 2.2vw; color: var(--ink-2); }
 .closed-clock{ font-size: 1.8vw; color: var(--ink-3); margin-top: 4vh; font-variant-numeric: tabular-nums; }
 
 /* ---- layout ------------------------------------------------------------- */
@@ -58,8 +66,8 @@ body.closed #dashboard { display: none; }
   align-items: center;
   justify-content: space-between;
 }
-.brand { font-size: 2.6vw; font-weight: 800; letter-spacing: 0.03em; }
-.brand span { color: var(--accent); }
+.brand { display: flex; align-items: center; }
+.brand-logo { height: 9vh; width: auto; }
 .datetime { text-align: center; }
 #clock {
   font-size: 4.4vw;
@@ -73,35 +81,38 @@ body.closed #dashboard { display: none; }
 .weather-meta { font-size: 1.2vw; color: var(--ink-2); line-height: 1.5; }
 
 /* ---- hero (current program) --------------------------------------------- */
+/* The one teal block on the light page — same move as the site's teal
+ * buttons on white. */
 #hero {
-  background: var(--panel);
-  border: 1px solid var(--panel-edge);
-  border-radius: 1.2vw;
+  background: var(--teal);
+  border-radius: 1.6vw;
   padding: 2.5vh 2.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.2vh;
+  color: var(--on-teal);
+  box-shadow: 0 0.6vh 3vh rgba(36, 61, 68, 0.25);
 }
 .hero-label {
   font-size: 1.3vw;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--ink-3);
+  color: var(--aqua);
   font-weight: 600;
 }
 .hero-main { display: flex; align-items: center; gap: 1.4vw; }
 .hero-badge {
   font-size: 2.6vw;
   font-weight: 800;
-  padding: 0.6vh 1.1vw;
-  border-radius: 0.8vw;
-  color: #08131d;
-  background: var(--accent);
+  padding: 0.6vh 1.6vw;
+  border-radius: 99vw;          /* brand pill, like the site's buttons */
+  color: var(--on-badge);
+  background: var(--aqua);
 }
 .hero-name { font-size: 3.4vw; font-weight: 700; line-height: 1.1; }
-.hero-sub { font-size: 1.7vw; color: var(--ink-2); font-variant-numeric: tabular-nums; }
-.hero-sub .dot { margin: 0 0.6vw; color: var(--ink-3); }
+.hero-sub { font-size: 1.7vw; color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
+.hero-sub .dot { margin: 0 0.6vw; color: var(--on-teal-2); }
 
 /* ---- zone columns -------------------------------------------------------- */
 #zones {
@@ -110,20 +121,21 @@ body.closed #dashboard { display: none; }
   gap: 2vw;
 }
 .zone-card {
-  background: var(--panel);
-  border: 1px solid var(--panel-edge);
-  border-radius: 1.2vw;
+  background: var(--card);
+  border: 1px solid var(--card-edge);
+  border-radius: 1.6vw;
   padding: 2.5vh 1.8vw;
   display: flex;
   flex-direction: column;
   gap: 1.4vh;
+  box-shadow: 0 0.4vh 2vh rgba(36, 61, 68, 0.10);
 }
 .zone-title {
   font-size: 1.5vw;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--ink-2);
-  font-weight: 700;
+  color: var(--teal);
+  font-weight: 800;
 }
 .zone-status { font-size: 1.3vw; font-weight: 600; color: var(--ink-3); }
 .is-live .zone-status { color: var(--good); }
@@ -138,10 +150,10 @@ body.closed #dashboard { display: none; }
 .lvl-badge {
   font-size: 1.3vw;
   font-weight: 800;
-  padding: 0.3vh 0.7vw;
-  border-radius: 0.5vw;
-  color: #08131d;
-  background: var(--ink-2);
+  padding: 0.3vh 1vw;
+  border-radius: 99vw;          /* brand pill */
+  color: var(--on-badge);
+  background: var(--aqua);
   flex-shrink: 0;
 }
 .zone-places { font-size: 2.4vw; font-weight: 700; margin-top: auto; }
@@ -150,14 +162,15 @@ body.closed #dashboard { display: none; }
 .is-idle .zone-places { color: var(--ink-2); font-size: 1.6vw; font-weight: 600; }
 .zone-time { font-size: 1.2vw; color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
-/* level badge hues — decorative; the L-number text carries the meaning */
-.lvl-l0 { background: #7fd8c2; }
-.lvl-l1 { background: #8fd082; }
-.lvl-l2 { background: #c9d16c; }
-.lvl-l3 { background: #f0c95c; }
-.lvl-l4 { background: #f2a35c; }
-.lvl-l5 { background: #ef7f66; }
-.lvl-l6 { background: #e06a8e; }
+/* level badge hues — decorative, tuned to the brand ramp (aqua → sand →
+ * warm orange → coral); the L-number text carries the meaning */
+.lvl-l0 { background: #c2eaea; }
+.lvl-l1 { background: #a9dfc9; }
+.lvl-l2 { background: #c6dfa0; }
+.lvl-l3 { background: #e8d5a3; }
+.lvl-l4 { background: #e5b87f; }
+.lvl-l5 { background: #e19a6b; }
+.lvl-l6 { background: #ef8a76; }
 
 /* ---- bottom bar ---------------------------------------------------------- */
 #bottombar {
@@ -170,8 +183,8 @@ body.closed #dashboard { display: none; }
 .next-label {
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--ink-3);
-  font-weight: 700;
+  color: var(--teal);
+  font-weight: 800;
   font-size: 1.2vw;
 }
 #next .lvl-badge { font-size: 1.1vw; }
