@@ -54,7 +54,7 @@ body.closed #dashboard { display: none; }
 /* ---- layout ------------------------------------------------------------- */
 #dashboard {
   display: grid;
-  grid-template-rows: 10vh 24vh 1fr 8vh;
+  grid-template-rows: 10vh 26vh 1fr 4vh;
   gap: 2vh;
   height: 100%;
   padding: 2.5vh 2.5vw;
@@ -87,12 +87,18 @@ body.closed #dashboard { display: none; }
   background: var(--teal);
   border-radius: 1.6vw;
   padding: 2.5vh 2.5vw;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 2.5vw;
+  color: var(--on-teal);
+  box-shadow: 0 0.6vh 3vh rgba(36, 61, 68, 0.25);
+}
+.hero-now {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.2vh;
-  color: var(--on-teal);
-  box-shadow: 0 0.6vh 3vh rgba(36, 61, 68, 0.25);
 }
 .hero-label {
   font-size: 1.3vw;
@@ -114,11 +120,55 @@ body.closed #dashboard { display: none; }
 .hero-sub { font-size: 1.7vw; color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
 .hero-sub .dot { margin: 0 0.6vw; color: var(--on-teal-2); }
 
+/* hero right side: next up, with places left per reef side */
+.hero-next {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.1vh;
+  padding-left: 2.5vw;
+  border-left: 1px solid rgba(244, 246, 244, 0.22);
+  min-width: 0;
+}
+.nx-main { display: flex; align-items: center; gap: 0.9vw; }
+.nx-main .lvl-badge { font-size: 1.5vw; }
+.nx-name {
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nx-time { font-size: 1.4vw; color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
+.nx-places { display: flex; align-items: center; gap: 0.7vw; flex-wrap: wrap; }
+.nx-places-label {
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--on-teal-2);
+  margin-right: 0.3vw;
+}
+.place-chip {
+  font-size: 1.35vw;
+  font-weight: 800;
+  padding: 0.4vh 1vw;
+  border-radius: 99vw;
+  background: var(--aqua);
+  color: var(--on-badge);
+  font-variant-numeric: tabular-nums;
+}
+.place-chip.is-full { background: var(--bad); color: #fff; }
+
+/* an empty badge is a badge not shown (idle hero, missing next data) */
+.lvl-badge:empty, .hero-badge:empty { display: none; }
+
 /* ---- zone columns -------------------------------------------------------- */
 #zones {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6vw;
 }
 .zone-card {
   background: var(--card);
@@ -172,22 +222,49 @@ body.closed #dashboard { display: none; }
 .lvl-l5 { background: #e19a6b; }
 .lvl-l6 { background: #ef8a76; }
 
+/* ---- "What's On" park events card ---------------------------------------- */
+#events-list { display: flex; flex-direction: column; margin-top: 0.4vh; }
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  padding: 1.3vh 0;
+}
+.event-row + .event-row { border-top: 1px solid rgba(36, 61, 68, 0.10); }
+.event-when {
+  flex-shrink: 0;
+  width: 4.8vw;
+  text-align: center;
+  background: var(--aqua);
+  color: var(--on-badge);
+  border-radius: 0.6vw;
+  padding: 0.8vh 0;
+}
+.event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
+.event-dow {
+  font-size: 0.85vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.event-dom { font-size: 1.2vw; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.event-name {
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.event-time { font-size: 1.05vw; color: var(--ink-2); font-variant-numeric: tabular-nums; margin-top: 0.2vh; }
+.events-empty { color: var(--ink-2); font-size: 1.3vw; font-weight: 600; margin-top: 1vh; }
+
 /* ---- bottom bar ---------------------------------------------------------- */
 #bottombar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-#next { display: flex; align-items: center; gap: 1vw; font-size: 1.6vw; }
-#next-body { display: flex; align-items: center; gap: 0.9vw; }
-.next-label {
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--teal);
-  font-weight: 800;
-  font-size: 1.2vw;
-}
-#next .lvl-badge { font-size: 1.1vw; }
-.next-time { color: var(--ink-2); font-variant-numeric: tabular-nums; }
 #updated { font-size: 1vw; color: var(--ink-3); }
 #updated.stale { color: var(--warn); }

@@ -26,11 +26,17 @@ jobs:
       - name: Fetch and parse sessions
         run: node scripts/parse-sessions.mjs
 
+      # Events change rarely and matter less than the live schedule, so a
+      # broken events page must never block the sessions update.
+      - name: Fetch and parse events
+        continue-on-error: true
+        run: node scripts/parse-events.mjs
+
       - name: Commit if changed
         run: |
           git config user.name "sessions-bot"
           git config user.email "actions@github.com"
-          git add data/sessions.json
+          git add data/sessions.json data/events.json
           if git diff --cached --quiet; then
             echo "No changes."
           else

@@ -34,6 +34,15 @@ window.STRINGS = {
     noData: "Schedule unavailable",
     wind: "Wind",
     kmh: "km/h",
+    whatsOn: "What's On",
+    noEvents: "No upcoming events",
+    today: "Today",
+    tomorrow: "Tmrw",
+    tomorrowFull: "Tomorrow",
+    sideRight: "Right",
+    sideLeft: "Left",
+    placesLabel: "Places left",
+    inDur: (d) => `in ${d}`,
   },
 };
 

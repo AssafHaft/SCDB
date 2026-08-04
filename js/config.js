@@ -20,6 +20,12 @@ window.CONFIG = {
   // Where the parsed schedule lives (written by the GitHub Actions job).
   sessionsUrl: "data/sessions.json",
 
+  // Where the parsed park events live (written by the same Actions job).
+  eventsUrl: "data/events.json",
+
+  // How many upcoming events the "What's On" card shows at most.
+  maxEvents: 4,
+
   // Weather: Open-Meteo, free, no API key, CORS-enabled.
   // Coordinates for the park (Tel Aviv coast). Adjust if needed.
   weather: {

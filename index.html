@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=5" />
 </head>
 <body>
   <!-- ======================= CLOSED SCREEN ======================= -->
@@ -38,15 +38,26 @@
     </header>
 
     <section id="hero">
-      <div class="hero-label">Now in the water</div>
-      <div class="hero-main">
-        <span class="hero-badge" id="now-level"></span>
-        <span class="hero-name" id="now-name">—</span>
+      <div class="hero-now">
+        <div class="hero-label">Now in the water</div>
+        <div class="hero-main">
+          <span class="hero-badge" id="now-level"></span>
+          <span class="hero-name" id="now-name">—</span>
+        </div>
+        <div class="hero-sub">
+          <span id="now-time"></span>
+          <span class="dot">·</span>
+          <span id="now-countdown"></span>
+        </div>
       </div>
-      <div class="hero-sub">
-        <span id="now-time"></span>
-        <span class="dot">·</span>
-        <span id="now-countdown"></span>
+      <div class="hero-next">
+        <div class="hero-label">Next up</div>
+        <div class="nx-main">
+          <span class="lvl-badge" id="nx-level"></span>
+          <span class="nx-name" id="nx-name">—</span>
+        </div>
+        <div class="nx-time" id="nx-time"></div>
+        <div class="nx-places" id="nx-places"></div>
       </div>
     </section>
 
@@ -72,20 +83,20 @@
         <div class="zone-places"></div>
         <div class="zone-time"></div>
       </div>
+      <div class="zone-card" id="events-card">
+        <div class="zone-title">What's On</div>
+        <div id="events-list"></div>
+      </div>
     </section>
 
     <footer id="bottombar">
-      <div id="next">
-        <span class="next-label">Next up</span>
-        <span id="next-body">—</span>
-      </div>
       <div id="updated"></div>
     </footer>
 
   </div>
 
-  <script src="js/config.js"></script>
-  <script src="js/strings.js"></script>
-  <script src="js/dashboard.js"></script>
+  <script src="js/config.js?v=5"></script>
+  <script src="js/strings.js?v=5"></script>
+  <script src="js/dashboard.js?v=5"></script>
 </body>
 </html>

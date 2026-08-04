@@ -1,18 +1,21 @@
 # SRF Club TV Dashboard
 
 A wall-mounted TV dashboard for the surf club: current session, wave program,
-Reef Right / Reef Left / Bay status, places left, next session, clock and
-weather. One static page, no backend, no login — hosted free on GitHub Pages.
+Reef Right / Reef Left / Bay status, places left, next session, upcoming park
+events, clock and weather. One static page, no backend, no login — hosted
+free on GitHub Pages.
 
 ## How it works
 
 ```
 GitHub Actions (every 10 min) ──► scripts/parse-sessions.mjs
         fetches srfparktlv.co.il/sessions, writes data/sessions.json
+                              ──► scripts/parse-events.mjs
+        fetches srfparktlv.co.il/eventer, writes data/events.json
                               │
                               ▼
 GitHub Pages serves index.html ──► the TV's browser reads sessions.json
-        (same domain, so no CORS issues) + Open-Meteo weather
+        + events.json (same domain, so no CORS issues) + Open-Meteo weather
 ```
 
 The dashboard never talks to the club's site directly — a browser on another
@@ -74,6 +77,11 @@ next to the parser that uses it.
   `scripts/parse-sessions.mjs`. It is deliberately the only file that knows
   anything about the club's markup. The parser refuses to write implausible
   output (fewer than 20 sessions), so a redesign can never blank the wall.
+- **"What's On" card empty or stale** — same idea: `extractEvents()` in
+  `scripts/parse-events.mjs` is the only code that knows the events page
+  markup. A broken events parse never blocks the sessions update (the
+  workflow step is `continue-on-error`), and the wall keeps the last good
+  event list.
 - **Weather panel empty** — Open-Meteo hiccup; it retries every 10 minutes
   on its own.
 
