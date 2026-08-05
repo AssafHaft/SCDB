@@ -42,6 +42,7 @@ window.STRINGS = {
     sideRight: "Right",
     sideLeft: "Left",
     placesLabel: "Places left",
+    asOf: "as of",
     inDur: (d) => `in ${d}`,
   },
 };

@@ -150,6 +150,8 @@ body.closed #dashboard { display: none; }
   color: var(--on-teal-2);
   margin-right: 0.3vw;
 }
+/* stale-data hint: soft brand amber, same size as the label it extends */
+.nx-asof { color: #eec27f; }
 .place-chip {
   font-size: 1.35vw;
   font-weight: 800;
@@ -267,4 +269,11 @@ body.closed #dashboard { display: none; }
   justify-content: flex-end;
 }
 #updated { font-size: 1vw; color: var(--ink-3); }
-#updated.stale { color: var(--warn); }
+#updated.stale {
+  color: #7a5214;
+  background: rgba(218, 148, 79, 0.18);
+  border: 1px solid rgba(218, 148, 79, 0.45);
+  padding: 0.5vh 1vw;
+  border-radius: 99vw;
+  font-weight: 700;
+}

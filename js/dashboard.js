@@ -160,8 +160,10 @@
   }
 
   // Hero right side: the next reef session, with places left per side —
-  // the question customers ask most.
-  function renderHeroNext(info, now) {
+  // the question customers ask most. When the schedule data is stale,
+  // `asOf` carries the data's own timestamp ("13:44") and the places label
+  // quietly says so — the wall must never assert a count it can't back.
+  function renderHeroNext(info, now, asOf) {
     const level = $("nx-level");
     const name = $("nx-name");
     const time = $("nx-time");
@@ -192,6 +194,12 @@
       const lab = document.createElement("span");
       lab.className = "nx-places-label";
       lab.textContent = T.placesLabel;
+      if (asOf) {
+        const note = document.createElement("span");
+        note.className = "nx-asof";
+        note.textContent = ` · ${T.asOf} ${asOf}`;
+        lab.appendChild(note);
+      }
       places.appendChild(lab);
       for (const [side, v] of sides) {
         const chip = document.createElement("span");
@@ -289,6 +297,13 @@
     const queue = upcomingReef(now);
     const reefNextInfo = queue[0] || null;
 
+    // data freshness — drives the stale note and the places "as of" hint
+    const ageMin = data && data.updatedAt
+      ? Math.max(Math.floor((now - new Date(data.updatedAt)) / 60000), 0)
+      : null;
+    const isStale = ageMin != null && ageMin > CONFIG.staleWarnMinutes;
+    const asOf = isStale ? hm(new Date(data.updatedAt)) : null;
+
     // hero: current wave program
     if (reefNow) {
       $("now-level").textContent = reefNow.level;
@@ -323,7 +338,7 @@
 
     // hero right side: next up. When nothing is running, the hero's main
     // slot already shows queue[0] ("Starts in …"), so show the one after.
-    renderHeroNext((reefNow ? queue[0] : queue[1]) || null, now);
+    renderHeroNext((reefNow ? queue[0] : queue[1]) || null, now, asOf);
 
     // weather
     if (weather) {
@@ -334,10 +349,9 @@
 
     // freshness note
     const upd = $("updated");
-    if (data && data.updatedAt) {
-      const ageMin = Math.floor((now - new Date(data.updatedAt)) / 60000);
-      upd.textContent = T.updated(Math.max(ageMin, 0));
-      upd.classList.toggle("stale", ageMin > CONFIG.staleWarnMinutes);
+    if (ageMin != null) {
+      upd.textContent = isStale ? T.stale(ageMin) : T.updated(ageMin);
+      upd.classList.toggle("stale", isStale);
     } else {
       upd.textContent = data ? "" : T.noData;
       upd.classList.add("stale");
