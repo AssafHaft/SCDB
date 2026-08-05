@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T13:55:27.868Z",
+  "updatedAt": "2026-08-05T14:00:35.661Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,7 +169,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 2
           },
           "open": false,
           "special": false
@@ -196,7 +197,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
@@ -275,8 +276,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 9
+            "right": 11,
+            "left": 8
           },
           "open": true,
           "special": false
@@ -301,7 +302,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 16
           },
           "open": true,
@@ -314,10 +315,9 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 6
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -379,7 +379,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 2
+            "right": 1
           },
           "open": true,
           "special": false
@@ -569,7 +569,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 3
+            "bay": 4
           },
           "open": true,
           "special": false
@@ -636,7 +636,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
