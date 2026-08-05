@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T15:15:21.572Z",
+  "updatedAt": "2026-08-05T15:20:28.904Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -215,27 +215,15 @@
           "special": false
         },
         {
-          "start": "20:00",
-          "end": "21:00",
-          "level": "L4",
-          "name": "Galna Mental Surf",
-          "zone": "reef",
-          "places": {
-            "left": 0
-          },
-          "open": false,
-          "special": true
-        },
-        {
           "start": "21:00",
           "end": "22:00",
           "level": "L6",
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "left": 2
+            "left": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -245,7 +233,6 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
             "left": 3
           },
           "open": true,
@@ -276,7 +263,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 7,
             "left": 9
           },
           "open": true,
@@ -327,7 +314,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 6
           },
           "open": true,
@@ -417,7 +404,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 12
+            "left": 13
           },
           "open": true,
           "special": false
