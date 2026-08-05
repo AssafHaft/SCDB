@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T18:20:21.475Z",
+  "updatedAt": "2026-08-05T18:25:18.620Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -289,7 +289,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 5
+            "left": 6
           },
           "open": true,
           "special": false
@@ -328,7 +328,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 1
+            "left": 0
           },
           "open": true,
           "special": false
@@ -340,7 +340,6 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 3,
             "left": 6
           },
           "open": true,
@@ -354,20 +353,6 @@
           "zone": "reef",
           "places": {
             "right": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "12:30",
-          "end": "14:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Adults 16+",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 0
           },
           "open": false,
           "special": false
@@ -523,7 +508,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
@@ -731,18 +716,6 @@
             "bay": 0
           },
           "open": false,
-          "special": false
-        },
-        {
-          "start": "15:00",
-          "end": "16:00",
-          "level": "L2",
-          "name": "Improvers (M2)",
-          "zone": "reef",
-          "places": {
-            "left": 8
-          },
-          "open": true,
           "special": false
         },
         {
