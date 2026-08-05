@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T15:40:22.965Z",
+  "updatedAt": "2026-08-05T15:45:29.759Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -218,6 +218,18 @@
           "start": "20:00",
           "end": "21:00",
           "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 2
+          },
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "20:00",
+          "end": "21:00",
+          "level": "L4",
           "name": "Galna Mental Surf",
           "zone": "reef",
           "places": {
@@ -245,7 +257,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "left": 3
+            "left": 2
           },
           "open": true,
           "special": false
@@ -276,7 +288,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -288,7 +300,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 16
           },
           "open": true,
@@ -497,7 +509,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -702,7 +714,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 13
           },
           "open": true,
           "special": false
@@ -712,6 +724,20 @@
           "end": "16:00",
           "level": "L0",
           "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 1
+          },
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "14:30",
+          "end": "16:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Kids 11-16",
           "zone": "bay",
           "side": "left",
           "ageGroup": "children",
