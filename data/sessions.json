@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T08:06:12.649Z",
+  "updatedAt": "2026-08-05T10:36:41.896Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -39,7 +39,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 4
           },
           "open": false,
@@ -91,7 +91,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 2,
+            "left": 2
           },
           "open": false,
           "special": false
@@ -103,10 +104,24 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
           "special": false
+        },
+        {
+          "start": "13:00",
+          "end": "14:00",
+          "level": "L5",
+          "name": "Private training - Wave Riders",
+          "zone": "reef",
+          "places": {
+            "right": 0,
+            "left": 0
+          },
+          "open": false,
+          "special": true
         },
         {
           "start": "14:00",
@@ -115,7 +130,8 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "left": 6
+            "right": 4,
+            "left": 0
           },
           "open": true,
           "special": false
@@ -127,8 +143,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 2
+            "left": 5
           },
           "open": true,
           "special": false
@@ -140,10 +155,9 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 10
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -153,8 +167,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 10
+            "right": 1,
+            "left": 6
           },
           "open": true,
           "special": false
@@ -168,9 +182,9 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 0
+            "bay": 6
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -180,6 +194,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
+            "right": 2,
             "left": 13
           },
           "open": true,
@@ -192,22 +207,9 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 1
+            "right": 0
           },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "20:00",
-          "end": "21:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 13
-          },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -241,7 +243,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 8
           },
           "open": true,
@@ -285,8 +287,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
-            "left": 17
+            "right": 12,
+            "left": 16
           },
           "open": true,
           "special": false
@@ -298,7 +300,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 13
           },
           "open": true,
@@ -311,8 +313,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 12
+            "right": 3,
+            "left": 9
           },
           "open": true,
           "special": false
@@ -324,7 +326,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 5,
             "left": 13
           },
           "open": true,
@@ -337,7 +339,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 6
           },
           "open": true,
@@ -352,20 +354,6 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "12:30",
-          "end": "14:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
             "bay": 0
           },
           "open": false,
@@ -378,7 +366,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
@@ -415,7 +403,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 16
+            "left": 15
           },
           "open": true,
           "special": false
@@ -440,8 +428,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 11
+            "right": 11,
+            "left": 15
           },
           "open": true,
           "special": false
@@ -455,7 +443,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 12
           },
           "open": true,
           "special": false
@@ -480,8 +468,8 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 11
+            "right": 10,
+            "left": 12
           },
           "sideNames": {
             "right": "Advanced (M4 Only)",
@@ -497,10 +485,9 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 2
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -555,7 +542,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -567,8 +554,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 11
+            "right": 6,
+            "left": 7
           },
           "open": true,
           "special": false
@@ -582,7 +569,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 6
+            "bay": 4
           },
           "open": true,
           "special": false
@@ -594,7 +581,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 10,
             "left": 11
           },
           "open": true,
@@ -636,7 +623,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 7
+            "bay": 9
           },
           "open": true,
           "special": false
@@ -648,8 +635,8 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 10
+            "right": 2,
+            "left": 9
           },
           "open": true,
           "special": false
@@ -688,7 +675,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 6,
             "left": 6
           },
           "open": true,
@@ -701,7 +688,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 9
           },
           "open": true,
@@ -744,7 +731,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 1
           },
           "open": true,
           "special": false
@@ -756,7 +743,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 8
           },
           "open": true,
@@ -798,8 +785,8 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 14,
-            "left": 13
+            "right": 13,
+            "left": 12
           },
           "open": true,
           "special": false
