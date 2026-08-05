@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T15:35:26.423Z",
+  "updatedAt": "2026-08-05T15:40:22.965Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -233,9 +233,9 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "left": 1
+            "left": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -245,8 +245,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 2
+            "left": 3
           },
           "open": true,
           "special": false
@@ -416,7 +415,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 12
           },
           "open": true,
@@ -636,7 +635,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 7
+            "left": 5
           },
           "open": true,
           "special": false
@@ -703,7 +702,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "open": true,
           "special": false
@@ -713,20 +712,6 @@
           "end": "16:00",
           "level": "L0",
           "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 2
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "14:30",
-          "end": "16:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 11-16",
           "zone": "bay",
           "side": "left",
           "ageGroup": "children",
@@ -743,7 +728,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "left": 7
+            "left": 8
           },
           "open": true,
           "special": false
