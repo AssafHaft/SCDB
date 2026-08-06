@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T12:15:26.157Z",
+  "updatedAt": "2026-08-06T12:20:26.491Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -296,7 +296,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -309,21 +309,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "08:30",
-          "end": "10:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Adults 16+",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 4
+            "left": 0
           },
           "open": true,
           "special": false
@@ -347,7 +333,6 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 6,
             "left": 6
           },
           "open": true,
@@ -440,21 +425,26 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "left": 0
+            "left": 1
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
           "start": "16:00",
           "end": "17:00",
           "level": "L5",
-          "name": "החברים של ניסים",
+          "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
+            "right": 3,
             "left": 0
           },
-          "open": false,
+          "sideNames": {
+            "right": "T-Time Mega Turns (T1+T2)",
+            "left": "החברים של ניסים"
+          },
+          "open": true,
           "special": false
         },
         {
@@ -572,7 +562,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "open": true,
