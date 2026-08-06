@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T16:27:00.214Z",
+  "updatedAt": "2026-08-06T17:17:41.270Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -253,9 +253,23 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
+          "special": false
+        },
+        {
+          "start": "21:00",
+          "end": "22:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 2,
+            "left": 1
+          },
+          "open": true,
           "special": false
         },
         {
@@ -296,7 +310,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 0
           },
           "open": true,
@@ -348,9 +362,21 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 0
+            "left": 1
           },
           "open": true,
+          "special": false
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 0
+          },
+          "open": false,
           "special": false
         },
         {
@@ -408,18 +434,6 @@
           "special": false
         },
         {
-          "start": "17:00",
-          "end": "18:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "left": 8
-          },
-          "open": true,
-          "special": false
-        },
-        {
           "start": "18:00",
           "end": "19:00",
           "level": "L6",
@@ -444,7 +458,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 15
           },
           "open": true,
@@ -498,7 +512,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "open": true,
           "special": false
@@ -603,8 +617,8 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 15,
-            "left": 18
+            "right": 14,
+            "left": 17
           },
           "open": true,
           "special": false
@@ -657,7 +671,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 19,
+            "right": 18,
             "left": 20
           },
           "open": true,
@@ -670,7 +684,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 11,
             "left": 14
           },
           "open": true,
@@ -711,7 +725,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 12
+            "left": 11
           },
           "open": true,
           "special": false
@@ -736,7 +750,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 15
           },
           "open": true,
