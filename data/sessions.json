@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T11:55:18.996Z",
+  "updatedAt": "2026-08-06T12:00:30.959Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -173,7 +173,7 @@
             "right": 3,
             "left": 2
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -183,7 +183,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 0
           },
           "open": true,
@@ -198,7 +198,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 8
+            "bay": 7
           },
           "open": true,
           "special": false
@@ -222,8 +222,8 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 6
+            "right": 5,
+            "left": 5
           },
           "sideNames": {
             "right": "Advanced (M4 Only)",
@@ -251,7 +251,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "left": 2
+            "left": 3
           },
           "open": true,
           "special": false
@@ -433,20 +433,27 @@
           "special": false
         },
         {
+          "start": "15:00",
+          "end": "16:00",
+          "level": "L2",
+          "name": "Improvers (M2)",
+          "zone": "reef",
+          "places": {
+            "left": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
           "start": "16:00",
           "end": "17:00",
           "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
+          "name": "החברים של ניסים",
           "zone": "reef",
           "places": {
-            "right": 3,
             "left": 0
           },
-          "sideNames": {
-            "right": "T-Time Mega Turns (T1+T2)",
-            "left": "החברים של ניסים"
-          },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -606,7 +613,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 13
+            "left": 14
           },
           "open": true,
           "special": false
