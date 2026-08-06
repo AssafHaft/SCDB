@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T14:20:30.812Z",
+  "updatedAt": "2026-08-06T14:25:23.437Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -229,6 +229,18 @@
           "special": false
         },
         {
+          "start": "19:00",
+          "end": "20:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)-SUP ONLY!",
+          "zone": "reef",
+          "places": {
+            "left": 6
+          },
+          "open": true,
+          "special": false
+        },
+        {
           "start": "20:00",
           "end": "21:00",
           "level": "L5",
@@ -277,7 +289,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 3,
             "left": 4
           },
           "open": true,
@@ -314,7 +326,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "left": 5
+            "left": 4
           },
           "open": true,
           "special": false
@@ -355,7 +367,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 3
+            "left": 2
           },
           "open": true,
           "special": false
@@ -432,7 +444,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 10
+            "left": 9
           },
           "open": true,
           "special": false
@@ -462,7 +474,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 10
           },
           "open": true,
@@ -475,7 +487,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 10
           },
           "open": true,
@@ -622,7 +634,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 2
+            "left": 1
           },
           "open": true,
           "special": false
@@ -702,7 +714,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 12
           },
           "open": true,
@@ -716,7 +728,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 14
+            "left": 13
           },
           "open": true,
           "special": false
