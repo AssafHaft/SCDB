@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T04:50:20.764Z",
+  "updatedAt": "2026-08-06T04:55:17.763Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -113,22 +113,10 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "14:00",
-          "end": "15:00",
-          "level": "L6",
-          "name": "Private training - Wave Riders",
-          "zone": "reef",
-          "places": {
             "right": 0
           },
           "open": false,
-          "special": true
+          "special": false
         },
         {
           "start": "15:00",
