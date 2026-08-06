@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T11:35:21.065Z",
+  "updatedAt": "2026-08-06T11:40:22.476Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -190,18 +190,6 @@
           "special": false
         },
         {
-          "start": "17:00",
-          "end": "18:00",
-          "level": "L4",
-          "name": "Advanced (T1 Only)",
-          "zone": "reef",
-          "places": {
-            "left": 8
-          },
-          "open": true,
-          "special": false
-        },
-        {
           "start": "17:30",
           "end": "19:00",
           "level": "L0",
@@ -277,7 +265,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 14
+            "left": 15
           },
           "open": true,
           "special": false
@@ -449,12 +437,17 @@
           "start": "16:00",
           "end": "17:00",
           "level": "L5",
-          "name": "החברים של ניסים",
+          "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
+            "right": 3,
             "left": 0
           },
-          "open": false,
+          "sideNames": {
+            "right": "T-Time Mega Turns (T1+T2)",
+            "left": "החברים של ניסים"
+          },
+          "open": true,
           "special": false
         },
         {
@@ -587,7 +580,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 8
+            "bay": 7
           },
           "open": true,
           "special": false
@@ -614,7 +607,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
@@ -667,7 +660,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 5
+            "left": 6
           },
           "open": true,
           "special": false
@@ -747,7 +740,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 13
           },
           "open": true,
