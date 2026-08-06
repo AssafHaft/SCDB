@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T12:35:27.320Z",
+  "updatedAt": "2026-08-06T12:40:22.681Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -183,7 +183,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 0
           },
           "open": true,
@@ -320,7 +320,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 5
           },
           "open": true,
@@ -407,27 +407,20 @@
           "special": false
         },
         {
-          "start": "15:00",
-          "end": "16:00",
-          "level": "L2",
-          "name": "Improvers (M2)",
-          "zone": "reef",
-          "places": {
-            "left": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
           "start": "16:00",
           "end": "17:00",
           "level": "L5",
-          "name": "החברים של ניסים",
+          "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
+            "right": 1,
             "left": 0
           },
-          "open": false,
+          "sideNames": {
+            "right": "T-Time Mega Turns (T1+T2)",
+            "left": "החברים של ניסים"
+          },
+          "open": true,
           "special": false
         },
         {
