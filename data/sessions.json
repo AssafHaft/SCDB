@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T09:20:20.973Z",
+  "updatedAt": "2026-08-06T09:25:28.216Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -168,7 +168,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 12
           },
           "open": true,
@@ -196,7 +196,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 12
+            "left": 11
           },
           "open": true,
           "special": false
@@ -209,7 +209,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 9
+            "left": 8
           },
           "sideNames": {
             "right": "Advanced (M4 Only)",
@@ -250,7 +250,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 15
           },
           "open": true,
@@ -268,8 +268,8 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 8
+            "right": 11,
+            "left": 9
           },
           "open": true,
           "special": false
@@ -400,7 +400,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 4
+            "left": 3
           },
           "open": true,
           "special": false
@@ -412,10 +412,9 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 2
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -741,7 +740,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "open": true,
           "special": false
