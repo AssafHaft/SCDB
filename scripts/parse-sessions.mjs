@@ -57,16 +57,25 @@ const STRIP_RE = /\s*-?\s*כולל גלשן סופט ללא עלות/;
 const SPECIAL_RE = /Private training|Galna/i;
 
 // ---------------------------------------------------------------------------
-async function fetchPage(url) {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
-      "Accept-Language": "he-IL,he;q=0.9,en;q=0.8",
-    },
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url}`);
-  return res.text();
+async function fetchPage(url, attempt = 1) {
+  try {
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(30_000), // a hung request must fail, not stall the job
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+        "Accept-Language": "he-IL,he;q=0.9,en;q=0.8",
+      },
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url}`);
+    return await res.text();
+  } catch (err) {
+    if (attempt < 2) {
+      console.warn(`Fetch failed (${err.message}), retrying once ...`);
+      return fetchPage(url, attempt + 1);
+    }
+    throw err;
+  }
 }
 
 function normalizeName(raw) {

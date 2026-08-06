@@ -16,6 +16,9 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # A hung run must never block the concurrency group until GitHub's
+    # 6-hour default — the whole job normally finishes in under a minute.
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
 
