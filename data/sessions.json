@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T15:25:20.491Z",
+  "updatedAt": "2026-08-06T15:30:26.171Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -236,9 +236,14 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 6
           },
-          "open": false,
+          "sideNames": {
+            "right": "Advanced (M4 Only)",
+            "left": "Advanced (M4 Only)-SUP ONLY!"
+          },
+          "open": true,
           "special": false
         },
         {
@@ -279,7 +284,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -291,22 +296,10 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 1
+            "right": 3,
+            "left": 0
           },
           "open": true,
-          "special": false
-        },
-        {
-          "start": "08:00",
-          "end": "09:00",
-          "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
-          "zone": "reef",
-          "places": {
-            "right": 0
-          },
-          "open": false,
           "special": false
         },
         {
@@ -401,18 +394,6 @@
           "special": false
         },
         {
-          "start": "16:00",
-          "end": "17:00",
-          "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
-          "zone": "reef",
-          "places": {
-            "right": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
           "start": "17:00",
           "end": "18:00",
           "level": "L4",
@@ -476,7 +457,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 10
+            "left": 9
           },
           "open": true,
           "special": false
@@ -650,7 +631,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 18
+            "bay": 16
           },
           "open": true,
           "special": false
@@ -741,7 +722,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 15
           },
           "open": true,
