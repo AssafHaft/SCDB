@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T10:55:15.885Z",
+  "updatedAt": "2026-08-06T11:00:33.921Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -145,10 +145,23 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 1
           },
           "open": false,
           "special": false
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "level": "L6",
+          "name": "Private training - Wave Riders",
+          "zone": "reef",
+          "places": {
+            "right": 0
+          },
+          "open": false,
+          "special": true
         },
         {
           "start": "15:00",
@@ -183,10 +196,9 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 12
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -210,10 +222,9 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 11
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -240,9 +251,10 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 0
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -264,7 +276,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 15
           },
           "open": true,
@@ -454,7 +466,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 0
           },
           "sideNames": {
@@ -483,7 +495,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 10
           },
           "open": true,
@@ -633,7 +645,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 0
           },
           "open": true,
