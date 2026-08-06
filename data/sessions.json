@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T12:40:22.681Z",
+  "updatedAt": "2026-08-06T12:45:20.552Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -413,14 +413,9 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 0
+            "right": 0
           },
-          "sideNames": {
-            "right": "T-Time Mega Turns (T1+T2)",
-            "left": "החברים של ניסים"
-          },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
