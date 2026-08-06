@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T09:30:24.062Z",
+  "updatedAt": "2026-08-06T09:35:16.136Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -133,7 +133,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 7
+            "left": 6
           },
           "open": true,
           "special": false
@@ -171,7 +171,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 6
+            "left": 7
           },
           "open": true,
           "special": false
@@ -183,7 +183,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 12
           },
           "open": true,
@@ -224,7 +224,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 8
+            "left": 9
           },
           "sideNames": {
             "right": "Advanced (M4 Only)",
@@ -253,7 +253,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -265,7 +265,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 15
           },
           "open": true,
@@ -350,7 +350,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 6
+            "left": 4
           },
           "open": true,
           "special": false
@@ -388,18 +388,6 @@
           "end": "12:00",
           "level": "L1",
           "name": "Beginners Plus (M1)",
-          "zone": "reef",
-          "places": {
-            "right": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "12:00",
-          "end": "13:00",
-          "level": "L6",
-          "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
             "right": 0
@@ -767,8 +755,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 14,
-            "left": 14
+            "right": 15,
+            "left": 13
           },
           "open": true,
           "special": false
