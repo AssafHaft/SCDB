@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T12:55:22.652Z",
+  "updatedAt": "2026-08-06T13:00:33.023Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -186,7 +186,19 @@
             "right": 5,
             "left": 0
           },
-          "open": true,
+          "open": false,
+          "special": false
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 0
+          },
+          "open": false,
           "special": false
         },
         {
@@ -222,7 +234,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 6
           },
           "sideNames": {
@@ -251,9 +263,9 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "left": 2
+            "left": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -263,7 +275,6 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 5,
             "left": 15
           },
           "open": true,
@@ -282,7 +293,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -307,10 +318,9 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 0
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -498,7 +508,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 10
           },
           "open": true,
@@ -565,7 +575,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 9
+            "bay": 8
           },
           "open": true,
           "special": false
