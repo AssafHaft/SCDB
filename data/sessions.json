@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T08:45:22.413Z",
+  "updatedAt": "2026-08-06T08:50:29.898Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -127,7 +127,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "left": 10
+            "left": 7
           },
           "open": true,
           "special": false
@@ -139,7 +139,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 8
           },
           "open": true,
@@ -167,7 +167,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "open": true,
           "special": false
@@ -179,7 +179,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 12
           },
           "open": true,
@@ -193,7 +193,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 10
+            "left": 9
           },
           "sideNames": {
             "right": "Advanced (M4 Only)",
@@ -305,7 +305,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -359,9 +359,21 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 0
+            "left": 1
           },
           "open": true,
+          "special": false
+        },
+        {
+          "start": "12:00",
+          "end": "13:00",
+          "level": "L6",
+          "name": "T- Time Pro Carves (T2+T3)",
+          "zone": "reef",
+          "places": {
+            "right": 0
+          },
+          "open": false,
           "special": false
         },
         {
@@ -454,7 +466,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 10
           },
           "open": true,
@@ -604,7 +616,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 0
           },
           "open": true,
