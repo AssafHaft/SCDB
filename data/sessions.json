@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T08:40:23.004Z",
+  "updatedAt": "2026-08-07T08:45:20.355Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -227,7 +227,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -278,7 +278,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 7
           },
           "open": true,
@@ -293,23 +293,9 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 0
           },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "11:30",
-          "end": "13:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 7
-          },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -358,7 +344,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 14
           },
           "open": true,
@@ -476,7 +462,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 9,
             "left": 15
           },
           "open": true,
@@ -717,7 +703,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 18
           },
           "open": true,
