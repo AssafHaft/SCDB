@@ -60,9 +60,27 @@ Everything staff might need to change lives in **`js/config.js`**:
 - `capacities` — set per-level session capacities (once confirmed with the
   club) to switch the display from "4 places left" to "8 of 12 in the water".
   Leave `null` to show the booking page's own wording.
+- `languages` / `languageIntervalSeconds` — the dashboard rotates through
+  these languages (keys into `window.STRINGS`, currently `en` and `he`),
+  wall-clock-timed so every TV switches in the same second. Set `languages`
+  to a single entry to stop rotating and stay on one language.
 
-Display text lives in **`js/strings.js`** — one place, so a Hebrew version
-later is a second block in that file plus `dir="rtl"`.
+Display text lives in **`js/strings.js`** — one English/Hebrew block per
+language, so adding a third language is a third block there, nothing else.
+Session names themselves (e.g. "T-Time Pro Carves") are the park's own
+naming and stay in English in both languages.
+
+Layout is direction-pinned where it matters: the reef-side cards and the
+place-left chips name real pool sides, so `#hero`, `#zones` and
+`.nx-places` in `css/style.css` are locked to `direction: ltr` regardless
+of language — only the text inside re-flows for Hebrew. If you rename or
+restructure those sections, keep that pin or the customer-reported
+"Right/Left on the wrong side" bug comes back.
+
+The dashboard is laid out as a fixed 16:9 "stage" (`#stage` in
+`index.html`, sized by `sizeStage()` in `js/dashboard.js`), so it matches a
+16:9 wall TV pixel-for-pixel and letterboxes — rather than stretching —
+on any other screen, including this repo's own preview tooling.
 
 The Hebrew→English mapping for the *source* page (zone names, availability
 wording, booking states) lives at the top of `scripts/parse-sessions.mjs`,
@@ -77,7 +95,7 @@ next to the parser that uses it.
   `scripts/parse-sessions.mjs`. It is deliberately the only file that knows
   anything about the club's markup. The parser refuses to write implausible
   output (fewer than 20 sessions), so a redesign can never blank the wall.
-- **"What's On" card empty or stale** — same idea: `extractEvents()` in
+- **"Upcoming Events" card empty or stale** — same idea: `extractEvents()` in
   `scripts/parse-events.mjs` is the only code that knows the events page
   markup. A broken events parse never blocks the sessions update (the
   workflow step is `continue-on-error`), and the wall keeps the last good

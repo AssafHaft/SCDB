@@ -6,7 +6,7 @@
 (function () {
   "use strict";
 
-  const T = window.T;
+  let T = window.T; // re-pointed by applyLanguage() when rotating
   const CONFIG = window.CONFIG;
 
   // ---- state ---------------------------------------------------------------
@@ -20,6 +20,9 @@
   // ---- time helpers --------------------------------------------------------
   const pad = (n) => String(n).padStart(2, "0");
   const hm = (d) => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  // Wrap a time range in bidi isolates (LRI…PDI) so "06:00–07:00" never
+  // renders reversed inside RTL text.
+  const iso = (s) => "⁦" + s + "⁩";
   const todayStr = (d) =>
     `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 
@@ -29,6 +32,60 @@
     return h * 60 + m;
   };
   const nowMin = (d) => d.getHours() * 60 + d.getMinutes();
+
+  // ---- 16:9 stage ----------------------------------------------------------
+  // The layout is designed for 16:9. --uw/--uh are 1/100 of the largest
+  // 16:9 box that fits the window (CSS falls back to 1vw/1vh), so on a
+  // 16:9 TV this is a no-op and on anything else the dashboard letterboxes
+  // instead of stretching.
+  function sizeStage() {
+    const w = Math.min(window.innerWidth, (window.innerHeight * 16) / 9);
+    const h = Math.min(window.innerHeight, (window.innerWidth * 9) / 16);
+    const st = document.documentElement.style;
+    st.setProperty("--uw", w / 100 + "px");
+    st.setProperty("--uh", h / 100 + "px");
+  }
+
+  // ---- language rotation ---------------------------------------------------
+  // Wall-clock driven so every TV switches in the same second. The switch
+  // itself hides behind a short opacity fade (see .lang-fade in the CSS).
+  let langIdx = 0;
+  let langSwitching = false;
+
+  function desiredLangIdx(now) {
+    const langs = CONFIG.languages || ["en"];
+    if (langs.length < 2) return 0;
+    const interval = CONFIG.languageIntervalSeconds || 30;
+    return Math.floor(now.getTime() / 1000 / interval) % langs.length;
+  }
+
+  function applyLanguage(idx) {
+    langIdx = idx;
+    const code = (CONFIG.languages || ["en"])[idx];
+    T = window.STRINGS[code] || window.STRINGS.en;
+    document.documentElement.lang = code;
+    document.documentElement.dir = T.dir || "ltr";
+    // static labels that render() never rewrites
+    $("lbl-now").textContent = T.now;
+    $("lbl-next").textContent = T.nextUp;
+    $("events-title").textContent = T.eventsTitle;
+    document.querySelector("#zone-left .zone-title").textContent = T.left;
+    document.querySelector("#zone-right .zone-title").textContent = T.right;
+    document.querySelector("#zone-bay .zone-title").textContent = T.bay;
+  }
+
+  function maybeSwitchLanguage(now) {
+    const want = desiredLangIdx(now);
+    if (want === langIdx || langSwitching) return;
+    langSwitching = true;
+    document.body.classList.add("lang-fade");
+    setTimeout(() => {
+      applyLanguage(want);
+      render(new Date());
+      document.body.classList.remove("lang-fade");
+      langSwitching = false;
+    }, 380);
+  }
 
   // ---- operating hours -----------------------------------------------------
   function openState(now) {
@@ -45,7 +102,7 @@
       if (i === 0 && nowMin(now) >= toMin(h.close)) continue; // already closed today
       if (i === 0) return { open: false, label: T.opensAt(h.open) };
       if (i === 1) return { open: false, label: T.opensTomorrow(h.open) };
-      const day = d.toLocaleDateString("en-GB", { weekday: "long" });
+      const day = d.toLocaleDateString(T.locale, { weekday: "long" });
       return { open: false, label: T.opensOn(day, h.open) };
     }
     return { open: false, label: "" };
@@ -132,7 +189,7 @@
         `<span class="lvl-badge ${levelClass(current.level)}">${current.level}</span>` +
         `<span class="zone-name">${name}</span>`;
       places.textContent = n == null ? "—" : placesText(n, current.level);
-      time.textContent = `${current.start}–${current.end}`;
+      time.textContent = iso(`${current.start}–${current.end}`);
     } else if (next) {
       const n = next.places ? next.places[sideKey] : undefined;
       card.className = "zone-card is-idle";
@@ -141,7 +198,7 @@
         `<span class="lvl-badge ${levelClass(next.level)}">${next.level}</span>` +
         `<span class="zone-name">${next.name}</span>`;
       places.textContent = n == null ? "" : placesText(n, next.level);
-      time.textContent = `${T.nextLesson} ${next.start}`;
+      time.textContent = `${T.nextLesson} ${iso(next.start)}`;
     } else {
       card.className = "zone-card is-idle";
       status.textContent = `○ ${T.noSession}`;
@@ -149,14 +206,6 @@
       places.textContent = "";
       time.textContent = "";
     }
-  }
-
-  // "1h 20m" / "45 min" for the next-up countdown.
-  function fmtDur(mins) {
-    if (mins < 60) return `${mins} min`;
-    const h = Math.floor(mins / 60);
-    const m = mins % 60;
-    return m ? `${h}h ${m}m` : `${h}h`;
   }
 
   // Hero right side: the next reef session, with places left per side —
@@ -182,13 +231,17 @@
     level.textContent = s.level;
     level.className = "lvl-badge " + levelClass(s.level);
     name.textContent = s.name;
+    const range = iso(`${s.start}–${s.end}`);
     time.textContent = info.tomorrow
-      ? `${T.tomorrowFull} ${s.start}–${s.end}`
-      : `${s.start}–${s.end} · ${T.inDur(fmtDur(toMin(s.start) - nowMin(now)))}`;
+      ? `${T.tomorrowFull} ${range}`
+      : `${range} · ${T.inDur(T.dur(toMin(s.start) - nowMin(now)))}`;
 
+    // Physical pool sides, left-to-right as the customer faces the water.
+    // .nx-places is direction-pinned in CSS so this order never mirrors
+    // in Hebrew — matches the physically-pinned #zones cards below.
     const sides = [
-      [T.sideRight, s.places && s.places.right],
       [T.sideLeft, s.places && s.places.left],
+      [T.sideRight, s.places && s.places.right],
     ].filter(([, v]) => v != null);
     if (sides.length) {
       const lab = document.createElement("span");
@@ -197,7 +250,7 @@
       if (asOf) {
         const note = document.createElement("span");
         note.className = "nx-asof";
-        note.textContent = ` · ${T.asOf} ${asOf}`;
+        note.textContent = ` · ${T.asOf(asOf)}`;
         lab.appendChild(note);
       }
       places.appendChild(lab);
@@ -210,7 +263,7 @@
     }
   }
 
-  // "What's On" card: the next few park events. Built with DOM nodes (not
+  // "Upcoming Events" card: the next few park events. Built with DOM nodes (not
   // innerHTML) because titles come from an external page.
   function renderEvents(now) {
     const list = $("events-list");
@@ -250,10 +303,10 @@
       dow.textContent =
         e.date === todayS ? T.today :
         e.date === tomorrowS ? T.tomorrow :
-        d.toLocaleDateString("en-GB", { weekday: "short" });
+        T.dow(d);
       const dom = document.createElement("div");
       dom.className = "event-dom";
-      dom.textContent = `${pad(d.getDate())}.${pad(d.getMonth() + 1)}`;
+      dom.textContent = iso(`${pad(d.getDate())}.${pad(d.getMonth() + 1)}`);
       when.append(dow, dom);
 
       const info = document.createElement("div");
@@ -264,7 +317,7 @@
       name.textContent = e.title;
       const time = document.createElement("div");
       time.className = "event-time";
-      time.textContent = e.time;
+      time.textContent = iso(e.time);
       info.append(name, time);
 
       row.append(when, info);
@@ -274,12 +327,8 @@
 
   function render(now) {
     // clock
-    $("clock").textContent = hm(now);
-    $("date").textContent = now.toLocaleDateString("en-GB", {
-      weekday: "long",
-      day: "numeric",
-      month: "long",
-    });
+    $("clock").textContent = iso(hm(now));
+    $("date").textContent = T.date(now);
 
     // open / closed
     const state = openState(now);
@@ -309,7 +358,7 @@
       $("now-level").textContent = reefNow.level;
       $("now-level").className = "hero-badge " + levelClass(reefNow.level);
       $("now-name").textContent = reefNow.name;
-      $("now-time").textContent = `${reefNow.start}–${reefNow.end}`;
+      $("now-time").textContent = iso(`${reefNow.start}–${reefNow.end}`);
       const minsLeft = toMin(reefNow.end) - nowMin(now);
       $("now-countdown").textContent = `${T.endsIn} ${minsLeft} ${T.min}`;
     } else if (reefNextInfo) {
@@ -317,9 +366,9 @@
       $("now-level").textContent = s.level;
       $("now-level").className = "hero-badge " + levelClass(s.level);
       $("now-name").textContent = s.name;
-      $("now-time").textContent = `${s.start}–${s.end}`;
+      $("now-time").textContent = iso(`${s.start}–${s.end}`);
       $("now-countdown").textContent = reefNextInfo.tomorrow
-        ? `${T.startsIn} — ${s.start}`
+        ? `${T.startsIn} — ${iso(s.start)}`
         : `${T.startsIn} ${toMin(s.start) - nowMin(now)} ${T.min}`;
     } else {
       $("now-level").textContent = "";
@@ -340,10 +389,11 @@
     // slot already shows queue[0] ("Starts in …"), so show the one after.
     renderHeroNext((reefNow ? queue[0] : queue[1]) || null, now, asOf);
 
-    // weather
+    // weather — description resolved at render time (not fetch time) so
+    // it follows the current language on every rotation.
     if (weather) {
       $("weather-temp").textContent = `${Math.round(weather.temp)}°`;
-      $("weather-desc").textContent = weather.desc;
+      $("weather-desc").textContent = T.wmo[weather.code] || "";
       $("weather-wind").textContent = `${T.wind} ${Math.round(weather.wind)} ${T.kmh}`;
     }
 
@@ -383,13 +433,6 @@
     }
   }
 
-  const WMO = {
-    0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast",
-    45: "Fog", 48: "Fog", 51: "Drizzle", 53: "Drizzle", 55: "Drizzle",
-    61: "Light rain", 63: "Rain", 65: "Heavy rain", 80: "Showers",
-    81: "Showers", 82: "Heavy showers", 95: "Thunderstorm",
-  };
-
   async function loadWeather() {
     try {
       const { latitude, longitude } = CONFIG.weather;
@@ -399,10 +442,12 @@
       const res = await fetch(url);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const j = await res.json();
+      // Store the raw WMO code — render() looks up the description in the
+      // current language's T.wmo table, so it follows language rotation.
       weather = {
         temp: j.current.temperature_2m,
         wind: j.current.wind_speed_10m,
-        desc: WMO[j.current.weather_code] || "",
+        code: j.current.weather_code,
       };
     } catch (e) {
       console.warn("weather fetch failed:", e.message);
@@ -411,9 +456,25 @@
 
   // ---- boot ----------------------------------------------------------------
   async function start() {
+    sizeStage();
+    window.addEventListener("resize", sizeStage);
+
+    // Join the rotation already in progress — every TV that boots mid-cycle
+    // lands on the same language, driven off the wall clock.
+    applyLanguage(desiredLangIdx(new Date()));
+
     await Promise.all([loadSessions(), loadEvents(), loadWeather()]);
     render(new Date());
-    setInterval(() => render(new Date()), 1000);
+    setInterval(() => {
+      // Re-check the stage size every tick, not just on resize — belt and
+      // suspenders against embedded/kiosk browsers that resize the
+      // viewport without firing a real `resize` event. Two property
+      // writes; effectively free.
+      sizeStage();
+      const now = new Date();
+      maybeSwitchLanguage(now);
+      render(now);
+    }, 1000);
     setInterval(loadSessions, CONFIG.sessionsRefreshSeconds * 1000);
     setInterval(loadEvents, CONFIG.sessionsRefreshSeconds * 1000);
     setInterval(loadWeather, CONFIG.weather.refreshMinutes * 60 * 1000);

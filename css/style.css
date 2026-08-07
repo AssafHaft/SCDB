@@ -4,9 +4,25 @@
  * #243D44 (all text, hero panel — the brand primary), pale aqua #C2EAEA
  * (accents/badges). White cards on the sand page, pill badges echoing the
  * site's fully-rounded buttons, and the wave-mark logo in brand teal.
- * Sized in viewport units to fill any 16:9 screen. No interaction.
+ *
+ * Sizing: every dimension is calc(var(--uw|--uh) * N) instead of a raw
+ * vw/vh unit. js/dashboard.js sizes --uw/--uh off the largest 16:9 box
+ * that fits the window (see #stage below), so the whole composition scales
+ * as one fixed 16:9 layout — pixel-identical on a 16:9 TV, letterboxed
+ * (not stretched) on any other screen. The :root fallback below covers the
+ * instant before that JS runs.
+ *
+ * Bilingual (EN/HE, auto-rotating): structural containers that seat
+ * physically-meaningful content — #hero, #zones, .nx-places — are pinned
+ * to direction:ltr unconditionally, so the reef-side cards and the
+ * Left/Right place chips never swap position when the language flips.
+ * Only the text *inside* them re-flows to RTL for Hebrew (see the
+ * `html[dir="rtl"]` rules near the bottom of each section). No interaction.
  * ------------------------------------------------------------------------- */
 :root {
+  --uw: 1vw;   /* overridden in px by js/dashboard.js's sizeStage() */
+  --uh: 1vh;
+
   --sand: #e1dad0;          /* brand sand — page background */
   --teal: #243d44;          /* brand primary — text + hero panel */
   --aqua: #c2eaea;          /* brand pale aqua — accents */
@@ -34,6 +50,25 @@ html, body {
   font-family: "Assistant", "Segoe UI", system-ui, sans-serif;
   cursor: none;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* language cross-fade: dashboard.js toggles .lang-fade for ~380ms while
+     it swaps text and flips dir, so the reflow never flashes on screen */
+  transition: opacity 0.38s ease;
+  opacity: 1;
+}
+body.lang-fade { opacity: 0; }
+
+/* the fixed 16:9 box; see the sizing note above */
+#stage {
+  position: relative;
+  width: calc(var(--uw) * 100);
+  height: calc(var(--uh) * 100);
+  overflow: hidden;
+  flex-shrink: 0;
+}
 
 /* ---- closed screen ------------------------------------------------------ */
 #closed-screen { display: none; }
@@ -42,22 +77,22 @@ body.closed #closed-screen {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2vh;
+  gap: calc(var(--uh) * 2);
   width: 100%;
   height: 100%;
 }
 body.closed #dashboard { display: none; }
-.closed-logo { width: 36vh; max-width: 42vw; height: auto; }
-.closed-sub  { font-size: 2.2vw; color: var(--ink-2); }
-.closed-clock{ font-size: 1.8vw; color: var(--ink-3); margin-top: 4vh; font-variant-numeric: tabular-nums; }
+.closed-logo { width: calc(var(--uh) * 36); max-width: calc(var(--uw) * 42); height: auto; }
+.closed-sub  { font-size: calc(var(--uw) * 2.2); color: var(--ink-2); }
+.closed-clock{ font-size: calc(var(--uw) * 1.8); color: var(--ink-3); margin-top: calc(var(--uh) * 4); font-variant-numeric: tabular-nums; }
 
 /* ---- layout ------------------------------------------------------------- */
 #dashboard {
   display: grid;
-  grid-template-rows: 10vh 26vh 1fr 4vh;
-  gap: 2vh;
+  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 26) 1fr calc(var(--uh) * 4);
+  gap: calc(var(--uh) * 2);
   height: 100%;
-  padding: 2.5vh 2.5vw;
+  padding: calc(var(--uh) * 2.5) calc(var(--uw) * 2.5);
 }
 
 /* ---- top bar ------------------------------------------------------------ */
@@ -67,101 +102,113 @@ body.closed #dashboard { display: none; }
   justify-content: space-between;
 }
 .brand { display: flex; align-items: center; }
-.brand-logo { height: 9vh; width: auto; }
+.brand-logo { height: calc(var(--uh) * 9); width: auto; }
 .datetime { text-align: center; }
 #clock {
-  font-size: 4.4vw;
+  font-size: calc(var(--uw) * 4.4);
   font-weight: 700;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
-#date { font-size: 1.3vw; color: var(--ink-2); margin-top: 0.5vh; }
-.weather { display: flex; align-items: center; gap: 1vw; }
-#weather-temp { font-size: 3.6vw; font-weight: 700; }
-.weather-meta { font-size: 1.2vw; color: var(--ink-2); line-height: 1.5; }
+#date { font-size: calc(var(--uw) * 1.3); color: var(--ink-2); margin-top: calc(var(--uh) * 0.5); }
+.weather { display: flex; align-items: center; gap: calc(var(--uw) * 1); }
+#weather-temp { font-size: calc(var(--uw) * 3.6); font-weight: 700; }
+.weather-meta { font-size: calc(var(--uw) * 1.2); color: var(--ink-2); line-height: 1.5; }
 
 /* ---- hero (current program) --------------------------------------------- */
 /* The one teal block on the light page — same move as the site's teal
  * buttons on white. */
 #hero {
   background: var(--teal);
-  border-radius: 1.6vw;
-  padding: 2.5vh 2.5vw;
+  border-radius: calc(var(--uw) * 1.6);
+  padding: calc(var(--uh) * 2.5) calc(var(--uw) * 2.5);
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   align-items: center;
-  gap: 2.5vw;
+  gap: calc(var(--uw) * 2.5);
   color: var(--on-teal);
-  box-shadow: 0 0.6vh 3vh rgba(36, 61, 68, 0.25);
+  box-shadow: 0 calc(var(--uh) * 0.6) calc(var(--uh) * 3) rgba(36, 61, 68, 0.25);
+  /* "Now" stays the left column, "Next up" stays the right column in both
+     languages — nothing on a glanceable TV should swap sides every 30s */
+  direction: ltr;
 }
 .hero-now {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.2vh;
+  gap: calc(var(--uh) * 1.2);
 }
 .hero-label {
-  font-size: 1.3vw;
+  font-size: calc(var(--uw) * 1.3);
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--aqua);
   font-weight: 600;
 }
-.hero-main { display: flex; align-items: center; gap: 1.4vw; }
+.hero-main { display: flex; align-items: center; gap: calc(var(--uw) * 1.4); }
 .hero-badge {
-  font-size: 2.6vw;
+  font-size: calc(var(--uw) * 2.6);
   font-weight: 800;
-  padding: 0.6vh 1.6vw;
-  border-radius: 99vw;          /* brand pill, like the site's buttons */
+  padding: calc(var(--uh) * 0.6) calc(var(--uw) * 1.6);
+  border-radius: calc(var(--uw) * 99);          /* brand pill, like the site's buttons */
   color: var(--on-badge);
   background: var(--aqua);
 }
-.hero-name { font-size: 3.4vw; font-weight: 700; line-height: 1.1; }
-.hero-sub { font-size: 1.7vw; color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
-.hero-sub .dot { margin: 0 0.6vw; color: var(--on-teal-2); }
+.hero-name { font-size: calc(var(--uw) * 3.4); font-weight: 700; line-height: 1.1; }
+.hero-sub { font-size: calc(var(--uw) * 1.7); color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
+.hero-sub .dot { margin: 0 calc(var(--uw) * 0.6); color: var(--on-teal-2); }
 
 /* hero right side: next up, with places left per reef side */
 .hero-next {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.1vh;
-  padding-left: 2.5vw;
+  gap: calc(var(--uh) * 1.1);
+  padding-left: calc(var(--uw) * 2.5);
   border-left: 1px solid rgba(244, 246, 244, 0.22);
   min-width: 0;
 }
-.nx-main { display: flex; align-items: center; gap: 0.9vw; }
-.nx-main .lvl-badge { font-size: 1.5vw; }
+.nx-main { display: flex; align-items: center; gap: calc(var(--uw) * 0.9); }
+.nx-main .lvl-badge { font-size: calc(var(--uw) * 1.5); }
 .nx-name {
-  font-size: 2vw;
+  font-size: calc(var(--uw) * 2);
   font-weight: 700;
   line-height: 1.1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.nx-time { font-size: 1.4vw; color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
-.nx-places { display: flex; align-items: center; gap: 0.7vw; flex-wrap: wrap; }
+.nx-time { font-size: calc(var(--uw) * 1.4); color: var(--on-teal-2); font-variant-numeric: tabular-nums; }
+.nx-places {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--uw) * 0.7);
+  flex-wrap: wrap;
+  /* Left chip stays physically left, Right chip physically right, in both
+     languages — these name real pool sides, not reading direction. */
+  direction: ltr;
+}
 .nx-places-label {
-  font-size: 1vw;
+  font-size: calc(var(--uw) * 1);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
   color: var(--on-teal-2);
-  margin-right: 0.3vw;
+  margin-right: calc(var(--uw) * 0.3);
 }
 /* stale-data hint: soft brand amber, same size as the label it extends */
 .nx-asof { color: #eec27f; }
 .place-chip {
-  font-size: 1.35vw;
+  font-size: calc(var(--uw) * 1.35);
   font-weight: 800;
-  padding: 0.4vh 1vw;
-  border-radius: 99vw;
+  padding: calc(var(--uh) * 0.4) calc(var(--uw) * 1);
+  border-radius: calc(var(--uw) * 99);
   background: var(--aqua);
   color: var(--on-badge);
   font-variant-numeric: tabular-nums;
 }
 .place-chip.is-full { background: var(--bad); color: #fff; }
+.place-chip { unicode-bidi: plaintext; } /* correct glyph order for the Hebrew label + number */
 
 /* an empty badge is a badge not shown (idle hero, missing next data) */
 .lvl-badge:empty, .hero-badge:empty { display: none; }
@@ -170,49 +217,52 @@ body.closed #dashboard { display: none; }
 #zones {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.6vw;
+  gap: calc(var(--uw) * 1.6);
+  /* Reef Left | Reef Right | Bay | Events always in that physical order,
+     regardless of language — see the file header note. */
+  direction: ltr;
 }
 .zone-card {
   background: var(--card);
   border: 1px solid var(--card-edge);
-  border-radius: 1.6vw;
-  padding: 2.5vh 1.8vw;
+  border-radius: calc(var(--uw) * 1.6);
+  padding: calc(var(--uh) * 2.5) calc(var(--uw) * 1.8);
   display: flex;
   flex-direction: column;
-  gap: 1.4vh;
-  box-shadow: 0 0.4vh 2vh rgba(36, 61, 68, 0.10);
+  gap: calc(var(--uh) * 1.4);
+  box-shadow: 0 calc(var(--uh) * 0.4) calc(var(--uh) * 2) rgba(36, 61, 68, 0.10);
 }
 .zone-title {
-  font-size: 1.5vw;
+  font-size: calc(var(--uw) * 1.5);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--teal);
   font-weight: 800;
 }
-.zone-status { font-size: 1.3vw; font-weight: 600; color: var(--ink-3); }
+.zone-status { font-size: calc(var(--uw) * 1.3); font-weight: 600; color: var(--ink-3); }
 .is-live .zone-status { color: var(--good); }
 .is-full .zone-status { color: var(--bad); }
 .zone-program {
   display: flex;
   align-items: center;
-  gap: 0.9vw;
-  min-height: 6vh;
+  gap: calc(var(--uw) * 0.9);
+  min-height: calc(var(--uh) * 6);
 }
-.zone-name { font-size: 1.6vw; font-weight: 600; line-height: 1.15; }
+.zone-name { font-size: calc(var(--uw) * 1.6); font-weight: 600; line-height: 1.15; }
 .lvl-badge {
-  font-size: 1.3vw;
+  font-size: calc(var(--uw) * 1.3);
   font-weight: 800;
-  padding: 0.3vh 1vw;
-  border-radius: 99vw;          /* brand pill */
+  padding: calc(var(--uh) * 0.3) calc(var(--uw) * 1);
+  border-radius: calc(var(--uw) * 99);          /* brand pill */
   color: var(--on-badge);
   background: var(--aqua);
   flex-shrink: 0;
 }
-.zone-places { font-size: 2.4vw; font-weight: 700; margin-top: auto; }
+.zone-places { font-size: calc(var(--uw) * 2.4); font-weight: 700; margin-top: auto; }
 .is-full .zone-places { color: var(--bad); }
 .is-live .zone-places { color: var(--ink); }
-.is-idle .zone-places { color: var(--ink-2); font-size: 1.6vw; font-weight: 600; }
-.zone-time { font-size: 1.2vw; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.is-idle .zone-places { color: var(--ink-2); font-size: calc(var(--uw) * 1.6); font-weight: 600; }
+.zone-time { font-size: calc(var(--uw) * 1.2); color: var(--ink-3); font-variant-numeric: tabular-nums; }
 
 /* level badge hues — decorative, tuned to the brand ramp (aqua → sand →
  * warm orange → coral); the L-number text carries the meaning */
@@ -224,34 +274,34 @@ body.closed #dashboard { display: none; }
 .lvl-l5 { background: #e19a6b; }
 .lvl-l6 { background: #ef8a76; }
 
-/* ---- "What's On" park events card ---------------------------------------- */
-#events-list { display: flex; flex-direction: column; margin-top: 0.4vh; }
+/* ---- "Upcoming Events" park events card ----------------------------------- */
+#events-list { display: flex; flex-direction: column; margin-top: calc(var(--uh) * 0.4); }
 .event-row {
   display: flex;
   align-items: center;
-  gap: 0.8vw;
-  padding: 1.3vh 0;
+  gap: calc(var(--uw) * 0.8);
+  padding: calc(var(--uh) * 1.3) 0;
 }
 .event-row + .event-row { border-top: 1px solid rgba(36, 61, 68, 0.10); }
 .event-when {
   flex-shrink: 0;
-  width: 4.8vw;
+  width: calc(var(--uw) * 4.8);
   text-align: center;
   background: var(--aqua);
   color: var(--on-badge);
-  border-radius: 0.6vw;
-  padding: 0.8vh 0;
+  border-radius: calc(var(--uw) * 0.6);
+  padding: calc(var(--uh) * 0.8) 0;
 }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
-  font-size: 0.85vw;
+  font-size: calc(var(--uw) * 0.85);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
-.event-dom { font-size: 1.2vw; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.event-dom { font-size: calc(var(--uw) * 1.2); font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
 .event-name {
-  font-size: 1.2vw;
+  font-size: calc(var(--uw) * 1.2);
   font-weight: 700;
   line-height: 1.2;
   display: -webkit-box;
@@ -259,8 +309,8 @@ body.closed #dashboard { display: none; }
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.event-time { font-size: 1.05vw; color: var(--ink-2); font-variant-numeric: tabular-nums; margin-top: 0.2vh; }
-.events-empty { color: var(--ink-2); font-size: 1.3vw; font-weight: 600; margin-top: 1vh; }
+.event-time { font-size: calc(var(--uw) * 1.05); color: var(--ink-2); font-variant-numeric: tabular-nums; margin-top: calc(var(--uh) * 0.2); }
+.events-empty { color: var(--ink-2); font-size: calc(var(--uw) * 1.3); font-weight: 600; margin-top: calc(var(--uh) * 1); }
 
 /* ---- bottom bar ---------------------------------------------------------- */
 #bottombar {
@@ -268,12 +318,27 @@ body.closed #dashboard { display: none; }
   align-items: center;
   justify-content: flex-end;
 }
-#updated { font-size: 1vw; color: var(--ink-3); }
+#updated { font-size: calc(var(--uw) * 1); color: var(--ink-3); }
 #updated.stale {
   color: #7a5214;
   background: rgba(218, 148, 79, 0.18);
   border: 1px solid rgba(218, 148, 79, 0.45);
-  padding: 0.5vh 1vw;
-  border-radius: 99vw;
+  padding: calc(var(--uh) * 0.5) calc(var(--uw) * 1);
+  border-radius: calc(var(--uw) * 99);
   font-weight: 700;
+}
+
+/* ---- Hebrew text flow -----------------------------------------------------
+ * #hero, #zones and .nx-places above are pinned to direction:ltr so nothing
+ * changes screen position when the language rotates. These rules re-enable
+ * right-to-left flow for the *text* inside each pinned panel — badge/name
+ * order, bullet/label order, right-aligned headings — without touching the
+ * panels' own position in their parent. (.nx-places stays ltr always — its
+ * own explicit rule holds regardless of what .hero-next inherits here,
+ * since a rule targeting an element directly always beats inheritance.) */
+html[dir="rtl"] .hero-now,
+html[dir="rtl"] .hero-next,
+html[dir="rtl"] .zone-card,
+html[dir="rtl"] #events-card {
+  direction: rtl;
 }

@@ -4,6 +4,11 @@
 window.CONFIG = {
   clubName: "SRF Park TLV",
 
+  // Languages to rotate between (keys of window.STRINGS) and how long each
+  // stays on screen. A single-entry list disables rotation.
+  languages: ["en", "he"],
+  languageIntervalSeconds: 30,
+
   // Operating hours per weekday (0 = Sunday … 6 = Saturday), local time.
   // Outside these hours the dashboard shows the quiet "closed" screen.
   // Times are "HH:MM" 24h. Set a day to null to mark the whole day closed.
@@ -23,7 +28,7 @@ window.CONFIG = {
   // Where the parsed park events live (written by the same Actions job).
   eventsUrl: "data/events.json",
 
-  // How many upcoming events the "What's On" card shows at most.
+  // How many upcoming events the "Upcoming Events" card shows at most.
   maxEvents: 4,
 
   // Weather: Open-Meteo, free, no API key, CORS-enabled.

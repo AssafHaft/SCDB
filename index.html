@@ -7,9 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=6" />
+  <link rel="stylesheet" href="css/style.css?v=8" />
 </head>
 <body>
+  <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
+       dimensions); on a 16:9 TV it fills the screen exactly, on any other
+       aspect ratio it letterboxes instead of stretching. -->
+  <div id="stage">
+
   <!-- ======================= CLOSED SCREEN ======================= -->
   <div id="closed-screen">
     <img class="closed-logo" src="assets/logo.svg" alt="SRF Park TLV" />
@@ -39,7 +44,7 @@
 
     <section id="hero">
       <div class="hero-now">
-        <div class="hero-label">Now in the water</div>
+        <div class="hero-label" id="lbl-now">Now in the water</div>
         <div class="hero-main">
           <span class="hero-badge" id="now-level"></span>
           <span class="hero-name" id="now-name">—</span>
@@ -51,7 +56,7 @@
         </div>
       </div>
       <div class="hero-next">
-        <div class="hero-label">Next up</div>
+        <div class="hero-label" id="lbl-next">Next up</div>
         <div class="nx-main">
           <span class="lvl-badge" id="nx-level"></span>
           <span class="nx-name" id="nx-name">—</span>
@@ -61,16 +66,18 @@
       </div>
     </section>
 
+    <!-- Physical order, viewer's perspective: Reef Left | Reef Right | Bay.
+         #zones is direction-pinned in CSS so this never mirrors in RTL. -->
     <section id="zones">
-      <div class="zone-card" id="zone-right">
-        <div class="zone-title">Reef Right</div>
+      <div class="zone-card" id="zone-left">
+        <div class="zone-title">Reef Left</div>
         <div class="zone-status"></div>
         <div class="zone-program"></div>
         <div class="zone-places"></div>
         <div class="zone-time"></div>
       </div>
-      <div class="zone-card" id="zone-left">
-        <div class="zone-title">Reef Left</div>
+      <div class="zone-card" id="zone-right">
+        <div class="zone-title">Reef Right</div>
         <div class="zone-status"></div>
         <div class="zone-program"></div>
         <div class="zone-places"></div>
@@ -84,7 +91,7 @@
         <div class="zone-time"></div>
       </div>
       <div class="zone-card" id="events-card">
-        <div class="zone-title">What's On</div>
+        <div class="zone-title" id="events-title">Upcoming Events</div>
         <div id="events-list"></div>
       </div>
     </section>
@@ -95,8 +102,10 @@
 
   </div>
 
-  <script src="js/config.js?v=6"></script>
-  <script src="js/strings.js?v=6"></script>
-  <script src="js/dashboard.js?v=6"></script>
+  </div> <!-- #stage -->
+
+  <script src="js/config.js?v=8"></script>
+  <script src="js/strings.js?v=8"></script>
+  <script src="js/dashboard.js?v=8"></script>
 </body>
 </html>
