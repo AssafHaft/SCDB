@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T13:55:18.952Z",
+  "updatedAt": "2026-08-07T14:00:43.277Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -258,9 +258,23 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
+          "special": false
+        },
+        {
+          "start": "18:00",
+          "end": "19:00",
+          "level": "L6",
+          "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
+          "zone": "reef",
+          "places": {
+            "right": 1,
+            "left": 0
+          },
+          "open": true,
           "special": false
         }
       ]
@@ -288,7 +302,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -432,8 +446,8 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 11
+            "right": 8,
+            "left": 10
           },
           "open": true,
           "special": false
@@ -536,7 +550,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -549,7 +563,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 14
+            "left": 13
           },
           "open": true,
           "special": false
@@ -737,7 +751,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 14
+            "left": 15
           },
           "open": true,
           "special": false
@@ -778,7 +792,7 @@
           "zone": "reef",
           "places": {
             "right": 19,
-            "left": 19
+            "left": 18
           },
           "open": true,
           "special": false
