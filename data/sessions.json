@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T11:25:19.938Z",
+  "updatedAt": "2026-08-07T11:30:32.668Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -188,9 +188,9 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 8
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -204,7 +204,7 @@
           "places": {
             "bay": 1
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -218,7 +218,7 @@
           "places": {
             "bay": 1
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -269,8 +269,8 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 9
+            "right": 7,
+            "left": 10
           },
           "open": true,
           "special": false
@@ -282,9 +282,10 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 9
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -360,7 +361,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 10
           },
           "open": true,
@@ -400,7 +401,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -438,7 +439,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 20
           },
           "open": true,
@@ -452,7 +453,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 11
+            "left": 10
           },
           "open": true,
           "special": false
@@ -516,7 +517,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 14
           },
           "open": true,
@@ -585,7 +586,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 15
           },
           "open": true,
@@ -599,7 +600,7 @@
           "zone": "reef",
           "places": {
             "right": 19,
-            "left": 17
+            "left": 16
           },
           "open": true,
           "special": false
