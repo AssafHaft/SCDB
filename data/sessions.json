@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T10:10:24.775Z",
+  "updatedAt": "2026-08-08T10:15:18.307Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -161,7 +161,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 5
           },
           "open": true,
           "special": false
@@ -226,7 +226,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 10
           },
           "open": true,
@@ -249,6 +249,18 @@
           "end": "19:00",
           "level": "L3",
           "name": "Intermediate (M3)",
+          "zone": "reef",
+          "places": {
+            "right": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
+          "start": "19:00",
+          "end": "20:00",
+          "level": "L5",
+          "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
             "right": 0
@@ -516,7 +528,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
@@ -560,7 +572,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 16
+            "left": 17
           },
           "open": true,
           "special": false
@@ -598,7 +610,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 18
           },
           "open": true,
@@ -825,7 +837,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
