@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T09:00:33.973Z",
+  "updatedAt": "2026-08-08T09:05:18.107Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -172,9 +172,10 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 7
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -187,6 +188,20 @@
             "right": 0
           },
           "open": false,
+          "special": false
+        },
+        {
+          "start": "15:30",
+          "end": "17:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "children",
+          "places": {
+            "bay": 14
+          },
+          "open": true,
           "special": false
         },
         {
@@ -211,7 +226,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 8
+            "left": 10
           },
           "open": true,
           "special": false
@@ -233,18 +248,6 @@
           "end": "19:00",
           "level": "L3",
           "name": "Intermediate (M3)",
-          "zone": "reef",
-          "places": {
-            "right": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "19:00",
-          "end": "20:00",
-          "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
             "right": 0
