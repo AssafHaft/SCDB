@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-08T13:07:22.000Z",
+  "updatedAt": "2026-08-08T13:10:19.946Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -278,19 +278,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "left": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "21:00",
-          "end": "22:00",
-          "level": "L6",
-          "name": "T- Time Pro Carves (T2+T3)",
-          "zone": "reef",
-          "places": {
-            "right": 0
+            "left": 0
           },
           "open": false,
           "special": false
