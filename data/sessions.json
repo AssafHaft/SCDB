@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T09:55:18.791Z",
+  "updatedAt": "2026-08-09T10:00:30.826Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -108,9 +108,24 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
+          "special": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 8
+          },
+          "open": true,
           "special": false
         },
         {
@@ -120,7 +135,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 14
           },
           "open": true,
@@ -160,8 +175,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
-            "left": 16
+            "right": 12,
+            "left": 15
           },
           "open": true,
           "special": false
@@ -215,7 +230,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
@@ -227,7 +242,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 8
           },
           "open": true,
@@ -240,7 +255,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 0
           },
           "open": true,
@@ -271,7 +286,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -430,7 +445,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 19
+            "bay": 20
           },
           "open": true,
           "special": false
@@ -442,7 +457,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 2
           },
           "open": true,
@@ -553,7 +568,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 14
+            "left": 15
           },
           "open": true,
           "special": false
@@ -618,7 +633,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 12
+            "left": 13
           },
           "open": true,
           "special": false
@@ -670,7 +685,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 12
           },
           "open": true,
