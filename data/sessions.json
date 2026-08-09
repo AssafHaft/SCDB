@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T11:20:17.857Z",
+  "updatedAt": "2026-08-09T11:25:16.420Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -161,7 +161,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 15
           },
           "open": true,
@@ -189,23 +189,9 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "17:30",
-          "end": "19:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 3
-          },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -229,7 +215,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -241,10 +227,9 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 0
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -271,7 +256,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 11
           },
           "open": true,
@@ -349,7 +334,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 14
           },
           "open": true,
@@ -363,7 +348,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -431,7 +416,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 20
+            "bay": 19
           },
           "open": true,
           "special": false
@@ -456,7 +441,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 10
           },
           "open": true,
@@ -523,7 +508,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 12
+            "left": 11
           },
           "open": true,
           "special": false
@@ -553,7 +538,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 15
           },
           "open": true,
@@ -713,7 +698,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 5
           },
           "open": true,
           "special": false
