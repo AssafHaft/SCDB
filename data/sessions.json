@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T09:30:54.038Z",
+  "updatedAt": "2026-08-09T09:35:19.996Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -120,7 +120,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 17,
             "left": 14
           },
           "open": true,
@@ -133,7 +133,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 8
           },
           "open": true,
@@ -173,8 +173,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 11
+            "right": 6,
+            "left": 12
           },
           "open": true,
           "special": false
@@ -227,7 +227,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 9
           },
           "open": true,
@@ -240,8 +240,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 4
+            "right": 6,
+            "left": 0
           },
           "open": true,
           "special": false
@@ -258,7 +258,6 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 14,
             "left": 14
           },
           "open": true,
@@ -285,7 +284,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 9
+            "left": 11
           },
           "open": true,
           "special": false
@@ -403,7 +402,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 12
+            "left": 13
           },
           "open": true,
           "special": false
@@ -417,7 +416,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 16
+            "bay": 14
           },
           "open": true,
           "special": false
@@ -443,7 +442,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 2
           },
           "open": true,
@@ -580,7 +579,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 12
+            "left": 13
           },
           "open": true,
           "special": false
@@ -619,7 +618,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
@@ -632,7 +631,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 13
+            "left": 15
           },
           "open": true,
           "special": false
