@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T10:50:18.191Z",
+  "updatedAt": "2026-08-09T10:55:15.812Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -136,7 +136,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -148,7 +148,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 1
           },
           "open": true,
@@ -163,7 +163,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 6
+            "bay": 7
           },
           "open": true,
           "special": false
@@ -189,7 +189,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 11
+            "left": 7
           },
           "open": true,
           "special": false
@@ -203,9 +203,23 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
-          "open": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "17:30",
+          "end": "19:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Kids 11-16",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 3
+          },
+          "open": true,
           "special": false
         },
         {
@@ -228,8 +242,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 7
+            "right": 1,
+            "left": 6
           },
           "open": true,
           "special": false
@@ -284,7 +298,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 11
           },
           "open": true,
@@ -297,7 +311,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 13
           },
           "open": true,
@@ -337,7 +351,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 17
+            "left": 16
           },
           "open": true,
           "special": false
@@ -389,7 +403,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 18
           },
           "open": true,
@@ -671,7 +685,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 11
           },
           "open": true,
