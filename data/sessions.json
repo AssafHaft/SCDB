@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T10:00:30.826Z",
+  "updatedAt": "2026-08-09T10:05:19.399Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -135,7 +135,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 14
           },
           "open": true,
@@ -148,8 +148,8 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 5
+            "right": 10,
+            "left": 4
           },
           "open": true,
           "special": false
@@ -176,7 +176,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 15
+            "left": 13
           },
           "open": true,
           "special": false
@@ -229,8 +229,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
-            "left": 14
+            "right": 12,
+            "left": 15
           },
           "open": true,
           "special": false
@@ -242,8 +242,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 8
+            "right": 3,
+            "left": 7
           },
           "open": true,
           "special": false
@@ -255,7 +255,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 3,
             "left": 0
           },
           "open": true,
@@ -445,7 +445,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 20
+            "bay": 19
           },
           "open": true,
           "special": false
