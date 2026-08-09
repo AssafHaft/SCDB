@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T14:25:16.283Z",
+  "updatedAt": "2026-08-09T14:30:23.883Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -209,6 +209,20 @@
           "special": false
         },
         {
+          "start": "17:30",
+          "end": "19:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Kids 11-16",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 2
+          },
+          "open": false,
+          "special": false
+        },
+        {
           "start": "18:00",
           "end": "19:00",
           "level": "L2",
@@ -257,7 +271,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "left": 11
+            "left": 10
           },
           "open": true,
           "special": false
@@ -295,8 +309,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 15,
-            "left": 9
+            "right": 14,
+            "left": 8
           },
           "open": true,
           "special": false
@@ -400,8 +414,8 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 14,
-            "left": 13
+            "right": 13,
+            "left": 12
           },
           "open": true,
           "special": false
@@ -455,7 +469,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
@@ -603,7 +617,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 15
           },
           "open": true,
@@ -711,7 +725,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 3
           },
           "open": true,
           "special": false
