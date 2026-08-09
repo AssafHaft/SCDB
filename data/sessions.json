@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T10:25:18.170Z",
+  "updatedAt": "2026-08-09T10:30:23.446Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -125,7 +125,7 @@
           "places": {
             "bay": 8
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -148,22 +148,8 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "15:30",
-          "end": "17:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Adults 16+",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 8
+            "right": 8,
+            "left": 0
           },
           "open": true,
           "special": false
@@ -285,8 +271,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 11
+            "right": 6,
+            "left": 10
           },
           "open": true,
           "special": false
@@ -470,7 +456,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 11
           },
           "open": true,
@@ -537,7 +523,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -727,7 +713,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 5
           },
           "open": true,
           "special": false
