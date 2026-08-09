@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T05:55:15.675Z",
+  "updatedAt": "2026-08-09T06:00:28.380Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -49,12 +49,17 @@
           "start": "09:00",
           "end": "10:00",
           "level": "L2",
-          "name": "Improvers (M2)",
+          "name": "קבוצה של יוני סחיש",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 8
           },
-          "open": true,
+          "sideNames": {
+            "right": "קבוצה של יוני סחיש",
+            "left": "Improvers (M2)"
+          },
+          "open": false,
           "special": false
         },
         {
@@ -64,8 +69,8 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 9
+            "right": 6,
+            "left": 8
           },
           "open": true,
           "special": false
@@ -106,20 +111,6 @@
             "right": 0
           },
           "open": false,
-          "special": false
-        },
-        {
-          "start": "13:30",
-          "end": "15:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 7
-          },
-          "open": true,
           "special": false
         },
         {
@@ -237,7 +228,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
@@ -281,7 +272,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 16
+            "left": 15
           },
           "open": true,
           "special": false
