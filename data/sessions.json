@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T10:35:18.673Z",
+  "updatedAt": "2026-08-09T10:40:18.764Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -123,7 +123,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 5
           },
           "open": false,
           "special": false
@@ -149,7 +149,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 1
+            "left": 2
           },
           "open": true,
           "special": false
@@ -203,7 +203,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 1
           },
           "open": true,
           "special": false
@@ -217,7 +217,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 2
           },
           "open": true,
           "special": false
@@ -229,7 +229,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 15
           },
           "open": true,
@@ -242,7 +242,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 7
           },
           "open": true,
@@ -286,7 +286,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
@@ -594,7 +594,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -607,7 +607,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 6
+            "left": 7
           },
           "open": true,
           "special": false
@@ -727,7 +727,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 6
           },
           "open": true,
           "special": false
