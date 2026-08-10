@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T21:15:41.749Z",
+  "updatedAt": "2026-08-10T02:00:32.201Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -14,7 +14,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -27,7 +27,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -53,7 +53,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 5
+            "left": 6
           },
           "open": true,
           "special": false
@@ -91,8 +91,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 12
+            "right": 8,
+            "left": 11
           },
           "open": true,
           "special": false
@@ -104,7 +104,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 7,
             "left": 11
           },
           "open": true,
@@ -157,8 +157,8 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 11
+            "right": 10,
+            "left": 10
           },
           "open": true,
           "special": false
@@ -211,23 +211,9 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "left": 4
+            "left": 0
           },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "18:30",
-          "end": "20:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Adults 16+",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 13
-          },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -239,7 +225,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 17
+            "bay": 16
           },
           "open": true,
           "special": false
@@ -277,7 +263,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -290,7 +276,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 13
+            "left": 15
           },
           "open": true,
           "special": false
