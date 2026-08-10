@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T15:10:24.135Z",
+  "updatedAt": "2026-08-10T15:15:23.529Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -266,21 +266,9 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 1
+            "left": 0
           },
           "open": true,
-          "special": false
-        },
-        {
-          "start": "21:00",
-          "end": "22:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 0
-          },
-          "open": false,
           "special": false
         },
         {
@@ -290,7 +278,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -437,7 +425,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 3
+            "left": 4
           },
           "open": true,
           "special": false
@@ -451,7 +439,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 24
+            "bay": 23
           },
           "open": true,
           "special": false
@@ -490,7 +478,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 11
           },
           "open": true,
@@ -519,7 +507,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "open": true,
           "special": false
@@ -583,7 +571,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -707,7 +695,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 6
           },
           "open": true,
           "special": false
