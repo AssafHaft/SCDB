@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T16:45:22.808Z",
+  "updatedAt": "2026-08-10T16:50:27.836Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -270,6 +270,18 @@
           },
           "open": true,
           "special": false
+        },
+        {
+          "start": "22:00",
+          "end": "23:00",
+          "level": "L5",
+          "name": "T-Time Mega Turns (T1+T2)",
+          "zone": "reef",
+          "places": {
+            "left": 4
+          },
+          "open": true,
+          "special": false
         }
       ]
     },
@@ -347,7 +359,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 9
+            "left": 10
           },
           "open": true,
           "special": false
@@ -480,7 +492,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 21
+            "bay": 22
           },
           "open": true,
           "special": false
@@ -557,7 +569,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 11
           },
           "open": true,
@@ -601,10 +613,9 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 3
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -653,7 +664,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 8
           },
           "open": true,
