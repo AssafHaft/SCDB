@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T06:25:23.702Z",
+  "updatedAt": "2026-08-10T06:30:27.848Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -65,7 +65,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 4,
             "left": 4
           },
           "open": true,
@@ -118,7 +118,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -157,7 +157,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 10
           },
           "open": true,
@@ -251,7 +251,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 9
+            "left": 10
           },
           "open": true,
           "special": false
@@ -347,7 +347,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 12
+            "left": 11
           },
           "open": true,
           "special": false
@@ -479,7 +479,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 17,
             "left": 16
           },
           "open": true,
@@ -533,7 +533,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 0
           },
           "open": true,
@@ -546,7 +546,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "left": 11
+            "left": 9
           },
           "open": true,
           "special": false
@@ -803,7 +803,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "open": true,
           "special": false
