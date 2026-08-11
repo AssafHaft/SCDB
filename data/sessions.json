@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T08:15:22.822Z",
+  "updatedAt": "2026-08-11T08:20:21.765Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -91,7 +91,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 12
           },
           "open": true,
@@ -156,7 +156,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "left": 17
+            "left": 15
           },
           "open": true,
           "special": false
@@ -169,21 +169,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 3
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "17:30",
-          "end": "19:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Adults 16+",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 22
+            "left": 0
           },
           "open": true,
           "special": false
@@ -234,9 +220,9 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "left": 1
+            "left": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -246,7 +232,6 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 5,
             "left": 4
           },
           "open": true,
@@ -316,7 +301,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -329,7 +314,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 16
+            "left": 15
           },
           "open": true,
           "special": false
@@ -571,7 +556,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 15
           },
           "open": true,
