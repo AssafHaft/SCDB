@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T17:20:20.909Z",
+  "updatedAt": "2026-08-11T17:25:24.393Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -276,9 +276,9 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "left": 1
+            "left": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -293,8 +293,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 9
+            "left": 8
           },
           "open": true,
           "special": false
@@ -384,9 +383,9 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -396,6 +395,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
+            "right": 9,
             "left": 13
           },
           "open": true,
@@ -450,7 +450,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 8
+            "bay": 9
           },
           "open": true,
           "special": false
@@ -527,7 +527,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 8
           },
           "open": true,
@@ -553,7 +553,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 15
           },
           "open": true,
@@ -758,7 +758,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
