@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T09:37:45.400Z",
+  "updatedAt": "2026-08-11T09:40:20.964Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -118,10 +118,9 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 4
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -131,7 +130,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 0
           },
           "open": true,
@@ -169,7 +168,21 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 0
+            "left": 1
+          },
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "17:30",
+          "end": "19:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Adults 16+",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 22
           },
           "open": true,
           "special": false
@@ -300,7 +313,6 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 16,
             "left": 12
           },
           "open": true,
@@ -461,7 +473,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 13
           },
           "open": true,
           "special": false
@@ -570,7 +582,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 14
           },
           "open": true,
@@ -822,7 +834,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 13
           },
           "open": true,
