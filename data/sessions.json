@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T08:55:19.020Z",
+  "updatedAt": "2026-08-12T09:00:35.694Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -91,9 +91,24 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
+          "special": false
+        },
+        {
+          "start": "12:30",
+          "end": "14:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Adults 16+",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 6
+          },
+          "open": true,
           "special": false
         },
         {
@@ -117,7 +132,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 5
           },
           "open": true,
@@ -131,7 +146,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 3
+            "left": 2
           },
           "open": true,
           "special": false
@@ -144,7 +159,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 7
+            "left": 6
           },
           "open": true,
           "special": false
@@ -184,8 +199,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 9
+            "right": 10,
+            "left": 8
           },
           "open": true,
           "special": false
@@ -197,7 +212,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 10
           },
           "open": true,
@@ -356,7 +371,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 5
           },
           "open": true,
@@ -397,7 +412,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 14
           },
           "open": true,
@@ -424,7 +439,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 7
+            "left": 6
           },
           "open": true,
           "special": false
