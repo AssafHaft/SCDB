@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T16:05:16.964Z",
+  "updatedAt": "2026-08-12T16:10:26.735Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -290,7 +290,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "left": 9
+            "left": 10
           },
           "open": true,
           "special": false
@@ -414,9 +414,9 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -426,7 +426,6 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 12,
             "left": 13
           },
           "open": true,
@@ -452,8 +451,8 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 6
+            "right": 4,
+            "left": 5
           },
           "open": true,
           "special": false
@@ -506,8 +505,8 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 11
+            "right": 7,
+            "left": 10
           },
           "open": true,
           "special": false
@@ -547,7 +546,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -585,7 +584,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 11
           },
           "open": true,
@@ -629,7 +628,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 11
           },
           "open": true,
@@ -802,7 +801,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 0
           },
           "sideNames": {
