@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T15:55:16.420Z",
+  "updatedAt": "2026-08-12T16:00:38.029Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -252,7 +252,8 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
           "special": false
@@ -264,9 +265,10 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
+            "right": 1,
             "left": 0
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -288,7 +290,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 6,
             "left": 9
           },
           "open": true,
@@ -371,7 +373,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 13
           },
           "open": true,
@@ -425,7 +427,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 13
           },
           "open": true,
@@ -451,7 +453,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 6,
             "left": 6
           },
           "open": true,
@@ -505,7 +507,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 11
           },
           "open": true,
@@ -559,7 +561,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 14
+            "left": 13
           },
           "open": true,
           "special": false
@@ -584,7 +586,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 8,
             "left": 11
           },
           "open": true,
@@ -628,7 +630,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 11
           },
           "open": true,
@@ -668,7 +670,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 5
           },
           "open": true,
