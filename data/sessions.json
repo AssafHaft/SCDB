@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T12:45:19.782Z",
+  "updatedAt": "2026-08-12T12:50:27.238Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -173,7 +173,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 12
+            "bay": 11
           },
           "open": false,
           "special": false
@@ -187,7 +187,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 1
           },
           "open": false,
           "special": false
@@ -212,7 +212,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 6
+            "left": 5
           },
           "open": true,
           "special": false
@@ -238,7 +238,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "left": 6
+            "left": 7
           },
           "open": true,
           "special": false
@@ -275,7 +275,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
@@ -319,7 +319,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -532,7 +532,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 7
+            "left": 8
           },
           "open": true,
           "special": false
@@ -629,7 +629,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "open": true,
           "special": false
@@ -681,7 +681,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 1
           },
           "open": true,
