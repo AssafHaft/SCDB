@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T08:40:21.654Z",
+  "updatedAt": "2026-08-12T08:45:22.532Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -105,9 +105,9 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -117,6 +117,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
+            "right": 2,
             "left": 5
           },
           "open": true,
@@ -130,7 +131,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 4
+            "left": 3
           },
           "open": true,
           "special": false
@@ -143,7 +144,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -241,18 +242,6 @@
           "special": false
         },
         {
-          "start": "20:00",
-          "end": "21:00",
-          "level": "L4",
-          "name": "Advanced (T1 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
           "start": "21:00",
           "end": "22:00",
           "level": "L5",
@@ -316,7 +305,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 13
           },
           "open": true,
@@ -342,7 +331,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 10,
             "left": 17
           },
           "open": true,
@@ -368,7 +357,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 5
           },
           "open": true,
