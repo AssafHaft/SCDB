@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T12:50:27.238Z",
+  "updatedAt": "2026-08-12T12:55:21.889Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -199,9 +199,10 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 1
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -212,23 +213,9 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 5
+            "left": 0
           },
           "open": true,
-          "special": false
-        },
-        {
-          "start": "17:30",
-          "end": "19:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 0
-          },
-          "open": false,
           "special": false
         },
         {
@@ -262,7 +249,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "left": 5
+            "left": 6
           },
           "open": true,
           "special": false
@@ -345,7 +332,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 12
+            "left": 13
           },
           "open": true,
           "special": false
@@ -492,7 +479,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -558,7 +545,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 11
           },
           "open": true,
           "special": false
@@ -642,7 +629,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 11
+            "left": 10
           },
           "open": true,
           "special": false
