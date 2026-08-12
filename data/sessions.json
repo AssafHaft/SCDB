@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-12T15:40:20.068Z",
+  "updatedAt": "2026-08-12T15:45:24.715Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -258,14 +258,38 @@
           "special": false
         },
         {
+          "start": "20:00",
+          "end": "21:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "left": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
+          "start": "21:00",
+          "end": "22:00",
+          "level": "L5",
+          "name": "Expert (T1+B1)",
+          "zone": "reef",
+          "places": {
+            "left": 2
+          },
+          "open": true,
+          "special": false
+        },
+        {
           "start": "22:00",
           "end": "23:00",
           "level": "L5",
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 10
+            "right": 7,
+            "left": 9
           },
           "open": true,
           "special": false
@@ -282,7 +306,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 14
           },
           "open": true,
@@ -348,7 +372,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -414,7 +438,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 17
           },
           "open": true,
@@ -427,7 +451,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 6
           },
           "open": true,
@@ -496,7 +520,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 4
+            "bay": 5
           },
           "open": true,
           "special": false
