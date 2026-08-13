@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T11:55:19.650Z",
+  "updatedAt": "2026-08-13T12:00:33.729Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -158,9 +158,24 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 0
           },
           "open": false,
+          "special": false
+        },
+        {
+          "start": "15:30",
+          "end": "17:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Adults 16+",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 7
+          },
+          "open": true,
           "special": false
         },
         {
@@ -210,7 +225,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 6
+            "left": 7
           },
           "open": true,
           "special": false
@@ -246,7 +261,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 4
           },
           "open": true,
@@ -329,7 +344,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 6,
             "left": 8
           },
           "open": true,
@@ -342,10 +357,9 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 1
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -535,7 +549,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 13
           },
           "open": true,
@@ -630,7 +644,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -683,7 +697,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 8,
             "left": 19
           },
           "open": true,
