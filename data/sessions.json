@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T09:25:19.142Z",
+  "updatedAt": "2026-08-13T09:30:31.708Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -108,7 +108,7 @@
           "places": {
             "bay": 9
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -122,7 +122,7 @@
           "places": {
             "bay": 1
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -145,8 +145,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 10
+            "right": 6,
+            "left": 12
           },
           "open": true,
           "special": false
@@ -197,10 +197,9 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 2
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -237,10 +236,9 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 4
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -263,7 +261,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 8,
             "left": 5
           },
           "open": true,
@@ -592,7 +590,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 8
           },
           "open": true,
@@ -795,7 +793,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 14
+            "left": 13
           },
           "open": true,
           "special": false
