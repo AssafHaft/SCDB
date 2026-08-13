@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T08:56:35.219Z",
+  "updatedAt": "2026-08-13T09:00:31.278Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -91,7 +91,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 0,
+            "left": 1
           },
           "open": false,
           "special": false
@@ -105,7 +106,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 8
           },
           "open": true,
           "special": false
@@ -131,8 +132,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 1
+            "right": 4,
+            "left": 0
           },
           "open": true,
           "special": false
@@ -144,7 +145,6 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 8,
             "left": 14
           },
           "open": true,
@@ -358,7 +358,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 4
+            "left": 3
           },
           "open": true,
           "special": false
@@ -384,7 +384,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 0
           },
           "open": true,
@@ -412,9 +412,21 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 0
+            "left": 1
           },
           "open": true,
+          "special": false
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 0
+          },
+          "open": false,
           "special": false
         },
         {
@@ -440,7 +452,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "open": true,
           "special": false
@@ -471,18 +483,6 @@
           "sideNames": {
             "right": "Pro (T2+B2)",
             "left": "החברים של ניסים"
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "17:00",
-          "end": "18:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "left": 6
           },
           "open": true,
           "special": false
@@ -714,7 +714,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "open": true,
           "special": false
