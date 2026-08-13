@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T09:45:22.931Z",
+  "updatedAt": "2026-08-13T09:50:18.750Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -106,7 +106,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 10
           },
           "open": false,
           "special": false
@@ -132,8 +132,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 1
+            "right": 3,
+            "left": 2
           },
           "open": true,
           "special": false
@@ -203,6 +203,20 @@
           "special": false
         },
         {
+          "start": "17:30",
+          "end": "19:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Adults 16+",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 5
+          },
+          "open": true,
+          "special": false
+        },
+        {
           "start": "18:00",
           "end": "19:00",
           "level": "L2",
@@ -210,7 +224,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 8
+            "left": 6
           },
           "open": true,
           "special": false
@@ -248,7 +262,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 7
           },
           "open": true,
@@ -262,7 +276,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 9
+            "left": 10
           },
           "open": true,
           "special": false
@@ -470,6 +484,18 @@
           "sideNames": {
             "right": "Pro (T2+B2)",
             "left": "החברים של ניסים"
+          },
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "left": 6
           },
           "open": true,
           "special": false
