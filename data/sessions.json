@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T11:25:18.587Z",
+  "updatedAt": "2026-08-13T11:30:26.555Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -248,7 +248,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 5
+            "left": 3
           },
           "open": true,
           "special": false
@@ -330,7 +330,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 8
           },
           "open": true,
@@ -344,23 +344,9 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 2
+            "left": 0
           },
           "open": true,
-          "special": false
-        },
-        {
-          "start": "10:30",
-          "end": "12:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "children",
-          "places": {
-            "bay": 0
-          },
-          "open": false,
           "special": false
         },
         {
@@ -370,7 +356,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 0
           },
           "open": true,
@@ -463,7 +449,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 0
           },
           "sideNames": {
@@ -536,7 +522,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 13
           },
           "open": true,
