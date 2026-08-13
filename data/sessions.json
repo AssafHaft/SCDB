@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T14:55:20.512Z",
+  "updatedAt": "2026-08-13T15:00:35.398Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -242,7 +242,7 @@
             "right": 2,
             "left": 2
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -276,7 +276,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 5,
             "left": 5
           },
           "open": true,
@@ -308,7 +308,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -398,7 +398,6 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
             "left": 3
           },
           "open": true,
@@ -461,7 +460,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 14
           },
           "open": true,
