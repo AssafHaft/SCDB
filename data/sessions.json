@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T19:30:27.826Z",
+  "updatedAt": "2026-08-13T19:35:18.916Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -442,6 +442,18 @@
           "special": false
         },
         {
+          "start": "16:00",
+          "end": "17:00",
+          "level": "L6",
+          "name": "החברים של ניסים",
+          "zone": "reef",
+          "places": {
+            "left": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
           "start": "18:00",
           "end": "19:00",
           "level": "L6",
@@ -478,7 +490,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 3
           },
           "open": true,
@@ -639,7 +651,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 18
           },
           "open": true,
@@ -771,7 +783,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 12
           },
           "open": true,
