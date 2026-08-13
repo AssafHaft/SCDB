@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T08:25:17.534Z",
+  "updatedAt": "2026-08-13T08:30:27.202Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -79,7 +79,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 7
+            "left": 6
           },
           "open": false,
           "special": false
@@ -91,8 +91,21 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 0
+            "right": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
+          "start": "12:30",
+          "end": "14:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Adults 16+",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 9
           },
           "open": true,
           "special": false
@@ -119,7 +132,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 4
+            "left": 1
           },
           "open": true,
           "special": false
@@ -171,7 +184,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -209,7 +222,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 8
           },
           "open": true,
@@ -344,7 +357,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 5
           },
           "open": true,
@@ -643,7 +656,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 14
           },
           "open": true,
@@ -751,7 +764,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 18
           },
           "open": true,
@@ -817,7 +830,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "left": 17
+            "left": 16
           },
           "open": true,
           "special": false
@@ -830,7 +843,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 13
           },
           "open": true,
           "special": false
