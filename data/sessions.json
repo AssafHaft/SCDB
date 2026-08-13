@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T20:05:19.409Z",
+  "updatedAt": "2026-08-13T20:10:22.465Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -348,7 +348,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 4
+            "left": 3
           },
           "open": true,
           "special": false
@@ -437,18 +437,6 @@
           "zone": "reef",
           "places": {
             "right": 0
-          },
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "16:00",
-          "end": "17:00",
-          "level": "L6",
-          "name": "החברים של ניסים",
-          "zone": "reef",
-          "places": {
-            "left": 0
           },
           "open": false,
           "special": false
@@ -598,7 +586,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 6
+            "left": 4
           },
           "open": true,
           "special": false
@@ -706,7 +694,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 17
+            "left": 15
           },
           "open": true,
           "special": false
