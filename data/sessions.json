@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T11:50:19.906Z",
+  "updatedAt": "2026-08-13T11:55:19.650Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -184,7 +184,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 12
           },
           "open": true,
@@ -222,10 +222,9 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 0
+            "right": 0
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -235,7 +234,7 @@
           "name": "T- Time Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "left": 4
+            "left": 3
           },
           "open": true,
           "special": false
@@ -247,7 +246,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 4
           },
           "open": true,
@@ -397,7 +396,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 1
           },
           "open": true,
@@ -604,7 +603,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 7
           },
           "open": true,
           "special": false
@@ -658,7 +657,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 16
+            "bay": 17
           },
           "open": true,
           "special": false
@@ -738,7 +737,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 18
           },
           "open": true,
@@ -778,7 +777,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 14
           },
           "open": true,
