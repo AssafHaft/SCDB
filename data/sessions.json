@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T14:05:24.296Z",
+  "updatedAt": "2026-08-13T14:10:20.318Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -385,7 +385,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 0
           },
           "open": true,
@@ -438,7 +438,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 0
+            "left": 1
           },
           "open": true,
           "special": false
@@ -447,12 +447,17 @@
           "start": "16:00",
           "end": "17:00",
           "level": "L6",
-          "name": "החברים של ניסים",
+          "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
+            "right": 7,
             "left": 0
           },
-          "open": false,
+          "sideNames": {
+            "right": "Pro (T2+B2)",
+            "left": "החברים של ניסים"
+          },
+          "open": true,
           "special": false
         },
         {
