@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T08:15:23.661Z",
+  "updatedAt": "2026-08-13T08:20:22.055Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -106,9 +106,9 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -118,7 +118,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "left": 6
+            "right": 6,
+            "left": 5
           },
           "open": true,
           "special": false
@@ -130,7 +131,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 14
           },
           "open": true,
@@ -170,7 +171,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 12
+            "left": 11
           },
           "open": true,
           "special": false
@@ -208,7 +209,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 8
           },
           "open": true,
@@ -248,7 +249,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 5
+            "left": 6
           },
           "open": true,
           "special": false
@@ -260,7 +261,7 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 11
           },
           "open": true,
@@ -642,7 +643,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 14
           },
           "open": true,
@@ -750,7 +751,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 18
           },
           "open": true,
@@ -763,7 +764,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 10
           },
           "open": true,
