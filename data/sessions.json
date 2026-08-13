@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T17:30:28.132Z",
+  "updatedAt": "2026-08-13T17:35:18.681Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -307,7 +307,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 6
           },
           "open": true,
@@ -339,20 +339,6 @@
           "special": false
         },
         {
-          "start": "08:30",
-          "end": "10:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Adults 16+",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 3
-          },
-          "open": true,
-          "special": false
-        },
-        {
           "start": "09:00",
           "end": "10:00",
           "level": "L3",
@@ -360,7 +346,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 4
+            "left": 5
           },
           "open": true,
           "special": false
@@ -398,9 +384,10 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 0
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -472,7 +459,6 @@
           "name": "2B Or Not 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
             "left": 12
           },
           "open": true,
@@ -719,7 +705,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 16
+            "left": 17
           },
           "open": true,
           "special": false
