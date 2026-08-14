@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T07:45:20.264Z",
+  "updatedAt": "2026-08-14T07:45:56.476Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -161,18 +161,6 @@
             "right": 0
           },
           "open": false,
-          "special": false
-        },
-        {
-          "start": "17:00",
-          "end": "18:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "left": 1
-          },
-          "open": true,
           "special": false
         },
         {
