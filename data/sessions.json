@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T19:40:22.255Z",
+  "updatedAt": "2026-08-14T19:45:24.159Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -303,7 +303,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 1
+            "left": 2
           },
           "open": true,
           "special": false
@@ -381,20 +381,6 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "11:30",
-          "end": "13:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
             "bay": 0
           },
           "open": false,
@@ -436,7 +422,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 7
+            "bay": 8
           },
           "open": true,
           "special": false
