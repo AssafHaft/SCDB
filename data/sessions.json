@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T07:00:30.460Z",
+  "updatedAt": "2026-08-14T07:05:18.272Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -114,6 +114,20 @@
           "special": false
         },
         {
+          "start": "12:30",
+          "end": "14:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Adults 16+",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
           "start": "14:00",
           "end": "15:00",
           "level": "L4",
@@ -152,6 +166,18 @@
           "special": false
         },
         {
+          "start": "17:00",
+          "end": "18:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "left": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
           "start": "18:00",
           "end": "19:00",
           "level": "L6",
@@ -176,7 +202,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
@@ -581,7 +607,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 18
+            "left": 17
           },
           "open": true,
           "special": false
