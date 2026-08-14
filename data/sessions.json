@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T13:35:17.750Z",
+  "updatedAt": "2026-08-14T13:37:34.513Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -433,7 +433,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 17
+            "bay": 16
           },
           "open": true,
           "special": false
@@ -459,9 +459,10 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 0
+            "right": 1,
+            "left": 14
           },
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -690,7 +691,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 7
+            "bay": 8
           },
           "open": true,
           "special": false
