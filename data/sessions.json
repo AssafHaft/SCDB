@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T09:15:21.018Z",
+  "updatedAt": "2026-08-16T09:20:19.634Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -203,6 +203,20 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
+            "bay": 1
+          },
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "17:30",
+          "end": "19:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
             "bay": 0
           },
           "open": false,
@@ -258,7 +272,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 17
           },
           "open": true,
@@ -298,7 +312,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 13
+            "left": 14
           },
           "open": true,
           "special": false
@@ -458,7 +472,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 11
+            "left": 10
           },
           "open": true,
           "special": false
@@ -756,7 +770,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 16
+            "left": 15
           },
           "open": true,
           "special": false
