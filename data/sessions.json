@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T06:55:18.216Z",
+  "updatedAt": "2026-08-16T07:00:30.217Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -59,7 +59,7 @@
             "right": 12,
             "left": 11
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -69,7 +69,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 11,
             "left": 5
           },
           "open": true,
@@ -123,7 +123,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 11
+            "left": 12
           },
           "open": true,
           "special": false
@@ -177,7 +177,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 13
           },
           "open": true,
           "special": false
@@ -471,7 +471,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -795,11 +795,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 0
-          },
-          "sideNames": {
-            "right": "2B Or Not 2B (B2+B3) - Barrel Fest",
-            "left": "פרטי- החברים של ניסים"
+            "left": 15
           },
           "open": true,
           "special": false
@@ -811,6 +807,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
+            "right": 17,
             "left": 16
           },
           "open": true,
