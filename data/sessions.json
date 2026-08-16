@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T14:25:16.429Z",
+  "updatedAt": "2026-08-16T14:30:28.258Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -206,7 +206,7 @@
           "places": {
             "bay": 7
           },
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -224,13 +224,28 @@
           "special": false
         },
         {
+          "start": "17:30",
+          "end": "19:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Kids 11-16",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 0
+          },
+          "open": false,
+          "special": false
+        },
+        {
           "start": "18:00",
           "end": "19:00",
           "level": "L2",
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "left": 4
+            "right": 9,
+            "left": 5
           },
           "open": true,
           "special": false
@@ -242,7 +257,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 14
           },
           "open": true,
@@ -406,7 +421,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 14
+            "left": 13
           },
           "open": true,
           "special": false
