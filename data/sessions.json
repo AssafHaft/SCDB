@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T10:40:21.094Z",
+  "updatedAt": "2026-08-16T10:45:19.978Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -123,7 +123,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 8
+            "left": 9
           },
           "open": true,
           "special": false
@@ -204,20 +204,6 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 1
-          },
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "17:30",
-          "end": "19:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
             "bay": 0
           },
           "open": false,
@@ -230,7 +216,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -770,7 +756,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 15
           },
           "open": true,
