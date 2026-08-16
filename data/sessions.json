@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-16T16:55:16.290Z",
+  "updatedAt": "2026-08-16T17:00:30.500Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -270,10 +270,10 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 5,
             "left": 8
           },
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -289,7 +289,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 16
+            "left": 17
           },
           "open": true,
           "special": false
@@ -367,7 +367,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 15
+            "left": 16
           },
           "open": true,
           "special": false
