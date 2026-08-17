@@ -9,7 +9,7 @@ free on GitHub Pages.
 
 ```
 GitHub Actions (every 10 min) ──► scripts/parse-sessions.mjs
-        fetches srfparktlv.co.il/sessions, writes data/sessions.json
+        fetches the srfparktlv.co.il booking feed, writes data/sessions.json
                               ──► scripts/parse-events.mjs
         fetches srfparktlv.co.il/eventer, writes data/events.json
                               │
@@ -93,8 +93,13 @@ next to the parser that uses it.
   log says why. The wall keeps showing the last good schedule meanwhile.
 - **Club redesigned their site** — fix `extractSessions()` in
   `scripts/parse-sessions.mjs`. It is deliberately the only file that knows
-  anything about the club's markup. The parser refuses to write implausible
+  anything about the club's data shape. The parser refuses to write implausible
   output (fewer than 20 sessions), so a redesign can never blank the wall.
+  It reads the same JSON feed the club's own booking app uses
+  (`/products/sessions-react/?ajax=1`), falling back to the `window.srxInitial`
+  payload embedded in the booking page if that route ever moves. Test a fix
+  offline against a saved response or a saved page:
+  `node scripts/parse-sessions.mjs --from-file payload.json`.
 - **"Upcoming Events" card empty or stale** — same idea: `extractEvents()` in
   `scripts/parse-events.mjs` is the only code that knows the events page
   markup. A broken events parse never blocks the sessions update (the
