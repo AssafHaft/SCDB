@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T11:35:17.030Z",
+  "updatedAt": "2026-08-18T11:40:20.637Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -145,7 +145,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 13
           },
           "open": true,
@@ -201,7 +201,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 16
+            "left": 15
           },
           "open": true,
           "special": false
@@ -313,7 +313,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 10
           },
           "open": true,
@@ -392,7 +392,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 10,
             "left": 10
           },
           "open": true,
@@ -406,7 +406,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 13
+            "left": 14
           },
           "open": true,
           "special": false
@@ -552,7 +552,12 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 15
+            "right": 15,
+            "left": 15
+          },
+          "sideNames": {
+            "right": "T-Times Pro Carves (T2+T3)",
+            "left": "אירוע פרטי- החברים של רועי"
           },
           "open": true,
           "special": false
@@ -622,7 +627,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 8
+            "left": 6
           },
           "open": true,
           "special": false
@@ -727,7 +732,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 14
           },
           "open": true,
@@ -821,7 +826,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 10
+            "left": 11
           },
           "open": true,
           "special": false
