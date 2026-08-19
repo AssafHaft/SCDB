@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T11:45:20.064Z",
+  "updatedAt": "2026-08-19T11:49:04.773Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -200,7 +200,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 11
+            "left": 7
           },
           "open": true,
           "special": false
@@ -212,7 +212,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "open": true,
@@ -253,7 +253,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 3
+            "left": 2
           },
           "open": true,
           "special": false
@@ -278,7 +278,7 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 15
           },
           "sideNames": {
@@ -420,7 +420,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 16
+            "bay": 15
           },
           "open": true,
           "special": false
@@ -552,7 +552,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 8
+            "left": 7
           },
           "open": true,
           "special": false
@@ -649,7 +649,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 16
+            "left": 15
           },
           "open": true,
           "special": false
@@ -702,7 +702,7 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 6,
             "left": 18
           },
           "open": true,
@@ -757,7 +757,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 15
+            "left": 14
           },
           "open": true,
           "special": false
