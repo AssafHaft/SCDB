@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T14:50:22.775Z",
+  "updatedAt": "2026-08-19T14:55:17.996Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -16,6 +16,7 @@
             "right": 11,
             "left": 8
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -29,6 +30,7 @@
             "right": 14,
             "left": 14
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -42,6 +44,7 @@
             "right": 0,
             "left": 5
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -55,6 +58,7 @@
             "right": 15,
             "left": 12
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -68,6 +72,7 @@
             "right": 10,
             "left": 4
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -81,6 +86,7 @@
             "right": 0,
             "left": 4
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -95,6 +101,7 @@
           "places": {
             "bay": 1
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -108,6 +115,7 @@
             "right": 6,
             "left": 5
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -121,6 +129,7 @@
             "right": 4,
             "left": 0
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -134,6 +143,7 @@
             "right": 5,
             "left": 3
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -147,6 +157,7 @@
             "right": 9,
             "left": 7
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -161,6 +172,7 @@
           "places": {
             "bay": 11
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -175,6 +187,7 @@
           "places": {
             "bay": 0
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -189,6 +202,7 @@
           "places": {
             "bay": 0
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -202,6 +216,7 @@
             "right": 1,
             "left": 8
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -215,6 +230,7 @@
             "right": 6,
             "left": 6
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -229,6 +245,7 @@
           "places": {
             "bay": 6
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -242,6 +259,7 @@
             "right": 0,
             "left": 0
           },
+          "disabled": false,
           "open": false,
           "special": false
         },
@@ -253,8 +271,9 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 2
+            "left": 1
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -268,6 +287,7 @@
             "right": 9,
             "left": 9
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -278,13 +298,14 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 15
           },
           "sideNames": {
             "right": "T-Times Pro Carves (T2+T3)",
             "left": "אירוע פרטי- החברים של רועי"
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -298,6 +319,7 @@
             "right": 10,
             "left": 11
           },
+          "disabled": false,
           "open": true,
           "special": false
         }
@@ -316,6 +338,7 @@
             "right": 14,
             "left": 10
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -329,6 +352,7 @@
             "right": 11,
             "left": 9
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -340,8 +364,9 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 9
+            "left": 8
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -352,9 +377,10 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 6
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -368,6 +394,7 @@
             "right": 11,
             "left": 11
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -378,9 +405,10 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 10
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -394,6 +422,7 @@
             "right": 12,
             "left": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -408,6 +437,7 @@
           "places": {
             "bay": 14
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -422,6 +452,7 @@
           "places": {
             "bay": 16
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -435,6 +466,7 @@
             "right": 13,
             "left": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -448,6 +480,7 @@
             "right": 10,
             "left": 6
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -461,6 +494,7 @@
             "right": 16,
             "left": 12
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -475,6 +509,7 @@
           "places": {
             "bay": 15
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -489,6 +524,7 @@
           "places": {
             "bay": 5
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -502,6 +538,7 @@
             "right": 16,
             "left": 14
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -515,6 +552,7 @@
             "right": 12,
             "left": 4
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -528,6 +566,7 @@
             "right": 14,
             "left": 9
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -538,9 +577,10 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 15,
             "left": 14
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -554,6 +594,7 @@
             "right": 7,
             "left": 8
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -567,6 +608,7 @@
             "right": 12,
             "left": 15
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -580,6 +622,7 @@
             "right": 15,
             "left": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         }
@@ -598,6 +641,7 @@
             "right": 12,
             "left": 10
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -611,6 +655,7 @@
             "right": 10,
             "left": 9
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -624,6 +669,7 @@
             "right": 12,
             "left": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -638,6 +684,7 @@
           "places": {
             "bay": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -651,6 +698,7 @@
             "right": 7,
             "left": 15
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -664,6 +712,7 @@
             "right": 1,
             "left": 11
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -678,6 +727,7 @@
           "places": {
             "bay": 2
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -692,6 +742,7 @@
           "places": {
             "bay": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -702,9 +753,10 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 16
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -718,6 +770,7 @@
             "right": 11,
             "left": 9
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -732,6 +785,7 @@
           "places": {
             "bay": 9
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -746,6 +800,7 @@
           "places": {
             "bay": 6
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -759,6 +814,7 @@
             "right": 5,
             "left": 13
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -772,6 +828,7 @@
             "right": 13,
             "left": 12
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -786,6 +843,7 @@
           "places": {
             "bay": 12
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -800,6 +858,7 @@
           "places": {
             "bay": 15
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -813,6 +872,7 @@
             "right": 14,
             "left": 7
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -826,6 +886,7 @@
             "right": 9,
             "left": 15
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -839,6 +900,7 @@
             "right": 6,
             "left": 11
           },
+          "disabled": false,
           "open": true,
           "special": false
         },
@@ -856,6 +918,7 @@
             "right": "2B Or Not To Be - Barrel Fest",
             "left": "2B Or Not To 2B (B2+B3) - Barrel Fest"
           },
+          "disabled": false,
           "open": true,
           "special": false
         }
