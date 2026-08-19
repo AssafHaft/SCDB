@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T09:05:18.668Z",
+  "updatedAt": "2026-08-19T09:10:22.185Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -118,7 +118,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 0
           },
           "open": true,
@@ -200,7 +200,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 14
+            "left": 15
           },
           "open": true,
           "special": false
@@ -213,7 +213,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 13
+            "left": 12
           },
           "open": true,
           "special": false
@@ -252,7 +252,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 9
           },
           "open": true,
@@ -327,7 +327,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 8
+            "left": 9
           },
           "open": true,
           "special": false
@@ -406,7 +406,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "open": true,
           "special": false
@@ -445,7 +445,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 7
           },
           "open": true,
@@ -473,7 +473,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 15
           },
           "open": true,
           "special": false
@@ -538,7 +538,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 17
           },
           "open": true,
@@ -823,7 +823,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 15
           },
           "open": true,
