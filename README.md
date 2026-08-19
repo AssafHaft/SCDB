@@ -15,10 +15,10 @@ soon and has spots left is what turns a passer-by into a last-minute sign-up.
 So the layout is deliberately lopsided:
 
 - **The next session owns the hero** — level, name, start time, a countdown
-  that turns warm inside `urgentMinutes`, and big per-side spot counts. This
-  is the conversion surface; everything about it is sized to be read across
-  a room, and both hero columns use `justify-content: space-between` so the
-  panel fills its height instead of floating in empty teal.
+  that turns warm inside `urgentMinutes`, and big per-side spot counts. It
+  is the tallest row on the screen, and both hero columns use
+  `justify-content: space-between` so the panel fills its height instead of
+  floating in empty teal.
   The session name is auto-fitted by `fitHeroName()` in `js/dashboard.js`:
   short names stay at full size and only unusually long ones step down, so
   a program title is never ellipsised away on the wall.
@@ -122,6 +122,15 @@ The dashboard is laid out as a fixed 16:9 "stage" (`#stage` in
 `index.html`, sized by `sizeStage()` in `js/dashboard.js`), so it matches a
 16:9 wall TV pixel-for-pixel and letterboxes — rather than stretching —
 on any other screen, including this repo's own preview tooling.
+
+**Everything must fit inside that stage — nothing scrolls on a wall.** The
+zone-card row is `minmax(0, 1fr)`, not `1fr`: a bare `1fr` keeps an
+implicit `auto` minimum, so one over-tall card (the events list is the
+usual culprit) refuses to shrink and shoves the whole grid off the bottom
+of the screen. That is precisely how the cards once ended up visibly cut
+off. The cards also carry `min-height: 0` and `overflow: hidden` as a
+backstop. If you add content to a card, re-check the bottom edge at
+1920x1080 rather than trusting it to wrap.
 
 The Hebrew→English mapping for the *source* page (zone names, availability
 wording, booking states) lives at the top of `scripts/parse-sessions.mjs`,

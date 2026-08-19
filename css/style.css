@@ -111,11 +111,18 @@ body.closed #dashboard { display: none; }
 /* Rows: topbar · next-session hero (the lead) · now strip (status) ·
  * zone cards · freshness note. The hero is the tallest block on purpose —
  * it carries the only information a passer-by can still act on. */
+/* NOTE the minmax(0, 1fr) on the zones row. A bare `1fr` carries an
+ * implicit `auto` minimum, so an over-tall card (the events list, most
+ * likely) refuses to shrink and pushes the whole grid past the bottom of
+ * the screen — which is exactly how the zone cards ended up clipped.
+ * minmax(0, …) lets the row shrink; the cards then clip their own content
+ * instead of the screen clipping the cards. Keep it. */
 #dashboard {
   display: grid;
-  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 33) calc(var(--uh) * 7) 1fr calc(var(--uh) * 3.5);
+  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 8) minmax(0, 1fr) calc(var(--uh) * 3);
   gap: calc(var(--uh) * 1.7);
   height: 100%;
+  min-height: 0;
   padding: calc(var(--uh) * 2.5) calc(var(--uw) * 2.5);
 }
 
@@ -278,7 +285,6 @@ body.closed #dashboard { display: none; }
   color: var(--on-teal-2);
   min-height: calc(var(--uh) * 2.4);
 }
-.spots-note.is-cta { color: var(--aqua); }
 .spots-note.is-closed { color: #f0a58f; }
 .spots-note.is-stale { color: #eec27f; }
 
@@ -293,12 +299,13 @@ body.closed #dashboard { display: none; }
   padding: 0 calc(var(--uw) * 0.4);
   min-width: 0;
 }
+/* reads as a real section heading — it was too faint to find on the wall */
 .now-label {
-  font-size: calc(var(--uw) * 1.35);
+  font-size: calc(var(--uw) * 1.9);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   font-weight: 800;
-  color: var(--ink-3);
+  color: var(--teal);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -333,6 +340,7 @@ body.closed #dashboard { display: none; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: calc(var(--uw) * 1.6);
+  min-height: 0;   /* let the row shrink rather than overflow the screen */
   /* Reef Left | Reef Right | Bay | Events always in that physical order,
      regardless of language — see the file header note. */
   direction: ltr;
@@ -341,11 +349,13 @@ body.closed #dashboard { display: none; }
   background: var(--card);
   border: 1px solid var(--card-edge);
   border-radius: calc(var(--uw) * 1.6);
-  padding: calc(var(--uh) * 2.5) calc(var(--uw) * 1.8);
+  padding: calc(var(--uh) * 2) calc(var(--uw) * 1.6);
   display: flex;
   flex-direction: column;
-  gap: calc(var(--uh) * 1.4);
+  gap: calc(var(--uh) * 0.9);
   box-shadow: 0 calc(var(--uh) * 0.4) calc(var(--uh) * 2) rgba(36, 61, 68, 0.10);
+  min-height: 0;
+  overflow: hidden;   /* backstop: never spill past the card's own edge */
 }
 .zone-title {
   font-size: calc(var(--uw) * 1.5);
@@ -361,9 +371,17 @@ body.closed #dashboard { display: none; }
   display: flex;
   align-items: center;
   gap: calc(var(--uw) * 0.9);
-  min-height: calc(var(--uh) * 6);
+  min-height: calc(var(--uh) * 5);
 }
-.zone-name { font-size: calc(var(--uw) * 1.6); font-weight: 600; line-height: 1.15; }
+.zone-name {
+  font-size: calc(var(--uw) * 1.5);
+  font-weight: 600;
+  line-height: 1.15;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .lvl-badge {
   font-size: calc(var(--uw) * 1.3);
   font-weight: 800;
@@ -373,11 +391,18 @@ body.closed #dashboard { display: none; }
   background: var(--aqua);
   flex-shrink: 0;
 }
-.zone-places { font-size: calc(var(--uw) * 2.4); font-weight: 700; margin-top: auto; }
+.zone-places { font-size: calc(var(--uw) * 2.2); font-weight: 700; margin-top: auto; }
 .is-full .zone-places { color: var(--bad); }
 .is-live .zone-places { color: var(--ink); }
-.is-idle .zone-places { color: var(--ink-2); font-size: calc(var(--uw) * 1.6); font-weight: 600; }
-.zone-time { font-size: calc(var(--uw) * 1.2); color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.is-idle .zone-places { color: var(--ink-2); font-size: calc(var(--uw) * 1.5); font-weight: 600; }
+/* session times carry the "can I make it?" answer — sized and coloured to
+   be read, not squinted at */
+.zone-time {
+  font-size: calc(var(--uw) * 1.7);
+  font-weight: 700;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
 
 /* level badge hues — decorative, tuned to the brand ramp (aqua → sand →
  * warm orange → coral); the L-number text carries the meaning */
@@ -390,41 +415,61 @@ body.closed #dashboard { display: none; }
 .lvl-l6 { background: #ef8a76; }
 
 /* ---- "Upcoming Events" park events card ----------------------------------- */
-#events-list { display: flex; flex-direction: column; margin-top: calc(var(--uh) * 0.4); }
+/* Rows are laid out as a single-line "when" pill (day, date and time
+   together) beside the title, rather than a tall stacked date block — the
+   stacked version made this card the tallest thing in the row and was what
+   pushed the whole grid off the bottom of the screen. */
+#events-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(var(--uh) * 0.4);
+  min-height: 0;
+  overflow: hidden;
+}
 .event-row {
   display: flex;
   align-items: center;
-  gap: calc(var(--uw) * 0.8);
-  padding: calc(var(--uh) * 1.3) 0;
+  gap: calc(var(--uw) * 0.7);
+  padding: calc(var(--uh) * 0.85) 0;
+  min-width: 0;
 }
 .event-row + .event-row { border-top: 1px solid rgba(36, 61, 68, 0.10); }
 .event-when {
   flex-shrink: 0;
-  width: calc(var(--uw) * 4.8);
-  text-align: center;
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--uw) * 0.35);
   background: var(--aqua);
   color: var(--on-badge);
-  border-radius: calc(var(--uw) * 0.6);
-  padding: calc(var(--uh) * 0.8) 0;
+  border-radius: calc(var(--uw) * 99);
+  padding: calc(var(--uh) * 0.45) calc(var(--uw) * 0.8);
+  direction: ltr;              /* "THU 21.08 20:00" reads LTR in both languages */
 }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
-  font-size: calc(var(--uw) * 0.85);
+  font-size: calc(var(--uw) * 1);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
-.event-dom { font-size: calc(var(--uw) * 1.2); font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.event-dom,
+.event-time {
+  font-size: calc(var(--uw) * 1.1);
+  font-weight: 800;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.event-time { opacity: 0.8; }
 .event-name {
-  font-size: calc(var(--uw) * 1.2);
+  font-size: calc(var(--uw) * 1.25);
   font-weight: 700;
   line-height: 1.2;
+  min-width: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.event-time { font-size: calc(var(--uw) * 1.05); color: var(--ink-2); font-variant-numeric: tabular-nums; margin-top: calc(var(--uh) * 0.2); }
 .events-empty { color: var(--ink-2); font-size: calc(var(--uw) * 1.3); font-weight: 600; margin-top: calc(var(--uh) * 1); }
 
 /* ---- bottom bar ---------------------------------------------------------- */

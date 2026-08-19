@@ -346,9 +346,6 @@
     } else if (asOf) {
       note.textContent = T.asOf(asOf);
       note.className = "spots-note is-stale";
-    } else if (CONFIG.showSignupCta) {
-      note.textContent = T.signupCta;
-      note.className = "spots-note is-cta";
     }
   }
 
@@ -414,32 +411,34 @@
       const row = document.createElement("div");
       row.className = "event-row" + (e.date === todayS ? " is-today" : "");
 
-      const when = document.createElement("div");
+      // One-line "when" pill: day, date and start time together, so the
+      // row stays short enough for the card to fit the screen.
+      const when = document.createElement("span");
       when.className = "event-when";
-      const dow = document.createElement("div");
+      const dow = document.createElement("span");
       dow.className = "event-dow";
       const d = new Date(`${e.date}T12:00:00`);
       dow.textContent =
         e.date === todayS ? T.today :
         e.date === tomorrowS ? T.tomorrow :
         T.dow(d);
-      const dom = document.createElement("div");
+      const dom = document.createElement("span");
       dom.className = "event-dom";
       dom.textContent = iso(`${pad(d.getDate())}.${pad(d.getMonth() + 1)}`);
       when.append(dow, dom);
+      if (e.time) {
+        const time = document.createElement("span");
+        time.className = "event-time";
+        time.textContent = iso(e.time);
+        when.appendChild(time);
+      }
 
-      const info = document.createElement("div");
-      info.className = "event-info";
       const name = document.createElement("div");
       name.className = "event-name";
       name.dir = "auto"; // Hebrew titles lay out correctly
       name.textContent = e.title;
-      const time = document.createElement("div");
-      time.className = "event-time";
-      time.textContent = iso(e.time);
-      info.append(name, time);
 
-      row.append(when, info);
+      row.append(when, name);
       list.appendChild(row);
     }
   }

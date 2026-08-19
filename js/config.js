@@ -29,12 +29,9 @@ window.CONFIG = {
   eventsUrl: "data/events.json",
 
   // How many upcoming events the "Upcoming Events" card shows at most.
-  maxEvents: 4,
-
-  // Show the "Sign up at reception" line under the spot counts when the
-  // next session can still be booked. Set false to hide it, or reword it
-  // (`signupCta`) per language in js/strings.js.
-  showSignupCta: true,
+  // 3 is what fits the card at 16:9 while leaving titles two readable
+  // lines; raising this clips the longest titles to one line.
+  maxEvents: 3,
 
   // Highlight the countdown when the next session is this close, to push
   // the last-minute sign-up the dashboard exists to drive. Minutes.
