@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T16:41:50.691Z",
+  "updatedAt": "2026-08-19T16:45:22.472Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -284,7 +284,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -298,7 +298,7 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 15
           },
           "sideNames": {
@@ -317,7 +317,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -349,8 +349,8 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 7
+            "right": 7,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -463,7 +463,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 13
           },
           "disabled": false,
@@ -564,7 +564,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -869,7 +869,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 6
           },
           "disabled": false,
