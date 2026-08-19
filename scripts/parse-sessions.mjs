@@ -239,6 +239,13 @@ function extractSessions(payload) {
       side,
       ageGroup: (side === "left" ? e.left_age_group : e.right_age_group) || "all",
       places,
+      // `disabled` = the club pulled this slot (cancelled/blocked). Exported
+      // separately from `open` because the two mean different things to a
+      // customer — "cancelled" vs "sold out" vs "too late to book" — and the
+      // dashboard leads with the next session's availability, so it must not
+      // blur them. It judges the booking cutoff against its own live clock;
+      // `open` freezes that at parse time and goes stale between runs.
+      disabled,
       open: places > 0 && !disabled && !timePassed,
       special: String(e.type || "regular") !== "regular" || SPECIAL_RE.test(name),
     });
@@ -259,7 +266,8 @@ function mergeSides(raw) {
       merged.push({
         date: r.date, start: r.start, end: r.end, level: r.level,
         name: r.name, zone: "bay", side: r.side, ageGroup: r.ageGroup,
-        places: { bay: r.places }, open: r.open, special: r.special,
+        places: { bay: r.places }, disabled: r.disabled, open: r.open,
+        special: r.special,
       });
       continue;
     }
@@ -268,7 +276,7 @@ function mergeSides(raw) {
       reefGroups.set(key, {
         date: r.date, start: r.start, end: r.end, level: r.level,
         name: r.name, zone: "reef", places: {}, sideNames: {},
-        open: false, special: r.special,
+        disabled: true, open: false, special: r.special,
       });
       merged.push(reefGroups.get(key));
     }
@@ -276,6 +284,8 @@ function mergeSides(raw) {
     if (r.places !== null) g.places[r.side] = r.places;
     g.sideNames[r.side] = r.name;
     g.open = g.open || r.open;
+    // The merged slot counts as pulled only if every side of it was.
+    g.disabled = g.disabled && r.disabled;
   }
 
   // Tidy: drop sideNames when both sides run the same program.

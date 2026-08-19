@@ -46,6 +46,34 @@
     st.setProperty("--uh", h / 100 + "px");
   }
 
+  // ---- hidden full-screen toggle -------------------------------------------
+  // A transparent corner button (see #fs-toggle in the CSS) so staff can put
+  // the TV browser into full screen without a keyboard. The Fullscreen API
+  // only works from a real user gesture, which the click provides. Prefixed
+  // variants are here because smart-TV browsers are often several years
+  // behind desktop.
+  function toggleFullscreen() {
+    const doc = document;
+    const el = doc.documentElement;
+    const isFull =
+      doc.fullscreenElement || doc.webkitFullscreenElement || doc.msFullscreenElement;
+    try {
+      if (isFull) {
+        const exit =
+          doc.exitFullscreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+        if (exit) exit.call(doc);
+      } else {
+        const req =
+          el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
+        if (req) req.call(el);
+      }
+    } catch (e) {
+      // Kiosk browsers may block or already be full screen; never let this
+      // throw into the render loop.
+      console.warn("fullscreen toggle failed:", e.message);
+    }
+  }
+
   // ---- language rotation ---------------------------------------------------
   // Wall-clock driven so every TV switches in the same second. The switch
   // itself hides behind a short opacity fade (see .lang-fade in the CSS).
@@ -67,7 +95,8 @@
     document.documentElement.dir = T.dir || "ltr";
     // static labels that render() never rewrites
     $("lbl-now").textContent = T.now;
-    $("lbl-next").textContent = T.nextUp;
+    $("lbl-next").textContent = T.nextSession;
+    $("lbl-spots").textContent = T.spotsLeft;
     $("events-title").textContent = T.eventsTitle;
     document.querySelector("#zone-left .zone-title").textContent = T.left;
     document.querySelector("#zone-right .zone-title").textContent = T.right;
@@ -208,59 +237,149 @@
     }
   }
 
-  // Hero right side: the next reef session, with places left per side —
-  // the question customers ask most. When the schedule data is stale,
-  // `asOf` carries the data's own timestamp ("13:44") and the places label
-  // quietly says so — the wall must never assert a count it can't back.
-  function renderHeroNext(info, now, asOf) {
+  // The hero name is the largest type on the wall, and program names vary a
+  // lot in length ("Pro (T2+B2)" vs "2B Or Not To Be (B2+B3) - Barrel Fest").
+  // Rather than ellipsis away information a customer needs, step the size
+  // down only as far as a given name actually requires — short names keep
+  // the full size. Re-measured only when the text or the box changes, so
+  // the once-a-second render loop doesn't thrash layout.
+  const HERO_NAME_MAX = 4.2, HERO_NAME_MIN = 2.6, HERO_NAME_STEP = 0.15;
+  let lastNameFit = "";
+  function fitHeroName(el) {
+    const key = `${el.textContent}|${el.clientWidth}`;
+    if (key === lastNameFit) return;
+    lastNameFit = key;
+    for (let s = HERO_NAME_MAX; s >= HERO_NAME_MIN; s -= HERO_NAME_STEP) {
+      el.style.fontSize = `calc(var(--uw) * ${s.toFixed(2)})`;
+      if (el.scrollWidth <= el.clientWidth + 1) return;
+    }
+  }
+
+  // THE LEAD. The next session is the only thing a passer-by can still act
+  // on, so it owns the hero: what it is, how soon, and — the part that
+  // actually converts — how many spots are left on each side.
+  //
+  // `asOf` is set when the schedule data is stale; the spot counts then say
+  // so, because the wall must never assert a count it can't back.
+  function renderHero(info, now, asOf) {
     const level = $("nx-level");
     const name = $("nx-name");
     const time = $("nx-time");
-    const places = $("nx-places");
+    const countdown = $("nx-countdown");
+    const spots = $("nx-spots");
+    const note = $("nx-note");
 
-    places.textContent = "";
+    spots.textContent = "";
+    note.textContent = "";
+    note.className = "spots-note";
+
     if (!info) {
       level.textContent = "";
-      level.className = "lvl-badge";
-      name.textContent = "—";
+      level.className = "hero-badge";
+      name.textContent = T.noMoreToday;
       time.textContent = "";
+      countdown.textContent = "";
+      countdown.className = "hero-countdown";
+      $("lbl-spots").style.visibility = "hidden";
       return;
     }
+    $("lbl-spots").style.visibility = "";
 
     const s = info.session;
     level.textContent = s.level;
-    level.className = "lvl-badge " + levelClass(s.level);
+    level.className = "hero-badge " + levelClass(s.level);
     name.textContent = s.name;
-    const range = iso(`${s.start}–${s.end}`);
+    fitHeroName(name);
+
+    const minsAway = info.tomorrow
+      ? null
+      : toMin(s.start) - nowMin(now);
     time.textContent = info.tomorrow
-      ? `${T.tomorrowFull} ${range}`
-      : `${range} · ${T.inDur(T.dur(toMin(s.start) - nowMin(now)))}`;
+      ? `${T.tomorrowFull} ${iso(`${s.start}–${s.end}`)}`
+      : iso(`${s.start}–${s.end}`);
+    countdown.textContent = minsAway == null ? "" : T.startsInShort(T.dur(minsAway));
+    // Imminent sessions get the warm treatment — that's the moment a
+    // last-minute sign-up is actually winnable.
+    countdown.className =
+      "hero-countdown" +
+      (minsAway != null && minsAway <= (CONFIG.urgentMinutes || 20) ? " is-soon" : "");
 
     // Physical pool sides, left-to-right as the customer faces the water.
-    // .nx-places is direction-pinned in CSS so this order never mirrors
+    // .spots-boxes is direction-pinned in CSS so this order never mirrors
     // in Hebrew — matches the physically-pinned #zones cards below.
     const sides = [
       [T.sideLeft, s.places && s.places.left],
       [T.sideRight, s.places && s.places.right],
+      [T.bay, s.places && s.places.bay],
     ].filter(([, v]) => v != null);
-    if (sides.length) {
-      const lab = document.createElement("span");
-      lab.className = "nx-places-label";
-      lab.textContent = T.placesLabel;
-      if (asOf) {
-        const note = document.createElement("span");
-        note.className = "nx-asof";
-        note.textContent = ` · ${T.asOf(asOf)}`;
-        lab.appendChild(note);
-      }
-      places.appendChild(lab);
-      for (const [side, v] of sides) {
-        const chip = document.createElement("span");
-        chip.className = "place-chip" + (v === 0 ? " is-full" : "");
-        chip.textContent = v === 0 ? `${side} · ${T.full}` : `${side} · ${v}`;
-        places.appendChild(chip);
-      }
+
+    for (const [side, v] of sides) {
+      const box = document.createElement("div");
+      box.className = "spot-box" + (v === 0 ? " is-full" : "");
+      const lab = document.createElement("div");
+      lab.className = "spot-side";
+      lab.textContent = side;
+      const val = document.createElement("div");
+      val.className = "spot-count";
+      val.textContent = v === 0 ? T.full : String(v);
+      box.append(lab, val);
+      spots.appendChild(box);
     }
+
+    // One honest line under the counts: how to act, or why you can't.
+    // The booking cutoff is judged against our own live clock — the feed's
+    // `open` flag freezes that at parse time and would contradict the spot
+    // counts sitting right above this line.
+    const anyLeft = sides.some(([, v]) => v > 0);
+    const tooLate = minsAway != null && minsAway < 1;
+    if (!sides.length) {
+      note.textContent = "";
+    } else if (s.disabled) {
+      note.textContent = T.bookingClosed;
+      note.className = "spots-note is-closed";
+    } else if (!anyLeft) {
+      note.textContent = T.spotsFull;
+      note.className = "spots-note is-closed";
+    } else if (tooLate) {
+      note.textContent = T.bookingClosed;
+      note.className = "spots-note is-closed";
+    } else if (asOf) {
+      note.textContent = T.asOf(asOf);
+      note.className = "spots-note is-stale";
+    } else if (CONFIG.showSignupCta) {
+      note.textContent = T.signupCta;
+      note.className = "spots-note is-cta";
+    }
+  }
+
+  // Secondary: what's already in the water. Present tense, nothing to act
+  // on, so it gets one quiet line rather than a panel.
+  function renderNowStrip(current, now) {
+    const body = $("now-body");
+    body.textContent = "";
+
+    if (!current) {
+      body.textContent = T.nothingInWater;
+      body.className = "now-body is-idle";
+      return;
+    }
+    body.className = "now-body";
+
+    const badge = document.createElement("span");
+    badge.className = "lvl-badge " + levelClass(current.level);
+    badge.textContent = current.level;
+
+    const name = document.createElement("span");
+    name.className = "now-name";
+    name.textContent = current.name;
+
+    const meta = document.createElement("span");
+    meta.className = "now-meta";
+    const minsLeft = toMin(current.end) - nowMin(now);
+    meta.textContent =
+      `${iso(`${current.start}–${current.end}`)} · ${T.endsIn} ${minsLeft} ${T.min}`;
+
+    body.append(badge, name, meta);
   }
 
   // "Upcoming Events" card: the next few park events. Built with DOM nodes (not
@@ -353,29 +472,11 @@
     const isStale = ageMin != null && ageMin > CONFIG.staleWarnMinutes;
     const asOf = isStale ? hm(new Date(data.updatedAt)) : null;
 
-    // hero: current wave program
-    if (reefNow) {
-      $("now-level").textContent = reefNow.level;
-      $("now-level").className = "hero-badge " + levelClass(reefNow.level);
-      $("now-name").textContent = reefNow.name;
-      $("now-time").textContent = iso(`${reefNow.start}–${reefNow.end}`);
-      const minsLeft = toMin(reefNow.end) - nowMin(now);
-      $("now-countdown").textContent = `${T.endsIn} ${minsLeft} ${T.min}`;
-    } else if (reefNextInfo) {
-      const s = reefNextInfo.session;
-      $("now-level").textContent = s.level;
-      $("now-level").className = "hero-badge " + levelClass(s.level);
-      $("now-name").textContent = s.name;
-      $("now-time").textContent = iso(`${s.start}–${s.end}`);
-      $("now-countdown").textContent = reefNextInfo.tomorrow
-        ? `${T.startsIn} — ${iso(s.start)}`
-        : `${T.startsIn} ${toMin(s.start) - nowMin(now)} ${T.min}`;
-    } else {
-      $("now-level").textContent = "";
-      $("now-name").textContent = T.noData;
-      $("now-time").textContent = "";
-      $("now-countdown").textContent = "";
-    }
+    // the lead: the next session and its remaining spots
+    renderHero(reefNextInfo, now, asOf);
+
+    // secondary: what's in the water right now
+    renderNowStrip(reefNow, now);
 
     // zone columns
     renderZone("zone-right", reefNow, reefNextInfo && !reefNextInfo.tomorrow ? reefNextInfo.session : null, "right");
@@ -384,10 +485,6 @@
 
     // park events
     renderEvents(now);
-
-    // hero right side: next up. When nothing is running, the hero's main
-    // slot already shows queue[0] ("Starts in …"), so show the one after.
-    renderHeroNext((reefNow ? queue[0] : queue[1]) || null, now, asOf);
 
     // weather — description resolved at render time (not fetch time) so
     // it follows the current language on every rotation.
@@ -458,6 +555,9 @@
   async function start() {
     sizeStage();
     window.addEventListener("resize", sizeStage);
+
+    const fsBtn = $("fs-toggle");
+    if (fsBtn) fsBtn.addEventListener("click", toggleFullscreen);
 
     // Join the rotation already in progress — every TV that boots mid-cycle
     // lands on the same language, driven off the wall clock.

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=8" />
+  <link rel="stylesheet" href="css/style.css?v=10" />
 </head>
 <body>
   <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
@@ -42,28 +42,32 @@
       </div>
     </header>
 
+    <!-- The lead: the next session is the only thing a passer-by can still
+         act on, so it owns the largest block and carries the spot counts. -->
     <section id="hero">
-      <div class="hero-now">
-        <div class="hero-label" id="lbl-now">Now in the water</div>
+      <div class="hero-text">
+        <div class="hero-topline">
+          <span class="hero-label" id="lbl-next">Next session</span>
+          <span class="hero-countdown" id="nx-countdown"></span>
+        </div>
         <div class="hero-main">
-          <span class="hero-badge" id="now-level"></span>
-          <span class="hero-name" id="now-name">—</span>
+          <span class="hero-badge" id="nx-level"></span>
+          <span class="hero-name" id="nx-name">—</span>
         </div>
-        <div class="hero-sub">
-          <span id="now-time"></span>
-          <span class="dot">·</span>
-          <span id="now-countdown"></span>
-        </div>
+        <div class="hero-time" id="nx-time"></div>
       </div>
-      <div class="hero-next">
-        <div class="hero-label" id="lbl-next">Next up</div>
-        <div class="nx-main">
-          <span class="lvl-badge" id="nx-level"></span>
-          <span class="nx-name" id="nx-name">—</span>
-        </div>
-        <div class="nx-time" id="nx-time"></div>
-        <div class="nx-places" id="nx-places"></div>
+      <div class="hero-spots">
+        <div class="spots-label" id="lbl-spots">Spots left</div>
+        <div class="spots-boxes" id="nx-spots"></div>
+        <div class="spots-note" id="nx-note"></div>
       </div>
+    </section>
+
+    <!-- Status, not a call to action: what's already in the water stays
+         readable but deliberately quiet. -->
+    <section id="now-strip">
+      <span class="now-label" id="lbl-now">Now in the water</span>
+      <span class="now-body" id="now-body">—</span>
     </section>
 
     <!-- Physical order, viewer's perspective: Reef Left | Reef Right | Bay.
@@ -104,8 +108,14 @@
 
   </div> <!-- #stage -->
 
-  <script src="js/config.js?v=8"></script>
-  <script src="js/strings.js?v=8"></script>
-  <script src="js/dashboard.js?v=8"></script>
+  <!-- Invisible full-screen toggle. Tapping the top-right corner of the
+       screen puts the TV's browser into full screen (and back out), so
+       staff can hide the browser chrome without a keyboard. Deliberately
+       unlabelled: it's for staff, not for customers reading the wall. -->
+  <button id="fs-toggle" type="button" aria-label="Toggle full screen"></button>
+
+  <script src="js/config.js?v=10"></script>
+  <script src="js/strings.js?v=10"></script>
+  <script src="js/dashboard.js?v=10"></script>
 </body>
 </html>

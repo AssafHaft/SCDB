@@ -1,9 +1,42 @@
 # SRF Club TV Dashboard
 
-A wall-mounted TV dashboard for the surf club: current session, wave program,
-Reef Right / Reef Left / Bay status, places left, next session, upcoming park
-events, clock and weather. One static page, no backend, no login — hosted
-free on GitHub Pages.
+A wall-mounted TV dashboard for the surf club: the next session and its
+remaining spots, what's currently in the water, Reef Left / Reef Right / Bay
+status, upcoming park events, clock and weather. One static page, no backend,
+no login — hosted free on GitHub Pages.
+
+## What it's for
+
+**The dashboard exists to fill the next session, not to report the present.**
+
+A session already in the water is status — nobody walking past can act on it.
+The next session is the only thing still influenceable: seeing that it starts
+soon and has spots left is what turns a passer-by into a last-minute sign-up.
+So the layout is deliberately lopsided:
+
+- **The next session owns the hero** — level, name, start time, a countdown
+  that turns warm inside `urgentMinutes`, and big per-side spot counts. This
+  is the conversion surface; everything about it is sized to be read across
+  a room, and both hero columns use `justify-content: space-between` so the
+  panel fills its height instead of floating in empty teal.
+  The session name is auto-fitted by `fitHeroName()` in `js/dashboard.js`:
+  short names stay at full size and only unusually long ones step down, so
+  a program title is never ellipsised away on the wall.
+- **The current session gets one quiet line** (`#now-strip`). Visible, never
+  competing.
+- **Zone cards and events** are the detail layer underneath.
+
+Two rules follow from this, and both are load-bearing:
+
+1. **Never assert a spot count the data can't back.** If the schedule goes
+   stale, the count line says "as of HH:MM" instead of implying it's live.
+2. **Never contradict the counts.** "Booking closed" is shown only when the
+   club actually pulled the slot (`disabled`) or the start time has genuinely
+   passed by *this page's* clock — not from the feed's `open` flag, which
+   freezes the booking cutoff at parse time and goes stale between runs.
+
+If you restructure the hero, keep those two properties. They're the
+difference between a screen staff trust and one they start apologising for.
 
 ## How it works
 
@@ -49,7 +82,10 @@ while `scripts/parse-sessions.mjs` is fixed.
    fresh commit.
 
 4. **Point the TV at the page.** Open the Pages URL in the TV's browser and
-   go full screen (F11 on most). Done — the page refreshes its own data.
+   go full screen. If the TV has no keyboard for F11, **tap the top-right
+   corner of the screen** — there's an invisible toggle there (`#fs-toggle`)
+   that puts the browser into full screen and back out again. Done — the
+   page refreshes its own data.
 
 ## Configuration
 
@@ -64,6 +100,11 @@ Everything staff might need to change lives in **`js/config.js`**:
   these languages (keys into `window.STRINGS`, currently `en` and `he`),
   wall-clock-timed so every TV switches in the same second. Set `languages`
   to a single entry to stop rotating and stay on one language.
+- `showSignupCta` — the "Sign up at reception" line under the spot counts.
+  Set `false` to hide it; reword it per language via `signupCta` in
+  `js/strings.js` (e.g. if sign-ups move to an app or a different desk).
+- `urgentMinutes` — how close a session must be for the countdown to switch
+  to the warm/urgent treatment. Default 20.
 
 Display text lives in **`js/strings.js`** — one English/Hebrew block per
 language, so adding a third language is a third block there, nothing else.
@@ -71,11 +112,11 @@ Session names themselves (e.g. "T-Time Pro Carves") are the park's own
 naming and stay in English in both languages.
 
 Layout is direction-pinned where it matters: the reef-side cards and the
-place-left chips name real pool sides, so `#hero`, `#zones` and
-`.nx-places` in `css/style.css` are locked to `direction: ltr` regardless
-of language — only the text inside re-flows for Hebrew. If you rename or
-restructure those sections, keep that pin or the customer-reported
-"Right/Left on the wrong side" bug comes back.
+spot boxes name real pool sides, so `#hero`, `#zones` and `.spots-boxes` in
+`css/style.css` are locked to `direction: ltr` regardless of language —
+only the text inside re-flows for Hebrew. If you rename or restructure
+those sections, keep that pin or the customer-reported "Right/Left on the
+wrong side" bug comes back.
 
 The dashboard is laid out as a fixed 16:9 "stage" (`#stage` in
 `index.html`, sized by `sizeStage()` in `js/dashboard.js`), so it matches a

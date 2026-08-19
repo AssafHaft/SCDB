@@ -31,6 +31,15 @@ window.CONFIG = {
   // How many upcoming events the "Upcoming Events" card shows at most.
   maxEvents: 4,
 
+  // Show the "Sign up at reception" line under the spot counts when the
+  // next session can still be booked. Set false to hide it, or reword it
+  // (`signupCta`) per language in js/strings.js.
+  showSignupCta: true,
+
+  // Highlight the countdown when the next session is this close, to push
+  // the last-minute sign-up the dashboard exists to drive. Minutes.
+  urgentMinutes: 20,
+
   // Weather: Open-Meteo, free, no API key, CORS-enabled.
   // Coordinates for the park (Tel Aviv coast). Adjust if needed.
   weather: {
