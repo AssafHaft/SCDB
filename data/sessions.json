@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T09:40:18.449Z",
+  "updatedAt": "2026-08-20T09:45:19.762Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -142,7 +142,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -156,10 +156,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -227,7 +227,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 2
           },
           "disabled": false,
@@ -330,7 +330,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 8
           },
           "disabled": false,
@@ -445,11 +445,11 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -461,7 +461,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 5
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -489,8 +489,8 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 10
+            "right": 3,
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -519,7 +519,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 8
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -547,7 +547,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 3
           },
           "disabled": false,
@@ -627,7 +627,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
