@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T11:17:26.529Z",
+  "updatedAt": "2026-08-20T11:20:18.086Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -269,7 +269,7 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 6
           },
           "disabled": false,
@@ -345,7 +345,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -683,7 +683,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
