@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T10:35:18.020Z",
+  "updatedAt": "2026-08-20T10:40:21.974Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -27,7 +27,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 4
           },
           "disabled": false,
@@ -185,7 +185,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 13
           },
           "disabled": false,
           "open": true,
@@ -227,7 +227,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 0
           },
           "disabled": false,
@@ -241,8 +241,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 7
+            "right": 11,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -255,7 +255,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 13
           },
           "disabled": false,
@@ -283,8 +283,8 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 15
+            "right": 12,
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -330,7 +330,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 8
           },
           "disabled": false,
@@ -461,7 +461,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 4
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -547,8 +547,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 1
+            "right": 8,
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -590,7 +590,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 11
+            "left": 10
           },
           "sideNames": {
             "right": "2B Or Not To Be - Barrel Fest",
@@ -755,7 +755,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
