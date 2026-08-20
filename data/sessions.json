@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T16:30:24.605Z",
+  "updatedAt": "2026-08-20T16:35:17.211Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -185,7 +185,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 4
+            "bay": 3
           },
           "disabled": false,
           "open": false,
@@ -283,7 +283,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 1
           },
           "disabled": false,
@@ -297,7 +297,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 4
           },
           "disabled": false,
@@ -640,7 +640,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 12
           },
           "disabled": false,
