@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T14:35:16.428Z",
+  "updatedAt": "2026-08-20T14:40:20.764Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -242,7 +242,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -283,7 +283,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 14
           },
           "disabled": false,
@@ -297,8 +297,8 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 6
+            "right": 12,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -316,7 +316,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 10
           },
           "disabled": false,
@@ -345,7 +345,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -489,7 +489,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 4
           },
           "disabled": false,
@@ -519,7 +519,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -670,7 +670,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 7
+            "bay": 6
           },
           "disabled": false,
           "open": true,
@@ -741,7 +741,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 6
           },
           "disabled": false,
