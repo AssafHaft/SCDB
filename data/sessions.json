@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T14:45:24.275Z",
+  "updatedAt": "2026-08-20T14:50:20.206Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -242,7 +242,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -256,7 +256,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 12
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -283,8 +283,8 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 14
+            "right": 9,
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -298,7 +298,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 5
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -490,7 +490,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 3
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -503,7 +503,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 3
           },
           "disabled": false,
@@ -575,7 +575,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -627,7 +627,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -670,7 +670,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 6
+            "bay": 7
           },
           "disabled": false,
           "open": true,
