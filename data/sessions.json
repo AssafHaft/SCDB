@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T12:30:25.180Z",
+  "updatedAt": "2026-08-20T12:35:20.806Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -214,7 +214,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 4
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -242,7 +242,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -256,7 +256,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -387,7 +387,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 12
           },
           "disabled": false,
@@ -445,7 +445,7 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
@@ -461,7 +461,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 2
+            "bay": 1
           },
           "disabled": false,
           "open": true,
@@ -519,7 +519,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -640,7 +640,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 16
           },
           "disabled": false,
