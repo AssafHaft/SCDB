@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T07:10:19.459Z",
+  "updatedAt": "2026-08-20T07:15:19.320Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -141,8 +141,8 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 6
+            "right": 6,
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -169,7 +169,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 12
           },
           "disabled": false,
@@ -227,8 +227,8 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 1
+            "right": 9,
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -360,7 +360,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 12
+            "bay": 13
           },
           "disabled": false,
           "open": true,
@@ -431,7 +431,7 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 16
           },
           "disabled": false,
@@ -519,7 +519,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 12
           },
           "disabled": false,
           "open": true,
