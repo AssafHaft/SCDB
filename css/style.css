@@ -129,7 +129,7 @@ body.closed #dashboard { display: none; }
  * instead of the screen clipping the cards. Keep it. */
 #dashboard {
   display: grid;
-  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 2.2) minmax(0, 1fr) calc(var(--uh) * 2.2);
+  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 3) minmax(0, 1fr) calc(var(--uh) * 2.2);
   gap: calc(var(--uh) * 1.4);
   height: 100%;
   min-height: 0;
@@ -321,12 +321,14 @@ body.closed #dashboard { display: none; }
 /* Deliberately small: a one-line status glance, not a headline. The hero
    above is what the screen is for, and the height saved here goes to the
    events card below. */
+/* The strip itself stays compact, but the heading has to be findable from
+   across the room — full brand teal, not the muted grey it was. */
 .now-label {
-  font-size: calc(var(--uw) * 0.85);
+  font-size: calc(var(--uw) * 1.35);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   font-weight: 800;
-  color: var(--ink-3);
+  color: var(--teal);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -497,7 +499,7 @@ body.closed #dashboard { display: none; }
    must fit the card, and letting the font decide made that depend on
    whether the webfont loaded (the fallback and Assistant have different
    metrics, so it fit in testing and could still clip on the TV).
-   3 x 9.8 = 29.4 units against ~30.5 available. The ~1 unit of slack is
+   3 x 9.5 = 28.5 units against ~29.7 available. The ~1 unit of slack is
    deliberate: the card title above is font-sized, so a webfont with taller
    metrics than the fallback shrinks the list, and without slack the third
    row would clip on the TV but not in testing. Inner text is
@@ -505,7 +507,7 @@ body.closed #dashboard { display: none; }
 .event-row {
   display: flex;
   align-items: center;
-  height: calc(var(--uh) * 9.8);
+  height: calc(var(--uh) * 9.5);
   padding: calc(var(--uh) * 0.42) 0;
   min-width: 0;
   overflow: hidden;
@@ -532,40 +534,42 @@ body.closed #dashboard { display: none; }
 /* When it happens: a stacked block at the far end of the row (opposite the
    thumbnail), so the description keeps a readable column instead of
    stretching across the card. Sized to be legible from the reception desk. */
+/* Day, date and time run side by side on one line, not stacked: a single
+   wide row lets each of them be much larger than three cramped lines could
+   be, and keeps the box short enough that consecutive rows' boxes never
+   touch (the row centres it in ~9.8 units of height). */
 .event-when {
   flex-shrink: 0;
-  width: calc(var(--uw) * 8.4);
-  text-align: center;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: calc(var(--uw) * 15.5);
   background: var(--aqua);
   color: var(--on-badge);
   border-radius: calc(var(--uw) * 0.7);
-  padding: calc(var(--uh) * 0.6) calc(var(--uw) * 0.5);
+  padding: calc(var(--uh) * 0.85) calc(var(--uw) * 0.8);
   direction: ltr;              /* "21.08" / "20:00" read LTR in both languages */
 }
+/* pinned ltr, so this margin needs no RTL counterpart */
+.event-when > * + * { margin-left: calc(var(--uw) * 0.85); }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
-  font-size: calc(var(--uw) * 1.15);
+  font-size: calc(var(--uw) * 1.45);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-.event-dom {
-  font-size: calc(var(--uw) * 1.5);
-  font-weight: 800;
-  line-height: 1.2;
-  font-variant-numeric: tabular-nums;
-}
+.event-dom,
 .event-time {
-  font-size: calc(var(--uw) * 1.42);
+  font-size: calc(var(--uw) * 1.7);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.15;
   font-variant-numeric: tabular-nums;
-  opacity: 0.82;
+  white-space: nowrap;
 }
+.event-time { opacity: 0.85; }
 .event-name {
   font-size: calc(var(--uw) * 1.45);
   font-weight: 700;
@@ -575,9 +579,10 @@ body.closed #dashboard { display: none; }
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* the extra context — smaller by design, it's read up close */
+/* the extra context — smaller by design, it's read up close, and keeping
+   it small is what buys the width for the day/date/time block */
 .event-detail {
-  font-size: calc(var(--uw) * 1.12);
+  font-size: calc(var(--uw) * 0.92);
   font-weight: 400;
   line-height: 1.2;
   color: var(--ink-2);
