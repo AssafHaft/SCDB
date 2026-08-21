@@ -28,10 +28,14 @@ window.CONFIG = {
   // Where the parsed park events live (written by the same Actions job).
   eventsUrl: "data/events.json",
 
-  // How many upcoming events the "Upcoming Events" card shows at most.
-  // 3 is what fits the card at 16:9 while leaving titles two readable
-  // lines; raising this clips the longest titles to one line.
+  // How many event rows the "Upcoming Events" card shows at once. Today's
+  // event (if any) is pinned in the first row and the remaining rows roll
+  // through the rest of the week. 3 is what fits the card at 16:9.
   maxEvents: 3,
+
+  // How long each rolling event stays before the card fades to the next.
+  // Slow on purpose: a wall display should feel alive, not busy.
+  eventsRotateSeconds: 10,
 
   // Highlight the countdown when the next session is this close, to push
   // the last-minute sign-up the dashboard exists to drive. Minutes.

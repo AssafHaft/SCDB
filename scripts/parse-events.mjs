@@ -60,7 +60,13 @@ const clean = (s) => s.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
  * The one function that knows the events page markup.
  * ------------------------------------------------------------------------ */
 function extractEvents(html) {
-  const cards = html.match(/<div class="event_content">[\s\S]*?<\/a>/g) || [];
+  // Match the whole `.box`, not just `.event_content`, because the card's
+  // thumbnail lives in a sibling `.event_img` immediately before it:
+  //   <div class="box">
+  //     <div class="event_img"><img src="…"></div>
+  //     <div class="event_content"> … </div>
+  const cards =
+    html.match(/<div class="box">[\s\S]*?<div class="event_content">[\s\S]*?<\/a>/g) || [];
   const events = [];
 
   for (const c of cards) {
@@ -77,11 +83,17 @@ function extractEvents(html) {
     const hour = grab(/<span class="hour">([\s\S]*?)<\/span>/);
     const hm = hour.match(/(\d{1,2}:\d{2})/);
 
+    // Absolute URL on the club's media host. Hot-linked by the dashboard;
+    // the TV hides the thumbnail if it fails to load, so a broken or
+    // blocked image never costs us the event text.
+    const imgM = c.match(/<div class="event_img">[\s\S]*?<img[^>]+src="([^"]+)"/);
+
     events.push({
       date: `${dm[3]}-${dm[2]}-${dm[1]}`,
       time: hm ? hm[1] : "",
       title: grab(/<div class="event_title">([\s\S]*?)<\/div>/),
       details: grab(/<div class="event_detais">([\s\S]*?)<\/div>/),
+      image: imgM ? imgM[1] : "",
       url: grab(/<a href="([^"]*)"/),
     });
   }

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=12" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
 </head>
 <body>
   <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
@@ -94,9 +94,14 @@
         <div class="zone-places"></div>
         <div class="zone-time"></div>
       </div>
+      <!-- Today's event stays pinned; the rest roll through on a slow
+           crossfade so the week ahead keeps moving without distracting. -->
       <div class="zone-card" id="events-card">
         <div class="zone-title" id="events-title">Upcoming Events</div>
-        <div id="events-list"></div>
+        <div id="events-list">
+          <div id="events-pinned"></div>
+          <div id="events-rotating"></div>
+        </div>
       </div>
     </section>
 
@@ -114,8 +119,8 @@
        unlabelled: it's for staff, not for customers reading the wall. -->
   <button id="fs-toggle" type="button" aria-label="Toggle full screen"></button>
 
-  <script src="js/config.js?v=12"></script>
-  <script src="js/strings.js?v=12"></script>
-  <script src="js/dashboard.js?v=12"></script>
+  <script src="js/config.js?v=13"></script>
+  <script src="js/strings.js?v=13"></script>
+  <script src="js/dashboard.js?v=13"></script>
 </body>
 </html>

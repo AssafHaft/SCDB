@@ -24,7 +24,13 @@ So the layout is deliberately lopsided:
   a program title is never ellipsised away on the wall.
 - **The current session gets one quiet line** (`#now-strip`). Visible, never
   competing.
-- **Zone cards and events** are the detail layer underneath.
+- **Zone cards** are the detail layer underneath.
+- **Upcoming Events** is the widest card in that row and carries thumbnails
+  (hot-linked from the club's media host) plus a line of detail. Today's
+  event is pinned in the top row; the rest of the week rolls through the
+  remaining rows on a slow crossfade — `eventsRotateSeconds` in
+  `js/config.js`. Rows only rebuild when the visible set actually changes,
+  so the carousel never re-requests images.
 
 Two rules follow from this, and both are load-bearing:
 
@@ -154,7 +160,12 @@ next to the parser that uses it.
   `scripts/parse-events.mjs` is the only code that knows the events page
   markup. A broken events parse never blocks the sessions update (the
   workflow step is `continue-on-error`), and the wall keeps the last good
-  event list.
+  event list. Note it matches the whole `.box`, not just `.event_content`,
+  because the thumbnail lives in a sibling `.event_img`.
+- **Event thumbnails missing, text still fine** — the images are hot-linked
+  from `api.srfparktlv.co.il`. If that host blocks or fails, each row drops
+  its thumbnail and runs full-width text; nothing else breaks. This is
+  deliberate: the events card is never worth failing the wall over.
 - **Weather panel empty** — Open-Meteo hiccup; it retries every 10 minutes
   on its own.
 

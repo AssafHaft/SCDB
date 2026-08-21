@@ -129,7 +129,7 @@ body.closed #dashboard { display: none; }
  * instead of the screen clipping the cards. Keep it. */
 #dashboard {
   display: grid;
-  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 8) minmax(0, 1fr) calc(var(--uh) * 3);
+  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 5) minmax(0, 1fr) calc(var(--uh) * 3);
   gap: calc(var(--uh) * 1.7);
   height: 100%;
   min-height: 0;
@@ -313,13 +313,14 @@ body.closed #dashboard { display: none; }
   min-width: 0;
 }
 #now-strip > * + * { margin-left: calc(var(--uw) * 1.2); }
-/* reads as a real section heading — it was too faint to find on the wall */
+/* Deliberately modest: a one-line status glance, not a headline — the
+   hero above it is what the screen is actually for. */
 .now-label {
-  font-size: calc(var(--uw) * 1.9);
+  font-size: calc(var(--uw) * 1.25);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 800;
-  color: var(--teal);
+  color: var(--ink-3);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -330,19 +331,18 @@ body.closed #dashboard { display: none; }
   color: var(--ink-2);
 }
 .now-body > * + * { margin-left: calc(var(--uw) * 0.9); }
-.now-body.is-idle { color: var(--ink-3); font-size: calc(var(--uw) * 1.6); font-weight: 600; }
-.now-body .lvl-badge { font-size: calc(var(--uw) * 1.35); }
+.now-body.is-idle { color: var(--ink-3); font-size: calc(var(--uw) * 1.3); font-weight: 600; }
+.now-body .lvl-badge { font-size: calc(var(--uw) * 1); padding: calc(var(--uh) * 0.25) calc(var(--uw) * 0.8); }
 .now-name {
-  font-size: calc(var(--uw) * 1.9);
+  font-size: calc(var(--uw) * 1.35);
   font-weight: 700;
   color: var(--ink);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* the running clock on the current session, sized to read at a glance too */
 .now-meta {
-  font-size: calc(var(--uw) * 1.9);
+  font-size: calc(var(--uw) * 1.3);
   font-weight: 600;
   color: var(--ink-2);
   font-variant-numeric: tabular-nums;
@@ -352,7 +352,8 @@ body.closed #dashboard { display: none; }
 /* ---- zone columns -------------------------------------------------------- */
 #zones {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* the events card earns extra width — it carries thumbnails and detail */
+  grid-template-columns: 1fr 1fr 1fr 1.85fr;
   gap: calc(var(--uw) * 1.6);
   min-height: 0;   /* let the row shrink rather than overflow the screen */
   /* Reef Left | Reef Right | Bay | Events always in that physical order,
@@ -442,54 +443,97 @@ body.closed #dashboard { display: none; }
 #events-list {
   display: flex;
   flex-direction: column;
-  margin-top: calc(var(--uh) * 0.4);
+  min-height: 0;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+/* the rolling half of the card; the pinned row above it never fades */
+#events-rotating {
+  transition: opacity 0.45s ease;
+  opacity: 1;
   min-height: 0;
   overflow: hidden;
 }
+#events-rotating.is-fading { opacity: 0; }
+/* Row height is fixed rather than content-driven, deliberately: three rows
+   must fit the card, and letting the font decide made that depend on
+   whether the webfont loaded (the fallback and Assistant have different
+   metrics, so it fit in testing and could still clip on the TV).
+   3 x 8.4 = 25.2 units, against ~25.6 available. Inner text is
+   single-line-clamped, so a fixed height never truncates mid-paragraph. */
 .event-row {
   display: flex;
   align-items: center;
-  padding: calc(var(--uh) * 0.85) 0;
+  height: calc(var(--uh) * 8.4);
+  padding: calc(var(--uh) * 0.42) 0;
   min-width: 0;
+  overflow: hidden;
 }
-.event-row > * + * { margin-left: calc(var(--uw) * 0.7); }
-.event-row + .event-row { border-top: 1px solid rgba(36, 61, 68, 0.10); }
+.event-row > * + * { margin-left: calc(var(--uw) * 0.8); }
+.event-row + .event-row,
+#events-rotating .event-row:first-child { border-top: 1px solid rgba(36, 61, 68, 0.10); }
+.event-thumb {
+  flex-shrink: 0;
+  width: calc(var(--uw) * 4.6);
+  height: calc(var(--uh) * 5.4);
+  border-radius: calc(var(--uw) * 0.6);
+  overflow: hidden;
+  background: rgba(36, 61, 68, 0.07);
+}
+.event-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* older TV browsers fall back to stretch; acceptable */
+  display: block;
+}
+.event-body { min-width: 0; flex: 1 1 auto; overflow: hidden; }
+.event-body > * + * { margin-top: calc(var(--uh) * 0.2); }
 .event-when {
   flex-shrink: 0;
-  display: flex;
+  display: inline-flex;
   align-items: baseline;
   background: var(--aqua);
   color: var(--on-badge);
   border-radius: calc(var(--uw) * 99);
-  padding: calc(var(--uh) * 0.45) calc(var(--uw) * 0.8);
+  padding: calc(var(--uh) * 0.3) calc(var(--uw) * 0.75);
   direction: ltr;              /* "THU 21.08 20:00" reads LTR in both languages */
 }
 /* pinned ltr, so this margin needs no RTL counterpart */
 .event-when > * + * { margin-left: calc(var(--uw) * 0.55); }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
-  font-size: calc(var(--uw) * 1);
+  font-size: calc(var(--uw) * 0.88);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 .event-dom,
 .event-time {
-  font-size: calc(var(--uw) * 1.1);
+  font-size: calc(var(--uw) * 0.98);
   font-weight: 800;
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
 }
 .event-time { opacity: 0.8; }
 .event-name {
-  font-size: calc(var(--uw) * 1.25);
+  font-size: calc(var(--uw) * 1.2);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
   min-width: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* the extra context — smaller by design, it's read up close */
+.event-detail {
+  font-size: calc(var(--uw) * 0.92);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--ink-2);
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .events-empty { color: var(--ink-2); font-size: calc(var(--uw) * 1.3); font-weight: 600; margin-top: calc(var(--uh) * 1); }
 

@@ -379,68 +379,163 @@
     body.append(badge, name, meta);
   }
 
-  // "Upcoming Events" card: the next few park events. Built with DOM nodes (not
-  // innerHTML) because titles come from an external page.
+  // ---- "Upcoming Events" card ----------------------------------------------
+  // Today's event is pinned in the top row; the rest of the week rolls
+  // through the remaining rows on a slow crossfade (see tickEventsRotation).
+  //
+  // Rebuilds are gated on a signature rather than run every second: the rows
+  // carry <img> thumbnails hot-linked from the club's media host, and
+  // recreating them once a second would re-request the images and flicker.
+  let eventsOffset = 0;      // rolling window position over the non-pinned events
+  let eventsRotatable = 0;   // how many events the window rolls over
+  let lastEventsSig = "";
+
+  function upcomingEvents(now) {
+    return ((eventsData && eventsData.events) || []).filter((e) => {
+      // Keep an event visible until an hour past its start time.
+      const dt = new Date(`${e.date}T${e.time || "23:59"}:00`);
+      return !isNaN(dt) && dt.getTime() > now.getTime() - 60 * 60000;
+    });
+  }
+
+  // Thumbnails are hot-linked from the club's media host. One master <img>
+  // per URL is loaded once and kept out of the DOM; rows get clones of it,
+  // which paint from cache instead of hitting their server again on every
+  // language flip or carousel step. Clones (not the master itself) because
+  // a recurring event reuses the same image, and appending one element to
+  // two rows would just move it out of the first.
+  // A URL that fails is remembered as broken and skipped from then on —
+  // the row runs full-width text rather than showing an empty box.
+  const eventImgCache = new Map();
+  function eventThumb(src) {
+    let rec = eventImgCache.get(src);
+    if (!rec) {
+      const img = document.createElement("img");
+      img.alt = "";
+      rec = { img, broken: false };
+      img.onerror = () => { rec.broken = true; };
+      img.src = src;
+      eventImgCache.set(src, rec);
+    }
+    return rec;
+  }
+
+  // One event row: thumbnail, when-pill, title, and a line of detail.
+  function buildEventRow(e, todayS, tomorrowS) {
+    const row = document.createElement("div");
+    row.className = "event-row" + (e.date === todayS ? " is-today" : "");
+
+    if (e.image) {
+      const rec = eventThumb(e.image);
+      if (!rec.broken) {
+        const thumb = document.createElement("div");
+        thumb.className = "event-thumb";
+        const img = rec.img.cloneNode(false);
+        img.onerror = () => { rec.broken = true; thumb.remove(); };
+        thumb.appendChild(img);
+        row.appendChild(thumb);
+      }
+    }
+
+    const body = document.createElement("div");
+    body.className = "event-body";
+
+    const when = document.createElement("span");
+    when.className = "event-when";
+    const dow = document.createElement("span");
+    dow.className = "event-dow";
+    const d = new Date(`${e.date}T12:00:00`);
+    dow.textContent =
+      e.date === todayS ? T.today :
+      e.date === tomorrowS ? T.tomorrow :
+      T.dow(d);
+    const dom = document.createElement("span");
+    dom.className = "event-dom";
+    dom.textContent = iso(`${pad(d.getDate())}.${pad(d.getMonth() + 1)}`);
+    when.append(dow, dom);
+    if (e.time) {
+      const time = document.createElement("span");
+      time.className = "event-time";
+      time.textContent = iso(e.time);
+      when.appendChild(time);
+    }
+
+    const name = document.createElement("div");
+    name.className = "event-name";
+    name.dir = "auto"; // Hebrew titles lay out correctly
+    name.textContent = e.title;
+
+    body.append(when, name);
+
+    if (e.details) {
+      const detail = document.createElement("div");
+      detail.className = "event-detail";
+      detail.dir = "auto";
+      detail.textContent = e.details;
+      body.appendChild(detail);
+    }
+
+    row.appendChild(body);
+    return row;
+  }
+
   function renderEvents(now) {
-    const list = $("events-list");
-    if (!list) return;
+    const pinnedEl = $("events-pinned");
+    const rotEl = $("events-rotating");
+    if (!pinnedEl || !rotEl) return;
 
-    const upcoming = ((eventsData && eventsData.events) || [])
-      .filter((e) => {
-        // Keep an event visible until an hour past its start time.
-        const dt = new Date(`${e.date}T${e.time || "23:59"}:00`);
-        return !isNaN(dt) && dt.getTime() > now.getTime() - 60 * 60000;
-      })
-      .slice(0, CONFIG.maxEvents || 4);
+    const todayS = todayStr(now);
+    const tomorrow = new Date(now);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowS = todayStr(tomorrow);
 
-    list.textContent = "";
-    if (upcoming.length === 0) {
+    const all = upcomingEvents(now);
+    const slots = Math.max(CONFIG.maxEvents || 3, 1);
+
+    // Today's event holds the top row; everything else rolls beneath it.
+    const pinned = all.find((e) => e.date === todayS) || null;
+    const rest = all.filter((e) => e !== pinned);
+    const rotSlots = Math.max(slots - (pinned ? 1 : 0), 0);
+
+    eventsRotatable = rest.length > rotSlots ? rest.length : 0;
+    if (!eventsRotatable) eventsOffset = 0;
+
+    const windowed = [];
+    for (let i = 0; i < Math.min(rotSlots, rest.length); i++) {
+      windowed.push(rest[(eventsOffset + i) % rest.length]);
+    }
+
+    const key = (e) => (e ? `${e.date}|${e.time}|${e.url}` : "-");
+    const sig = [langIdx, key(pinned), ...windowed.map(key)].join("~");
+    if (sig === lastEventsSig) return;   // nothing changed — leave the DOM (and its images) alone
+    lastEventsSig = sig;
+
+    pinnedEl.textContent = "";
+    rotEl.textContent = "";
+
+    if (!pinned && windowed.length === 0) {
       const empty = document.createElement("div");
       empty.className = "events-empty";
       empty.textContent = T.noEvents;
-      list.appendChild(empty);
+      pinnedEl.appendChild(empty);
       return;
     }
 
-    const tomorrow = new Date(now);
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    const todayS = todayStr(now);
-    const tomorrowS = todayStr(tomorrow);
+    if (pinned) pinnedEl.appendChild(buildEventRow(pinned, todayS, tomorrowS));
+    for (const e of windowed) rotEl.appendChild(buildEventRow(e, todayS, tomorrowS));
+  }
 
-    for (const e of upcoming) {
-      const row = document.createElement("div");
-      row.className = "event-row" + (e.date === todayS ? " is-today" : "");
-
-      // One-line "when" pill: day, date and start time together, so the
-      // row stays short enough for the card to fit the screen.
-      const when = document.createElement("span");
-      when.className = "event-when";
-      const dow = document.createElement("span");
-      dow.className = "event-dow";
-      const d = new Date(`${e.date}T12:00:00`);
-      dow.textContent =
-        e.date === todayS ? T.today :
-        e.date === tomorrowS ? T.tomorrow :
-        T.dow(d);
-      const dom = document.createElement("span");
-      dom.className = "event-dom";
-      dom.textContent = iso(`${pad(d.getDate())}.${pad(d.getMonth() + 1)}`);
-      when.append(dow, dom);
-      if (e.time) {
-        const time = document.createElement("span");
-        time.className = "event-time";
-        time.textContent = iso(e.time);
-        when.appendChild(time);
-      }
-
-      const name = document.createElement("div");
-      name.className = "event-name";
-      name.dir = "auto"; // Hebrew titles lay out correctly
-      name.textContent = e.title;
-
-      row.append(when, name);
-      list.appendChild(row);
-    }
+  // Advance the rolling window, hidden behind a fade so rows never visibly
+  // pop. The pinned row is in its own container and is untouched.
+  function tickEventsRotation() {
+    const rotEl = $("events-rotating");
+    if (!rotEl || !eventsRotatable || document.body.classList.contains("closed")) return;
+    rotEl.classList.add("is-fading");
+    setTimeout(() => {
+      eventsOffset = (eventsOffset + 1) % Math.max(eventsRotatable, 1);
+      renderEvents(new Date());
+      rotEl.classList.remove("is-fading");
+    }, 450);
   }
 
   function render(now) {
@@ -574,6 +669,7 @@
       maybeSwitchLanguage(now);
       render(now);
     }, 1000);
+    setInterval(tickEventsRotation, (CONFIG.eventsRotateSeconds || 10) * 1000);
     setInterval(loadSessions, CONFIG.sessionsRefreshSeconds * 1000);
     setInterval(loadEvents, CONFIG.sessionsRefreshSeconds * 1000);
     setInterval(loadWeather, CONFIG.weather.refreshMinutes * 60 * 1000);
