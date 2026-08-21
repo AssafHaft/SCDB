@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T05:35:15.340Z",
+  "updatedAt": "2026-08-21T05:40:22.322Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -57,7 +57,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 0
           },
           "disabled": false,
           "open": false,
@@ -438,7 +438,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 2
           },
           "disabled": false,
@@ -526,7 +526,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 10
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -598,7 +598,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 16
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -625,7 +625,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 14
           },
           "disabled": false,
