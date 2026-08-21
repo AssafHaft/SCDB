@@ -131,6 +131,21 @@ The pool cells are laid out by `.pool-grid` (2 columns, Bay spanning both).
 them — it must never assign `className`, which would strip the structural
 `.pool-cell` class and drop the cell out of the grid.
 
+Two deliberate exceptions to "pinned containers keep their text RTL in
+Hebrew":
+
+- `#now-strip` stays `direction: ltr` in both languages. Its label is the
+  heading for the pool box directly beneath it, which sits on the left; in
+  RTL it would swing to the right edge, away from what it describes.
+- `.event-when` stays `ltr` so `21.08` / `20:00` read correctly either way.
+
+Everything else must follow the page direction. Do **not** put `dir="auto"`
+on event titles or descriptions: it lets each string pick its own direction,
+so an English title inside the Hebrew layout stays left-aligned while its
+neighbours are right-aligned, and rows look ragged after a language switch.
+`.pool-cell` is flipped explicitly for the same reason — `.pool-grid` above
+it is pinned `ltr`, and the cells would otherwise inherit that.
+
 The dashboard is laid out as a fixed 16:9 "stage" (`#stage` in
 `index.html`, sized by `sizeStage()` in `js/dashboard.js`), so it matches a
 16:9 wall TV pixel-for-pixel and letterboxes — rather than stretching —

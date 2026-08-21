@@ -311,6 +311,11 @@ body.closed #dashboard { display: none; }
   align-items: center;
   padding: 0 calc(var(--uw) * 0.4);
   min-width: 0;
+  /* Pinned left in both languages: this line is the heading for the pool
+     box directly beneath it, which sits on the left of the card row. In
+     Hebrew it would otherwise swing to the right edge, away from what it
+     describes. */
+  direction: ltr;
 }
 #now-strip > * + * { margin-left: calc(var(--uw) * 1.2); }
 /* Deliberately small: a one-line status glance, not a headline. The hero
@@ -368,7 +373,10 @@ body.closed #dashboard { display: none; }
 .pool-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 0.82fr;
+  /* Bay carries the same five lines as the reef cells plus its own divider
+     padding, so it needs nearly the same height — the reef row has slack
+     to spare, Bay does not. */
+  grid-template-rows: 1fr 0.95fr;
   gap: calc(var(--uh) * 1) calc(var(--uw) * 1);
   height: 100%;
   min-height: 0;
@@ -520,34 +528,44 @@ body.closed #dashboard { display: none; }
   display: block;
 }
 .event-body { min-width: 0; flex: 1 1 auto; overflow: hidden; }
-.event-body > * + * { margin-top: calc(var(--uh) * 0.2); }
+.event-body > * + * { margin-top: calc(var(--uh) * 0.25); }
+/* When it happens: a stacked block at the far end of the row (opposite the
+   thumbnail), so the description keeps a readable column instead of
+   stretching across the card. Sized to be legible from the reception desk. */
 .event-when {
   flex-shrink: 0;
-  display: inline-flex;
-  align-items: baseline;
+  width: calc(var(--uw) * 8.4);
+  text-align: center;
   background: var(--aqua);
   color: var(--on-badge);
-  border-radius: calc(var(--uw) * 99);
-  padding: calc(var(--uh) * 0.3) calc(var(--uw) * 0.75);
-  direction: ltr;              /* "THU 21.08 20:00" reads LTR in both languages */
+  border-radius: calc(var(--uw) * 0.7);
+  padding: calc(var(--uh) * 0.6) calc(var(--uw) * 0.5);
+  direction: ltr;              /* "21.08" / "20:00" read LTR in both languages */
 }
-/* pinned ltr, so this margin needs no RTL counterpart */
-.event-when > * + * { margin-left: calc(var(--uw) * 0.55); }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
-  font-size: calc(var(--uw) * 0.98);
+  font-size: calc(var(--uw) * 1.15);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.event-dom,
-.event-time {
-  font-size: calc(var(--uw) * 1.08);
+.event-dom {
+  font-size: calc(var(--uw) * 1.5);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.2;
   font-variant-numeric: tabular-nums;
 }
-.event-time { opacity: 0.8; }
+.event-time {
+  font-size: calc(var(--uw) * 1.42);
+  font-weight: 800;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.82;
+}
 .event-name {
   font-size: calc(var(--uw) * 1.45);
   font-weight: 700;
@@ -587,18 +605,28 @@ body.closed #dashboard { display: none; }
 }
 
 /* ---- Hebrew text flow -----------------------------------------------------
- * #hero, #zones and .spots-boxes above are pinned to direction:ltr so
- * nothing changes screen position when the language rotates. These rules
- * re-enable right-to-left flow for the *text* inside each pinned panel —
- * badge/name order, label order, right-aligned headings — without touching
- * the panels' own position in their parent. (.spots-boxes stays ltr always
- * — its own explicit rule holds regardless of what .hero-spots inherits
- * here, since a rule targeting an element directly beats inheritance.) */
+ * #hero, #zones, .pool-grid and .spots-boxes above are pinned to
+ * direction:ltr so nothing changes screen position when the language
+ * rotates. These rules re-enable right-to-left flow for the *text* inside
+ * each pinned panel — badge/name order, label order, right-aligned
+ * headings — without touching the panels' own position in their parent.
+ *
+ * In Hebrew EVERY text block must be RTL and right-aligned; a block left
+ * on ltr inside an rtl card is what makes rows look ragged. .pool-cell is
+ * listed explicitly because .pool-grid above it is pinned ltr (to keep
+ * Reef Left physically left), and the cells would otherwise inherit that
+ * and left-align their Hebrew text.
+ *
+ * Deliberately NOT flipped: .spots-boxes and .event-when (pinned ltr so
+ * "21.08"/"20:00" and the Left/Right boxes read correctly either way), and
+ * #now-strip — its label is the heading for the pool box below it, which
+ * sits on the left, so the strip stays left-anchored in both languages. */
 html[dir="rtl"] .hero-text,
 html[dir="rtl"] .hero-spots,
-html[dir="rtl"] #now-strip,
 html[dir="rtl"] .zone-card,
-html[dir="rtl"] #events-card {
+html[dir="rtl"] .pool-cell,
+html[dir="rtl"] #events-card,
+html[dir="rtl"] .event-body {
   direction: rtl;
 }
 
@@ -610,8 +638,6 @@ html[dir="rtl"] #events-card {
 html[dir="rtl"] .weather > * + *,
 html[dir="rtl"] .hero-topline > * + *,
 html[dir="rtl"] .hero-main > * + *,
-html[dir="rtl"] #now-strip > * + *,
-html[dir="rtl"] .now-body > * + *,
 html[dir="rtl"] .zone-program > * + *,
 html[dir="rtl"] .event-row > * + * {
   margin-left: 0;
@@ -619,7 +645,5 @@ html[dir="rtl"] .event-row > * + * {
 html[dir="rtl"] .weather > * + * { margin-right: calc(var(--uw) * 1); }
 html[dir="rtl"] .hero-topline > * + * { margin-right: calc(var(--uw) * 1.2); }
 html[dir="rtl"] .hero-main > * + * { margin-right: calc(var(--uw) * 1.4); }
-html[dir="rtl"] #now-strip > * + * { margin-right: calc(var(--uw) * 1.2); }
-html[dir="rtl"] .now-body > * + * { margin-right: calc(var(--uw) * 0.9); }
 html[dir="rtl"] .zone-program > * + * { margin-right: calc(var(--uw) * 0.9); }
-html[dir="rtl"] .event-row > * + * { margin-right: calc(var(--uw) * 0.7); }
+html[dir="rtl"] .event-row > * + * { margin-right: calc(var(--uw) * 0.8); }

@@ -445,45 +445,52 @@
       }
     }
 
+    // Title with its description underneath. No dir="auto" here: letting
+    // each string pick its own direction meant an English title inside the
+    // Hebrew layout stayed left-aligned while everything around it was
+    // right-aligned, which is what made rows look ragged after a language
+    // switch. These inherit the page direction instead, so the whole card
+    // is RTL/right-aligned in Hebrew and LTR/left-aligned in English.
     const body = document.createElement("div");
     body.className = "event-body";
 
-    const when = document.createElement("span");
-    when.className = "event-when";
-    const dow = document.createElement("span");
-    dow.className = "event-dow";
-    const d = new Date(`${e.date}T12:00:00`);
-    dow.textContent =
-      e.date === todayS ? T.today :
-      e.date === tomorrowS ? T.tomorrow :
-      T.dow(d);
-    const dom = document.createElement("span");
-    dom.className = "event-dom";
-    dom.textContent = iso(`${pad(d.getDate())}.${pad(d.getMonth() + 1)}`);
-    when.append(dow, dom);
-    if (e.time) {
-      const time = document.createElement("span");
-      time.className = "event-time";
-      time.textContent = iso(e.time);
-      when.appendChild(time);
-    }
-
     const name = document.createElement("div");
     name.className = "event-name";
-    name.dir = "auto"; // Hebrew titles lay out correctly
     name.textContent = e.title;
-
-    body.append(when, name);
+    body.appendChild(name);
 
     if (e.details) {
       const detail = document.createElement("div");
       detail.className = "event-detail";
-      detail.dir = "auto";
       detail.textContent = e.details;
       body.appendChild(detail);
     }
-
     row.appendChild(body);
+
+    // When it happens, stacked at the far end of the row: day, date, time.
+    // Sits opposite the thumbnail so the description keeps a readable
+    // column instead of stretching the width of the card.
+    const when = document.createElement("div");
+    when.className = "event-when";
+    const d = new Date(`${e.date}T12:00:00`);
+    const dow = document.createElement("div");
+    dow.className = "event-dow";
+    dow.textContent =
+      e.date === todayS ? T.today :
+      e.date === tomorrowS ? T.tomorrow :
+      T.dow(d);
+    const dom = document.createElement("div");
+    dom.className = "event-dom";
+    dom.textContent = iso(`${pad(d.getDate())}.${pad(d.getMonth() + 1)}`);
+    when.append(dow, dom);
+    if (e.time) {
+      const time = document.createElement("div");
+      time.className = "event-time";
+      time.textContent = iso(e.time);
+      when.appendChild(time);
+    }
+    row.appendChild(when);
+
     return row;
   }
 
