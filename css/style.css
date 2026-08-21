@@ -129,8 +129,8 @@ body.closed #dashboard { display: none; }
  * instead of the screen clipping the cards. Keep it. */
 #dashboard {
   display: grid;
-  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 5) minmax(0, 1fr) calc(var(--uh) * 3);
-  gap: calc(var(--uh) * 1.7);
+  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 3) minmax(0, 1fr) calc(var(--uh) * 2.5);
+  gap: calc(var(--uh) * 1.5);
   height: 100%;
   min-height: 0;
   padding: calc(var(--uh) * 2.5) calc(var(--uw) * 2.5);
@@ -313,10 +313,11 @@ body.closed #dashboard { display: none; }
   min-width: 0;
 }
 #now-strip > * + * { margin-left: calc(var(--uw) * 1.2); }
-/* Deliberately modest: a one-line status glance, not a headline — the
-   hero above it is what the screen is actually for. */
+/* Deliberately small: a one-line status glance, not a headline. The hero
+   above is what the screen is for, and the height saved here goes to the
+   events card below. */
 .now-label {
-  font-size: calc(var(--uw) * 1.25);
+  font-size: calc(var(--uw) * 1.02);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 800;
@@ -331,10 +332,10 @@ body.closed #dashboard { display: none; }
   color: var(--ink-2);
 }
 .now-body > * + * { margin-left: calc(var(--uw) * 0.9); }
-.now-body.is-idle { color: var(--ink-3); font-size: calc(var(--uw) * 1.3); font-weight: 600; }
-.now-body .lvl-badge { font-size: calc(var(--uw) * 1); padding: calc(var(--uh) * 0.25) calc(var(--uw) * 0.8); }
+.now-body.is-idle { color: var(--ink-3); font-size: calc(var(--uw) * 1.05); font-weight: 600; }
+.now-body .lvl-badge { font-size: calc(var(--uw) * 0.85); padding: calc(var(--uh) * 0.2) calc(var(--uw) * 0.7); }
 .now-name {
-  font-size: calc(var(--uw) * 1.35);
+  font-size: calc(var(--uw) * 1.12);
   font-weight: 700;
   color: var(--ink);
   white-space: nowrap;
@@ -342,7 +343,7 @@ body.closed #dashboard { display: none; }
   text-overflow: ellipsis;
 }
 .now-meta {
-  font-size: calc(var(--uw) * 1.3);
+  font-size: calc(var(--uw) * 1.08);
   font-weight: 600;
   color: var(--ink-2);
   font-variant-numeric: tabular-nums;
@@ -459,12 +460,15 @@ body.closed #dashboard { display: none; }
    must fit the card, and letting the font decide made that depend on
    whether the webfont loaded (the fallback and Assistant have different
    metrics, so it fit in testing and could still clip on the TV).
-   3 x 8.4 = 25.2 units, against ~25.6 available. Inner text is
+   3 x 9.35 = 28 units against ~29 available. The ~1 unit of slack is
+   deliberate: the card title above is font-sized, so a webfont with taller
+   metrics than the fallback shrinks the list, and without slack the third
+   row would clip on the TV but not in testing. Inner text is
    single-line-clamped, so a fixed height never truncates mid-paragraph. */
 .event-row {
   display: flex;
   align-items: center;
-  height: calc(var(--uh) * 8.4);
+  height: calc(var(--uh) * 9.35);
   padding: calc(var(--uh) * 0.42) 0;
   min-width: 0;
   overflow: hidden;
@@ -474,9 +478,9 @@ body.closed #dashboard { display: none; }
 #events-rotating .event-row:first-child { border-top: 1px solid rgba(36, 61, 68, 0.10); }
 .event-thumb {
   flex-shrink: 0;
-  width: calc(var(--uw) * 4.6);
-  height: calc(var(--uh) * 5.4);
-  border-radius: calc(var(--uw) * 0.6);
+  width: calc(var(--uw) * 6.2);
+  height: calc(var(--uh) * 7.2);
+  border-radius: calc(var(--uw) * 0.7);
   overflow: hidden;
   background: rgba(36, 61, 68, 0.07);
 }
@@ -502,21 +506,21 @@ body.closed #dashboard { display: none; }
 .event-when > * + * { margin-left: calc(var(--uw) * 0.55); }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
-  font-size: calc(var(--uw) * 0.88);
+  font-size: calc(var(--uw) * 0.98);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 .event-dom,
 .event-time {
-  font-size: calc(var(--uw) * 0.98);
+  font-size: calc(var(--uw) * 1.08);
   font-weight: 800;
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
 }
 .event-time { opacity: 0.8; }
 .event-name {
-  font-size: calc(var(--uw) * 1.2);
+  font-size: calc(var(--uw) * 1.38);
   font-weight: 700;
   line-height: 1.15;
   min-width: 0;
@@ -526,7 +530,7 @@ body.closed #dashboard { display: none; }
 }
 /* the extra context — smaller by design, it's read up close */
 .event-detail {
-  font-size: calc(var(--uw) * 0.92);
+  font-size: calc(var(--uw) * 1.05);
   font-weight: 400;
   line-height: 1.2;
   color: var(--ink-2);
