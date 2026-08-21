@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T16:30:27.893Z",
+  "updatedAt": "2026-08-21T16:35:21.345Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -351,11 +351,11 @@
           "name": "New T1+B1",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -497,7 +497,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 12
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -715,7 +715,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
