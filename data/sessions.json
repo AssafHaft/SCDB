@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:35:16.222Z",
+  "updatedAt": "2026-08-21T13:40:18.957Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -286,7 +286,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "sideNames": {
@@ -294,7 +294,7 @@
             "left": "2B Or Not To 2B (B2+B3) - Barrel Fest"
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -410,7 +410,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -425,7 +425,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -541,7 +541,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 9
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -568,8 +568,8 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 8
+            "right": 5,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -626,7 +626,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -743,7 +743,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 16
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -800,8 +800,8 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 15,
-            "left": 6
+            "right": 14,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -931,7 +931,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 13
           },
           "disabled": false,
