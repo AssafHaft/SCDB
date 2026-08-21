@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T07:25:17.131Z",
+  "updatedAt": "2026-08-21T07:30:24.273Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -118,7 +118,7 @@
             "bay": 10
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -129,7 +129,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -200,11 +200,11 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -323,7 +323,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 1
           },
           "disabled": false,
@@ -438,7 +438,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 1,
             "left": 2
           },
           "disabled": false,
@@ -554,8 +554,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 12
+            "right": 7,
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -598,7 +598,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -932,7 +932,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
