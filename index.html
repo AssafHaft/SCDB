@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=14" />
+  <link rel="stylesheet" href="css/style.css?v=15" />
 </head>
 <body>
   <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
@@ -70,29 +70,34 @@
       <span class="now-body" id="now-body">—</span>
     </section>
 
-    <!-- Physical order, viewer's perspective: Reef Left | Reef Right | Bay.
-         #zones is direction-pinned in CSS so this never mirrors in RTL. -->
+    <!-- The pool lives in one box: Reef Left and Reef Right side by side as
+         they are in the water, Bay spanning underneath them. .pool-grid is
+         direction-pinned in CSS so left/right never mirror in RTL. -->
     <section id="zones">
-      <div class="zone-card" id="zone-left">
-        <div class="zone-title">Reef Left</div>
-        <div class="zone-status"></div>
-        <div class="zone-program"></div>
-        <div class="zone-places"></div>
-        <div class="zone-time"></div>
-      </div>
-      <div class="zone-card" id="zone-right">
-        <div class="zone-title">Reef Right</div>
-        <div class="zone-status"></div>
-        <div class="zone-program"></div>
-        <div class="zone-places"></div>
-        <div class="zone-time"></div>
-      </div>
-      <div class="zone-card" id="zone-bay">
-        <div class="zone-title">The Bay</div>
-        <div class="zone-status"></div>
-        <div class="zone-program"></div>
-        <div class="zone-places"></div>
-        <div class="zone-time"></div>
+      <div class="zone-card" id="pool-box">
+        <div class="pool-grid">
+          <div class="pool-cell" id="zone-left">
+            <div class="zone-title">Reef Left</div>
+            <div class="zone-status"></div>
+            <div class="zone-program"></div>
+            <div class="zone-places"></div>
+            <div class="zone-time"></div>
+          </div>
+          <div class="pool-cell" id="zone-right">
+            <div class="zone-title">Reef Right</div>
+            <div class="zone-status"></div>
+            <div class="zone-program"></div>
+            <div class="zone-places"></div>
+            <div class="zone-time"></div>
+          </div>
+          <div class="pool-cell" id="zone-bay">
+            <div class="zone-title">BAY</div>
+            <div class="zone-status"></div>
+            <div class="zone-program"></div>
+            <div class="zone-places"></div>
+            <div class="zone-time"></div>
+          </div>
+        </div>
       </div>
       <!-- Today's event stays pinned; the rest roll through on a slow
            crossfade so the week ahead keeps moving without distracting. -->
@@ -119,8 +124,8 @@
        unlabelled: it's for staff, not for customers reading the wall. -->
   <button id="fs-toggle" type="button" aria-label="Toggle full screen"></button>
 
-  <script src="js/config.js?v=14"></script>
-  <script src="js/strings.js?v=14"></script>
-  <script src="js/dashboard.js?v=14"></script>
+  <script src="js/config.js?v=15"></script>
+  <script src="js/strings.js?v=15"></script>
+  <script src="js/dashboard.js?v=15"></script>
 </body>
 </html>

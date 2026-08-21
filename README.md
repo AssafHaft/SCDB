@@ -24,7 +24,9 @@ So the layout is deliberately lopsided:
   a program title is never ellipsised away on the wall.
 - **The current session gets one quiet line** (`#now-strip`). Visible, never
   competing.
-- **Zone cards** are the detail layer underneath.
+- **The pool sits in one compact box** (`#pool-box`): Reef Left and Reef
+  Right side by side as they are in the water, Bay spanning underneath.
+  It's a status readout, so it takes about a third of the width.
 - **Upcoming Events** is the widest card in that row and carries thumbnails
   (hot-linked from the club's media host) plus a line of detail. Today's
   event is pinned in the top row; the rest of the week rolls through the
@@ -117,12 +119,17 @@ language, so adding a third language is a third block there, nothing else.
 Session names themselves (e.g. "T-Time Pro Carves") are the park's own
 naming and stay in English in both languages.
 
-Layout is direction-pinned where it matters: the reef-side cards and the
-spot boxes name real pool sides, so `#hero`, `#zones` and `.spots-boxes` in
-`css/style.css` are locked to `direction: ltr` regardless of language —
-only the text inside re-flows for Hebrew. If you rename or restructure
-those sections, keep that pin or the customer-reported "Right/Left on the
-wrong side" bug comes back.
+Layout is direction-pinned where it matters: the reef-side cells and the
+spot boxes name real pool sides, so `#hero`, `#zones`, `.pool-grid` and
+`.spots-boxes` in `css/style.css` are locked to `direction: ltr` regardless
+of language — only the text inside re-flows for Hebrew. If you rename or
+restructure those sections, keep that pin or the customer-reported
+"Right/Left on the wrong side" bug comes back.
+
+The pool cells are laid out by `.pool-grid` (2 columns, Bay spanning both).
+`renderZone()` toggles only the `is-live` / `is-full` / `is-idle` class on
+them — it must never assign `className`, which would strip the structural
+`.pool-cell` class and drop the cell out of the grid.
 
 The dashboard is laid out as a fixed 16:9 "stage" (`#stage` in
 `index.html`, sized by `sizeStage()` in `js/dashboard.js`), so it matches a

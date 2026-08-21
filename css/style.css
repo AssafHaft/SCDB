@@ -129,8 +129,8 @@ body.closed #dashboard { display: none; }
  * instead of the screen clipping the cards. Keep it. */
 #dashboard {
   display: grid;
-  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 3) minmax(0, 1fr) calc(var(--uh) * 2.5);
-  gap: calc(var(--uh) * 1.5);
+  grid-template-rows: calc(var(--uh) * 10) calc(var(--uh) * 36) calc(var(--uh) * 2.2) minmax(0, 1fr) calc(var(--uh) * 2.2);
+  gap: calc(var(--uh) * 1.4);
   height: 100%;
   min-height: 0;
   padding: calc(var(--uh) * 2.5) calc(var(--uw) * 2.5);
@@ -317,7 +317,7 @@ body.closed #dashboard { display: none; }
    above is what the screen is for, and the height saved here goes to the
    events card below. */
 .now-label {
-  font-size: calc(var(--uw) * 1.02);
+  font-size: calc(var(--uw) * 0.85);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 800;
@@ -332,10 +332,10 @@ body.closed #dashboard { display: none; }
   color: var(--ink-2);
 }
 .now-body > * + * { margin-left: calc(var(--uw) * 0.9); }
-.now-body.is-idle { color: var(--ink-3); font-size: calc(var(--uw) * 1.05); font-weight: 600; }
-.now-body .lvl-badge { font-size: calc(var(--uw) * 0.85); padding: calc(var(--uh) * 0.2) calc(var(--uw) * 0.7); }
+.now-body.is-idle { color: var(--ink-3); font-size: calc(var(--uw) * 0.9); font-weight: 600; }
+.now-body .lvl-badge { font-size: calc(var(--uw) * 0.72); padding: calc(var(--uh) * 0.15) calc(var(--uw) * 0.6); }
 .now-name {
-  font-size: calc(var(--uw) * 1.12);
+  font-size: calc(var(--uw) * 0.95);
   font-weight: 700;
   color: var(--ink);
   white-space: nowrap;
@@ -343,7 +343,7 @@ body.closed #dashboard { display: none; }
   text-overflow: ellipsis;
 }
 .now-meta {
-  font-size: calc(var(--uw) * 1.08);
+  font-size: calc(var(--uw) * 0.92);
   font-weight: 600;
   color: var(--ink-2);
   font-variant-numeric: tabular-nums;
@@ -353,14 +353,41 @@ body.closed #dashboard { display: none; }
 /* ---- zone columns -------------------------------------------------------- */
 #zones {
   display: grid;
-  /* the events card earns extra width — it carries thumbnails and detail */
-  grid-template-columns: 1fr 1fr 1fr 1.85fr;
+  /* Two boxes now: the whole pool on the left, events on the right. The
+     pool is a compact status readout; events carries thumbnails and
+     detail and takes the rest of the width. */
+  grid-template-columns: 1fr 2.5fr;
   gap: calc(var(--uw) * 1.6);
   min-height: 0;   /* let the row shrink rather than overflow the screen */
-  /* Reef Left | Reef Right | Bay | Events always in that physical order,
-     regardless of language — see the file header note. */
+  /* Pool box then events, in that physical order regardless of language —
+     see the file header note. */
   direction: ltr;
 }
+
+/* ---- pool box: Reef Left | Reef Right, with Bay spanning underneath ----- */
+.pool-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 0.82fr;
+  gap: calc(var(--uh) * 1) calc(var(--uw) * 1);
+  height: 100%;
+  min-height: 0;
+  /* Left cell stays physically left, matching the water — never mirrors */
+  direction: ltr;
+}
+#zone-bay { grid-column: 1 / -1; }
+.pool-cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.pool-cell > * + * { margin-top: calc(var(--uh) * 0.25); }
+.pool-cell > .zone-places { margin-top: auto; }
+/* hairlines instead of three separate cards — one box, three readouts */
+#zone-right { padding-left: calc(var(--uw) * 1); border-left: 1px solid var(--card-edge); }
+#zone-bay { padding-top: calc(var(--uh) * 1); border-top: 1px solid var(--card-edge); }
 .zone-card {
   background: var(--card);
   border: 1px solid var(--card-edge);
@@ -374,23 +401,25 @@ body.closed #dashboard { display: none; }
 }
 .zone-card > * + * { margin-top: calc(var(--uh) * 0.9); }
 .zone-title {
-  font-size: calc(var(--uw) * 1.5);
+  font-size: calc(var(--uw) * 1.05);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   color: var(--teal);
   font-weight: 800;
 }
-.zone-status { font-size: calc(var(--uw) * 1.3); font-weight: 600; color: var(--ink-3); }
+/* the events card keeps a full-size heading; the pool cells are compact */
+#events-title { font-size: calc(var(--uw) * 1.5); letter-spacing: 0.12em; }
+.zone-status { font-size: calc(var(--uw) * 0.85); font-weight: 600; color: var(--ink-3); }
 .is-live .zone-status { color: var(--good); }
 .is-full .zone-status { color: var(--bad); }
 .zone-program {
   display: flex;
   align-items: center;
-  min-height: calc(var(--uh) * 5);
+  min-height: calc(var(--uh) * 3.4);
 }
-.zone-program > * + * { margin-left: calc(var(--uw) * 0.9); }
+.zone-program > * + * { margin-left: calc(var(--uw) * 0.6); }
 .zone-name {
-  font-size: calc(var(--uw) * 1.5);
+  font-size: calc(var(--uw) * 0.98);
   font-weight: 600;
   line-height: 1.15;
   display: -webkit-box;
@@ -399,28 +428,28 @@ body.closed #dashboard { display: none; }
   overflow: hidden;
 }
 .lvl-badge {
-  font-size: calc(var(--uw) * 1.3);
+  font-size: calc(var(--uw) * 0.92);
   font-weight: 800;
-  padding: calc(var(--uh) * 0.3) calc(var(--uw) * 1);
+  padding: calc(var(--uh) * 0.22) calc(var(--uw) * 0.7);
   border-radius: calc(var(--uw) * 99);          /* brand pill */
   color: var(--on-badge);
   background: var(--aqua);
   flex-shrink: 0;
 }
-/* margin-top:auto pins this to the card's bottom — must out-specify the
-   `.zone-card > * + *` spacing rule above, hence the parent in the selector */
-.zone-card > .zone-places {
-  font-size: calc(var(--uw) * 2.2);
+/* margin-top:auto pins this to the cell's bottom — must out-specify the
+   `.pool-cell > * + *` spacing rule, hence the parent in the selector */
+.pool-cell > .zone-places {
+  font-size: calc(var(--uw) * 1.45);
   font-weight: 700;
   margin-top: auto;
 }
 .is-full .zone-places { color: var(--bad); }
 .is-live .zone-places { color: var(--ink); }
-.is-idle .zone-places { color: var(--ink-2); font-size: calc(var(--uw) * 1.5); font-weight: 600; }
+.is-idle .zone-places { color: var(--ink-2); font-size: calc(var(--uw) * 1); font-weight: 600; }
 /* session times carry the "can I make it?" answer — sized and coloured to
    be read, not squinted at */
 .zone-time {
-  font-size: calc(var(--uw) * 1.7);
+  font-size: calc(var(--uw) * 1.05);
   font-weight: 700;
   color: var(--ink-2);
   font-variant-numeric: tabular-nums;
@@ -460,7 +489,7 @@ body.closed #dashboard { display: none; }
    must fit the card, and letting the font decide made that depend on
    whether the webfont loaded (the fallback and Assistant have different
    metrics, so it fit in testing and could still clip on the TV).
-   3 x 9.35 = 28 units against ~29 available. The ~1 unit of slack is
+   3 x 9.8 = 29.4 units against ~30.5 available. The ~1 unit of slack is
    deliberate: the card title above is font-sized, so a webfont with taller
    metrics than the fallback shrinks the list, and without slack the third
    row would clip on the TV but not in testing. Inner text is
@@ -468,7 +497,7 @@ body.closed #dashboard { display: none; }
 .event-row {
   display: flex;
   align-items: center;
-  height: calc(var(--uh) * 9.35);
+  height: calc(var(--uh) * 9.8);
   padding: calc(var(--uh) * 0.42) 0;
   min-width: 0;
   overflow: hidden;
@@ -478,8 +507,8 @@ body.closed #dashboard { display: none; }
 #events-rotating .event-row:first-child { border-top: 1px solid rgba(36, 61, 68, 0.10); }
 .event-thumb {
   flex-shrink: 0;
-  width: calc(var(--uw) * 6.2);
-  height: calc(var(--uh) * 7.2);
+  width: calc(var(--uw) * 6.6);
+  height: calc(var(--uh) * 7.7);
   border-radius: calc(var(--uw) * 0.7);
   overflow: hidden;
   background: rgba(36, 61, 68, 0.07);
@@ -520,7 +549,7 @@ body.closed #dashboard { display: none; }
 }
 .event-time { opacity: 0.8; }
 .event-name {
-  font-size: calc(var(--uw) * 1.38);
+  font-size: calc(var(--uw) * 1.45);
   font-weight: 700;
   line-height: 1.15;
   min-width: 0;
@@ -530,7 +559,7 @@ body.closed #dashboard { display: none; }
 }
 /* the extra context — smaller by design, it's read up close */
 .event-detail {
-  font-size: calc(var(--uw) * 1.05);
+  font-size: calc(var(--uw) * 1.12);
   font-weight: 400;
   line-height: 1.2;
   color: var(--ink-2);

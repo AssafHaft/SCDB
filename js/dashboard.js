@@ -208,11 +208,19 @@
     const places = card.querySelector(".zone-places");
     const time = card.querySelector(".zone-time");
 
+    // Toggle only the state class — these cells carry structural classes
+    // (.pool-cell) and a grid position, so overwriting className would
+    // strip their layout out from under them.
+    const setState = (s) => {
+      card.classList.remove("is-live", "is-full", "is-idle");
+      card.classList.add(s);
+    };
+
     if (current) {
       const n = current.places ? current.places[sideKey] : undefined;
       const isFull = n === 0;
       const name = (current.sideNames && current.sideNames[sideKey]) || current.name;
-      card.className = "zone-card " + (isFull ? "is-full" : "is-live");
+      setState(isFull ? "is-full" : "is-live");
       status.textContent = isFull ? `● ${T.inSession} · ${T.full}` : `● ${T.inSession}`;
       program.innerHTML =
         `<span class="lvl-badge ${levelClass(current.level)}">${current.level}</span>` +
@@ -221,7 +229,7 @@
       time.textContent = iso(`${current.start}–${current.end}`);
     } else if (next) {
       const n = next.places ? next.places[sideKey] : undefined;
-      card.className = "zone-card is-idle";
+      setState("is-idle");
       status.textContent = `○ ${T.noSession}`;
       program.innerHTML =
         `<span class="lvl-badge ${levelClass(next.level)}">${next.level}</span>` +
@@ -229,7 +237,7 @@
       places.textContent = n == null ? "" : placesText(n, next.level);
       time.textContent = `${T.nextLesson} ${iso(next.start)}`;
     } else {
-      card.className = "zone-card is-idle";
+      setState("is-idle");
       status.textContent = `○ ${T.noSession}`;
       program.textContent = "—";
       places.textContent = "";
