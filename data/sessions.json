@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T07:05:17.545Z",
+  "updatedAt": "2026-08-21T07:10:20.544Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -129,7 +129,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 5
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -310,7 +310,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 15
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -323,8 +323,8 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 0
+            "right": 6,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -337,7 +337,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 10
           },
           "disabled": false,
@@ -453,7 +453,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 9
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -598,7 +598,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -715,7 +715,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 17
+            "left": 15
           },
           "disabled": false,
           "open": true,
