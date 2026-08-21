@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T16:05:16.365Z",
+  "updatedAt": "2026-08-21T16:10:21.838Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -310,7 +310,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -597,7 +597,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 11
           },
           "disabled": false,
@@ -625,8 +625,8 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 9
+            "right": 5,
+            "left": 10
           },
           "disabled": false,
           "open": true,
