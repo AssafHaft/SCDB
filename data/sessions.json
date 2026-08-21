@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T12:30:24.444Z",
+  "updatedAt": "2026-08-21T12:35:18.669Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -286,8 +286,8 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 1
+            "right": 2,
+            "left": 0
           },
           "sideNames": {
             "right": "2B Or Not To Be - Barrel Fest",
@@ -310,7 +310,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -425,7 +425,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 7
+            "bay": 5
           },
           "disabled": false,
           "open": true,
@@ -611,7 +611,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
