@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T12:40:17.817Z",
+  "updatedAt": "2026-08-21T12:45:19.992Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -286,7 +286,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 0
           },
           "sideNames": {
@@ -310,7 +310,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -597,7 +597,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
@@ -611,7 +611,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
@@ -729,7 +729,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
