@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T13:20:19.423Z",
+  "updatedAt": "2026-08-21T13:25:16.665Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -309,7 +309,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 10,
             "left": 10
           },
           "disabled": false,
@@ -381,7 +381,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -541,7 +541,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 9
           },
           "disabled": false,
           "open": true,
@@ -554,7 +554,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 10
           },
           "disabled": false,
@@ -625,8 +625,8 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 10
+            "right": 11,
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -672,7 +672,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 17
           },
           "disabled": false,
