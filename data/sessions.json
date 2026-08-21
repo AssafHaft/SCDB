@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T11:45:19.158Z",
+  "updatedAt": "2026-08-21T11:50:18.327Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -286,8 +286,8 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 2
+            "right": 4,
+            "left": 0
           },
           "sideNames": {
             "right": "2B Or Not To Be - Barrel Fest",
@@ -323,11 +323,11 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -338,7 +338,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -468,7 +468,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 9
+            "bay": 8
           },
           "disabled": false,
           "open": true,
@@ -483,10 +483,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -541,7 +541,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 13
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -555,7 +555,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -625,7 +625,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 11
           },
           "disabled": false,
@@ -858,7 +858,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 17
           },
           "disabled": false,
