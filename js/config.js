@@ -7,7 +7,7 @@ window.CONFIG = {
   // Languages to rotate between (keys of window.STRINGS) and how long each
   // stays on screen. A single-entry list disables rotation.
   languages: ["en", "he"],
-  languageIntervalSeconds: 30,
+  languageIntervalSeconds: 60,
 
   // Operating hours per weekday (0 = Sunday … 6 = Saturday), local time.
   // Outside these hours the dashboard shows the quiet "closed" screen.

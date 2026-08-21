@@ -105,9 +105,10 @@ Everything staff might need to change lives in **`js/config.js`**:
   club) to switch the display from "4 places left" to "8 of 12 in the water".
   Leave `null` to show the booking page's own wording.
 - `languages` / `languageIntervalSeconds` — the dashboard rotates through
-  these languages (keys into `window.STRINGS`, currently `en` and `he`),
-  wall-clock-timed so every TV switches in the same second. Set `languages`
-  to a single entry to stop rotating and stay on one language.
+  these languages (keys into `window.STRINGS`, currently `en` and `he`)
+  every 60 seconds, wall-clock-timed so every TV switches in the same
+  second. Set `languages` to a single entry to stop rotating and stay on
+  one language.
 - `showSignupCta` — the "Sign up at reception" line under the spot counts.
   Set `false` to hide it; reword it per language via `signupCta` in
   `js/strings.js` (e.g. if sign-ups move to an app or a different desk).

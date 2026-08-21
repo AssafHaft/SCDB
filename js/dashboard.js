@@ -370,21 +370,26 @@
     }
     body.className = "now-body";
 
-    const badge = document.createElement("span");
-    badge.className = "lvl-badge " + levelClass(current.level);
-    badge.textContent = current.level;
-
+    // Order is fixed and deliberate: heading, session name, when it runs,
+    // how long is left. The level badge used to sit between the heading and
+    // the name, which broke that reading order; the level is already shown
+    // in the pool cells directly below, so the strip does without it.
+    // Time and countdown are separate elements rather than one string, so
+    // each is its own bidi run and neither can reorder the other.
     const name = document.createElement("span");
     name.className = "now-name";
     name.textContent = current.name;
 
-    const meta = document.createElement("span");
-    meta.className = "now-meta";
-    const minsLeft = toMin(current.end) - nowMin(now);
-    meta.textContent =
-      `${iso(`${current.start}–${current.end}`)} · ${T.endsIn} ${minsLeft} ${T.min}`;
+    const time = document.createElement("span");
+    time.className = "now-time";
+    time.textContent = iso(`${current.start}–${current.end}`);
 
-    body.append(badge, name, meta);
+    const remain = document.createElement("span");
+    remain.className = "now-remain";
+    const minsLeft = toMin(current.end) - nowMin(now);
+    remain.textContent = `${T.endsIn} ${minsLeft} ${T.min}`;
+
+    body.append(name, time, remain);
   }
 
   // ---- "Upcoming Events" card ----------------------------------------------

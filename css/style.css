@@ -349,13 +349,15 @@ body.closed #dashboard { display: none; }
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.now-meta {
+.now-time,
+.now-remain {
   font-size: calc(var(--uw) * 0.92);
   font-weight: 600;
   color: var(--ink-2);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.now-remain { color: var(--ink-3); }
 
 /* ---- zone columns -------------------------------------------------------- */
 #zones {
@@ -548,9 +550,12 @@ body.closed #dashboard { display: none; }
   color: var(--on-badge);
   border-radius: calc(var(--uw) * 0.7);
   padding: calc(var(--uh) * 0.85) calc(var(--uw) * 0.8);
-  direction: ltr;              /* "21.08" / "20:00" read LTR in both languages */
+  /* Day, date, time in that reading order — so the block flows with the
+     language: left-to-right in English, right-to-left in Hebrew. The
+     numbers themselves are bidi-isolated at build time, so "22.08" and
+     "10:00" stay correct inside an RTL run. */
+  direction: ltr;
 }
-/* pinned ltr, so this margin needs no RTL counterpart */
 .event-when > * + * { margin-left: calc(var(--uw) * 0.85); }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
 .event-dow {
@@ -622,16 +627,22 @@ body.closed #dashboard { display: none; }
  * Reef Left physically left), and the cells would otherwise inherit that
  * and left-align their Hebrew text.
  *
- * Deliberately NOT flipped: .spots-boxes and .event-when (pinned ltr so
- * "21.08"/"20:00" and the Left/Right boxes read correctly either way), and
- * #now-strip — its label is the heading for the pool box below it, which
- * sits on the left, so the strip stays left-anchored in both languages. */
+ * Deliberately NOT flipped: .spots-boxes (pinned ltr so the Left/Right
+ * boxes keep matching the real pool sides), and #now-strip — its label is
+ * the heading for the pool box below it, which sits on the left, so the
+ * strip stays left-anchored in both languages. Its children are ordered
+ * explicitly in js/dashboard.js instead.
+ *
+ * .event-when IS flipped: day/date/time should read in language order
+ * (day first), and the numbers inside it are bidi-isolated so they stay
+ * correct within an RTL run. */
 html[dir="rtl"] .hero-text,
 html[dir="rtl"] .hero-spots,
 html[dir="rtl"] .zone-card,
 html[dir="rtl"] .pool-cell,
 html[dir="rtl"] #events-card,
-html[dir="rtl"] .event-body {
+html[dir="rtl"] .event-body,
+html[dir="rtl"] .event-when {
   direction: rtl;
 }
 
@@ -644,9 +655,11 @@ html[dir="rtl"] .weather > * + *,
 html[dir="rtl"] .hero-topline > * + *,
 html[dir="rtl"] .hero-main > * + *,
 html[dir="rtl"] .zone-program > * + *,
-html[dir="rtl"] .event-row > * + * {
+html[dir="rtl"] .event-row > * + *,
+html[dir="rtl"] .event-when > * + * {
   margin-left: 0;
 }
+html[dir="rtl"] .event-when > * + * { margin-right: calc(var(--uw) * 0.85); }
 html[dir="rtl"] .weather > * + * { margin-right: calc(var(--uw) * 1); }
 html[dir="rtl"] .hero-topline > * + * { margin-right: calc(var(--uw) * 1.2); }
 html[dir="rtl"] .hero-main > * + * { margin-right: calc(var(--uw) * 1.4); }
