@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:35:17.786Z",
+  "updatedAt": "2026-08-22T17:40:18.185Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -362,7 +362,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
@@ -405,7 +405,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 13
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -432,7 +432,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 12
           },
           "disabled": false,
@@ -446,7 +446,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 11,
             "left": 11
           },
           "disabled": false,
@@ -518,7 +518,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 11
           },
           "disabled": false,
@@ -562,7 +562,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 13
           },
           "disabled": false,
@@ -710,7 +710,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 9,
             "left": 16
           },
           "disabled": false,
@@ -738,7 +738,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 14,
             "left": 15
           },
           "disabled": false,
@@ -839,7 +839,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 12
+            "bay": 13
           },
           "disabled": false,
           "open": true,
