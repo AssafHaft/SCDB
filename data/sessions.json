@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T16:00:28.242Z",
+  "updatedAt": "2026-08-22T16:05:15.186Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -71,7 +71,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 0
+            "bay": 2
           },
           "disabled": false,
           "open": false,
@@ -315,7 +315,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
@@ -363,7 +363,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -549,7 +549,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -576,7 +576,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 9
           },
           "disabled": false,
@@ -663,8 +663,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
-            "left": 13
+            "right": 13,
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -678,7 +678,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -753,7 +753,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -912,7 +912,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 1
           },
           "disabled": false,
           "open": true,
@@ -926,7 +926,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
