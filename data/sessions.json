@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T16:15:20.867Z",
+  "updatedAt": "2026-08-23T16:20:18.653Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -361,7 +361,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 10
           },
           "disabled": false,
@@ -591,7 +591,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -606,7 +606,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 10
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -753,7 +753,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -865,7 +865,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 8
+            "left": 6
           },
           "disabled": false,
           "open": true,
