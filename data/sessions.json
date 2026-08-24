@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:45:18.638Z",
+  "updatedAt": "2026-08-24T11:50:18.278Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -156,7 +156,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
           "open": false,
@@ -169,7 +169,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 1
           },
           "disabled": false,
@@ -183,8 +183,8 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 6
+            "right": 6,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -446,7 +446,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -489,7 +489,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 8
           },
           "disabled": false,
           "open": true,
@@ -704,7 +704,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 9,
             "left": 9
           },
           "disabled": false,
@@ -777,7 +777,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -791,7 +791,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -862,7 +862,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 13,
             "left": 16
           },
           "disabled": false,
@@ -891,7 +891,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 14
           },
           "disabled": false,
