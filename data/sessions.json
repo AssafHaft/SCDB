@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:05:15.532Z",
+  "updatedAt": "2026-08-24T11:10:18.648Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,8 +169,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 3
+            "right": 3,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -272,7 +272,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -328,8 +328,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 1
+            "right": 5,
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -417,7 +417,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 13
           },
           "disabled": false,
@@ -431,8 +431,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 12
+            "right": 7,
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -474,7 +474,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -489,7 +489,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 8
+            "bay": 9
           },
           "disabled": false,
           "open": true,
@@ -515,7 +515,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 3
           },
           "disabled": false,
@@ -573,8 +573,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 0
+            "right": 11,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -849,7 +849,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
