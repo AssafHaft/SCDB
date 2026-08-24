@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T08:27:44.835Z",
+  "updatedAt": "2026-08-24T08:30:26.400Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -183,7 +183,7 @@
           "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 10
           },
           "disabled": false,
@@ -515,7 +515,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 4
           },
           "disabled": false,
