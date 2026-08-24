@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T06:55:17.584Z",
+  "updatedAt": "2026-08-24T07:00:31.861Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -73,7 +73,7 @@
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -112,7 +112,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 2
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -141,7 +141,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 8
+            "bay": 5
           },
           "disabled": false,
           "open": true,
@@ -199,7 +199,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -272,7 +272,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 9
           },
           "disabled": false,
           "open": true,
@@ -328,7 +328,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 6
           },
           "disabled": false,
@@ -629,7 +629,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 14
           },
           "disabled": false,
@@ -777,7 +777,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "disabled": false,
           "open": true,
