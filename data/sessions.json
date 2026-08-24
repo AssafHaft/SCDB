@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:10:21.544Z",
+  "updatedAt": "2026-08-24T13:15:22.366Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -214,10 +214,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -301,7 +301,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -315,10 +315,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -343,7 +343,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 7
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -375,7 +375,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
@@ -432,7 +432,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -459,7 +459,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 14
           },
           "disabled": false,
@@ -489,7 +489,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 6
           },
           "disabled": false,
           "open": true,
@@ -516,7 +516,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -704,7 +704,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 6,
             "left": 9
           },
           "disabled": false,
