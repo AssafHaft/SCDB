@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:25:16.664Z",
+  "updatedAt": "2026-08-24T11:30:25.285Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -144,7 +144,7 @@
             "bay": 1
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -159,7 +159,7 @@
             "bay": 1
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -169,7 +169,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 2
           },
           "disabled": false,
@@ -184,7 +184,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -328,8 +328,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 0
+            "right": 5,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -432,7 +432,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -460,7 +460,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -630,7 +630,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 14
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -663,7 +663,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
