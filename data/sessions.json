@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T11:17:33.989Z",
+  "updatedAt": "2026-08-25T11:20:19.814Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -154,10 +154,10 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -167,7 +167,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
@@ -212,7 +212,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 5
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -267,8 +267,8 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 9
+            "right": 3,
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -314,7 +314,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 8
           },
           "disabled": false,
@@ -501,7 +501,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 10
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -515,7 +515,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -544,7 +544,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 6
+            "left": 1
           },
           "disabled": false,
           "open": true,
