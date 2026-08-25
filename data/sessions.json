@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T10:30:26.380Z",
+  "updatedAt": "2026-08-25T10:35:18.650Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -141,7 +141,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 5
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -154,7 +154,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "left": 2
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -212,7 +212,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 7
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -239,8 +239,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 6
+            "right": 2,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -267,7 +267,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 13
           },
           "disabled": false,
@@ -301,7 +301,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -342,7 +342,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 4
           },
           "disabled": false,
@@ -385,7 +385,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -501,7 +501,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 11
+            "left": 9
           },
           "disabled": false,
           "open": true,
