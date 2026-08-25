@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T11:25:17.137Z",
+  "updatedAt": "2026-08-25T11:30:24.805Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -144,7 +144,7 @@
             "bay": 4
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -212,7 +212,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 1
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -267,7 +267,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 11
           },
           "disabled": false,
@@ -282,7 +282,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -357,7 +357,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -370,7 +370,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 11
           },
           "disabled": false,
@@ -501,7 +501,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -544,10 +544,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 7
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -651,7 +651,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -720,7 +720,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 8
           },
           "disabled": false,
