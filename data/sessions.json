@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T10:15:21.318Z",
+  "updatedAt": "2026-08-26T10:20:22.139Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -155,11 +155,11 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -228,7 +228,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -243,7 +243,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -271,7 +271,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -391,7 +391,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
@@ -419,7 +419,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 8
           },
           "disabled": false,
@@ -652,7 +652,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -858,7 +858,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 1,
             "left": 15
           },
           "disabled": false,
