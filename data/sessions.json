@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T11:15:20.855Z",
+  "updatedAt": "2026-08-26T11:20:23.647Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -243,7 +243,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -257,10 +257,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -271,7 +271,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -317,7 +317,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 12
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -335,7 +335,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 13
           },
           "disabled": false,
@@ -461,7 +461,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 15
           },
           "disabled": false,
@@ -710,10 +710,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -753,7 +753,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 9
+            "left": 8
           },
           "sideNames": {
             "right": "T-Times Pro Carves (New T2+T3)",
