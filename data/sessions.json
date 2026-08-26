@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T14:10:19.665Z",
+  "updatedAt": "2026-08-26T14:15:21.905Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -316,8 +316,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 9
+            "right": 6,
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -377,7 +377,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
@@ -405,7 +405,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 3
           },
           "disabled": false,
@@ -419,8 +419,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 7
+            "right": 5,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -462,7 +462,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -477,7 +477,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 4
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -638,7 +638,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -900,7 +900,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 13
           },
           "disabled": false,
