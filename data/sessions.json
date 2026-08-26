@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T19:55:17.167Z",
+  "updatedAt": "2026-08-26T20:00:33.273Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -419,8 +419,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 0,
-            "left": 2
+            "right": 1,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -520,8 +520,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 17
+            "right": 9,
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -680,7 +680,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
@@ -872,11 +872,11 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
