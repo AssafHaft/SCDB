@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T11:50:22.536Z",
+  "updatedAt": "2026-08-26T11:55:15.275Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -185,10 +185,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -271,10 +271,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -303,7 +303,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -316,7 +316,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
@@ -378,7 +378,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -406,7 +406,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -420,7 +420,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -477,7 +477,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -872,7 +872,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 0
           },
           "disabled": false,
