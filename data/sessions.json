@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T14:00:35.398Z",
+  "updatedAt": "2026-08-26T14:05:20.454Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -316,8 +316,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 8
+            "right": 5,
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -335,7 +335,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 13
           },
           "disabled": false,
@@ -419,7 +419,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -447,7 +447,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 6
           },
           "disabled": false,
@@ -461,7 +461,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 1,
             "left": 14
           },
           "disabled": false,
@@ -535,7 +535,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -591,7 +591,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -858,7 +858,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 14
           },
           "disabled": false,
@@ -900,7 +900,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 11,
             "left": 13
           },
           "disabled": false,
