@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T10:35:17.050Z",
+  "updatedAt": "2026-08-26T10:40:20.616Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,7 +169,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -213,8 +213,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 4
+            "right": 4,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -243,7 +243,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -271,7 +271,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -302,7 +302,7 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 8
           },
           "disabled": false,
@@ -364,7 +364,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -377,7 +377,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 9,
             "left": 12
           },
           "disabled": false,
@@ -391,7 +391,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 7,
             "left": 13
           },
           "disabled": false,
@@ -787,10 +787,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -845,7 +845,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 2
           },
           "disabled": false,
           "open": true,
