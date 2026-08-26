@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T15:55:38.654Z",
+  "updatedAt": "2026-08-26T16:00:34.431Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -317,7 +317,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -335,7 +335,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 13
           },
           "disabled": false,
@@ -405,11 +405,11 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -419,7 +419,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 3
           },
           "disabled": false,
@@ -535,7 +535,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -549,7 +549,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 13
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -637,7 +637,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 15
           },
           "disabled": false,
@@ -680,7 +680,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 12,
             "left": 12
           },
           "disabled": false,
@@ -787,10 +787,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
