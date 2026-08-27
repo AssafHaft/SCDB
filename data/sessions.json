@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T13:55:16.924Z",
+  "updatedAt": "2026-08-27T14:00:32.835Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -226,7 +226,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 10
           },
           "disabled": false,
@@ -268,8 +268,8 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 0
+            "right": 5,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -655,7 +655,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -784,7 +784,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 3
+            "bay": 4
           },
           "disabled": false,
           "open": true,
