@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T18:00:34.177Z",
+  "updatedAt": "2026-08-27T18:05:18.723Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -315,7 +315,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 6
           },
           "disabled": false,
@@ -416,7 +416,7 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 5
           },
           "disabled": false,
@@ -578,7 +578,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
@@ -626,7 +626,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -741,7 +741,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": true,
