@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T11:55:18.858Z",
+  "updatedAt": "2026-08-27T12:00:34.374Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -143,7 +143,7 @@
             "left": 1
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -198,8 +198,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 13
+            "right": 3,
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -226,7 +226,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 9
           },
           "disabled": false,
@@ -268,7 +268,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 7,
             "left": 1
           },
           "disabled": false,
@@ -358,11 +358,11 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -508,10 +508,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -713,7 +713,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 8
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -755,7 +755,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
