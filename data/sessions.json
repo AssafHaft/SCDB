@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T08:20:19.018Z",
+  "updatedAt": "2026-08-27T08:25:17.136Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -185,7 +185,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 3
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -226,7 +226,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 10
           },
           "disabled": false,
@@ -416,7 +416,7 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 7
           },
           "disabled": false,
@@ -430,7 +430,7 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 3
           },
           "sideNames": {
@@ -668,7 +668,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 12
           },
           "disabled": false,
@@ -755,7 +755,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
