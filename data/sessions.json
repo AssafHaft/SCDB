@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T09:20:18.143Z",
+  "updatedAt": "2026-08-27T09:25:17.207Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -112,10 +112,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -140,7 +140,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -198,7 +198,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 11
           },
           "disabled": false,
@@ -213,7 +213,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -241,7 +241,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -268,7 +268,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 0
           },
           "disabled": false,
@@ -302,7 +302,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -329,7 +329,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 0
           },
           "disabled": false,
