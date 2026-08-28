@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T09:55:17.625Z",
+  "updatedAt": "2026-08-28T10:00:34.063Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -194,7 +194,7 @@
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -205,10 +205,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -290,8 +290,8 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 8
+            "right": 4,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -367,7 +367,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 4
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -452,7 +452,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 0
           },
           "disabled": false,
@@ -783,12 +783,12 @@
         {
           "start": "17:00",
           "end": "18:00",
-          "level": "L6",
-          "name": "Ocean T (T3)",
+          "level": "L5",
+          "name": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 12
+            "right": 15,
+            "left": 15
           },
           "disabled": false,
           "open": true,
