@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T19:25:14.731Z",
+  "updatedAt": "2026-08-29T19:30:22.735Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -390,7 +390,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 16
+            "left": 15
           },
           "sideNames": {
             "right": "Galish team",
@@ -421,7 +421,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 13
           },
           "disabled": false,
@@ -449,8 +449,8 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 18
+            "right": 2,
+            "left": 15
           },
           "disabled": false,
           "open": true,
