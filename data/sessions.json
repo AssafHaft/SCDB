@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T11:50:18.277Z",
+  "updatedAt": "2026-08-29T11:55:15.756Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -229,10 +229,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -242,7 +242,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
@@ -258,10 +258,10 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -299,7 +299,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 1
           },
           "disabled": false,
@@ -333,7 +333,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -550,7 +550,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 15
           },
           "disabled": false,
@@ -625,7 +625,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 18
           },
           "disabled": false,
