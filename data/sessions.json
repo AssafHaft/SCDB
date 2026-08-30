@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T06:30:27.293Z",
+  "updatedAt": "2026-08-30T06:35:17.397Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -71,7 +71,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 12
+            "left": 11
           },
           "sideNames": {
             "right": "Galish team",
@@ -232,7 +232,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -259,8 +259,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 18,
-            "left": 16
+            "right": 17,
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -320,7 +320,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 14
           },
           "disabled": false,
@@ -742,7 +742,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 4
+            "bay": 5
           },
           "disabled": false,
           "open": true,
