@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T13:25:17.791Z",
+  "updatedAt": "2026-08-30T13:30:24.719Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -231,8 +231,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 6
+            "right": 10,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -306,7 +306,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 17
           },
           "disabled": false,
@@ -334,7 +334,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 13
           },
           "disabled": false,
@@ -363,7 +363,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -461,7 +461,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -533,7 +533,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 6
           },
           "disabled": false,
@@ -548,7 +548,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -567,7 +567,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 17
+            "left": 18
           },
           "disabled": false,
           "open": true,
@@ -623,7 +623,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 15
           },
           "disabled": false,
