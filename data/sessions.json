@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T11:15:23.258Z",
+  "updatedAt": "2026-09-01T11:20:17.412Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -143,8 +143,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 15,
-            "left": 3
+            "right": 14,
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -203,7 +203,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -217,7 +217,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 14
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -258,7 +258,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 10
           },
           "disabled": false,
@@ -348,7 +348,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 16
           },
           "disabled": false,
@@ -376,7 +376,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 18
           },
           "disabled": false,
@@ -476,7 +476,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -822,7 +822,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 18
           },
           "disabled": false,
