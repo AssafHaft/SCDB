@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T12:55:18.656Z",
+  "updatedAt": "2026-09-02T13:00:33.134Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -157,7 +157,7 @@
             "left": 6
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -168,7 +168,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -241,7 +241,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -269,7 +269,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -387,7 +387,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 16
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -400,7 +400,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 14
           },
           "disabled": false,
@@ -415,7 +415,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -470,7 +470,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 10
           },
           "disabled": false,
@@ -619,7 +619,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -762,7 +762,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 16
           },
           "disabled": false,
@@ -824,7 +824,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 10,
             "left": 13
           },
           "disabled": false,
