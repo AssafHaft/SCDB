@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T08:20:22.076Z",
+  "updatedAt": "2026-09-02T08:25:18.779Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -98,7 +98,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -167,7 +167,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 10,
             "left": 16
           },
           "disabled": false,
@@ -226,7 +226,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 12
           },
           "disabled": false,
@@ -254,7 +254,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 10
           },
           "disabled": false,
@@ -329,7 +329,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 19,
+            "right": 18,
             "left": 18
           },
           "disabled": false,
@@ -415,7 +415,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 17
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -661,7 +661,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 15
           },
           "disabled": false,
@@ -691,7 +691,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 16
+            "bay": 15
           },
           "disabled": false,
           "open": true,
@@ -704,7 +704,7 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 14
           },
           "disabled": false,
