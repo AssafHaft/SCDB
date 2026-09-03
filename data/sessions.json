@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T15:20:19.746Z",
+  "updatedAt": "2026-09-03T15:25:16.023Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -283,7 +283,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 10
           },
           "disabled": false,
@@ -298,7 +298,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -317,7 +317,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -330,8 +330,8 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 9
+            "right": 5,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -374,10 +374,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -387,7 +387,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 9
           },
           "disabled": false,
@@ -431,7 +431,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -537,7 +537,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -682,7 +682,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 11
           },
           "disabled": false,
