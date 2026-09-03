@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T13:10:23.918Z",
+  "updatedAt": "2026-09-03T13:15:19.593Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -242,7 +242,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -283,7 +283,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 8,
             "left": 12
           },
           "disabled": false,
@@ -344,8 +344,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 13,
-            "left": 0
+            "right": 12,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -475,7 +475,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -578,8 +578,8 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
-            "left": 17
+            "right": 14,
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -626,7 +626,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -640,7 +640,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 10
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -726,7 +726,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 5,
             "left": 10
           },
           "disabled": false,
@@ -798,7 +798,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 8
           },
           "disabled": false,
@@ -842,7 +842,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 16
           },
           "disabled": false,
@@ -856,7 +856,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
