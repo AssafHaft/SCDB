@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T17:10:25.161Z",
+  "updatedAt": "2026-09-03T17:15:19.645Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -283,8 +283,8 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 5
+            "right": 0,
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -317,7 +317,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -330,7 +330,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 6
           },
           "disabled": false,
@@ -344,7 +344,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 3,
             "left": 1
           },
           "disabled": false,
@@ -387,7 +387,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 9
           },
           "disabled": false,
@@ -508,10 +508,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -625,7 +625,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
@@ -727,7 +727,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
