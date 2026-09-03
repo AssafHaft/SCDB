@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T17:40:22.101Z",
+  "updatedAt": "2026-09-03T17:45:20.782Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -297,8 +297,8 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 0,
-            "left": 6
+            "right": 1,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -344,7 +344,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 1
           },
           "disabled": false,
@@ -474,7 +474,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 13
           },
           "disabled": false,
@@ -488,7 +488,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 15
           },
           "sideNames": {
@@ -536,7 +536,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 10
           },
           "disabled": false,
@@ -639,7 +639,7 @@
           "name": "New T1+B1",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 7
           },
           "disabled": false,
@@ -927,7 +927,7 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 14,
             "left": 13
           },
           "disabled": false,
