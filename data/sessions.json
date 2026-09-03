@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T15:45:21.574Z",
+  "updatedAt": "2026-09-03T15:50:18.220Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -283,8 +283,8 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 10
+            "right": 3,
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -331,7 +331,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 5
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -417,7 +417,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -446,10 +446,10 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -536,7 +536,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
@@ -579,7 +579,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 14
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -611,7 +611,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 5,
             "left": 4
           },
           "disabled": false,
@@ -900,7 +900,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
