@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T06:55:18.318Z",
+  "updatedAt": "2026-09-03T07:00:29.663Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -85,10 +85,10 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -140,7 +140,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 7
           },
           "disabled": false,
@@ -198,7 +198,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 2
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -345,7 +345,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -387,8 +387,8 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 9
+            "right": 9,
+            "left": 8
           },
           "disabled": false,
           "open": true,
