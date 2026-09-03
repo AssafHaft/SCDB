@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T03:40:20.610Z",
+  "updatedAt": "2026-09-03T03:45:20.243Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -27,7 +27,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 7
           },
           "disabled": false,
@@ -84,7 +84,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 8
           },
           "disabled": false,
