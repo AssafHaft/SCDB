@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T10:50:16.962Z",
+  "updatedAt": "2026-09-04T10:55:17.409Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -233,8 +233,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 1
+            "right": 2,
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -262,7 +262,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 4
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -323,7 +323,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -424,10 +424,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -438,10 +438,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -482,7 +482,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 16
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -496,7 +496,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -539,7 +539,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 14
           },
           "disabled": false,
@@ -554,7 +554,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -597,7 +597,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 11
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -827,7 +827,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 19
+            "left": 20
           },
           "disabled": false,
           "open": true,
