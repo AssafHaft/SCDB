@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T07:35:16.439Z",
+  "updatedAt": "2026-09-04T07:40:19.094Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -172,7 +172,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -233,8 +233,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 8
+            "right": 2,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -379,7 +379,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 10
           },
           "disabled": false,
@@ -395,10 +395,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 6
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -437,7 +437,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 2,
             "left": 7
           },
           "disabled": false,
@@ -553,7 +553,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 6
           },
           "disabled": false,
@@ -658,7 +658,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 17
+            "left": 18
           },
           "disabled": false,
           "open": true,
