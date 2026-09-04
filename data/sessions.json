@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T08:05:15.136Z",
+  "updatedAt": "2026-09-04T08:10:22.223Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -171,7 +171,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 6
           },
           "disabled": false,
@@ -309,7 +309,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -352,7 +352,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -379,7 +379,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 10
           },
           "disabled": false,
@@ -424,7 +424,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -437,7 +437,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 4
           },
           "disabled": false,
@@ -453,7 +453,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 10
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -539,7 +539,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 16
           },
           "disabled": false,
@@ -583,7 +583,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 6
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -596,7 +596,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 11
           },
           "disabled": false,
@@ -729,7 +729,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -770,7 +770,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 19,
+            "right": 18,
             "left": 19
           },
           "disabled": false,
