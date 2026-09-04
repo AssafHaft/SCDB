@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T11:10:20.076Z",
+  "updatedAt": "2026-09-04T11:15:19.135Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -233,11 +233,11 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -308,7 +308,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 3
           },
           "disabled": false,
@@ -379,8 +379,8 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 8
+            "right": 2,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -539,8 +539,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 14
+            "right": 11,
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -729,7 +729,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
