@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T09:30:25.061Z",
+  "updatedAt": "2026-09-06T09:35:14.610Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -224,7 +224,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 15
           },
           "disabled": false,
@@ -271,8 +271,8 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 13
+            "right": 9,
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -328,7 +328,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 14,
             "left": 16
           },
           "disabled": false,
@@ -371,7 +371,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -497,7 +497,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
@@ -560,7 +560,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -700,7 +700,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 18
           },
           "disabled": false,
