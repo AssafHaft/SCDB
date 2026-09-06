@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T08:35:16.648Z",
+  "updatedAt": "2026-09-06T08:40:16.524Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -127,7 +127,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 5
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -154,8 +154,8 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 10
+            "right": 9,
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -182,7 +182,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 7,
             "left": 10
           },
           "disabled": false,
@@ -601,7 +601,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 17
           },
           "disabled": false,
