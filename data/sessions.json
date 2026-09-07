@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T13:15:18.514Z",
+  "updatedAt": "2026-09-07T13:20:18.981Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,7 +169,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": false,
@@ -225,7 +225,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 6
           },
           "disabled": false,
@@ -512,7 +512,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -615,7 +615,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 19
           },
           "disabled": false,
