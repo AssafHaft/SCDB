@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T09:25:18.205Z",
+  "updatedAt": "2026-09-08T09:30:22.347Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -140,8 +140,8 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 2
+            "right": 8,
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -253,7 +253,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 1
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -285,7 +285,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 14
           },
           "disabled": false,
@@ -343,7 +343,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -356,7 +356,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 19
           },
           "disabled": false,
@@ -371,7 +371,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
