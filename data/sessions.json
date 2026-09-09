@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T12:30:24.151Z",
+  "updatedAt": "2026-09-09T12:35:19.575Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -192,6 +192,21 @@
           "special": false
         },
         {
+          "start": "15:30",
+          "end": "17:00",
+          "level": "L0",
+          "name": "torq אירוע פרטי 30 גולשים",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 24
+          },
+          "disabled": false,
+          "open": false,
+          "special": false
+        },
+        {
           "start": "16:00",
           "end": "17:00",
           "level": "L2",
@@ -242,7 +257,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -284,7 +299,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -662,7 +677,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 7
+            "left": 8
           },
           "disabled": false,
           "open": true,
