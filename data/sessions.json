@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T14:00:40.661Z",
+  "updatedAt": "2026-09-10T14:05:16.599Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -196,7 +196,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 12
           },
           "disabled": false,
@@ -258,7 +258,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -344,7 +344,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 8
+            "bay": 9
           },
           "disabled": false,
           "open": true,
@@ -387,7 +387,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -551,7 +551,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
