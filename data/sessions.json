@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T10:05:16.002Z",
+  "updatedAt": "2026-09-12T10:10:19.720Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -172,8 +172,8 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 9
+            "right": 3,
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -217,7 +217,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 10
+            "bay": 9
           },
           "disabled": false,
           "open": true,
@@ -231,7 +231,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 7
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -260,7 +260,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 7
+            "bay": 8
           },
           "disabled": false,
           "open": true,
@@ -301,7 +301,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 4
           },
           "disabled": false,
@@ -465,7 +465,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -479,7 +479,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 7
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -565,10 +565,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
