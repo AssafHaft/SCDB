@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T12:50:17.563Z",
+  "updatedAt": "2026-09-12T12:55:17.279Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -230,7 +230,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 1
           },
           "disabled": false,
@@ -436,7 +436,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 18
+            "bay": 17
           },
           "disabled": false,
           "open": true,
@@ -451,7 +451,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 16
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -464,7 +464,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 14
           },
           "disabled": false,
@@ -478,7 +478,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 2
           },
           "disabled": false,
@@ -550,8 +550,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 9
+            "right": 6,
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -612,7 +612,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
