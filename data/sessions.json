@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T09:15:20.542Z",
+  "updatedAt": "2026-09-12T09:20:20.958Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -217,7 +217,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -349,7 +349,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 6,
             "left": 16
           },
           "disabled": false,
@@ -478,8 +478,8 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 9
+            "right": 7,
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -565,10 +565,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
