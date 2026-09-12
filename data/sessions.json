@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T11:05:18.744Z",
+  "updatedAt": "2026-09-12T11:10:18.803Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -301,7 +301,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 0,
             "left": 1
           },
           "disabled": false,
@@ -478,8 +478,8 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 5
+            "right": 6,
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -579,7 +579,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
