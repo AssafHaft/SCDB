@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T10:35:16.045Z",
+  "updatedAt": "2026-09-12T10:40:17.943Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -173,7 +173,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 8
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -230,8 +230,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 6
+            "right": 7,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -350,7 +350,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -406,7 +406,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 14
           },
           "disabled": false,
@@ -478,7 +478,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 4
           },
           "disabled": false,
@@ -565,10 +565,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -578,7 +578,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 15
           },
           "disabled": false,
@@ -854,7 +854,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
