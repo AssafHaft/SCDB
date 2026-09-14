@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T11:30:26.094Z",
+  "updatedAt": "2026-09-14T11:35:17.626Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -154,7 +154,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -222,21 +222,6 @@
           "start": "18:30",
           "end": "20:00",
           "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 7-10",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "children",
-          "places": {
-            "bay": 11
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "18:30",
-          "end": "20:00",
-          "level": "L0",
           "name": "Beginner lesson in Bay - Adults 16+",
           "zone": "bay",
           "side": "left",
@@ -270,10 +255,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -388,7 +373,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -415,7 +400,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 12
           },
           "disabled": false,
@@ -459,7 +444,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 17
+            "bay": 18
           },
           "disabled": false,
           "open": true,
