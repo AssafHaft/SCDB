@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T18:45:21.958Z",
+  "updatedAt": "2026-09-14T18:50:19.625Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -415,7 +415,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -500,7 +500,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 10
+            "left": 11
           },
           "sideNames": {
             "right": "אירוע פרטי- בגלל הרוח",
@@ -517,7 +517,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 7
           },
           "disabled": false,
@@ -635,7 +635,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 17
           },
           "disabled": false,
@@ -649,7 +649,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 16
           },
           "disabled": false,
