@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T05:55:53.065Z",
+  "updatedAt": "2026-09-14T06:00:35.377Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -59,7 +59,7 @@
             "left": 10
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -270,7 +270,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -330,7 +330,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 16
           },
           "disabled": false,
