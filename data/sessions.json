@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T08:55:19.489Z",
+  "updatedAt": "2026-09-14T09:00:37.238Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -101,7 +101,7 @@
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -111,7 +111,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 15
           },
           "disabled": false,
@@ -139,7 +139,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 6
           },
           "disabled": false,
@@ -429,7 +429,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 17
           },
           "disabled": false,
@@ -515,7 +515,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 10
+            "left": 11
           },
           "sideNames": {
             "right": "אירוע פרטי- בגלל הרוח",
@@ -533,7 +533,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
