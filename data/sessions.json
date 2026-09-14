@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T09:00:37.238Z",
+  "updatedAt": "2026-09-14T09:05:55.453Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -125,11 +125,11 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -139,7 +139,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 6
           },
           "disabled": false,
@@ -501,7 +501,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 17
+            "left": 18
           },
           "disabled": false,
           "open": true,
@@ -515,7 +515,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 11
+            "left": 12
           },
           "sideNames": {
             "right": "אירוע פרטי- בגלל הרוח",
