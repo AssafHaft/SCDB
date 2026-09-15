@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T06:00:31.070Z",
+  "updatedAt": "2026-09-15T06:05:17.398Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -212,7 +212,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 9
+            "left": 8
           },
           "sideNames": {
             "right": "אירוע פרטי- בגלל הרוח",
@@ -229,7 +229,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -532,7 +532,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
