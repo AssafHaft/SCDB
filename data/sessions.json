@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T10:20:20.363Z",
+  "updatedAt": "2026-09-16T10:25:15.688Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -141,7 +141,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -154,8 +154,8 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 7
+            "right": 5,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -184,7 +184,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 19
+            "left": 18
           },
           "disabled": false,
           "open": true,
@@ -344,7 +344,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 16
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -500,7 +500,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 10
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -589,7 +589,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -617,7 +617,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 13
           },
           "disabled": false,
@@ -662,7 +662,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 8
+            "bay": 6
           },
           "disabled": false,
           "open": true,
@@ -733,7 +733,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 17
           },
           "disabled": false,
@@ -818,7 +818,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 13
           },
           "disabled": false,
