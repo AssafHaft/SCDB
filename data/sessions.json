@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T15:50:20.441Z",
+  "updatedAt": "2026-09-16T15:55:19.007Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -282,7 +282,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 6
           },
           "disabled": false,
@@ -358,7 +358,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -561,7 +561,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -617,7 +617,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 8
           },
           "disabled": false,
@@ -632,7 +632,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
