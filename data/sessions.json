@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T12:55:18.115Z",
+  "updatedAt": "2026-09-16T13:00:31.554Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -187,7 +187,7 @@
             "left": 15
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -268,8 +268,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 5
+            "right": 13,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -282,7 +282,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 10
           },
           "disabled": false,
@@ -357,7 +357,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 7
           },
           "disabled": false,
@@ -371,7 +371,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 16
           },
           "disabled": false,
@@ -414,7 +414,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -527,7 +527,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 14
           },
           "disabled": false,
