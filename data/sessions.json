@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T11:05:15.482Z",
+  "updatedAt": "2026-09-16T11:10:19.593Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -240,7 +240,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 15
           },
           "disabled": false,
@@ -302,7 +302,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -357,7 +357,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 10
           },
           "disabled": false,
@@ -443,7 +443,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -458,7 +458,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 10
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -499,7 +499,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 9
           },
           "disabled": false,
@@ -618,7 +618,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 13
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -632,7 +632,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -748,7 +748,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
