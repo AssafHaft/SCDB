@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T13:05:17.061Z",
+  "updatedAt": "2026-09-16T13:10:19.145Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -254,7 +254,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 1,
             "left": 5
           },
           "disabled": false,
@@ -315,7 +315,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 13
           },
           "disabled": false,
@@ -344,7 +344,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -357,7 +357,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 12,
             "left": 7
           },
           "disabled": false,
@@ -371,8 +371,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 16,
-            "left": 16
+            "right": 15,
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -385,7 +385,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 2
           },
           "disabled": false,
@@ -527,7 +527,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 14
           },
           "disabled": false,
