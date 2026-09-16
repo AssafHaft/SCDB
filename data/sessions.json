@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T18:40:18.849Z",
+  "updatedAt": "2026-09-16T18:45:21.067Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -357,7 +357,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -371,8 +371,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 13
+            "right": 13,
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -733,7 +733,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 17
           },
           "disabled": false,
@@ -790,7 +790,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 9,
             "left": 15
           },
           "disabled": false,
