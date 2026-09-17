@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T11:40:17.630Z",
+  "updatedAt": "2026-09-17T11:45:19.539Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -197,11 +197,11 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -254,10 +254,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -374,7 +374,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 8
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -424,21 +424,6 @@
           "special": false
         },
         {
-          "start": "12:30",
-          "end": "14:00",
-          "level": "L0",
-          "name": "Beginner lesson in Bay - Kids 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 10
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
           "start": "13:00",
           "end": "14:00",
           "level": "L3",
@@ -459,7 +444,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 3
           },
           "disabled": false,
@@ -489,7 +474,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 19
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -502,7 +487,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 15
           },
           "disabled": false,
@@ -531,7 +516,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
