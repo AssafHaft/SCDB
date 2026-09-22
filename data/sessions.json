@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T04:25:15.395Z",
+  "updatedAt": "2026-09-22T04:30:22.706Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -27,7 +27,7 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -41,7 +41,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 2
           },
           "disabled": false,
@@ -69,7 +69,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
@@ -97,7 +97,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 12
           },
           "disabled": false,
