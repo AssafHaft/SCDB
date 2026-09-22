@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T04:10:20.914Z",
+  "updatedAt": "2026-09-22T04:15:18.971Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -42,7 +42,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -55,7 +55,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 7
           },
           "disabled": false,
