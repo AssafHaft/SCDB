@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T10:00:29.502Z",
+  "updatedAt": "2026-09-22T10:05:19.393Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -358,7 +358,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 15
           },
           "disabled": false,
@@ -442,7 +442,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 15
           },
           "disabled": false,
@@ -646,7 +646,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 17,
             "left": 6
           },
           "disabled": false,
