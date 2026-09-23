@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T08:40:18.642Z",
+  "updatedAt": "2026-09-23T08:45:20.320Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -97,7 +97,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 1
           },
           "disabled": false,
@@ -154,7 +154,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -168,7 +168,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 14
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -240,7 +240,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 13
           },
           "disabled": false,
@@ -315,7 +315,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 16
           },
           "disabled": false,
@@ -343,7 +343,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 9
           },
           "disabled": false,
@@ -386,7 +386,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -543,7 +543,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -619,7 +619,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -648,7 +648,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "disabled": false,
           "open": true,
