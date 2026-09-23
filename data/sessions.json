@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T11:20:20.530Z",
+  "updatedAt": "2026-09-23T11:25:18.710Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -139,7 +139,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 10
           },
           "disabled": false,
@@ -154,7 +154,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -227,7 +227,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 8
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -240,7 +240,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 10
           },
           "disabled": false,
@@ -254,7 +254,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 1
           },
           "disabled": false,
@@ -343,7 +343,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
@@ -357,7 +357,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 4
           },
           "disabled": false,
@@ -386,7 +386,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -500,8 +500,8 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 18,
-            "left": 16
+            "right": 19,
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -515,7 +515,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -528,7 +528,7 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 8
           },
           "disabled": false,
