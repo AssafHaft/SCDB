@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T13:40:18.602Z",
+  "updatedAt": "2026-09-23T13:45:20.910Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -167,8 +167,8 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 7
+            "right": 7,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -240,8 +240,8 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 6
+            "right": 1,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -302,7 +302,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 10
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -343,7 +343,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 8
           },
           "disabled": false,
@@ -372,7 +372,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 6
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -399,7 +399,7 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 7
           },
           "disabled": false,
@@ -429,7 +429,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 17
+            "bay": 15
           },
           "disabled": false,
           "open": true,
@@ -575,7 +575,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 18
           },
           "disabled": false,
@@ -632,8 +632,8 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 6
+            "right": 7,
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -677,7 +677,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
