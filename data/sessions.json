@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T12:05:16.447Z",
+  "updatedAt": "2026-09-24T12:10:20.242Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,7 +169,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -182,8 +182,8 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 3
+            "right": 5,
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -227,7 +227,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 8
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -254,8 +254,8 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 4
+            "right": 3,
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -268,7 +268,7 @@
           "name": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 11
           },
           "disabled": false,
@@ -316,7 +316,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -358,7 +358,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -416,7 +416,7 @@
           "name": "T-Times Pro Carves (New T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 2
           },
           "disabled": false,
@@ -580,7 +580,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 10
           },
           "sideNames": {
