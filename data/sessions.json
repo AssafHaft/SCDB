@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T16:15:20.462Z",
+  "updatedAt": "2026-09-25T16:20:21.388Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -220,7 +220,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -249,7 +249,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 12
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -263,7 +263,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -307,7 +307,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 4
+            "left": 5
           },
           "sideNames": {
             "right": "FlowM2 ()",
@@ -324,7 +324,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 3
           },
           "disabled": false,
@@ -426,7 +426,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 9
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -543,7 +543,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 19
           },
           "disabled": false,
