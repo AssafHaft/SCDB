@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T08:42:23.471Z",
+  "updatedAt": "2026-09-27T08:45:20.040Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -98,10 +98,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -127,10 +127,10 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 0
+            "bay": 10
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -171,7 +171,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 12
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -184,7 +184,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 3
           },
           "disabled": false,
@@ -330,7 +330,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 17
           },
           "disabled": false,
@@ -387,7 +387,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 16
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -444,7 +444,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 13
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -765,7 +765,7 @@
           "zone": "reef",
           "places": {
             "right": 20,
-            "left": 16
+            "left": 15
           },
           "sideNames": {
             "right": "PRIVTE EVENT",
