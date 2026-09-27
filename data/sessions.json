@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T12:25:16.600Z",
+  "updatedAt": "2026-09-27T12:30:22.457Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -203,7 +203,7 @@
             "bay": 13
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -213,11 +213,11 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -241,7 +241,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 8
           },
           "disabled": false,
@@ -269,7 +269,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 9,
             "left": 4
           },
           "disabled": false,
@@ -297,8 +297,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 6
+            "right": 9,
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -317,7 +317,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -387,7 +387,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -530,8 +530,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 19
+            "right": 5,
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -573,7 +573,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 19
           },
           "disabled": false,
