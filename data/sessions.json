@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T11:20:18.113Z",
+  "updatedAt": "2026-09-27T11:25:16.420Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -184,7 +184,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -255,7 +255,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 10
           },
           "disabled": false,
@@ -344,8 +344,8 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 15
+            "right": 11,
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -358,7 +358,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 17
           },
           "disabled": false,
@@ -372,8 +372,8 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 4
+            "right": 5,
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -429,7 +429,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 17
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -444,7 +444,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 13
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -472,7 +472,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
@@ -502,7 +502,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 3
           },
           "disabled": false,
           "open": true,
