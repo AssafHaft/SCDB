@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T10:50:19.425Z",
+  "updatedAt": "2026-09-27T10:55:14.969Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -184,7 +184,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 1
           },
           "disabled": false,
@@ -213,11 +213,11 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -255,7 +255,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 10
           },
           "disabled": false,
@@ -269,7 +269,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 7
           },
           "disabled": false,
@@ -283,7 +283,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 13
           },
           "disabled": false,
@@ -387,7 +387,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -459,7 +459,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -502,7 +502,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 2
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -517,7 +517,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -732,7 +732,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 15
           },
           "disabled": false,
