@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T13:55:17.676Z",
+  "updatedAt": "2026-09-28T14:00:38.250Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -84,7 +84,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
           "open": false,
@@ -228,10 +228,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -284,7 +284,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -345,7 +345,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -447,7 +447,7 @@
           "zone": "reef",
           "places": {
             "right": 20,
-            "left": 13
+            "left": 12
           },
           "sideNames": {
             "right": "PRIVTE EVENT",
