@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T07:50:19.245Z",
+  "updatedAt": "2026-09-28T07:55:15.429Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -112,10 +112,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -156,10 +156,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -227,7 +227,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 14
           },
           "disabled": false,
@@ -284,7 +284,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -465,7 +465,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 9
+            "left": 10
           },
           "sideNames": {
             "right": "PRIVATE EVENT",
@@ -534,7 +534,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -650,7 +650,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 18
           },
           "disabled": false,
@@ -679,7 +679,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
