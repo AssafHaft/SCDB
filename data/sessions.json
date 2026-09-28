@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T12:35:17.792Z",
+  "updatedAt": "2026-09-28T12:40:22.470Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,7 +169,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 4
           },
           "disabled": false,
@@ -214,10 +214,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -241,7 +241,7 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
@@ -330,8 +330,8 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 15
+            "right": 10,
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -498,7 +498,7 @@
           "zone": "reef",
           "places": {
             "right": 20,
-            "left": 15
+            "left": 16
           },
           "sideNames": {
             "right": "PRIVATE EVENT",
