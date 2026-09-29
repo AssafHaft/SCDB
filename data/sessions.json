@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T14:35:18.217Z",
+  "updatedAt": "2026-09-29T14:40:21.066Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -181,7 +181,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 16
+            "bay": 15
           },
           "disabled": false,
           "open": false,
@@ -231,7 +231,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -244,7 +244,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 0
           },
           "disabled": false,
@@ -258,7 +258,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 12
           },
           "disabled": false,
@@ -305,7 +305,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 17
           },
           "disabled": false,
@@ -334,7 +334,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -564,7 +564,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 17
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -635,7 +635,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 19
+            "bay": 20
           },
           "disabled": false,
           "open": true,
@@ -720,7 +720,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 15
           },
           "disabled": false,
