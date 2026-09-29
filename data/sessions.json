@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T14:50:22.376Z",
+  "updatedAt": "2026-09-29T15:00:34.576Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -213,14 +213,14 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 3
+            "left": 4
           },
           "sideNames": {
             "right": "PRIVATE EVENT",
             "left": "Advanced (M4 Only)"
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -273,7 +273,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -319,7 +319,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 14
           },
           "disabled": false,
@@ -333,7 +333,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 0,
             "left": 5
           },
           "disabled": false,
@@ -348,7 +348,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -375,7 +375,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 0
           },
           "disabled": false,
@@ -389,7 +389,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
@@ -474,7 +474,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 16
           },
           "disabled": false,
@@ -619,8 +619,8 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 14
+            "right": 11,
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -720,7 +720,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 15
           },
           "disabled": false,
@@ -734,7 +734,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 9,
             "left": 15
           },
           "disabled": false,
