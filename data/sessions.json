@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T14:25:55.079Z",
+  "updatedAt": "2026-09-29T14:30:25.495Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -231,7 +231,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -244,7 +244,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -333,7 +333,7 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 9,
             "left": 5
           },
           "disabled": false,
@@ -361,7 +361,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 8,
             "left": 5
           },
           "disabled": false,
@@ -635,7 +635,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 20
+            "bay": 19
           },
           "disabled": false,
           "open": true,
