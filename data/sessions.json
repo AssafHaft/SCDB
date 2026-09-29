@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T09:16:17.997Z",
+  "updatedAt": "2026-09-29T09:20:21.626Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -126,7 +126,7 @@
           "zone": "reef",
           "places": {
             "right": 20,
-            "left": 1
+            "left": 0
           },
           "sideNames": {
             "right": "Private Event",
@@ -162,7 +162,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 0
+            "left": 1
           },
           "sideNames": {
             "right": "PRIVATE EVENT",
@@ -375,8 +375,8 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 1
+            "right": 6,
+            "left": 0
           },
           "disabled": false,
           "open": true,
