@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T06:55:17.401Z",
+  "updatedAt": "2026-09-29T07:00:29.549Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -73,7 +73,7 @@
             "left": 4
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -144,7 +144,7 @@
           "zone": "reef",
           "places": {
             "right": 20,
-            "left": 11
+            "left": 9
           },
           "sideNames": {
             "right": "PRIVTE EVENT",
