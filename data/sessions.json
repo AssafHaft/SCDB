@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T06:20:19.512Z",
+  "updatedAt": "2026-09-29T06:25:17.033Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -126,7 +126,7 @@
           "zone": "reef",
           "places": {
             "right": 20,
-            "left": 1
+            "left": 2
           },
           "sideNames": {
             "right": "Private Event",
@@ -244,7 +244,7 @@
           "name": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 5
           },
           "disabled": false,
@@ -320,7 +320,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -390,7 +390,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
