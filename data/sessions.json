@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T16:30:25.559Z",
+  "updatedAt": "2026-09-30T16:35:17.973Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -210,8 +210,8 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 5
+            "right": 2,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -299,7 +299,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 12
           },
           "disabled": false,
@@ -327,7 +327,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 6
           },
           "disabled": false,
@@ -370,7 +370,7 @@
           "name": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 14
           },
           "disabled": false,
@@ -428,8 +428,8 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 13
+            "right": 10,
+            "left": 12
           },
           "disabled": false,
           "open": true,
