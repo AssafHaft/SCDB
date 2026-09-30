@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T19:45:20.890Z",
+  "updatedAt": "2026-09-30T19:50:18.550Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -415,7 +415,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 12
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -428,7 +428,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
