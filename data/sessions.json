@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T15:55:21.282Z",
+  "updatedAt": "2026-09-30T16:00:33.292Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -200,7 +200,7 @@
             "left": 6
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -211,7 +211,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -356,7 +356,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 10
           },
           "disabled": false,
@@ -371,7 +371,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -385,7 +385,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -415,7 +415,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -529,7 +529,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 18
           },
           "disabled": false,
@@ -633,7 +633,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 13
           },
           "disabled": false,
@@ -691,7 +691,7 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 0
           },
           "disabled": false,
