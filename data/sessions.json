@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T08:35:16.124Z",
+  "updatedAt": "2026-10-01T08:40:19.343Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -141,7 +141,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -170,10 +170,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -185,7 +185,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 9
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -198,7 +198,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 11
           },
           "disabled": false,
@@ -212,7 +212,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
@@ -258,7 +258,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -299,7 +299,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 15,
             "left": 18
           },
           "disabled": false,
@@ -346,7 +346,7 @@
           "name": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 17
           },
           "disabled": false,
@@ -360,7 +360,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 11
           },
           "disabled": false,
@@ -461,11 +461,11 @@
           "name": "T-Times Pro Carves (T2+T3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -490,7 +490,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 3
           },
           "disabled": false,
@@ -683,7 +683,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
