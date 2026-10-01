@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T14:25:16.999Z",
+  "updatedAt": "2026-10-01T14:30:28.727Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -261,7 +261,7 @@
             "bay": 1
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -271,8 +271,8 @@
           "name": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 13
+            "right": 5,
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -285,7 +285,7 @@
           "name": "L7 - Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -299,8 +299,8 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 16
+            "right": 10,
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -314,7 +314,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -376,7 +376,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 19
+            "bay": 18
           },
           "disabled": false,
           "open": true,
@@ -448,7 +448,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -510,7 +510,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -523,8 +523,8 @@
           "name": "New T1+B1",
           "zone": "reef",
           "places": {
-            "right": 13,
-            "left": 13
+            "right": 12,
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -552,7 +552,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 14
           },
           "disabled": false,
@@ -625,7 +625,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 10
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -640,7 +640,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 10
+            "bay": 11
           },
           "disabled": false,
           "open": true,
