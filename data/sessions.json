@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T18:00:30.134Z",
+  "updatedAt": "2026-10-02T18:05:19.014Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -190,7 +190,7 @@
           "name": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 5,
             "left": 7
           },
           "disabled": false,
@@ -204,7 +204,7 @@
           "name": "New T1+B1",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
@@ -234,7 +234,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 4
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -247,7 +247,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 11
           },
           "disabled": false,
@@ -364,7 +364,7 @@
           "name": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 16
           },
           "disabled": false,
@@ -452,7 +452,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 24
+            "bay": 23
           },
           "disabled": false,
           "open": true,
@@ -512,7 +512,7 @@
           "name": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 14,
             "left": 15
           },
           "disabled": false,
@@ -541,7 +541,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -598,7 +598,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -740,7 +740,7 @@
           "name": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 17
           },
           "disabled": false,
@@ -768,7 +768,7 @@
           "name": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 12
           },
           "disabled": false,
