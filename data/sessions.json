@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T21:23:59.765Z",
+  "updatedAt": "2026-10-02T02:00:31.467Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -13,8 +13,8 @@
           "name": "Ocean-T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 9
+            "right": 4,
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -41,7 +41,7 @@
           "name": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 2
           },
           "disabled": false,
@@ -84,8 +84,8 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 6
+            "right": 3,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -129,7 +129,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -350,7 +350,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 19
+            "left": 20
           },
           "disabled": false,
           "open": true,
@@ -407,7 +407,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 20,
+            "right": 19,
             "left": 18
           },
           "disabled": false,
@@ -421,7 +421,7 @@
           "name": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 11
           },
           "disabled": false,
@@ -450,7 +450,7 @@
           "name": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 17
           },
           "disabled": false,
@@ -754,7 +754,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
