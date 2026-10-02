@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T19:55:16.206Z",
+  "updatedAt": "2026-10-02T20:00:30.439Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -234,7 +234,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -247,7 +247,7 @@
           "name": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 11
           },
           "disabled": false,
@@ -527,7 +527,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -583,7 +583,7 @@
           "name": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 15
           },
           "disabled": false,
@@ -598,7 +598,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
