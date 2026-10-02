@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T07:50:19.398Z",
+  "updatedAt": "2026-10-02T07:55:16.157Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -263,7 +263,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 4
+            "bay": 2
           },
           "disabled": false,
           "open": true,
@@ -321,10 +321,25 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 2
           },
           "disabled": false,
           "open": true,
+          "special": false
+        },
+        {
+          "start": "13:30",
+          "end": "15:00",
+          "level": "L0",
+          "name": "Beginner lesson in Bay - Kids 11-16",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "children",
+          "places": {
+            "bay": 0
+          },
+          "disabled": false,
+          "open": false,
           "special": false
         },
         {
@@ -407,7 +422,7 @@
           "name": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 18
           },
           "disabled": false,
@@ -511,7 +526,7 @@
           "name": "L7 - Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 5
           },
           "disabled": false,
