@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T16:10:19.228Z",
+  "updatedAt": "2026-10-03T16:15:18.727Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -316,11 +316,11 @@
           "name": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -350,7 +350,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -393,7 +393,7 @@
           "zone": "reef",
           "places": {
             "right": 19,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -407,7 +407,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -420,7 +420,7 @@
           "name": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 11
           },
           "disabled": false,
@@ -577,11 +577,11 @@
           "name": "L7 - Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
