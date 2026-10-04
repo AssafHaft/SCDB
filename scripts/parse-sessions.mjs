@@ -7,8 +7,10 @@
  *    sessions, exit non-zero WITHOUT touching the existing sessions.json.
  *    The dashboard then keeps showing the last good data, and the failed
  *    Actions run is the alarm bell.
- *  - All Hebrew→English mapping happens here, in HE-facing NAME_MAP below,
- *    so the dashboard only ever sees normalised English JSON.
+ *  - Session names are passed through as the club publishes them — both
+ *    `name` (Hebrew site) and `en_name` (English site) — and the dashboard
+ *    picks per language exactly as the club's site does. Never rewrite them
+ *    here: any local renaming is a guaranteed mismatch with the website.
  *
  * Data source (rewritten 2026-08-17):
  *   The club replaced the server-rendered booking page with a React app, so
@@ -56,29 +58,15 @@ const CLUB_TZ = "Asia/Jerusalem";
 // means the parse went wrong.
 const MIN_PLAUSIBLE_SESSIONS = 20;
 
-// Booking extras stripped from names on the TV (e.g. "includes free softboard").
-// Both spellings are needed: we prefer the feed's en_name, but fall back to
-// the Hebrew name when an entry has none.
+// Booking extras stripped from names on the TV (e.g. "includes free softboard")
+// — an add-on note, not part of the session's name. Both spellings, since we
+// export both the Hebrew `name` and the English `en_name`.
 const STRIP_RE = /\s*-?\s*(?:כולל גלשן סופט ללא עלות|including free softboard)/i;
-
-// Known session names → short English display names. The feed's `en_name`
-// already covers most of the catalogue, so these mostly exist to keep the
-// long bay lesson titles short enough for the TV layout; the Hebrew patterns
-// stay as a safety net for entries published without an en_name.
-const NAME_MAP = [
-  [/Beginners?\s+lesson\s+in\s+the\s+Bay\s*-\s*Over\s*16\s*years/i, "Beginner lesson in Bay - Adults 16+"],
-  [/Beginners?\s+lesson\s+in\s+the\s+Bay\s*-\s*ages\s*11-16/i, "Beginner lesson in Bay - Kids 11-16"],
-  [/Beginners?\s+lesson\s+in\s+the\s+Bay\s*-\s*ages\s*7-10/i, "Beginner lesson in Bay - Kids 7-10"],
-  [/שיעור גלישה למתחילים ב\s*Bay\s*-\s*בוגרים.*16/, "Beginner lesson in Bay - Adults 16+"],
-  [/שיעור גלישה למתחילים ב\s*Bay\s*-\s*ילדים\s*11-16/, "Beginner lesson in Bay - Kids 11-16"],
-  [/שיעור גלישה למתחילים ב\s*Bay\s*-\s*ילדים\s*7-10/, "Beginner lesson in Bay - Kids 7-10"],
-  [/אימון פרטי\s*-?\s*/, "Private training - "],
-];
 
 // Sessions that share a reef slot with the regular program (private training,
 // special activities). They sort after regular sessions so the dashboard's
 // "current session" pick prefers the public program.
-const SPECIAL_RE = /Private training|Galna/i;
+const SPECIAL_RE = /Private training|אימון פרטי|Galna/i;
 
 // ---------------------------------------------------------------------------
 async function fetchJson(url, attempt = 1) {
@@ -190,10 +178,9 @@ const hhmm = (t) => String(t || "").slice(0, 5);
 function normalizeName(raw) {
   let name = String(raw || "").replace(/\s+/g, " ").trim();
   name = name.replace(STRIP_RE, "");
-  for (const [re, en] of NAME_MAP) name = name.replace(re, en);
-  // Drop the leading level prefix ("L4 – ", "L5- ", "L3 - ") — the badge
+  // Drop the leading level prefix ("L4 – ", "L5- ", "L7 - ") — the badge
   // already shows it.
-  name = name.replace(/^L[0-6]\s*[-–]?\s*/, "");
+  name = name.replace(/^L\d+\s*[-–]?\s*/, "");
   return name.replace(/\s+/g, " ").trim();
 }
 
@@ -227,7 +214,13 @@ function extractSessions(payload) {
 
     // The site closes booking once the slot is under a minute away.
     const timePassed = now >= slotWallClock(e.date, hhmm(e.startTime)) - 60_000;
-    const name = normalizeName(e.en_name || e.name);
+    // Both names, so the dashboard can apply the club site's own rule per
+    // language (sessions.js: `lang==="en" && e.en_name ? e.en_name : e.name`).
+    // `name` is the field the club keeps current; `en_name` often lags a
+    // rename or is a leftover template default, so it must never stand in
+    // for the Hebrew name.
+    const name = normalizeName(e.name);
+    const nameEn = normalizeName(e.en_name);
 
     raw.push({
       date: String(e.date).slice(0, 10),
@@ -235,6 +228,7 @@ function extractSessions(payload) {
       end: hhmm(e.endTime),
       level,
       name,
+      nameEn,
       zone,
       side,
       ageGroup: (side === "left" ? e.left_age_group : e.right_age_group) || "all",
@@ -247,7 +241,7 @@ function extractSessions(payload) {
       // `open` freezes that at parse time and goes stale between runs.
       disabled,
       open: places > 0 && !disabled && !timePassed,
-      special: String(e.type || "regular") !== "regular" || SPECIAL_RE.test(name),
+      special: String(e.type || "regular") !== "regular" || SPECIAL_RE.test(`${name} ${nameEn}`),
     });
   }
 
@@ -265,9 +259,9 @@ function mergeSides(raw) {
     if (r.zone === "bay") {
       merged.push({
         date: r.date, start: r.start, end: r.end, level: r.level,
-        name: r.name, zone: "bay", side: r.side, ageGroup: r.ageGroup,
-        places: { bay: r.places }, disabled: r.disabled, open: r.open,
-        special: r.special,
+        name: r.name, nameEn: r.nameEn, zone: "bay", side: r.side,
+        ageGroup: r.ageGroup, places: { bay: r.places }, disabled: r.disabled,
+        open: r.open, special: r.special,
       });
       continue;
     }
@@ -275,7 +269,11 @@ function mergeSides(raw) {
     if (!reefGroups.has(key)) {
       reefGroups.set(key, {
         date: r.date, start: r.start, end: r.end, level: r.level,
-        name: r.name, zone: "reef", places: {}, sideNames: {},
+        name: r.name, nameEn: r.nameEn, zone: "reef", places: {},
+        // Parallel maps rather than {name, nameEn} objects: `sideNames` stays
+        // plain strings so a TV still running older JS (they only reload by
+        // hand, but re-read this file every minute) keeps rendering it.
+        sideNames: {}, sideNamesEn: {},
         disabled: true, open: false, special: r.special,
       });
       merged.push(reefGroups.get(key));
@@ -283,17 +281,25 @@ function mergeSides(raw) {
     const g = reefGroups.get(key);
     if (r.places !== null) g.places[r.side] = r.places;
     g.sideNames[r.side] = r.name;
+    g.sideNamesEn[r.side] = r.nameEn;
     g.open = g.open || r.open;
     // The merged slot counts as pulled only if every side of it was.
     g.disabled = g.disabled && r.disabled;
   }
 
-  // Tidy: drop sideNames when both sides run the same program.
+  // Tidy: drop the side maps when both sides run the same program; otherwise
+  // the slot's headline name is the right side's.
   for (const s of merged) {
     if (s.sideNames) {
-      const names = [...new Set(Object.values(s.sideNames))];
-      if (names.length <= 1) delete s.sideNames;
-      else s.name = s.sideNames.right || names[0];
+      const sides = Object.keys(s.sideNames);
+      if (new Set(sides.map((k) => `${s.sideNames[k]}|${s.sideNamesEn[k]}`)).size <= 1) {
+        delete s.sideNames;
+        delete s.sideNamesEn;
+      } else {
+        const k = "right" in s.sideNames ? "right" : sides[0];
+        s.name = s.sideNames[k];
+        s.nameEn = s.sideNamesEn[k];
+      }
     }
   }
   return merged;

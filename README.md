@@ -117,8 +117,15 @@ Everything staff might need to change lives in **`js/config.js`**:
 
 Display text lives in **`js/strings.js`** — one English/Hebrew block per
 language, so adding a third language is a third block there, nothing else.
-Session names themselves (e.g. "T-Time Pro Carves") are the park's own
-naming and stay in English in both languages.
+Session names are shown exactly as the club's website shows them, using the
+site's own rule (`js/dist/sessions.js` on their site): the feed's `en_name`
+in English when it has one, otherwise `name`. The parser exports both and
+`sessionName()` in `js/dashboard.js` picks per language. Don't rename or
+"tidy" session names locally — `name` is the field the club keeps current,
+`en_name` often lags a rename, and any local rewrite is a mismatch with the
+website by definition. (The parser only drops the leading `L5 -` level
+prefix, which the badge already shows, and the "including free softboard"
+booking note.)
 
 Layout is direction-pinned where it matters: the reef-side cells and the
 spot boxes name real pool sides, so `#hero`, `#zones`, `.pool-grid` and
@@ -160,10 +167,6 @@ of the screen. That is precisely how the cards once ended up visibly cut
 off. The cards also carry `min-height: 0` and `overflow: hidden` as a
 backstop. If you add content to a card, re-check the bottom edge at
 1920x1080 rather than trusting it to wrap.
-
-The Hebrew→English mapping for the *source* page (zone names, availability
-wording, booking states) lives at the top of `scripts/parse-sessions.mjs`,
-next to the parser that uses it.
 
 ## When something breaks
 

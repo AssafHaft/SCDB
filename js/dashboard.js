@@ -192,6 +192,16 @@
     return "lvl-" + (level || "Lx").toLowerCase();
   }
 
+  // The club site's own rule (its sessions.js): English name when showing
+  // English and the session has one, otherwise the Hebrew `name`. `side`
+  // picks a reef side's own program when the two sides of a slot differ.
+  function sessionName(s, side) {
+    const per = side && s.sideNames && side in s.sideNames;
+    const he = per ? s.sideNames[side] : s.name;
+    const en = per ? (s.sideNamesEn || {})[side] : s.nameEn;
+    return (T === window.STRINGS.en && en) || he;
+  }
+
   function placesText(n, level) {
     if (n === 0) return T.full;
     if (CONFIG.capacities && CONFIG.capacities[level] != null) {
@@ -219,7 +229,7 @@
     if (current) {
       const n = current.places ? current.places[sideKey] : undefined;
       const isFull = n === 0;
-      const name = (current.sideNames && current.sideNames[sideKey]) || current.name;
+      const name = sessionName(current, sideKey);
       setState(isFull ? "is-full" : "is-live");
       status.textContent = isFull ? `● ${T.inSession} · ${T.full}` : `● ${T.inSession}`;
       program.innerHTML =
@@ -233,7 +243,7 @@
       status.textContent = `○ ${T.noSession}`;
       program.innerHTML =
         `<span class="lvl-badge ${levelClass(next.level)}">${next.level}</span>` +
-        `<span class="zone-name">${next.name}</span>`;
+        `<span class="zone-name">${sessionName(next, sideKey)}</span>`;
       places.textContent = n == null ? "" : placesText(n, next.level);
       time.textContent = `${T.nextLesson} ${iso(next.start)}`;
     } else {
@@ -296,7 +306,7 @@
     const s = info.session;
     level.textContent = s.level;
     level.className = "hero-badge " + levelClass(s.level);
-    name.textContent = s.name;
+    name.textContent = sessionName(s);
     fitHeroName(name);
 
     const minsAway = info.tomorrow
@@ -378,7 +388,7 @@
     // each is its own bidi run and neither can reorder the other.
     const name = document.createElement("span");
     name.className = "now-name";
-    name.textContent = current.name;
+    name.textContent = sessionName(current);
 
     const time = document.createElement("span");
     time.className = "now-time";

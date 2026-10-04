@@ -4,11 +4,9 @@
 // carries its direction, date locale, and the few formatters that differ
 // per language (durations, weekday chips, weather wording).
 //
-// Note: the Hebrew→English mapping for the *source* page (zone names,
-// availability wording, booking-state labels) lives in
-// scripts/parse-sessions.mjs next to the parser that consumes it. The
-// dashboard itself only ever sees already-normalised English JSON, and
-// session names stay in English in both languages (the park's own naming).
+// Session names are not here: they come from the club's feed as both `name`
+// and `en_name`, and sessionName() in js/dashboard.js picks per language
+// exactly as the club's own website does.
 // ---------------------------------------------------------------------------
 window.STRINGS = {
   en: {
