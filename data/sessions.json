@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T19:00:37.129Z",
+  "updatedAt": "2026-10-05T19:09:16.215Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -290,6 +290,21 @@
           "special": false
         },
         {
+          "start": "08:00",
+          "end": "09:00",
+          "level": "L2",
+          "name": "אירוע פרטי",
+          "nameEn": "Private Event",
+          "zone": "reef",
+          "places": {
+            "right": 1,
+            "left": 1
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
           "start": "08:30",
           "end": "10:00",
           "level": "L0",
@@ -343,7 +358,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 14
           },
           "disabled": false,
@@ -373,7 +388,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 10
           },
           "disabled": false,
@@ -451,7 +466,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -551,7 +566,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 7
           },
           "disabled": false,
@@ -582,7 +597,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -617,7 +632,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -693,7 +708,7 @@
           "zone": "reef",
           "places": {
             "right": 19,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -737,7 +752,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -837,7 +852,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 15
           },
           "disabled": false,
