@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T06:10:20.724Z",
+  "updatedAt": "2026-10-05T06:15:19.830Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -90,7 +90,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -104,7 +104,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 11
           },
           "sideNames": {
@@ -128,10 +128,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -233,7 +233,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -314,7 +314,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 2
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -566,7 +566,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 12
           },
           "disabled": false,
