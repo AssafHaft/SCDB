@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T09:40:21.815Z",
+  "updatedAt": "2026-10-05T09:45:21.654Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -104,7 +104,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 10
           },
           "sideNames": {
@@ -203,7 +203,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -290,21 +290,6 @@
           "special": false
         },
         {
-          "start": "08:00",
-          "end": "09:00",
-          "level": "L2",
-          "name": "Improvers (M2)",
-          "nameEn": "Improvers (M2)",
-          "zone": "reef",
-          "places": {
-            "right": 18,
-            "left": 18
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
           "start": "08:30",
           "end": "10:00",
           "level": "L0",
@@ -344,7 +329,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 18
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -496,7 +481,7 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 7
           },
           "sideNames": {
@@ -693,7 +678,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 16
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -882,7 +867,7 @@
           "nameEn": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 15
           },
           "disabled": false,
