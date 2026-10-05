@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T13:20:22.334Z",
+  "updatedAt": "2026-10-05T13:25:21.886Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -187,8 +187,8 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 16
+            "right": 8,
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -203,7 +203,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 4
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -217,8 +217,8 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 8
+            "right": 11,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -233,7 +233,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -247,7 +247,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 7,
             "left": 3
           },
           "disabled": false,
@@ -418,7 +418,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 4
           },
           "disabled": false,
@@ -451,7 +451,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 10
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -566,7 +566,7 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 10,
             "left": 13
           },
           "disabled": false,
