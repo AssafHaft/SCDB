@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T09:35:17.931Z",
+  "updatedAt": "2026-10-05T09:40:21.815Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -233,7 +233,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -293,12 +293,12 @@
           "start": "08:00",
           "end": "09:00",
           "level": "L2",
-          "name": "סשן פרטי- גולשים ללא גבולות",
-          "nameEn": "",
+          "name": "Improvers (M2)",
+          "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 20,
-            "left": 20
+            "right": 18,
+            "left": 18
           },
           "disabled": false,
           "open": true,
@@ -388,8 +388,8 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 15
+            "right": 10,
+            "left": 14
           },
           "disabled": false,
           "open": true,
