@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T11:25:17.067Z",
+  "updatedAt": "2026-10-06T11:30:23.755Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -166,7 +166,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -197,7 +197,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 21
+            "bay": 22
           },
           "disabled": false,
           "open": true,
@@ -266,11 +266,11 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -313,7 +313,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -439,11 +439,11 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 10
+            "left": 14
           },
           "sideNames": {
             "right": "Improvers (M2)",
-            "left": "שבט הנובה עשרה גולשים"
+            "left": "שבט הנובה ארבע עשרה גולשים"
           },
           "sideNamesEn": {
             "right": "Improvers (M2)",
@@ -461,7 +461,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 14
           },
           "disabled": false,
@@ -491,11 +491,11 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -507,7 +507,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -688,7 +688,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -852,7 +852,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 15
           },
           "disabled": false,
