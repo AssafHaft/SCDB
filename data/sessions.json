@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T09:15:18.643Z",
+  "updatedAt": "2026-10-07T09:20:19.643Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -127,11 +127,11 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -142,11 +142,11 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -173,7 +173,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -234,7 +234,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 20
           },
           "sideNames": {
@@ -273,10 +273,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -307,7 +307,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 7
           },
           "disabled": false,
@@ -398,7 +398,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -549,7 +549,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
