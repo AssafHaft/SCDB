@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T11:25:16.438Z",
+  "updatedAt": "2026-10-07T11:30:59.273Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -157,7 +157,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 3
           },
           "disabled": false,
@@ -172,8 +172,8 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
-            "left": 8
+            "right": 12,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -234,7 +234,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 20
           },
           "sideNames": {
@@ -307,7 +307,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 5
           },
           "disabled": false,
@@ -323,7 +323,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 9
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -427,7 +427,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 10
           },
           "disabled": false,
@@ -533,7 +533,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 13
           },
           "disabled": false,
@@ -644,8 +644,8 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 8
+            "right": 7,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -799,7 +799,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
