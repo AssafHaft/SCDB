@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T14:15:20.602Z",
+  "updatedAt": "2026-10-07T14:20:18.486Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -241,7 +241,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 6
           },
           "disabled": false,
@@ -271,7 +271,7 @@
           "nameEn": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 12
           },
           "disabled": false,
@@ -291,7 +291,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 5
           },
           "disabled": false,
@@ -322,7 +322,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -412,7 +412,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
