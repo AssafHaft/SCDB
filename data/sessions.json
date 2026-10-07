@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T17:45:20.814Z",
+  "updatedAt": "2026-10-07T17:50:19.525Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -143,7 +143,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": false,
@@ -271,7 +271,7 @@
           "nameEn": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 2
           },
           "disabled": false,
@@ -291,7 +291,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 4
           },
           "disabled": false,
@@ -368,7 +368,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -382,7 +382,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -397,7 +397,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -644,10 +644,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
