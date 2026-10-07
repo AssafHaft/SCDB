@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T08:40:21.988Z",
+  "updatedAt": "2026-10-07T08:45:22.037Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -127,11 +127,11 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -752,7 +752,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 7
           },
           "disabled": false,
