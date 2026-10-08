@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T09:10:20.098Z",
+  "updatedAt": "2026-10-08T09:15:19.873Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -134,7 +134,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -150,7 +150,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -256,7 +256,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -270,7 +270,7 @@
           "nameEn": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 13
           },
           "disabled": false,
@@ -306,7 +306,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -320,7 +320,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 4
           },
           "disabled": false,
@@ -351,7 +351,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 3,
             "left": 4
           },
           "disabled": false,
@@ -615,7 +615,7 @@
           "nameEn": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 12
           },
           "disabled": false,
@@ -818,7 +818,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 23
+            "bay": 22
           },
           "disabled": false,
           "open": true,
@@ -849,7 +849,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
