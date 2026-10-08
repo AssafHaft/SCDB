@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T05:30:24.383Z",
+  "updatedAt": "2026-10-08T05:35:16.634Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -90,7 +90,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 8
           },
           "disabled": false,
@@ -134,7 +134,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 15,
             "left": 3
           },
           "disabled": false,
@@ -195,7 +195,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -475,7 +475,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 7
           },
           "disabled": false,
@@ -521,7 +521,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -646,7 +646,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 10
           },
           "disabled": false,
@@ -678,7 +678,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 12
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -786,7 +786,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 16
           },
           "disabled": false,
