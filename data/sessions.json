@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T07:55:18.998Z",
+  "updatedAt": "2026-10-08T08:00:30.704Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -108,7 +108,7 @@
             "left": 1
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -135,7 +135,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -225,8 +225,8 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 13
+            "right": 5,
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -320,7 +320,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 4
           },
           "disabled": false,
@@ -351,7 +351,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 4
           },
           "disabled": false,
@@ -571,7 +571,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -694,7 +694,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 15
+            "bay": 12
           },
           "disabled": false,
           "open": true,
