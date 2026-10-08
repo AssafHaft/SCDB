@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T07:30:26.858Z",
+  "updatedAt": "2026-10-08T07:35:17.444Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -105,10 +105,10 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -135,7 +135,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -165,7 +165,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -225,7 +225,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 5,
             "left": 16
           },
           "disabled": false,
@@ -291,7 +291,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 11
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -320,7 +320,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 9,
             "left": 4
           },
           "disabled": false,
@@ -520,7 +520,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 6,
             "left": 8
           },
           "disabled": false,
@@ -646,7 +646,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 10
           },
           "disabled": false,
@@ -924,7 +924,7 @@
           "nameEn": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 15
           },
           "disabled": false,
