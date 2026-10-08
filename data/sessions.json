@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T19:55:18.093Z",
+  "updatedAt": "2026-10-08T20:00:30.747Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -305,8 +305,8 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 6
+            "right": 8,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -321,10 +321,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -476,10 +476,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -708,7 +708,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 7
           },
           "disabled": false,
