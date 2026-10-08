@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T10:45:21.711Z",
+  "updatedAt": "2026-10-08T10:50:22.691Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -164,7 +164,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 10,
             "left": 11
           },
           "disabled": false,
@@ -180,7 +180,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -195,7 +195,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -225,7 +225,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 11
           },
           "disabled": false,
@@ -241,7 +241,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 7
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -255,7 +255,7 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
@@ -271,7 +271,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -320,7 +320,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 1
           },
           "disabled": false,
