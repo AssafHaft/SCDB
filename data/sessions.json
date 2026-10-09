@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T06:55:17.455Z",
+  "updatedAt": "2026-10-09T07:00:32.721Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -91,7 +91,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
           "open": false,
@@ -153,7 +153,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 3
           },
           "disabled": false,
@@ -215,10 +215,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -260,7 +260,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -402,10 +402,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -418,7 +418,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 7
+            "bay": 5
           },
           "disabled": false,
           "open": true,
@@ -464,7 +464,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 20
+            "bay": 18
           },
           "disabled": false,
           "open": true,
@@ -496,7 +496,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 9
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -510,7 +510,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 16
           },
           "disabled": false,
