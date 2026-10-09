@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T07:05:15.052Z",
+  "updatedAt": "2026-10-09T07:10:19.076Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -402,10 +402,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -418,7 +418,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 6
           },
           "disabled": false,
           "open": true,
@@ -464,7 +464,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 16
+            "bay": 18
           },
           "disabled": false,
           "open": true,
@@ -496,7 +496,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 7
           },
           "disabled": false,
           "open": true,
