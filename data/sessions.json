@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T16:10:18.684Z",
+  "updatedAt": "2026-10-09T16:15:23.962Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -402,7 +402,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -428,15 +428,23 @@
           "start": "12:00",
           "end": "13:00",
           "level": "L2",
-          "name": "Improvers (M2)",
-          "nameEn": "FlowM2 ()",
+          "name": "יום הולדת עלמה (4 גולשות)",
+          "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 4,
             "left": 0
           },
+          "sideNames": {
+            "right": "יום הולדת עלמה (4 גולשות)",
+            "left": "Improvers (M2)"
+          },
+          "sideNamesEn": {
+            "right": "Improvers (M2)",
+            "left": "FlowM2 ()"
+          },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
