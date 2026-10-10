@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T18:15:20.695Z",
+  "updatedAt": "2026-10-10T18:20:23.600Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -426,7 +426,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
@@ -517,8 +517,8 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 6
+            "right": 8,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -703,7 +703,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 15
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -870,7 +870,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 12
+            "left": 13
           },
           "sideNames": {
             "right": "צוות ביטן",
