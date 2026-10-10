@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T05:30:23.020Z",
+  "updatedAt": "2026-10-10T05:35:20.401Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -138,7 +138,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -208,7 +208,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 1
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -270,7 +270,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 17
+            "bay": 15
           },
           "disabled": false,
           "open": true,
@@ -391,7 +391,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 7
           },
           "disabled": false,
