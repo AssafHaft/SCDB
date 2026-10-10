@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T09:00:33.094Z",
+  "updatedAt": "2026-10-10T09:05:16.419Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -138,7 +138,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 7
+            "bay": 8
           },
           "disabled": false,
           "open": false,
@@ -176,10 +176,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -192,7 +192,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 13
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -224,7 +224,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 4
           },
           "disabled": false,
           "open": true,
@@ -254,10 +254,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -286,7 +286,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 17
+            "bay": 16
           },
           "disabled": false,
           "open": true,
@@ -362,10 +362,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -376,7 +376,7 @@
           "nameEn": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 2
           },
           "disabled": false,
@@ -764,7 +764,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
