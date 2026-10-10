@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T09:30:27.809Z",
+  "updatedAt": "2026-10-10T09:35:15.986Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -176,10 +176,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -238,7 +238,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 7
           },
           "disabled": false,
@@ -300,11 +300,11 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -315,11 +315,11 @@
           "nameEn": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -376,7 +376,7 @@
           "nameEn": "Malibu Turns (New M3+M4)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
@@ -426,7 +426,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 15
           },
           "disabled": false,
@@ -594,7 +594,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 16
+            "left": 14
           },
           "disabled": false,
           "open": true,
