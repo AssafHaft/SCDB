@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T15:10:20.015Z",
+  "updatedAt": "2026-10-10T15:15:20.206Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -391,7 +391,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 4
           },
           "disabled": false,
@@ -443,22 +443,6 @@
           "places": {
             "right": 7,
             "left": 9
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "08:30",
-          "end": "10:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - בוגרים מעל גיל 16",
-          "nameEn": "Beginners lesson in the Bay - Over 16 years",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 23
           },
           "disabled": false,
           "open": true,
