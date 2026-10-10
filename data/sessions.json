@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T18:05:18.308Z",
+  "updatedAt": "2026-10-10T18:10:20.516Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -426,7 +426,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 10
           },
           "disabled": false,
@@ -517,8 +517,8 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 9
+            "right": 8,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -532,7 +532,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -577,7 +577,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 13
           },
           "disabled": false,
@@ -870,7 +870,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 13
+            "left": 12
           },
           "sideNames": {
             "right": "צוות ביטן",
