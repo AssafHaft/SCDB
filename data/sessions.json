@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T16:10:19.907Z",
+  "updatedAt": "2026-10-11T16:15:20.363Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -256,7 +256,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -275,7 +275,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 14
           },
           "disabled": false,
@@ -336,7 +336,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 14
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -350,7 +350,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 8
           },
           "disabled": false,
@@ -366,7 +366,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 9
+            "left": 8
           },
           "sideNames": {
             "right": "קהילת שבט הנובה (עשרה גולשים)",
@@ -389,7 +389,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -419,7 +419,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -535,7 +535,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
