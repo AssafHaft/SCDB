@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T10:20:19.845Z",
+  "updatedAt": "2026-10-11T10:25:17.067Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -195,7 +195,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 5
           },
           "disabled": false,
@@ -210,7 +210,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
@@ -225,7 +225,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 6
           },
           "disabled": false,
@@ -361,12 +361,20 @@
           "start": "12:00",
           "end": "13:00",
           "level": "L2",
-          "name": "Improvers (M2)",
+          "name": "קהילת שבט הנובה (עשרה גולשים)",
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 10,
             "left": 12
+          },
+          "sideNames": {
+            "right": "קהילת שבט הנובה (עשרה גולשים)",
+            "left": "Improvers (M2)"
+          },
+          "sideNamesEn": {
+            "right": "Improvers (M2)",
+            "left": "Improvers (M2)"
           },
           "disabled": false,
           "open": true,
@@ -411,7 +419,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -697,7 +705,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 20
           },
           "disabled": false,
