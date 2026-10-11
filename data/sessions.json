@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T17:35:16.733Z",
+  "updatedAt": "2026-10-11T17:40:21.988Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -256,10 +256,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -276,7 +276,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -366,7 +366,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 10
+            "left": 9
           },
           "sideNames": {
             "right": "קהילת שבט הנובה (עשרה גולשים)",
@@ -419,7 +419,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 14
+            "left": 11
           },
           "disabled": false,
           "open": true,
