@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T15:25:19.508Z",
+  "updatedAt": "2026-10-11T15:30:23.568Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -240,7 +240,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 0,
             "left": 5
           },
           "disabled": false,
@@ -256,7 +256,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -321,7 +321,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -336,7 +336,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -366,7 +366,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 11
+            "left": 10
           },
           "sideNames": {
             "right": "קהילת שבט הנובה (עשרה גולשים)",
@@ -504,7 +504,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -615,7 +615,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 18
           },
           "disabled": false,
@@ -706,7 +706,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 18
+            "left": 17
           },
           "disabled": false,
           "open": true,
