@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T06:55:15.545Z",
+  "updatedAt": "2026-10-12T07:00:32.253Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -74,11 +74,11 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 9
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -90,7 +90,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -143,7 +143,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -293,7 +293,7 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 14
           },
           "disabled": false,
@@ -338,7 +338,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 16
           },
           "disabled": false,
@@ -384,7 +384,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 3
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -537,7 +537,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -752,7 +752,7 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 15
           },
           "disabled": false,
@@ -783,7 +783,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
