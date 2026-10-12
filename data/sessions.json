@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T07:10:19.330Z",
+  "updatedAt": "2026-10-12T07:15:21.030Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -105,7 +105,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 7
           },
           "sideNames": {
             "right": "קהילת שבט הנובה (עשרה גולשים)",
@@ -143,7 +143,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -177,22 +177,6 @@
           },
           "disabled": false,
           "open": true,
-          "special": false
-        },
-        {
-          "start": "16:30",
-          "end": "18:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 11-16",
-          "nameEn": "Beginners lesson in the Bay - ages 11-16",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "children",
-          "places": {
-            "bay": 0
-          },
-          "disabled": false,
-          "open": false,
           "special": false
         },
         {
@@ -384,7 +368,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
