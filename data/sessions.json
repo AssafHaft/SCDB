@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T11:50:18.083Z",
+  "updatedAt": "2026-10-13T11:55:16.452Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -307,7 +307,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 14
           },
           "disabled": false,
@@ -424,12 +424,20 @@
           "start": "13:00",
           "end": "14:00",
           "level": "L2",
-          "name": "Improvers (M2) - כולל גלשן סופט וחליפה ללא עלות",
-          "nameEn": "Improvers (M2)",
+          "name": "NAVINA - אירוע פרטי",
+          "nameEn": "",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 8,
             "left": 18
+          },
+          "sideNames": {
+            "right": "NAVINA - אירוע פרטי",
+            "left": "Improvers (M2) - כולל גלשן סופט וחליפה ללא עלות"
+          },
+          "sideNamesEn": {
+            "right": "",
+            "left": "Improvers (M2)"
           },
           "disabled": false,
           "open": true,
@@ -696,7 +704,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 7
           },
           "disabled": false,
