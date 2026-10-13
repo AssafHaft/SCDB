@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T11:40:18.316Z",
+  "updatedAt": "2026-10-13T11:45:19.391Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -242,7 +242,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 11
           },
           "disabled": false,
@@ -258,7 +258,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -273,7 +273,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -384,7 +384,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -428,7 +428,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 19,
+            "right": 11,
             "left": 18
           },
           "disabled": false,
@@ -489,7 +489,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -534,7 +534,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -644,7 +644,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 7
+            "left": 6
           },
           "sideNames": {
             "right": "רם הנדסה (5)",
@@ -696,7 +696,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 7
           },
           "disabled": false,
