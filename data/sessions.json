@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T06:10:19.513Z",
+  "updatedAt": "2026-10-13T06:15:19.029Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -75,7 +75,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -164,7 +164,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 12
           },
           "disabled": false,
@@ -518,7 +518,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 14
           },
           "disabled": false,
