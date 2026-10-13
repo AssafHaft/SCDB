@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T11:20:23.459Z",
+  "updatedAt": "2026-10-13T11:25:17.056Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -134,7 +134,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 10
           },
           "disabled": false,
@@ -149,7 +149,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 10
           },
           "disabled": false,
@@ -164,7 +164,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 6
           },
           "disabled": false,
@@ -257,7 +257,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 3,
             "left": 3
           },
           "disabled": false,
@@ -644,7 +644,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 9
+            "left": 7
           },
           "sideNames": {
             "right": "רם הנדסה (5)",
@@ -749,8 +749,8 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
-            "left": 15
+            "right": 10,
+            "left": 16
           },
           "disabled": false,
           "open": true,
