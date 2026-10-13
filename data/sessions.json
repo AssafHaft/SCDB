@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T08:55:15.036Z",
+  "updatedAt": "2026-10-13T09:00:32.647Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -119,7 +119,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 2
           },
           "disabled": false,
@@ -135,7 +135,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 16
+            "left": 17
           },
           "disabled": false,
           "open": true,
@@ -213,7 +213,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 3
           },
           "disabled": false,
           "open": true,
@@ -488,7 +488,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 11
           },
           "disabled": false,
@@ -518,7 +518,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 14
           },
           "disabled": false,
@@ -644,7 +644,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 11
+            "left": 9
           },
           "sideNames": {
             "right": "רם הנדסה (5)",
@@ -749,8 +749,8 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 16
+            "right": 13,
+            "left": 15
           },
           "disabled": false,
           "open": true,
