@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T04:05:16.439Z",
+  "updatedAt": "2026-10-14T04:10:20.030Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -15,7 +15,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": false,
@@ -45,7 +45,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -75,7 +75,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 11,
             "left": 10
           },
           "disabled": false,
