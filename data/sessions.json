@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T09:15:20.232Z",
+  "updatedAt": "2026-10-14T09:20:19.996Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -167,7 +167,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 12
+            "left": 11
           },
           "sideNames": {
             "right": "Navina (2)",
@@ -189,8 +189,8 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 0
+            "right": 1,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -204,7 +204,7 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 13
           },
           "disabled": false,
@@ -219,7 +219,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 3,
             "left": 7
           },
           "disabled": false,
@@ -279,7 +279,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 1
           },
           "disabled": false,
