@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T08:20:16.743Z",
+  "updatedAt": "2026-10-14T08:25:17.976Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -121,7 +121,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 6
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -136,7 +136,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 15
+            "left": 14
           },
           "sideNames": {
             "right": "NAVINA - אירוע פרטי",
@@ -159,7 +159,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -271,7 +271,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 8,
             "left": 1
           },
           "disabled": false,
@@ -691,7 +691,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 6
           },
           "disabled": false,
           "open": true,
