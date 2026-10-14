@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T09:40:21.216Z",
+  "updatedAt": "2026-10-14T09:45:21.802Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -144,7 +144,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 13
+            "left": 12
           },
           "sideNames": {
             "right": "NAVINA - אירוע פרטי",
@@ -234,7 +234,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 17
           },
           "disabled": false,
@@ -264,7 +264,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 5
           },
           "disabled": false,
@@ -715,10 +715,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 0
+            "bay": 4
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
