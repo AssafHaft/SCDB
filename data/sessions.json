@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T07:50:17.851Z",
+  "updatedAt": "2026-10-14T07:55:14.698Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -105,7 +105,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
@@ -121,7 +121,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -169,12 +169,20 @@
           "start": "15:00",
           "end": "16:00",
           "level": "L5",
-          "name": "Expert (T2 Only)",
+          "name": "Navina (1)",
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 3
+            "left": 2
+          },
+          "sideNames": {
+            "right": "Navina (1)",
+            "left": "Expert (T2 Only)"
+          },
+          "sideNamesEn": {
+            "right": "Expert (T2 Only)",
+            "left": "Expert (T2 Only)"
           },
           "disabled": false,
           "open": true,
@@ -411,7 +419,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 9,
             "left": 7
           },
           "disabled": false,
@@ -544,7 +552,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 13,
             "left": 11
           },
           "disabled": false,
