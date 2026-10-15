@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-15T08:55:15.560Z",
+  "updatedAt": "2026-10-15T09:00:31.910Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -116,7 +116,7 @@
             "left": 15
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -617,7 +617,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 14
           },
           "disabled": false,
