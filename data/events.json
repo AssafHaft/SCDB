@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T20:45:21.007Z",
+  "updatedAt": "2026-10-17T20:50:18.100Z",
   "source": "https://www.srfparktlv.co.il/eventer/",
   "parserOk": true,
   "events": [
@@ -54,7 +54,7 @@
     {
       "date": "2026-11-13",
       "time": "10:30",
-      "title": "סדנה לנשים | Level up your bottom turn | L3 Left",
+      "title": "סדנה לנשים | Level up your Bottom Turn | L3 Left",
       "details": "Buttom Turn הראשון ועד לשיפור הטכניקה - סדנה שמשלבת תנועה, מיקוד ותרגול מעשי, עם צילום וניתוח הגלישה שלך.",
       "image": "https://api.srfparktlv.co.il/uploads/1792269285473_activity_scheduler_143.jpg",
       "url": "/eventer/buttomturn/"
@@ -70,10 +70,18 @@
     {
       "date": "2026-11-24",
       "time": "19:00",
-      "title": "Mobility • Balance • Coordination for Surfers",
+      "title": "Mobility | Balance | Coordination for Surfers",
       "details": "משפרים יציבות, תנועה ושליטה בגלשן. סדנה מעשית עם רותם סולארצ’יק לפיתוח שיווי משקל, קואורדינציה וטכניקה שיעזרו לכם להוציא יותר מכל גל.",
-      "image": "https://api.srfparktlv.co.il/uploads/1792269865136_activity_scheduler_145.jpg",
+      "image": "https://api.srfparktlv.co.il/uploads/1792269954405_activity_scheduler_145.jpg",
       "url": "/eventer/mobilitybalancecoordination/"
+    },
+    {
+      "date": "2026-12-01",
+      "time": "19:00",
+      "title": "UNLOCK YOUR RANGE",
+      "details": "Flexibility for Surfers – יותר גמישות, פחות עומס וחופש תנועה על הגלשן בסדנת יוגה עם דנה ניסני.",
+      "image": "https://api.srfparktlv.co.il/uploads/1792270199704_activity_scheduler_146.jpg",
+      "url": "/eventer/flexibilityforsurfers/"
     }
   ]
 }
