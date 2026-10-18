@@ -99,7 +99,6 @@ while `scripts/parse-sessions.mjs` is fixed.
 
 Everything staff might need to change lives in **`js/config.js`**:
 
-- `operatingHours` — per weekday; outside them the quiet closed screen shows.
 - `weather.latitude/longitude` — park location for Open-Meteo.
 - `capacities` — set per-level session capacities (once confirmed with the
   club) to switch the display from "4 places left" to "8 of 12 in the water".

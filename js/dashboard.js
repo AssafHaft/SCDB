@@ -116,27 +116,6 @@
     }, 380);
   }
 
-  // ---- operating hours -----------------------------------------------------
-  function openState(now) {
-    const hours = CONFIG.operatingHours[now.getDay()];
-    if (hours && nowMin(now) >= toMin(hours.open) && nowMin(now) < toMin(hours.close)) {
-      return { open: true };
-    }
-    // find next opening
-    for (let i = 0; i < 8; i++) {
-      const d = new Date(now);
-      d.setDate(d.getDate() + i);
-      const h = CONFIG.operatingHours[d.getDay()];
-      if (!h) continue;
-      if (i === 0 && nowMin(now) >= toMin(h.close)) continue; // already closed today
-      if (i === 0) return { open: false, label: T.opensAt(h.open) };
-      if (i === 1) return { open: false, label: T.opensTomorrow(h.open) };
-      const day = d.toLocaleDateString(T.locale, { weekday: "long" });
-      return { open: false, label: T.opensOn(day, h.open) };
-    }
-    return { open: false, label: "" };
-  }
-
   // ---- schedule lookups ----------------------------------------------------
   function sessionsFor(dateStr) {
     if (!data || !data.days) return [];
@@ -151,8 +130,7 @@
     );
   }
 
-  function findNext(sessions, now, zone) {
-    const n = nowMin(now);
+  function findNext(sessions, n, zone) {
     return sessions
       .filter((s) => s.zone === zone && toMin(s.start) > n)
       .sort((a, b) => toMin(a.start) - toMin(b.start))[0];
@@ -211,7 +189,7 @@
     return T.placesLeft(n);
   }
 
-  function renderZone(id, current, next, sideKey) {
+  function renderZone(id, current, next, sideKey, tomorrow) {
     const card = $(id);
     const status = card.querySelector(".zone-status");
     const program = card.querySelector(".zone-program");
@@ -245,7 +223,7 @@
         `<span class="lvl-badge ${levelClass(next.level)}">${next.level}</span>` +
         `<span class="zone-name">${sessionName(next, sideKey)}</span>`;
       places.textContent = n == null ? "" : placesText(n, next.level);
-      time.textContent = `${T.nextLesson} ${iso(next.start)}`;
+      time.textContent = `${tomorrow ? T.tomorrowFull : T.nextLesson} ${iso(next.start)}`;
     } else {
       setState("is-idle");
       status.textContent = `○ ${T.noSession}`;
@@ -559,7 +537,7 @@
   // pop. The pinned row is in its own container and is untouched.
   function tickEventsRotation() {
     const rotEl = $("events-rotating");
-    if (!rotEl || !eventsRotatable || document.body.classList.contains("closed")) return;
+    if (!rotEl || !eventsRotatable) return;
     rotEl.classList.add("is-fading");
     setTimeout(() => {
       eventsOffset = (eventsOffset + 1) % Math.max(eventsRotatable, 1);
@@ -573,19 +551,13 @@
     $("clock").textContent = iso(hm(now));
     $("date").textContent = T.date(now);
 
-    // open / closed
-    const state = openState(now);
-    document.body.classList.toggle("closed", !state.open);
-    if (!state.open) {
-      $("closed-sub").textContent = state.label || "";
-      $("closed-clock").textContent = hm(now);
-      return;
-    }
-
     const sessions = sessionsFor(todayStr(now));
     const reefNow = findCurrent(sessions, now, "reef");
     const bayNow = findCurrent(sessions, now, "bay");
-    const bayNext = findNext(sessions, now, "bay");
+    const bayToday = findNext(sessions, nowMin(now), "bay");
+    const tmr = new Date(now);
+    tmr.setDate(tmr.getDate() + 1);
+    const bayNext = bayToday || findNext(sessionsFor(todayStr(tmr)), -1, "bay");
     const queue = upcomingReef(now);
     const reefNextInfo = queue[0] || null;
 
@@ -603,9 +575,12 @@
     renderNowStrip(reefNow, now);
 
     // zone columns
-    renderZone("zone-right", reefNow, reefNextInfo && !reefNextInfo.tomorrow ? reefNextInfo.session : null, "right");
-    renderZone("zone-left", reefNow, reefNextInfo && !reefNextInfo.tomorrow ? reefNextInfo.session : null, "left");
-    renderZone("zone-bay", bayNow, bayNext, "bay");
+    // After the day's last session these show tomorrow's first instead.
+    const reefNext = reefNextInfo && reefNextInfo.session;
+    const reefTmr = reefNextInfo && reefNextInfo.tomorrow;
+    renderZone("zone-right", reefNow, reefNext, "right", reefTmr);
+    renderZone("zone-left", reefNow, reefNext, "left", reefTmr);
+    renderZone("zone-bay", bayNow, bayNext, "bay", !bayToday);
 
     // park events
     renderEvents(now);

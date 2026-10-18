@@ -9,19 +9,6 @@ window.CONFIG = {
   languages: ["en", "he"],
   languageIntervalSeconds: 60,
 
-  // Operating hours per weekday (0 = Sunday … 6 = Saturday), local time.
-  // Outside these hours the dashboard shows the quiet "closed" screen.
-  // Times are "HH:MM" 24h. Set a day to null to mark the whole day closed.
-  operatingHours: {
-    0: { open: "06:00", close: "23:00" }, // Sunday
-    1: { open: "06:00", close: "23:00" }, // Monday
-    2: { open: "06:00", close: "23:00" }, // Tuesday
-    3: { open: "06:00", close: "23:00" }, // Wednesday
-    4: { open: "06:00", close: "23:00" }, // Thursday
-    5: { open: "06:00", close: "23:00" }, // Friday
-    6: { open: "06:00", close: "23:00" }, // Saturday
-  },
-
   // Where the parsed schedule lives (written by the GitHub Actions job).
   sessionsUrl: "data/sessions.json",
 

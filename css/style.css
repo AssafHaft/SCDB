@@ -101,22 +101,6 @@ body.lang-fade { opacity: 0; }
   flex-shrink: 0;
 }
 
-/* ---- closed screen ------------------------------------------------------ */
-#closed-screen { display: none; }
-body.closed #closed-screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-body.closed #closed-screen > * + * { margin-top: calc(var(--uh) * 2); }
-body.closed #dashboard { display: none; }
-.closed-logo { width: calc(var(--uh) * 36); max-width: calc(var(--uw) * 42); height: auto; }
-.closed-sub  { font-size: calc(var(--uw) * 2.2); color: var(--ink-2); }
-.closed-clock{ font-size: calc(var(--uw) * 1.8); color: var(--ink-3); margin-top: calc(var(--uh) * 4); font-variant-numeric: tabular-nums; }
-
 /* ---- layout ------------------------------------------------------------- */
 /* Rows: topbar · next-session hero (the lead) · now strip (status) ·
  * zone cards · freshness note. The hero is the tallest block on purpose —
