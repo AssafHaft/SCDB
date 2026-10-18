@@ -102,6 +102,10 @@
     $("lbl-next").textContent = T.nextSession;
     $("lbl-spots").textContent = T.spotsLeft;
     $("events-title").textContent = T.eventsTitle;
+    $("map-side-left").textContent = T.sideLeft;
+    $("map-side-right").textContent = T.sideRight;
+    $("map-cap-reef-l").textContent = $("map-cap-reef-r").textContent = T.reef;
+    $("map-cap-bay-l").textContent = $("map-cap-bay-r").textContent = T.bay;
     document.querySelector("#zone-left .zone-title").textContent = T.left;
     document.querySelector("#zone-right .zone-title").textContent = T.right;
     document.querySelector("#zone-bay .zone-title").textContent = T.bay;
@@ -243,15 +247,23 @@
   // down only as far as a given name actually requires — short names keep
   // the full size. Re-measured only when the text or the box changes, so
   // the once-a-second render loop doesn't thrash layout.
-  const HERO_NAME_MAX = 4.2, HERO_NAME_MIN = 2.6, HERO_NAME_STEP = 0.15;
+  const HERO_NAME_MAX = 4.2, HERO_NAME_MIN = 2.2, HERO_NAME_STEP = 0.15;
   let lastNameFit = "";
   function fitHeroName(el) {
-    const key = `${el.textContent}|${el.clientWidth}`;
+    // Font status is in the key so a late webfont load triggers a re-fit.
+    const fonts = document.fonts ? document.fonts.status : "";
+    const key = `${el.textContent}|${el.clientWidth}|${fonts}`;
     if (key === lastNameFit) return;
     lastNameFit = key;
+    // Measure the text itself against the box (which fills the row, see
+    // .hero-name): scrollWidth rounds to whole pixels, so a sub-pixel
+    // overflow passed as "fits" while the ellipsis still ate the last
+    // few characters.
+    const text = document.createRange();
+    text.selectNodeContents(el);
     for (let s = HERO_NAME_MAX; s >= HERO_NAME_MIN; s -= HERO_NAME_STEP) {
       el.style.fontSize = `calc(var(--uw) * ${s.toFixed(2)})`;
-      if (el.scrollWidth <= el.clientWidth + 1) return;
+      if (text.getBoundingClientRect().width <= el.getBoundingClientRect().width) return;
     }
   }
 
@@ -289,7 +301,6 @@
     level.textContent = s.level;
     level.className = "hero-badge " + levelClass(s.level);
     name.textContent = sessionName(s);
-    fitHeroName(name);
 
     const minsAway = info.tomorrow
       ? null
@@ -347,6 +358,40 @@
       note.textContent = T.asOf(asOf);
       note.className = "spots-note is-stale";
     }
+
+    // Fit last: the spot boxes and note set the width of the column beside
+    // the name, and they were rebuilt above. Fitting before them measured a
+    // wider box than the one the name ends up in.
+    fitHeroName(name);
+  }
+
+  // The pool map beside the hero. Each reef side gets the slot's own
+  // program there — sides can differ (a competition on one, a lesson on
+  // the other), so this looks at every reef record in the slot, not just
+  // the one the hero names. The Bay runs its own timetable, so its chip
+  // says when it's next in use.
+  function renderPoolMap(info, now, bay, bayTomorrow) {
+    const chip = (id, level, text, cls) => {
+      const el = $(id);
+      el.className = "map-chip" + (cls ? " " + cls : "");
+      el.innerHTML = (level ? `<span class="lvl-badge ${levelClass(level)}">${level}</span>` : "") +
+        `<span>${text}</span>`;
+    };
+    let slot = [];
+    if (info) {
+      const d = new Date(now);
+      if (info.tomorrow) d.setDate(d.getDate() + 1);
+      slot = sessionsFor(todayStr(d))
+        .filter((x) => x.zone === "reef" && x.start === info.session.start);
+    }
+    for (const side of ["left", "right"]) {
+      const s = slot.find((x) => x.places && x.places[side] != null);
+      if (!s) chip(`map-${side}`, "", "—", "is-none");
+      else if (s.places[side] === 0) chip(`map-${side}`, s.level, T.full, "is-full");
+      else chip(`map-${side}`, s.level, String(s.places[side]));
+    }
+    if (bay) chip("map-bay", bay.level, `${bayTomorrow ? T.tomorrow + " " : ""}${iso(bay.start)}`);
+    else chip("map-bay", "", "—", "is-none");
   }
 
   // Secondary: what's already in the water. Present tense, nothing to act
@@ -574,6 +619,7 @@
 
     // the lead: the next session and its remaining spots
     renderHero(reefNextInfo, now, asOf);
+    renderPoolMap(reefNextInfo, now, bayNext, !bayToday);
 
     // secondary: what's in the water right now
     renderNowStrip(reefNow, now);

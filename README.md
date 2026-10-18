@@ -140,10 +140,18 @@ stays centred. Don't pin a container to one side to "keep it still" across
 the rotation: that is exactly what made the two languages look
 inconsistent.
 
-The only exceptions are the two things that name real pool sides:
-`.pool-grid` (Reef Left | Reef Right) and `.spots-boxes` (Left | Right) in
-`css/style.css` are locked to `direction: ltr`, so they always match the
-water. Keep that pin if you restructure them, or the customer-reported
+The only exceptions are the things that name real pool sides:
+`.pool-grid` (Reef Left | Reef Right), `.spots-boxes` (Left | Right) and the
+hero's pool map (`.hero-map`) in `css/style.css` are locked to
+`direction: ltr`, so they always match the water.
+
+The pool map is the park's own drawing as inline SVG in `index.html`. Its
+labels are HTML laid over it at percentages of the SVG viewBox (the comment
+above `.hero-map` has the formula), so they scale with the screen. Each Reef
+chip shows that side's own level and spots for the next slot. Sides can run
+different programs in the same slot, so `renderPoolMap()` looks at every
+reef record at that time, not just the one the hero names. The Bay has
+its own timetable, so its chip shows when the Bay is next in use. Keep that pin if you restructure them, or the customer-reported
 "Right/Left on the wrong side" bug comes back.
 
 The pool cells are laid out by `.pool-grid` (2 columns, Bay spanning both).

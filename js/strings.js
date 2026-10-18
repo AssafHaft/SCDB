@@ -51,6 +51,7 @@ window.STRINGS = {
     tomorrowFull: "Tomorrow",
     sideRight: "Right",
     sideLeft: "Left",
+    reef: "Reef",
     asOf: (t) => `as of ${t}`,
     dur: (mins) => {
       if (mins < 60) return `${mins} min`;
@@ -112,6 +113,7 @@ window.STRINGS = {
     tomorrowFull: "מחר",
     sideRight: "ימין",
     sideLeft: "שמאל",
+    reef: "ריף",
     asOf: (t) => `נכון ל-${t}`,
     dur: (mins) => {
       if (mins < 60) return `${mins} דק׳`;

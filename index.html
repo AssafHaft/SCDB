@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=24" />
+  <link rel="stylesheet" href="css/style.css?v=25" />
 </head>
 <body>
   <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
@@ -58,6 +58,30 @@
           <span class="hero-name" id="nx-name">—</span>
         </div>
         <div class="hero-time" id="nx-time"></div>
+      </div>
+      <!-- Where the next session happens: the pool as drawn by the park
+           (wave machine up the middle, Reef nearest it, Bay below, beach at
+           the bottom), with each zone's slot info sitting on its zone.
+           Pinned ltr in CSS - Left and Right are the water's sides, not
+           reading direction; only the map's place in the hero mirrors. -->
+      <div class="hero-map" aria-hidden="true">
+        <svg viewBox="8 6 171 186">
+          <path class="map-water" d="M90.3 9L12.5 118Q10 122 11.5 128C22 155 42 174 66.5 183C82 173 91.8 160 91.8 143L92.5 90.8H90.3Z"/>
+          <path class="map-water" d="M96.3 9L174.1 118Q176.6 122 175.1 128C164.6 155 144.6 174 120.1 183C104.6 173 94.8 160 94.8 143L94.1 90.8H96.3Z"/>
+          <path class="map-beach" d="M66.5 183C82 173 91.8 160 91.8 143L92.5 90.8H94.1L94.8 143C94.8 160 104.6 173 120.1 183Q93.3 197 66.5 183Z"/>
+          <path class="map-split" d="M36.5 85.5Q62 104 92 104M94.6 104Q124.6 104 150.1 85.5"/>
+          <rect class="map-pier" x="90.3" y="8.5" width="6" height="82.3" rx="1"/>
+          <path class="map-pier-seg" d="M90.3 15.3H96.3M90.3 22.1H96.3M90.3 28.9H96.3M90.3 35.7H96.3M90.3 42.5H96.3M90.3 49.3H96.3M90.3 56.1H96.3M90.3 62.9H96.3M90.3 69.7H96.3M90.3 76.5H96.3M90.3 83.3H96.3"/>
+        </svg>
+        <span class="map-side" id="map-side-left">Left</span>
+        <span class="map-side" id="map-side-right">Right</span>
+        <span class="map-caption" id="map-cap-reef-l">Reef</span>
+        <span class="map-caption" id="map-cap-reef-r">Reef</span>
+        <span class="map-caption" id="map-cap-bay-l">Bay</span>
+        <span class="map-caption" id="map-cap-bay-r">Bay</span>
+        <span class="map-chip" id="map-left"></span>
+        <span class="map-chip" id="map-right"></span>
+        <span class="map-chip" id="map-bay"></span>
       </div>
     </section>
 
@@ -123,8 +147,8 @@
        unlabelled: it's for staff, not for customers reading the wall. -->
   <button id="fs-toggle" type="button" aria-label="Toggle full screen"></button>
 
-  <script src="js/config.js?v=24"></script>
-  <script src="js/strings.js?v=24"></script>
-  <script src="js/dashboard.js?v=24"></script>
+  <script src="js/config.js?v=25"></script>
+  <script src="js/strings.js?v=25"></script>
+  <script src="js/dashboard.js?v=25"></script>
 </body>
 </html>

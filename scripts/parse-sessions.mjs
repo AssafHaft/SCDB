@@ -60,8 +60,9 @@ const MIN_PLAUSIBLE_SESSIONS = 20;
 
 // Booking extras stripped from names on the TV (e.g. "includes free softboard")
 // — an add-on note, not part of the session's name. Both spellings, since we
-// export both the Hebrew `name` and the English `en_name`.
-const STRIP_RE = /\s*-?\s*(?:כולל גלשן סופט ללא עלות|including free softboard)/i;
+// export both the Hebrew `name` and the English `en_name`. The club also
+// writes "…סופט וחליפה ללא עלות" (softboard *and wetsuit*); same note.
+const STRIP_RE = /\s*-?\s*(?:כולל גלשן סופט(?: וחליפה)? ללא עלות|including free softboard)/i;
 
 // Sessions that share a reef slot with the regular program (private training,
 // special activities). They sort after regular sessions so the dashboard's
