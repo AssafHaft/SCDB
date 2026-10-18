@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T12:45:19.473Z",
+  "updatedAt": "2026-10-18T12:50:18.437Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -165,7 +165,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 7,
             "left": 18
           },
           "disabled": false,
@@ -338,7 +338,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 16
           },
           "disabled": false,
@@ -443,7 +443,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 16,
             "left": 13
           },
           "disabled": false,
@@ -585,7 +585,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 7
+            "left": 8
           },
           "disabled": false,
           "open": true,
