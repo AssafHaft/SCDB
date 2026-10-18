@@ -19,6 +19,10 @@
 
   // ---- time helpers --------------------------------------------------------
   const pad = (n) => String(n).padStart(2, "0");
+
+  // PM10 µg/m³ — Israel's ambient standard. A sharav dust event blows
+  // straight past it; ordinary days sit far below.
+  const DUST_PM10 = 130;
   const hm = (d) => `${pad(d.getHours())}:${pad(d.getMinutes())}`;
   // Wrap a time range in bidi isolates (LRI…PDI) so "06:00–07:00" never
   // renders reversed inside RTL text.
@@ -585,12 +589,32 @@
     // park events
     renderEvents(now);
 
-    // weather — description resolved at render time (not fetch time) so
-    // it follows the current language on every rotation.
+    // weather — text resolved at render time (not fetch time) so it
+    // follows the current language on every rotation. UV shows only in
+    // daylight; rain and dust haze only when they matter, so on a normal
+    // day the block stays three short lines.
     if (weather) {
-      $("weather-temp").textContent = `${Math.round(weather.temp)}°`;
-      $("weather-desc").textContent = T.wmo[weather.code] || "";
-      $("weather-wind").textContent = `${T.wind} ${Math.round(weather.wind)} ${T.kmh}`;
+      const w = weather;
+      const warn = (s) => `<span class="wx-warn">${s}</span>`;
+      const uv = Math.round(w.uv);
+      const uvText = T.uv(uv, T.uvLevels[uv < 3 ? 0 : uv < 6 ? 1 : uv < 8 ? 2 : uv < 11 ? 3 : 4]);
+      const sun = [[T.sunrise, w.sunrise[0]], [T.sunset, w.sunset[0]], [T.sunrise, w.sunrise[1]]]
+        .find(([, t]) => t > now);
+      $("weather-temp").textContent = `${Math.round(w.temp)}°`;
+      $("weather-desc").textContent =
+        [T.wmo[w.code], T.feelsLike(Math.round(w.feels))].filter(Boolean).join(" · ");
+      // Only touch the DOM when the text actually changes — rebuilding
+      // these every second would restart the icon animations each tick.
+      const setHTML = (el, html) => { if (el._html !== html) el.innerHTML = el._html = html; };
+      setHTML($("weather-wind"), [
+        uv > 0 && (uv >= 6 ? warn(uvText) : uvText), // WHO: 6+ is "high"
+        `${windIcon(w.wind)}${T.wind} ${Math.round(w.wind)} ${T.kmh}`,
+      ].filter(Boolean).join(" · "));
+      setHTML($("weather-extra"), [
+        sun && `${horizonIcon(sun[0] === T.sunrise)}${sun[0]} ${iso(hm(sun[1]))}`,
+        w.rain >= 30 && warn(T.rainChance(w.rain)),
+        w.pm10 >= DUST_PM10 && warn(T.dust),
+      ].filter(Boolean).join(" · "));
     }
 
     // freshness note
@@ -629,22 +653,99 @@
     }
   }
 
+  // One icon per WMO weather code, in a 64x64 box: clear, partly cloudy,
+  // overcast, fog/haze, rain (drizzle, showers, and the snow codes Tel Aviv
+  // never sees) and thunderstorm — moon instead of sun at night. A dust
+  // event is drawn as haze. Colours come from .i-* classes in style.css;
+  // motion from .a-* classes (slow on purpose — a wall, not a screensaver).
+  // Animated parts are wrapped in <g> so a CSS transform never overrides a
+  // shape's own transform attribute, and rotations name their pivot in
+  // user units instead of relying on transform-box (older TV browsers).
+  const CLOUD = "M20 48A10 10 0 0 1 19.15 28.04A13 13 0 0 1 44.38 26.02A11 11 0 1 1 45 48Z";
+  const MOON = "M38 14A18 18 0 1 0 50 40A15 15 0 0 1 38 14Z";
+  function weatherIcon(code, day) {
+    const cloud = (t, cls = "") =>
+      `<g class="a-drift ${cls}"><path class="i-cloud ${cls}" d="${CLOUD}" transform="${t}"/></g>`;
+    const sun = (x, y, r) => {
+      let rays = "";
+      for (let i = 0; i < 8; i++) {
+        const c = Math.cos(i * Math.PI / 4), s = Math.sin(i * Math.PI / 4);
+        rays += `M${(x + c * (r + 5)).toFixed(1)} ${(y + s * (r + 5)).toFixed(1)}` +
+                `L${(x + c * (r + 11)).toFixed(1)} ${(y + s * (r + 11)).toFixed(1)}`;
+      }
+      return `<circle class="i-sun" cx="${x}" cy="${y}" r="${r}"/>` +
+        `<path class="i-ray a-spin" style="transform-origin:${x}px ${y}px" d="${rays}"/>`;
+    };
+    const moon = (t, o) =>
+      `<g class="a-rock" style="transform-origin:${o}px ${o}px"><path class="i-sun" d="${MOON}" transform="${t}"/></g>`;
+    const drops = [22, 33, 44].map((x, i) =>
+      `<path class="i-drop a-fall" style="animation-delay:-${i * 0.4}s" d="M${x} 47L${x - 3} 56"/>`).join("");
+    let g;
+    if (code <= 1) g = day ? sun(32, 32, 12) : moon("", 32);
+    else if (code === 2) g = (day ? sun(23, 23, 9) : moon("translate(2 2) scale(.6)", 21)) + cloud("translate(5 7)");
+    else if (code === 3) g = cloud("translate(12 -5) scale(.75)", "back") + cloud("translate(-3 6)");
+    else if (code <= 48) g = cloud("translate(0 -8)") +
+      '<path class="i-fog a-drift" d="M12 47H48"/><path class="i-fog a-drift back" d="M20 56H56"/>';
+    else if (code >= 95) g = cloud("translate(0 -6)") + '<path class="i-bolt a-flash" d="M34 40L24 53H31L27 63L40 49H33Z"/>';
+    else g = cloud("translate(0 -6)") + drops;
+    return `<svg viewBox="0 0 64 64">${g}</svg>`;
+  }
+
+  // Small inline symbols for the wind and sun lines (24x24, sized in em).
+  // The gusts flow faster the windier it is: ~5s a loop when calm, down
+  // to 1s in a strong wind.
+  function windIcon(kmh) {
+    const dur = Math.max(1, 5.5 - Math.round(kmh) / 8).toFixed(1);
+    return `<svg class="wx-sm" viewBox="0 0 24 24"><path class="i-wind a-flow" style="animation-duration:${dur}s" ` +
+      `d="M2 9H13A3 3 0 1 0 10 6M2 13H18A3 3 0 1 1 15 16M2 17H9"/></svg>`;
+  }
+  // Half a sun on the horizon, rising or sinking behind it.
+  function horizonIcon(rise) {
+    return `<svg class="wx-sm" viewBox="0 0 24 24">` +
+      `<clipPath id="wx-hz"><rect width="24" height="16"/></clipPath>` +
+      `<g clip-path="url(#wx-hz)"><g class="${rise ? "a-rise" : "a-set"}">` +
+      `<circle class="i-sun" cx="12" cy="16" r="4.5"/>` +
+      `<path class="i-ray" d="M7.4 11.4L5.6 9.6M12 9.5V7M16.6 11.4L18.4 9.6"/></g></g>` +
+      `<path class="i-hz" d="M2 16H22"/></svg>`;
+  }
+
   async function loadWeather() {
-    try {
-      const { latitude, longitude } = CONFIG.weather;
-      const url =
-        `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}` +
-        `&current=temperature_2m,wind_speed_10m,weather_code&timezone=auto`;
+    const get = async (url) => {
       const res = await fetch(url);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const j = await res.json();
-      // Store the raw WMO code — render() looks up the description in the
-      // current language's T.wmo table, so it follows language rotation.
+      return res.json();
+    };
+    try {
+      const { latitude, longitude } = CONFIG.weather;
+      const q = `latitude=${latitude}&longitude=${longitude}&timezone=auto`;
+      const [f, air] = await Promise.all([
+        get(`https://api.open-meteo.com/v1/forecast?${q}` +
+          `&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m,uv_index,is_day` +
+          `&daily=sunrise,sunset,precipitation_probability_max&forecast_days=2`),
+        // Air quality only feeds the dust-haze note; never lose the
+        // weather because this one call failed.
+        get(`https://air-quality-api.open-meteo.com/v1/air-quality?${q}&current=pm10`)
+          .catch(() => null),
+      ]);
+      // Sunrise/sunset come as local times with no offset, which older TV
+      // browsers parse as UTC — pin them with the offset Open-Meteo reports.
+      const at = (s) => new Date(Date.parse(s + "Z") - f.utc_offset_seconds * 1000);
+      // Store raw values (WMO code, numbers) — render() words them in the
+      // current language, so they follow language rotation.
       weather = {
-        temp: j.current.temperature_2m,
-        wind: j.current.wind_speed_10m,
-        code: j.current.weather_code,
+        temp: f.current.temperature_2m,
+        feels: f.current.apparent_temperature,
+        wind: f.current.wind_speed_10m,
+        uv: f.current.uv_index,
+        code: f.current.weather_code,
+        rain: f.daily.precipitation_probability_max[0],
+        sunrise: f.daily.sunrise.map(at),
+        sunset: f.daily.sunset.map(at),
+        pm10: air ? air.current.pm10 : null,
       };
+      // The icon doesn't depend on language, so it's drawn once per fetch.
+      $("weather-icon").innerHTML = weatherIcon(
+        weather.pm10 >= DUST_PM10 ? 45 : weather.code, f.current.is_day !== 0);
     } catch (e) {
       console.warn("weather fetch failed:", e.message);
     }

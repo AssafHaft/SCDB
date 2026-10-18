@@ -99,7 +99,13 @@ while `scripts/parse-sessions.mjs` is fixed.
 
 Everything staff might need to change lives in **`js/config.js`**:
 
-- `weather.latitude/longitude` — park location for Open-Meteo.
+- `weather.latitude/longitude` — park location for Open-Meteo. The weather
+  block shows temperature, condition and "feels like" (coastal humidity),
+  the UV level in daylight (orange from WHO "high", 6+), wind, and the next
+  sunrise/sunset. Two notes appear only when they matter: chance of rain
+  (30%+, so winter only in practice) and "Dust haze"/"אובך" when PM10 passes
+  Israel's 130 µg/m³ standard — a sharav. Air quality is a separate
+  Open-Meteo call; if it fails, the rest of the weather still shows.
 - `capacities` — set per-level session capacities (once confirmed with the
   club) to switch the display from "4 places left" to "8 of 12 in the water".
   Leave `null` to show the booking page's own wording.

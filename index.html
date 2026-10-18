@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=20" />
+  <link rel="stylesheet" href="css/style.css?v=23" />
 </head>
 <body>
   <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
@@ -27,10 +27,12 @@
         <div id="date"></div>
       </div>
       <div class="weather">
+        <div class="wx-icon" id="weather-icon" aria-hidden="true"></div>
         <div id="weather-temp">--°</div>
         <div class="weather-meta">
           <div id="weather-desc"></div>
           <div id="weather-wind"></div>
+          <div id="weather-extra"></div>
         </div>
       </div>
     </header>
@@ -117,8 +119,8 @@
        unlabelled: it's for staff, not for customers reading the wall. -->
   <button id="fs-toggle" type="button" aria-label="Toggle full screen"></button>
 
-  <script src="js/config.js?v=20"></script>
-  <script src="js/strings.js?v=20"></script>
-  <script src="js/dashboard.js?v=20"></script>
+  <script src="js/config.js?v=23"></script>
+  <script src="js/strings.js?v=23"></script>
+  <script src="js/dashboard.js?v=23"></script>
 </body>
 </html>
