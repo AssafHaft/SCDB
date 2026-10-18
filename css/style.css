@@ -22,12 +22,14 @@
  * rows, the hero columns and the card row. Row-direction margins need an
  * RTL counterpart — see the Hebrew block at the foot of this file.
  *
- * Bilingual (EN/HE, auto-rotating): structural containers that seat
- * physically-meaningful content — #hero, #zones, .spots-boxes — are pinned
- * to direction:ltr unconditionally, so the reef-side cards and the
- * Left/Right spot boxes never swap position when the language flips.
- * Only the text *inside* them re-flows to RTL for Hebrew (see the
- * `html[dir="rtl"]` rules near the bottom of each section). No interaction.
+ * Bilingual (EN/HE, auto-rotating): the whole layout mirrors with the
+ * language. Every row starts at the reading start (left in English, right
+ * in Hebrew): logo, Spots Left, the "Now in the water" heading and the
+ * pool box beneath it lead; the clock stays centred; weather, the next
+ * session, events and the freshness note trail. The ONLY things pinned to
+ * direction:ltr are the two that name real pool sides — .pool-grid
+ * (Reef Left | Reef Right) and .spots-boxes (Left | Right) — so they always
+ * match the water. See the Hebrew block at the foot of the file.
  * ------------------------------------------------------------------------- */
 :root {
   --uw: 1vw;   /* overridden in px by js/dashboard.js's sizeStage() */
@@ -185,21 +187,18 @@ body.lang-fade { opacity: 0; }
 
 /* ---- hero: the next session (the lead) ----------------------------------- */
 /* The one teal block on the light page — same move as the site's teal
- * buttons on white. Session identity on the left, the spot counts that
- * drive a sign-up on the right. */
+ * buttons on white. The spot counts that drive a sign-up lead (reading
+ * start), the session identity follows; mirrors in Hebrew. */
 #hero {
   background: var(--teal);
   border-radius: calc(var(--uw) * 1.6);
   padding: calc(var(--uh) * 2.2) calc(var(--uw) * 2.5);
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: calc(var(--uw) * 2.5);
   color: var(--on-teal);
   box-shadow: 0 calc(var(--uh) * 0.6) calc(var(--uh) * 3) rgba(36, 61, 68, 0.25);
-  /* Session on the left, spots on the right in both languages — nothing on
-     a glanceable TV should swap sides every 30s */
-  direction: ltr;
 }
 /* space-between, not center: the three lines spread to fill the block's
    full height so the hero reads as a deliberately composed panel rather
@@ -275,8 +274,9 @@ body.lang-fade { opacity: 0; }
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding-left: calc(var(--uw) * 2.8);
-  border-left: 1px solid rgba(244, 246, 244, 0.22);
+  /* divider on the side facing the session (mirrored for Hebrew below) */
+  padding-right: calc(var(--uw) * 2.8);
+  border-right: 1px solid rgba(244, 246, 244, 0.22);
 }
 .hero-spots > * + * { margin-top: calc(var(--uh) * 1.2); }
 .spots-label {
@@ -337,11 +337,8 @@ body.lang-fade { opacity: 0; }
   align-items: center;
   padding: 0 calc(var(--uw) * 0.4);
   min-width: 0;
-  /* Pinned left in both languages: this line is the heading for the pool
-     box directly beneath it, which sits on the left of the card row. In
-     Hebrew it would otherwise swing to the right edge, away from what it
-     describes. */
-  direction: ltr;
+  /* Flows with the language: its label leads, so it always sits right
+     above the pool box it heads (left in English, right in Hebrew). */
 }
 #now-strip > * + * { margin-left: calc(var(--uw) * 1.2); }
 /* Deliberately small: a one-line status glance, not a headline. The hero
@@ -394,9 +391,7 @@ body.lang-fade { opacity: 0; }
   grid-template-columns: 1fr 2.5fr;
   gap: calc(var(--uw) * 1.6);
   min-height: 0;   /* let the row shrink rather than overflow the screen */
-  /* Pool box then events, in that physical order regardless of language —
-     see the file header note. */
-  direction: ltr;
+  /* Pool box leads, events trail — mirrors in Hebrew, like the hero. */
 }
 
 /* ---- pool box: Reef Left | Reef Right, with Bay spanning underneath ----- */
@@ -580,7 +575,6 @@ body.lang-fade { opacity: 0; }
      language: left-to-right in English, right-to-left in Hebrew. The
      numbers themselves are bidi-isolated at build time, so "22.08" and
      "10:00" stay correct inside an RTL run. */
-  direction: ltr;
 }
 .event-when > * + * { margin-left: calc(var(--uw) * 0.85); }
 .event-row.is-today .event-when { background: var(--teal); color: var(--on-teal); }
@@ -641,43 +635,27 @@ body.lang-fade { opacity: 0; }
 }
 
 /* ---- Hebrew text flow -----------------------------------------------------
- * #hero, #zones, .pool-grid and .spots-boxes above are pinned to
- * direction:ltr so nothing changes screen position when the language
- * rotates. These rules re-enable right-to-left flow for the *text* inside
- * each pinned panel — badge/name order, label order, right-aligned
- * headings — without touching the panels' own position in their parent.
- *
- * In Hebrew EVERY text block must be RTL and right-aligned; a block left
- * on ltr inside an rtl card is what makes rows look ragged. .pool-cell is
- * listed explicitly because .pool-grid above it is pinned ltr (to keep
- * Reef Left physically left), and the cells would otherwise inherit that
- * and left-align their Hebrew text.
- *
- * Deliberately NOT flipped: .spots-boxes (pinned ltr so the Left/Right
- * boxes keep matching the real pool sides), and #now-strip — its label is
- * the heading for the pool box below it, which sits on the left, so the
- * strip stays left-anchored in both languages. Its children are ordered
- * explicitly in js/dashboard.js instead.
- *
- * .event-when IS flipped: day/date/time should read in language order
- * (day first), and the numbers inside it are bidi-isolated so they stay
- * correct within an RTL run. */
-html[dir="rtl"] .hero-text,
-html[dir="rtl"] .hero-spots,
-html[dir="rtl"] .zone-card,
-html[dir="rtl"] .pool-cell,
-html[dir="rtl"] #events-card,
-html[dir="rtl"] .event-body,
-html[dir="rtl"] .event-when {
-  direction: rtl;
+ * Everything inherits the page direction, so the layout mirrors on its
+ * own. The one exception: .pool-grid is pinned ltr (Reef Left stays
+ * physically left), so its cells are flipped back explicitly — otherwise
+ * their Hebrew would inherit ltr and left-align. In Hebrew EVERY text
+ * block must be RTL and right-aligned; one left on ltr is what makes rows
+ * look ragged. */
+html[dir="rtl"] .pool-cell { direction: rtl; }
+html[dir="rtl"] .hero-spots {
+  padding-right: 0;
+  border-right: 0;
+  padding-left: calc(var(--uw) * 2.8);
+  border-left: 1px solid rgba(244, 246, 244, 0.22);
 }
 
 /* Row-direction spacing is done with physical margins (see the no-flex-gap
  * note in the file header), so it has to be mirrored by hand for Hebrew:
  * in an RTL row the later sibling sits to the LEFT, so the gap belongs on
- * its right edge. .spots-boxes and .event-when are excluded on purpose —
- * both are pinned to direction:ltr and keep their left margins. */
+ * its right edge. .spots-boxes is excluded on purpose — it is pinned to
+ * direction:ltr and keeps its left margins. */
 html[dir="rtl"] .weather > * + *,
+html[dir="rtl"] #now-strip > * + *,
 html[dir="rtl"] .hero-topline > * + *,
 html[dir="rtl"] .hero-main > * + *,
 html[dir="rtl"] .zone-program > * + *,
@@ -687,6 +665,7 @@ html[dir="rtl"] .event-when > * + * {
 }
 html[dir="rtl"] .event-when > * + * { margin-right: calc(var(--uw) * 0.85); }
 html[dir="rtl"] .weather > * + * { margin-right: calc(var(--uw) * 1); }
+html[dir="rtl"] #now-strip > * + * { margin-right: calc(var(--uw) * 1.2); }
 html[dir="rtl"] .wx-sm { margin-right: 0; margin-left: 0.3em; }
 html[dir="rtl"] .hero-topline > * + * { margin-right: calc(var(--uw) * 1.2); }
 html[dir="rtl"] .hero-main > * + * { margin-right: calc(var(--uw) * 1.4); }

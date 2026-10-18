@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=23" />
+  <link rel="stylesheet" href="css/style.css?v=24" />
 </head>
 <body>
   <!-- #stage is a fixed 16:9 box (sized by js/dashboard.js off window
@@ -38,8 +38,16 @@
     </header>
 
     <!-- The lead: the next session is the only thing a passer-by can still
-         act on, so it owns the largest block and carries the spot counts. -->
+         act on, so it owns the largest block and carries the spot counts.
+         Layout mirrors with the language: the spot counts sit at the
+         reading start (left in English, right in Hebrew), the session
+         beside them - the same side the pool box takes in the row below. -->
     <section id="hero">
+      <div class="hero-spots">
+        <div class="spots-label" id="lbl-spots">Spots left</div>
+        <div class="spots-boxes" id="nx-spots"></div>
+        <div class="spots-note" id="nx-note"></div>
+      </div>
       <div class="hero-text">
         <div class="hero-topline">
           <span class="hero-label" id="lbl-next">Next session</span>
@@ -50,11 +58,6 @@
           <span class="hero-name" id="nx-name">—</span>
         </div>
         <div class="hero-time" id="nx-time"></div>
-      </div>
-      <div class="hero-spots">
-        <div class="spots-label" id="lbl-spots">Spots left</div>
-        <div class="spots-boxes" id="nx-spots"></div>
-        <div class="spots-note" id="nx-note"></div>
       </div>
     </section>
 
@@ -67,7 +70,8 @@
 
     <!-- The pool lives in one box: Reef Left and Reef Right side by side as
          they are in the water, Bay spanning underneath them. .pool-grid is
-         direction-pinned in CSS so left/right never mirror in RTL. -->
+         direction-pinned in CSS so left/right never mirror in RTL; the box
+         itself mirrors with the language (reading start, under the heading). -->
     <section id="zones">
       <div class="zone-card" id="pool-box">
         <div class="pool-grid">
@@ -119,8 +123,8 @@
        unlabelled: it's for staff, not for customers reading the wall. -->
   <button id="fs-toggle" type="button" aria-label="Toggle full screen"></button>
 
-  <script src="js/config.js?v=23"></script>
-  <script src="js/strings.js?v=23"></script>
-  <script src="js/dashboard.js?v=23"></script>
+  <script src="js/config.js?v=24"></script>
+  <script src="js/strings.js?v=24"></script>
+  <script src="js/dashboard.js?v=24"></script>
 </body>
 </html>

@@ -132,11 +132,18 @@ website by definition. (The parser only drops the leading `L5 -` level
 prefix, which the badge already shows, and the "including free softboard"
 booking note.)
 
-Layout is direction-pinned where it matters: the reef-side cells and the
-spot boxes name real pool sides, so `#hero`, `#zones`, `.pool-grid` and
-`.spots-boxes` in `css/style.css` are locked to `direction: ltr` regardless
-of language — only the text inside re-flows for Hebrew. If you rename or
-restructure those sections, keep that pin or the customer-reported
+The whole layout mirrors with the language. Every row starts at the
+reading start (left in English, right in Hebrew): the logo, **Spots Left**,
+the "Now in the water" heading and the pool box beneath it lead; the next
+session, weather, Upcoming Events and the freshness note trail; the clock
+stays centred. Don't pin a container to one side to "keep it still" across
+the rotation: that is exactly what made the two languages look
+inconsistent.
+
+The only exceptions are the two things that name real pool sides:
+`.pool-grid` (Reef Left | Reef Right) and `.spots-boxes` (Left | Right) in
+`css/style.css` are locked to `direction: ltr`, so they always match the
+water. Keep that pin if you restructure them, or the customer-reported
 "Right/Left on the wrong side" bug comes back.
 
 The pool cells are laid out by `.pool-grid` (2 columns, Bay spanning both).
@@ -144,15 +151,7 @@ The pool cells are laid out by `.pool-grid` (2 columns, Bay spanning both).
 them — it must never assign `className`, which would strip the structural
 `.pool-cell` class and drop the cell out of the grid.
 
-Two deliberate exceptions to "pinned containers keep their text RTL in
-Hebrew":
-
-- `#now-strip` stays `direction: ltr` in both languages. Its label is the
-  heading for the pool box directly beneath it, which sits on the left; in
-  RTL it would swing to the right edge, away from what it describes.
-- `.event-when` stays `ltr` so `21.08` / `20:00` read correctly either way.
-
-Everything else must follow the page direction. Do **not** put `dir="auto"`
+Text follows the page direction everywhere. Do **not** put `dir="auto"`
 on event titles or descriptions: it lets each string pick its own direction,
 so an English title inside the Hebrew layout stays left-aligned while its
 neighbours are right-aligned, and rows look ragged after a language switch.

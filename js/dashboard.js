@@ -306,7 +306,7 @@
 
     // Physical pool sides, left-to-right as the customer faces the water.
     // .spots-boxes is direction-pinned in CSS so this order never mirrors
-    // in Hebrew — matches the physically-pinned #zones cards below.
+    // in Hebrew — matches the physically-pinned .pool-grid cells below.
     const sides = [
       [T.sideLeft, s.places && s.places.left],
       [T.sideRight, s.places && s.places.right],
