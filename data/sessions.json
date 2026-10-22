@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T03:25:16.805Z",
+  "updatedAt": "2026-10-22T03:30:24.666Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -14,7 +14,7 @@
           "nameEn": "Pro (T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 8
           },
           "disabled": false,
@@ -212,7 +212,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
