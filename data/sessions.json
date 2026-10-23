@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T13:35:18.318Z",
+  "updatedAt": "2026-10-23T13:40:20.703Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -268,11 +268,11 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -283,7 +283,7 @@
           "nameEn": "2B Or Not To Be - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 11
           },
           "disabled": false,
@@ -300,7 +300,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 6
+            "bay": 5
           },
           "disabled": false,
           "open": true,
@@ -330,8 +330,8 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 3
+            "right": 0,
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -440,7 +440,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 22
+            "bay": 23
           },
           "disabled": false,
           "open": true,
@@ -471,7 +471,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -516,7 +516,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 6
+            "left": 7
           },
           "sideNames": {
             "right": "Elliot Parker (2)",
@@ -657,7 +657,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
