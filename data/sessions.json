@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T09:30:27.426Z",
+  "updatedAt": "2026-10-23T09:35:17.273Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -107,9 +107,9 @@
         {
           "start": "13:00",
           "end": "14:00",
-          "level": "L4",
-          "name": "(T2 Only)",
-          "nameEn": "(T2 Only)",
+          "level": "L5",
+          "name": "Expert (T2 Only)",
+          "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
             "right": 15,
@@ -143,7 +143,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 9
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -187,11 +187,11 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -238,7 +238,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 2
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -254,7 +254,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 13
           },
           "disabled": false,
           "open": true,
@@ -330,7 +330,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 9
           },
           "disabled": false,
@@ -470,7 +470,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 13
           },
           "disabled": false,
@@ -582,7 +582,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 16
+            "left": 17
           },
           "disabled": false,
           "open": true,
