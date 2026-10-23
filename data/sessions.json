@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T09:50:18.988Z",
+  "updatedAt": "2026-10-23T09:55:20.171Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -112,7 +112,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 12,
             "left": 15
           },
           "disabled": false,
@@ -127,7 +127,7 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 5,
             "left": 2
           },
           "disabled": false,
@@ -142,8 +142,8 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 0,
-            "left": 8
+            "right": 1,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -157,7 +157,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -330,7 +330,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 9
           },
           "disabled": false,
@@ -378,7 +378,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -500,7 +500,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 10
           },
           "disabled": false,
