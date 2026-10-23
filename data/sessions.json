@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T08:10:18.058Z",
+  "updatedAt": "2026-10-23T08:15:21.481Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -172,7 +172,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -192,7 +192,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 4
           },
           "disabled": false,
@@ -208,7 +208,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -496,12 +496,20 @@
           "start": "19:00",
           "end": "20:00",
           "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
-          "nameEn": "T-Time Mega Turns - Advanced",
+          "name": "Elliot Parker (1)",
+          "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 1,
             "left": 11
+          },
+          "sideNames": {
+            "right": "Elliot Parker (1)",
+            "left": "T-Time Mega Turns (T1+T2)"
+          },
+          "sideNamesEn": {
+            "right": "T-Time Mega Turns (T1+T2)",
+            "left": "T-Time Mega Turns - Advanced"
           },
           "disabled": false,
           "open": true,
