@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T08:35:15.197Z",
+  "updatedAt": "2026-10-23T08:40:19.543Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -112,8 +112,8 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 10,
-            "left": 2
+            "right": 7,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -207,7 +207,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 3
           },
           "disabled": false,
@@ -496,15 +496,15 @@
           "start": "19:00",
           "end": "20:00",
           "level": "L5",
-          "name": "Elliot Parker (1)",
+          "name": "Elliot Parker (2)",
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 10
+            "left": 11
           },
           "sideNames": {
-            "right": "Elliot Parker (1)",
+            "right": "Elliot Parker (2)",
             "left": "T-Time Mega Turns (T1+T2)"
           },
           "sideNamesEn": {
