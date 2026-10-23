@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T12:20:22.170Z",
+  "updatedAt": "2026-10-23T12:25:15.694Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -331,7 +331,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 7
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -345,11 +345,11 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -516,7 +516,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 6
+            "left": 7
           },
           "sideNames": {
             "right": "Elliot Parker (2)",
