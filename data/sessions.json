@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T18:30:29.189Z",
+  "updatedAt": "2026-10-23T18:35:16.589Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -254,7 +254,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 11
+            "bay": 10
           },
           "disabled": false,
           "open": true,
@@ -284,7 +284,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -408,8 +408,8 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 12
+            "right": 13,
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -471,7 +471,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 6
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -501,7 +501,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 6
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -516,7 +516,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 3
+            "left": 1
           },
           "sideNames": {
             "right": "Elliot Parker (2)",
