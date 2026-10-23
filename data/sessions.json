@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T13:10:20.357Z",
+  "updatedAt": "2026-10-23T13:15:22.052Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -172,7 +172,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 1
           },
           "disabled": false,
@@ -300,7 +300,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 3
+            "bay": 5
           },
           "disabled": false,
           "open": true,
@@ -316,7 +316,7 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 20
+            "bay": 19
           },
           "disabled": false,
           "open": true,
@@ -409,7 +409,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -516,7 +516,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 7
+            "left": 6
           },
           "sideNames": {
             "right": "Elliot Parker (2)",
