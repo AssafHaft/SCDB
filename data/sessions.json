@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T08:25:16.946Z",
+  "updatedAt": "2026-10-23T08:30:26.204Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -127,7 +127,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 10
           },
           "disabled": false,
@@ -172,7 +172,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -192,7 +192,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 4
           },
           "disabled": false,
@@ -207,7 +207,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 3
           },
           "disabled": false,
@@ -394,7 +394,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -501,7 +501,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 11
+            "left": 10
           },
           "sideNames": {
             "right": "Elliot Parker (1)",
