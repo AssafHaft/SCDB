@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T10:15:18.983Z",
+  "updatedAt": "2026-10-24T10:20:19.726Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -169,10 +169,10 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 1
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -216,7 +216,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 4
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -278,7 +278,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 0
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -323,7 +323,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 1
+            "left": 0
           },
           "sideNames": {
             "right": "Elliot Parker (2)",
@@ -346,7 +346,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -389,7 +389,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -404,7 +404,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 8
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -848,7 +848,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 11
+            "left": 10
           },
           "disabled": false,
           "open": true,
