@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T09:55:16.088Z",
+  "updatedAt": "2026-10-24T10:00:29.817Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -156,7 +156,7 @@
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -215,8 +215,8 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 5
+            "right": 8,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -247,7 +247,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 12
+            "bay": 11
           },
           "disabled": false,
           "open": true,
@@ -307,11 +307,11 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -345,8 +345,8 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 10
+            "right": 0,
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -365,7 +365,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 3
           },
           "sideNames": {
@@ -388,7 +388,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 13,
             "left": 16
           },
           "disabled": false,
@@ -433,7 +433,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 3,
             "left": 11
           },
           "disabled": false,
@@ -651,7 +651,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 13,
             "left": 13
           },
           "disabled": false,
