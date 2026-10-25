@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T12:45:19.930Z",
+  "updatedAt": "2026-10-25T12:50:19.714Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -159,7 +159,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 16
+            "bay": 17
           },
           "disabled": false,
           "open": true,
@@ -188,7 +188,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 0
           },
           "disabled": false,
@@ -250,8 +250,8 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
-            "left": 3
+            "right": 3,
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -300,8 +300,8 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 10
+            "right": 6,
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -345,7 +345,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 8
           },
           "disabled": false,
@@ -360,7 +360,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 8
           },
           "disabled": false,
@@ -450,8 +450,8 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 15
+            "right": 7,
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -726,7 +726,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
