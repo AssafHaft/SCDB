@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T06:45:20.260Z",
+  "updatedAt": "2026-10-26T06:50:19.492Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -60,7 +60,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -179,7 +179,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 14
           },
           "disabled": false,
@@ -378,7 +378,7 @@
           "nameEn": "2B Or Not To 2B (B2+B3) - Barrel Fest",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 5,
             "left": 3
           },
           "disabled": false,
@@ -394,10 +394,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 2
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
