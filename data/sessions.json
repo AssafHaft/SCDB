@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T06:25:15.502Z",
+  "updatedAt": "2026-10-26T06:30:24.282Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -90,7 +90,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -119,7 +119,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 6,
             "left": 5
           },
           "disabled": false,
@@ -181,22 +181,6 @@
           "places": {
             "right": 4,
             "left": 14
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "18:30",
-          "end": "20:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - בוגרים מעל גיל 16",
-          "nameEn": "Beginners lesson in the Bay - Over 16 years",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 24
           },
           "disabled": false,
           "open": true,
@@ -656,7 +640,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -701,7 +685,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
