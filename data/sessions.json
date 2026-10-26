@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T11:25:17.357Z",
+  "updatedAt": "2026-10-26T11:30:25.962Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -150,7 +150,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -164,8 +164,8 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
-            "left": 16
+            "right": 15,
+            "left": 18
           },
           "disabled": false,
           "open": true,
@@ -180,7 +180,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -229,7 +229,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 1
           },
           "disabled": false,
@@ -393,7 +393,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 0
           },
           "disabled": false,
@@ -408,7 +408,7 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 14
           },
           "sideNames": {
@@ -542,7 +542,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 6,
             "left": 14
           },
           "disabled": false,
@@ -572,7 +572,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 15
           },
           "disabled": false,
