@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T06:20:19.350Z",
+  "updatedAt": "2026-10-26T06:25:15.502Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -119,8 +119,8 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 4
+            "right": 5,
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -409,8 +409,8 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 3
+            "right": 0,
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -424,7 +424,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 1
           },
           "disabled": false,
