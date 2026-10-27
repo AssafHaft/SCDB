@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T09:00:32.497Z",
+  "updatedAt": "2026-10-27T09:05:28.062Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -134,10 +134,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -193,7 +193,7 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 12
           },
           "sideNames": {
@@ -342,7 +342,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 15
           },
           "disabled": false,
@@ -558,7 +558,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 15
           },
           "disabled": false,
@@ -587,7 +587,7 @@
           "nameEn": "T-Time Mega Turns - Advanced",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 7,
             "left": 14
           },
           "disabled": false,
