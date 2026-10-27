@@ -1,223 +1,8 @@
 {
-  "updatedAt": "2026-10-26T21:55:15.331Z",
+  "updatedAt": "2026-10-27T00:00:24.801Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
-    {
-      "date": "2026-10-26",
-      "sessions": [
-        {
-          "start": "07:00",
-          "end": "08:00",
-          "level": "L6",
-          "name": "Pro (T2+B2)",
-          "nameEn": "Pro (T2+B2)",
-          "zone": "reef",
-          "places": {
-            "right": 4,
-            "left": 4
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "08:00",
-          "end": "09:00",
-          "level": "L4",
-          "name": "Advanced (T1 Only)",
-          "nameEn": "Advanced (T1 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 2,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "09:00",
-          "end": "10:00",
-          "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
-          "nameEn": "T-Time Mega Turns (T1+T2)",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 1
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "10:00",
-          "end": "11:00",
-          "level": "L3",
-          "name": "Intermediate (M3)",
-          "nameEn": "Intermediate (M3)",
-          "zone": "reef",
-          "places": {
-            "right": 4,
-            "left": 8
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "11:00",
-          "end": "12:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "nameEn": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "12:00",
-          "end": "13:00",
-          "level": "L2",
-          "name": "Improvers (M2)",
-          "nameEn": "Improvers (M2)",
-          "zone": "reef",
-          "places": {
-            "right": 6,
-            "left": 3
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "13:00",
-          "end": "14:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "nameEn": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 5,
-            "left": 4
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "14:00",
-          "end": "15:00",
-          "level": "L7",
-          "name": "Turns to Barrels",
-          "nameEn": "Turns to Barrels",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "15:00",
-          "end": "16:00",
-          "level": "L4",
-          "name": "Advanced (T1 Only)",
-          "nameEn": "Advanced (T1 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 2,
-            "left": 3
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "16:00",
-          "end": "17:00",
-          "level": "L5",
-          "name": "Expert (T2 Only)",
-          "nameEn": "Expert (T1+B1)",
-          "zone": "reef",
-          "places": {
-            "right": 3,
-            "left": 3
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "17:00",
-          "end": "18:00",
-          "level": "L2",
-          "name": "Improvers (M2)",
-          "nameEn": "Improvers (M2)",
-          "zone": "reef",
-          "places": {
-            "right": 15,
-            "left": 8
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "18:00",
-          "end": "19:00",
-          "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
-          "nameEn": "T-Time Mega Turns (T1+T2)",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 3
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "19:00",
-          "end": "20:00",
-          "level": "L3",
-          "name": "Intermediate (M3)",
-          "nameEn": "Intermediate (M3)",
-          "zone": "reef",
-          "places": {
-            "right": 6,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "20:00",
-          "end": "21:00",
-          "level": "L7",
-          "name": "Ocean T (T3)",
-          "nameEn": "Ocean T (T3)",
-          "zone": "reef",
-          "places": {
-            "right": 4,
-            "left": 4
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        }
-      ]
-    },
     {
       "date": "2026-10-27",
       "sessions": [
@@ -244,11 +29,11 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -261,7 +46,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 21
+            "bay": 20
           },
           "disabled": false,
           "open": true,
@@ -320,7 +105,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 4
+            "right": 2
           },
           "disabled": false,
           "open": true,
@@ -408,8 +193,8 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 13,
-            "left": 14
+            "right": 12,
+            "left": 13
           },
           "sideNames": {
             "right": "Improvers (M1)",
@@ -694,6 +479,236 @@
           "places": {
             "right": 5,
             "left": 11
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "sessions": [
+        {
+          "start": "07:00",
+          "end": "08:00",
+          "level": "L7",
+          "name": "Turns to Barrels",
+          "nameEn": "Turns to Barrels",
+          "zone": "reef",
+          "places": {
+            "right": 8,
+            "left": 12
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "08:00",
+          "end": "09:00",
+          "level": "L6",
+          "name": "Pro (T2+B2)",
+          "nameEn": "Pro (T2+B2)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 13
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "08:30",
+          "end": "10:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - בוגרים מעל גיל 16",
+          "nameEn": "Beginners lesson in the Bay - Over 16 years",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 22
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "09:00",
+          "end": "10:00",
+          "level": "L1",
+          "name": "Improvers (M1)",
+          "nameEn": "Beginners Plus (M1)",
+          "zone": "reef",
+          "places": {
+            "right": 17,
+            "left": 15
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "10:00",
+          "end": "11:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "nameEn": "New Advanced Carves (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 10,
+            "left": 15
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "11:00",
+          "end": "12:00",
+          "level": "L2",
+          "name": "Improvers (M2)",
+          "nameEn": "FlowM2 ()",
+          "zone": "reef",
+          "places": {
+            "left": 11
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "12:00",
+          "end": "13:00",
+          "level": "L5",
+          "name": "T-Time Mega Turns (T1+T2)",
+          "nameEn": "T-Time Mega Turns - Advanced",
+          "zone": "reef",
+          "places": {
+            "right": 9,
+            "left": 14
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "13:00",
+          "end": "14:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "nameEn": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 13,
+            "left": 17
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "level": "L7",
+          "name": "Ocean T (T3)",
+          "nameEn": "Ocean T (T3)",
+          "zone": "reef",
+          "places": {
+            "right": 9,
+            "left": 10
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "15:00",
+          "end": "16:00",
+          "level": "L5",
+          "name": "Expert (T1+B1)",
+          "nameEn": "Expert (T1+B1)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 12
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "level": "L6",
+          "name": "Pro (T2+B2)",
+          "nameEn": "Pro (T2+B2)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 15
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "level": "L2",
+          "name": "Improvers (M2)",
+          "nameEn": "Improvers (M2)",
+          "zone": "reef",
+          "places": {
+            "right": 11,
+            "left": 20
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "18:00",
+          "end": "19:00",
+          "level": "L7",
+          "name": "Turns to Barrels",
+          "nameEn": "Turns to Barrels",
+          "zone": "reef",
+          "places": {
+            "right": 12,
+            "left": 11
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "19:00",
+          "end": "20:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "nameEn": "New Advanced Carves (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 18,
+            "left": 15
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "20:00",
+          "end": "21:00",
+          "level": "L5",
+          "name": "Expert (T2 Only)",
+          "nameEn": "Expert (T2 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 12
           },
           "disabled": false,
           "open": true,
