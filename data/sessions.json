@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T10:25:18.944Z",
+  "updatedAt": "2026-10-28T10:30:26.915Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -119,7 +119,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -135,7 +135,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -320,7 +320,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -395,7 +395,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 20
+            "left": 19
           },
           "disabled": false,
           "open": true,
@@ -474,7 +474,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 13
           },
           "disabled": false,
@@ -537,7 +537,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 18
+            "bay": 16
           },
           "disabled": false,
           "open": true,
@@ -613,7 +613,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -659,7 +659,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 7
           },
           "disabled": false,
