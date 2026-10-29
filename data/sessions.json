@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T14:05:18.425Z",
+  "updatedAt": "2026-10-29T14:10:26.258Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -165,7 +165,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": false,
@@ -194,8 +194,8 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 7
+            "right": 9,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -244,7 +244,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 11
           },
           "disabled": false,
