@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T16:30:27.333Z",
+  "updatedAt": "2026-10-29T16:35:16.599Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -351,7 +351,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 15
           },
           "disabled": false,
@@ -444,7 +444,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 4,
             "left": 0
           },
           "disabled": false,
@@ -495,7 +495,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -509,8 +509,8 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
-            "left": 17
+            "right": 15,
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -772,7 +772,7 @@
           "nameEn": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 15
           },
           "disabled": false,
