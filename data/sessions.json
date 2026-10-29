@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T15:20:19.332Z",
+  "updatedAt": "2026-10-29T15:25:16.569Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -194,7 +194,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 8
           },
           "disabled": false,
@@ -209,7 +209,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 12,
             "left": 12
           },
           "disabled": false,
@@ -336,7 +336,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 8
           },
           "disabled": false,
@@ -382,7 +382,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 7
           },
           "disabled": false,
@@ -445,7 +445,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
