@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T07:25:16.062Z",
+  "updatedAt": "2026-10-30T07:30:24.072Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -75,8 +75,8 @@
           "nameEn": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 5,
-            "left": 7
+            "right": 4,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -106,7 +106,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 3
           },
           "disabled": false,
@@ -214,7 +214,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 2,
             "left": 0
           },
           "disabled": false,
@@ -264,7 +264,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 5
           },
           "disabled": false,
