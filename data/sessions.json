@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T13:55:17.114Z",
+  "updatedAt": "2026-10-31T14:00:38.432Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -261,11 +261,11 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 17
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -306,7 +306,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
