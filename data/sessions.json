@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T13:45:19.038Z",
+  "updatedAt": "2026-10-31T13:50:16.996Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -261,7 +261,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 17
           },
           "disabled": false,
@@ -276,11 +276,11 @@
           "nameEn": "Pro (New T2+B2)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -306,7 +306,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 2,
             "left": 1
           },
           "disabled": false,
