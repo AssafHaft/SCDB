@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T07:30:30.907Z",
+  "updatedAt": "2026-11-02T07:35:16.465Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -90,7 +90,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 5
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -105,7 +105,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -242,7 +242,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 13
           },
           "disabled": false,
@@ -293,7 +293,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 15
           },
           "disabled": false,
@@ -369,7 +369,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 11
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -556,7 +556,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 17
+            "left": 15
           },
           "sideNames": {
             "right": "קהילת הנובה 15 גולשים",
