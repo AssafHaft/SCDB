@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T06:40:17.978Z",
+  "updatedAt": "2026-11-04T06:45:19.491Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -59,7 +59,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 8
           },
           "disabled": false,
@@ -75,7 +75,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 7
+            "left": 6
           },
           "sideNames": {
             "right": "קהילת הנובה 15 גולשים",
@@ -128,7 +128,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 15
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -202,7 +202,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 8
           },
           "disabled": false,
@@ -343,7 +343,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 11
           },
           "disabled": false,
