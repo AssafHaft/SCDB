@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T16:50:18.540Z",
+  "updatedAt": "2026-11-08T16:55:17.221Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -360,32 +360,16 @@
           "start": "16:30",
           "end": "18:00",
           "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "nameEn": "Beginners lesson in the Bay - ages 7-10",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 12
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "16:30",
-          "end": "18:00",
-          "level": "L0",
           "name": "שיעור גלישה למתחילים ב Bay - ילדים 11-16",
           "nameEn": "Beginners lesson in the Bay - ages 11-16",
           "zone": "bay",
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 12
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -554,7 +538,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 17
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -568,7 +552,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 11
           },
           "disabled": false,
