@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T17:00:32.534Z",
+  "updatedAt": "2026-11-08T17:05:15.725Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -357,22 +357,6 @@
           "special": false
         },
         {
-          "start": "16:30",
-          "end": "18:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 11-16",
-          "nameEn": "Beginners lesson in the Bay - ages 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
           "start": "17:00",
           "end": "18:00",
           "level": "L2",
@@ -522,7 +506,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 16
+            "left": 17
           },
           "disabled": false,
           "open": true,
