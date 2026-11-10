@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T16:30:27.763Z",
+  "updatedAt": "2026-11-10T16:35:17.635Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -261,7 +261,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -494,13 +494,13 @@
         {
           "start": "08:00",
           "end": "09:00",
-          "level": "L7",
-          "name": "Ocean T (T3)",
-          "nameEn": "Ocean T (T3)",
+          "level": "L5",
+          "name": "T-Time Mega Turns (T1+T2)",
+          "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 12
+            "right": 15,
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -561,7 +561,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 15
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -605,7 +605,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 12
           },
           "disabled": false,
@@ -673,7 +673,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 19
           },
           "sideNames": {
