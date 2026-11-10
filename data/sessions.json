@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T17:15:20.511Z",
+  "updatedAt": "2026-11-10T17:20:21.478Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -210,8 +210,8 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 7,
-            "left": 8
+            "right": 8,
+            "left": 7
           },
           "disabled": false,
           "open": false,
@@ -276,7 +276,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -322,7 +322,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 4
+            "left": 3
           },
           "sideNames": {
             "right": "קהילת שבט הנובה- עשרה גולשים",
