@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T09:50:19.339Z",
+  "updatedAt": "2026-11-11T09:55:17.105Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -129,7 +129,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 10
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -143,8 +143,8 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 6,
-            "left": 7
+            "right": 5,
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -218,7 +218,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 9
           },
           "disabled": false,
@@ -359,7 +359,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 9,
             "left": 8
           },
           "disabled": false,
@@ -428,7 +428,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 9
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -500,7 +500,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 15
           },
           "disabled": false,
@@ -714,7 +714,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 14
           },
           "disabled": false,
