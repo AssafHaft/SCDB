@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T08:00:30.544Z",
+  "updatedAt": "2026-11-11T08:05:15.189Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -91,7 +91,7 @@
           "zone": "reef",
           "places": {
             "right": 10,
-            "left": 1
+            "left": 0
           },
           "sideNames": {
             "right": "קהילת שבט הנובה- עשרה גולשים",
@@ -129,7 +129,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -173,7 +173,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 12
           },
           "disabled": false,
