@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T07:25:16.596Z",
+  "updatedAt": "2026-11-11T07:30:24.918Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -59,7 +59,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 10
           },
           "disabled": false,
@@ -442,7 +442,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 16
           },
           "sideNames": {
@@ -546,7 +546,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 16
           },
           "disabled": false,
@@ -670,7 +670,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 13
+            "bay": 12
           },
           "disabled": false,
           "open": true,
