@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T06:50:18.465Z",
+  "updatedAt": "2026-11-12T06:55:15.364Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -75,7 +75,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 13,
             "left": 13
           },
           "disabled": false,
@@ -90,7 +90,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 4,
             "left": 8
           },
           "disabled": false,
@@ -120,7 +120,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 8,
             "left": 10
           },
           "disabled": false,
@@ -136,10 +136,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -151,7 +151,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 6
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -219,7 +219,7 @@
           "zone": "reef",
           "places": {
             "right": 11,
-            "left": 14
+            "left": 13
           },
           "sideNames": {
             "right": "Improvers (M2)",
@@ -571,7 +571,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 8
           },
           "disabled": false,
