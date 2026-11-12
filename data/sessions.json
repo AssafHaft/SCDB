@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T17:45:20.967Z",
+  "updatedAt": "2026-11-12T17:50:20.446Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -307,11 +307,11 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
