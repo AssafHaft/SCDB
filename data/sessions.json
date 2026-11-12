@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T16:50:24.406Z",
+  "updatedAt": "2026-11-12T16:55:16.555Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -242,7 +242,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -262,10 +262,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 0
+            "left": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -277,7 +277,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 5
           },
           "disabled": false,
           "open": true,
@@ -307,11 +307,11 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
@@ -338,7 +338,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 3
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -353,10 +353,10 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 1
+            "left": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -446,7 +446,7 @@
           "zone": "reef",
           "places": {
             "right": 1,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -495,7 +495,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 8
           },
           "disabled": false,
@@ -618,7 +618,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 7
           },
           "disabled": false,
@@ -666,7 +666,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 11
+            "bay": 12
           },
           "disabled": false,
           "open": true,
@@ -696,7 +696,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 17,
+            "right": 18,
             "left": 17
           },
           "disabled": false,
