@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T11:35:15.726Z",
+  "updatedAt": "2026-11-13T11:40:18.117Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -228,8 +228,8 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 8
+            "right": 0,
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -248,7 +248,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 2
           },
           "disabled": false,
@@ -310,7 +310,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -524,7 +524,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 10
           },
           "disabled": false,
