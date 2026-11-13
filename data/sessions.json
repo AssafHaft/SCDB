@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T14:55:15.833Z",
+  "updatedAt": "2026-11-13T15:00:37.349Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -232,7 +232,7 @@
             "left": 2
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         }
       ]
@@ -295,7 +295,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 9
+            "bay": 7
           },
           "disabled": false,
           "open": true,
@@ -309,7 +309,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 3
           },
           "disabled": false,
@@ -325,7 +325,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 5
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -371,7 +371,7 @@
           "zone": "reef",
           "places": {
             "right": 6,
-            "left": 1
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -433,7 +433,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 12,
             "left": 14
           },
           "disabled": false,
@@ -464,7 +464,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -679,7 +679,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 17
+            "left": 18
           },
           "disabled": false,
           "open": true,
