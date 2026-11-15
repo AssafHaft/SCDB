@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T10:10:16.731Z",
+  "updatedAt": "2026-11-15T10:15:19.658Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -89,7 +89,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 3,
             "left": 0
           },
           "disabled": false,
@@ -104,8 +104,8 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
-            "left": 2
+            "right": 0,
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -134,8 +134,8 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 17,
-            "left": 16
+            "right": 16,
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -165,7 +165,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 13
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -230,7 +230,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 7
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -405,7 +405,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 15
+            "left": 16
           },
           "sideNames": {
             "right": "Improvers (M2)",
@@ -444,7 +444,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 20
+            "bay": 21
           },
           "disabled": false,
           "open": true,
@@ -570,7 +570,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 12
+            "left": 13
           },
           "disabled": false,
           "open": true,
