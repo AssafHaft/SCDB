@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T07:30:24.405Z",
+  "updatedAt": "2026-11-15T07:35:18.290Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -74,7 +74,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 11,
+            "right": 10,
             "left": 8
           },
           "disabled": false,
@@ -89,7 +89,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 6,
             "left": 5
           },
           "disabled": false,
@@ -275,7 +275,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 14
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -290,7 +290,15 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 12
+            "left": 10
+          },
+          "sideNames": {
+            "right": "Improvers (M2)",
+            "left": "קהילת שבט הנובה- עשרה גולשים"
+          },
+          "sideNamesEn": {
+            "right": "Improvers (M2)",
+            "left": "Improvers (M2) including free wetsuit & softboard"
           },
           "disabled": false,
           "open": true,
@@ -700,21 +708,6 @@
           "places": {
             "right": 10,
             "left": 15
-          },
-          "disabled": false,
-          "open": true,
-          "special": false
-        },
-        {
-          "start": "18:00",
-          "end": "19:00",
-          "level": "L7",
-          "name": "Turns to Barrels",
-          "nameEn": "Turns to Barrels",
-          "zone": "reef",
-          "places": {
-            "right": 12,
-            "left": 12
           },
           "disabled": false,
           "open": true,
