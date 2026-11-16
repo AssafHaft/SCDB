@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T12:55:23.863Z",
+  "updatedAt": "2026-11-16T13:00:36.090Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -127,7 +127,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 3,
             "left": 4
           },
           "disabled": false,
@@ -146,7 +146,7 @@
             "left": 8
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -158,7 +158,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 10
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -204,7 +204,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 16,
+            "right": 14,
             "left": 12
           },
           "sideNames": {
@@ -308,7 +308,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 7,
             "left": 4
           },
           "disabled": false,
@@ -384,7 +384,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 14,
+            "right": 15,
             "left": 12
           },
           "disabled": false,
@@ -459,7 +459,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 12
           },
           "disabled": false,
@@ -587,7 +587,7 @@
           "zone": "reef",
           "places": {
             "right": 17,
-            "left": 14
+            "left": 13
           },
           "disabled": false,
           "open": true,
