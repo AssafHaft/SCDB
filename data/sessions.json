@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T07:55:16.155Z",
+  "updatedAt": "2026-11-17T08:00:32.748Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -94,7 +94,7 @@
             "left": 1
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -106,7 +106,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 7
+            "left": 6
           },
           "disabled": false,
           "open": true,
@@ -120,7 +120,7 @@
           "nameEn": "Intermediate (M3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 10,
             "left": 17
           },
           "disabled": false,
@@ -338,7 +338,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 15
+            "left": 13
           },
           "disabled": false,
           "open": true,
@@ -681,7 +681,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 13
           },
           "sideNames": {
