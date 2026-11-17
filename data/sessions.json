@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T14:30:27.373Z",
+  "updatedAt": "2026-11-17T14:35:17.420Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -188,38 +188,6 @@
           "special": false
         },
         {
-          "start": "16:30",
-          "end": "18:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "nameEn": "Beginners lesson in the Bay - ages 7-10",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 12
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "16:30",
-          "end": "18:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 11-16",
-          "nameEn": "Beginners lesson in the Bay - ages 11-16",
-          "zone": "bay",
-          "side": "left",
-          "ageGroup": "children",
-          "places": {
-            "bay": 13
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
           "start": "17:00",
           "end": "18:00",
           "level": "L1",
@@ -242,7 +210,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 8,
             "left": 11
           },
           "disabled": false,
@@ -353,7 +321,7 @@
           "zone": "reef",
           "places": {
             "right": 14,
-            "left": 11
+            "left": 9
           },
           "disabled": false,
           "open": true,
@@ -613,7 +581,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 12
           },
           "sideNames": {
