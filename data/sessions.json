@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T07:15:19.563Z",
+  "updatedAt": "2026-11-17T07:20:18.105Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -91,7 +91,7 @@
           "zone": "reef",
           "places": {
             "right": 5,
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -136,7 +136,7 @@
           "zone": "reef",
           "places": {
             "right": 12,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -227,7 +227,7 @@
           "nameEn": "Beginners Plus (M1)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 16
           },
           "disabled": false,
@@ -337,7 +337,7 @@
           "nameEn": "Improvers (M2)",
           "zone": "reef",
           "places": {
-            "right": 8,
+            "right": 9,
             "left": 15
           },
           "disabled": false,
@@ -438,8 +438,8 @@
           "start": "18:00",
           "end": "19:00",
           "level": "L4",
-          "name": "1st Point - Longboard M4 Only",
-          "nameEn": "1st Point - Longboard M4 Only",
+          "name": "Advanced (M4 Only)",
+          "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
             "right": 18,
