@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T11:05:17.295Z",
+  "updatedAt": "2026-11-17T11:10:21.788Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -150,7 +150,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 7,
+            "right": 5,
             "left": 4
           },
           "disabled": false,
@@ -180,7 +180,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 4,
+            "right": 6,
             "left": 4
           },
           "disabled": false,
@@ -242,8 +242,8 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 9,
-            "left": 15
+            "right": 12,
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -584,7 +584,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 17
+            "left": 16
           },
           "disabled": false,
           "open": true,
@@ -681,7 +681,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 17,
             "left": 13
           },
           "sideNames": {
