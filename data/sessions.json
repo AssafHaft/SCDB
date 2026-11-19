@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T06:30:27.043Z",
+  "updatedAt": "2026-11-19T06:35:16.562Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -75,8 +75,8 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 12,
-            "left": 7
+            "right": 11,
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -90,11 +90,11 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
