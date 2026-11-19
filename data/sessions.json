@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T15:55:17.467Z",
+  "updatedAt": "2026-11-19T16:00:34.647Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -230,7 +230,7 @@
             "left": "Improvers (M2) including free wetsuit & softboard"
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -353,7 +353,7 @@
           "nameEn": "Beginners Plus ()",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 0,
             "left": 6
           },
           "disabled": false,
