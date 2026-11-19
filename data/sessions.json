@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T10:10:21.174Z",
+  "updatedAt": "2026-11-19T10:45:20.625Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -120,8 +120,8 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
-            "left": 1
+            "right": 4,
+            "left": 0
           },
           "disabled": false,
           "open": false,
@@ -150,7 +150,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 5
           },
           "sideNames": {
@@ -173,7 +173,7 @@
           "nameEn": "Expert (T1+B1)",
           "zone": "reef",
           "places": {
-            "right": 3,
+            "right": 4,
             "left": 5
           },
           "disabled": false,
@@ -189,7 +189,7 @@
           "zone": "reef",
           "places": {
             "right": 9,
-            "left": 7
+            "left": 8
           },
           "disabled": false,
           "open": true,
@@ -203,7 +203,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 12
           },
           "disabled": false,
@@ -218,7 +218,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 12,
             "left": 13
           },
           "sideNames": {
@@ -261,7 +261,7 @@
           "nameEn": "New Advanced Carves (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 14,
             "left": 11
           },
           "disabled": false,
@@ -276,7 +276,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 6,
+            "right": 5,
             "left": 4
           },
           "disabled": false,
@@ -339,7 +339,7 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 20
+            "bay": 18
           },
           "disabled": false,
           "open": true,
