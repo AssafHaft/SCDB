@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T12:35:26.049Z",
+  "updatedAt": "2026-11-20T12:40:22.753Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -198,8 +198,8 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 0,
-            "left": 1
+            "right": 1,
+            "left": 0
           },
           "disabled": false,
           "open": true,
@@ -248,7 +248,7 @@
           "nameEn": "Ocean T (T3)",
           "zone": "reef",
           "places": {
-            "right": 9,
+            "right": 8,
             "left": 5
           },
           "disabled": false,
