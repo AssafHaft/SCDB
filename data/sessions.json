@@ -1,242 +1,8 @@
 {
-  "updatedAt": "2026-11-20T21:55:20.053Z",
+  "updatedAt": "2026-11-21T03:00:34.367Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
-    {
-      "date": "2026-11-20",
-      "sessions": [
-        {
-          "start": "07:00",
-          "end": "08:00",
-          "level": "L4",
-          "name": "Advanced (T1 Only)",
-          "nameEn": "New Advanced Carves (T1 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 8,
-            "left": 8
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "08:00",
-          "end": "09:00",
-          "level": "L5",
-          "name": "T-Time Mega Turns (T1+T2)",
-          "nameEn": "T-Time Mega Turns (T1+T2)",
-          "zone": "reef",
-          "places": {
-            "right": 1,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "08:30",
-          "end": "10:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - בוגרים מעל גיל 16",
-          "nameEn": "Beginners lesson in the Bay - Over 16 years",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 3
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "09:00",
-          "end": "10:00",
-          "level": "L3",
-          "name": "Intermediate (M3)",
-          "nameEn": "Secret Spot (New M3)",
-          "zone": "reef",
-          "places": {
-            "right": 2,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "10:00",
-          "end": "11:00",
-          "level": "L6",
-          "name": "Pro (T2+B2)",
-          "nameEn": "Pro (New T2+B2)",
-          "zone": "reef",
-          "places": {
-            "right": 1,
-            "left": 1
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "10:30",
-          "end": "12:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - בוגרים מעל גיל 16",
-          "nameEn": "Beginners lesson in the Bay - Over 16 years",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "adults",
-          "places": {
-            "bay": 6
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "11:00",
-          "end": "12:00",
-          "level": "L1",
-          "name": "Improvers (M1)",
-          "nameEn": "Beginners Plus ()",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 4
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "12:00",
-          "end": "13:00",
-          "level": "L4",
-          "name": "Advanced (M4 Only)",
-          "nameEn": "Advanced (M4 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "13:00",
-          "end": "14:00",
-          "level": "L3",
-          "name": "Intermediate (M3)",
-          "nameEn": "Secret Spot (New M3)",
-          "zone": "reef",
-          "places": {
-            "right": 3,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "14:00",
-          "end": "15:00",
-          "level": "L4",
-          "name": "Advanced (T1 Only)",
-          "nameEn": "Advanced (T1 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "14:30",
-          "end": "16:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
-          "nameEn": "Beginners lesson in the Bay - ages 7-10",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "children",
-          "places": {
-            "bay": 1
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "14:30",
-          "end": "16:00",
-          "level": "L0",
-          "name": "שיעור גלישה למתחילים ב Bay - ילדים 11-16",
-          "nameEn": "Beginners lesson in the Bay - ages 11-16",
-          "zone": "bay",
-          "side": "right",
-          "ageGroup": "children",
-          "places": {
-            "bay": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "15:00",
-          "end": "16:00",
-          "level": "L2",
-          "name": "Improvers (M2)",
-          "nameEn": "FlowM2 ()",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 0
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "16:00",
-          "end": "17:00",
-          "level": "L5",
-          "name": "Expert (T2 Only)",
-          "nameEn": "Expert (T2 Only)",
-          "zone": "reef",
-          "places": {
-            "right": 0,
-            "left": 1
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        },
-        {
-          "start": "17:00",
-          "end": "18:00",
-          "level": "L7",
-          "name": "Turns to Barrels",
-          "nameEn": "Turns to Barrels",
-          "zone": "reef",
-          "places": {
-            "right": 5,
-            "left": 2
-          },
-          "disabled": false,
-          "open": false,
-          "special": false
-        }
-      ]
-    },
     {
       "date": "2026-11-21",
       "sessions": [
@@ -263,7 +29,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 1,
+            "right": 2,
             "left": 1
           },
           "disabled": false,
@@ -325,7 +91,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -356,7 +122,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 5
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -418,7 +184,7 @@
           "zone": "reef",
           "places": {
             "right": 13,
-            "left": 13
+            "left": 12
           },
           "disabled": false,
           "open": true,
@@ -765,6 +531,254 @@
           "sideNamesEn": {
             "right": "Expert (T2 Only)",
             "left": "Expert (T2 Only)"
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "sessions": [
+        {
+          "start": "07:00",
+          "end": "08:00",
+          "level": "L5",
+          "name": "T-Time Mega Turns (T1+T2)",
+          "nameEn": "T-Time Mega Turns (T1+T2)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 14
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "08:00",
+          "end": "09:00",
+          "level": "L4",
+          "name": "Advanced (T1 Only)",
+          "nameEn": "Advanced (T1 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 17,
+            "left": 18
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "09:00",
+          "end": "10:00",
+          "level": "L5",
+          "name": "Expert (T2 Only)",
+          "nameEn": "Expert (T2 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 12
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "10:00",
+          "end": "11:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "nameEn": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 16,
+            "left": 18
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "11:00",
+          "end": "12:00",
+          "level": "L7",
+          "name": "Turns to Barrels",
+          "nameEn": "Turns to Barrels",
+          "zone": "reef",
+          "places": {
+            "right": 12,
+            "left": 12
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "12:00",
+          "end": "13:00",
+          "level": "L2",
+          "name": "Improvers (M2)",
+          "nameEn": "Improvers (M2)",
+          "zone": "reef",
+          "places": {
+            "right": 20,
+            "left": 20
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "13:00",
+          "end": "14:00",
+          "level": "L5",
+          "name": "Expert (T2 Only)",
+          "nameEn": "Expert (T2 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 14,
+            "left": 15
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "14:00",
+          "end": "15:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "nameEn": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 18,
+            "left": 18
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "15:00",
+          "end": "16:00",
+          "level": "L6",
+          "name": "Pro (T2+B2)",
+          "nameEn": "Pro (T2+B2)",
+          "zone": "reef",
+          "places": {
+            "right": 14,
+            "left": 14
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "level": "L4",
+          "name": "Advanced (M4 Only)",
+          "nameEn": "Advanced (M4 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 18,
+            "left": 18
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "16:30",
+          "end": "18:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - ילדים 7-10",
+          "nameEn": "Beginners lesson in the Bay - ages 7-10",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 11
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "16:30",
+          "end": "18:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - ילדים 11-16",
+          "nameEn": "Beginners lesson in the Bay - ages 11-16",
+          "zone": "bay",
+          "side": "left",
+          "ageGroup": "children",
+          "places": {
+            "bay": 12
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "level": "L2",
+          "name": "Improvers (M2)",
+          "nameEn": "Improvers (M2)",
+          "zone": "reef",
+          "places": {
+            "right": 20,
+            "left": 20
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "18:00",
+          "end": "19:00",
+          "level": "L5",
+          "name": "Expert (T2 Only)",
+          "nameEn": "Expert (T2 Only)",
+          "zone": "reef",
+          "places": {
+            "right": 15,
+            "left": 15
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "18:30",
+          "end": "20:00",
+          "level": "L0",
+          "name": "שיעור גלישה למתחילים ב Bay - בוגרים מעל גיל 16",
+          "nameEn": "Beginners lesson in the Bay - Over 16 years",
+          "zone": "bay",
+          "side": "right",
+          "ageGroup": "adults",
+          "places": {
+            "bay": 22
+          },
+          "disabled": false,
+          "open": true,
+          "special": false
+        },
+        {
+          "start": "19:00",
+          "end": "20:00",
+          "level": "L3",
+          "name": "Intermediate (M3)",
+          "nameEn": "Intermediate (M3)",
+          "zone": "reef",
+          "places": {
+            "right": 18,
+            "left": 18
           },
           "disabled": false,
           "open": true,
