@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T15:30:27.120Z",
+  "updatedAt": "2026-11-21T15:35:20.209Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -275,7 +275,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 3
+            "left": 2
           },
           "disabled": false,
           "open": true,
@@ -294,7 +294,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 16,
             "left": 17
           },
           "disabled": false,
@@ -340,8 +340,8 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 20,
-            "left": 19
+            "right": 19,
+            "left": 20
           },
           "disabled": false,
           "open": true,
