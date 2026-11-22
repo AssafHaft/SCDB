@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T16:55:26.096Z",
+  "updatedAt": "2026-11-22T17:00:35.172Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -219,7 +219,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 10
+            "left": 11
           },
           "sideNames": {
             "right": "SRF LEAGUE COMP- under 18 boys & girls",
@@ -230,7 +230,7 @@
             "left": "Expert (T2 Only)"
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
