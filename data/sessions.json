@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T13:10:25.165Z",
+  "updatedAt": "2026-11-24T13:15:22.681Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -210,7 +210,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 12
           },
           "disabled": false,
@@ -225,8 +225,8 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 3,
-            "left": 12
+            "right": 4,
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -475,7 +475,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 18,
+            "right": 19,
             "left": 19
           },
           "disabled": false,
