@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T16:30:30.265Z",
+  "updatedAt": "2026-11-26T16:35:19.257Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -292,7 +292,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 12
+            "left": 13
           },
           "sideNames": {
             "right": "Chasing Fun",
@@ -454,7 +454,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 10
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -533,7 +533,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 7
           },
           "disabled": false,
@@ -550,7 +550,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 14
+            "bay": 15
           },
           "disabled": false,
           "open": true,
@@ -596,7 +596,7 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 4
+            "bay": 5
           },
           "disabled": false,
           "open": true,
