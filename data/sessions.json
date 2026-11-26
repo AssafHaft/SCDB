@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T04:25:17.058Z",
+  "updatedAt": "2026-11-26T04:30:26.313Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -61,10 +61,10 @@
           "side": "right",
           "ageGroup": "adults",
           "places": {
-            "bay": 0
+            "bay": 1
           },
           "disabled": false,
-          "open": false,
+          "open": true,
           "special": false
         },
         {
