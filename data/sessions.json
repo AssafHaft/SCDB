@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T21:05:18.264Z",
+  "updatedAt": "2026-11-26T21:10:25.498Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -292,7 +292,7 @@
           "zone": "reef",
           "places": {
             "right": 0,
-            "left": 11
+            "left": 12
           },
           "sideNames": {
             "right": "Chasing Fun",
@@ -406,7 +406,7 @@
           "nameEn": "Advanced (T1 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 4
           },
           "disabled": false,
@@ -565,7 +565,7 @@
           "zone": "reef",
           "places": {
             "right": 7,
-            "left": 15
+            "left": 14
           },
           "disabled": false,
           "open": true,
