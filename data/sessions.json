@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T07:50:22.485Z",
+  "updatedAt": "2026-11-27T07:55:18.659Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -536,8 +536,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 0,
-            "left": 0
+            "right": 0
           },
           "disabled": false,
           "open": false,
@@ -591,13 +590,13 @@
         {
           "start": "11:00",
           "end": "12:00",
-          "level": "L3",
-          "name": "Intermediate (M3)",
-          "nameEn": "Intermediate (M3)",
+          "level": "L2",
+          "name": "Improvers (M2)",
+          "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 18,
-            "left": 18
+            "right": 20,
+            "left": 20
           },
           "disabled": false,
           "open": true,
