@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T08:25:21.240Z",
+  "updatedAt": "2026-11-27T08:30:29.273Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -103,7 +103,7 @@
             "bay": 9
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -222,7 +222,7 @@
           "zone": "reef",
           "places": {
             "right": 16,
-            "left": 12
+            "left": 11
           },
           "disabled": false,
           "open": true,
@@ -236,7 +236,7 @@
           "nameEn": "Expert (T2 Only)",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 11,
             "left": 12
           },
           "disabled": false,
@@ -271,7 +271,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 12,
+            "right": 11,
             "left": 11
           },
           "disabled": false,
@@ -379,7 +379,7 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 10,
+            "right": 9,
             "left": 11
           },
           "disabled": false,
@@ -457,7 +457,7 @@
           "zone": "reef",
           "places": {
             "right": 4,
-            "left": 8
+            "left": 7
           },
           "disabled": false,
           "open": true,
@@ -537,7 +537,7 @@
           "zone": "reef",
           "places": {
             "right": 15,
-            "left": 10
+            "left": 14
           },
           "disabled": false,
           "open": true,
@@ -552,7 +552,7 @@
           "zone": "reef",
           "places": {
             "right": 18,
-            "left": 16
+            "left": 15
           },
           "disabled": false,
           "open": true,
@@ -581,7 +581,7 @@
           "nameEn": "Improvers (M2) including free wetsuit & softboard",
           "zone": "reef",
           "places": {
-            "right": 20,
+            "right": 19,
             "left": 20
           },
           "disabled": false,
