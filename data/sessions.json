@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T11:35:19.364Z",
+  "updatedAt": "2026-11-27T11:40:25.593Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -221,7 +221,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 13,
+            "right": 11,
             "left": 10
           },
           "disabled": false,
@@ -287,7 +287,7 @@
           "zone": "reef",
           "places": {
             "right": 8,
-            "left": 2
+            "left": 1
           },
           "disabled": false,
           "open": true,
@@ -303,7 +303,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 16
+            "bay": 17
           },
           "disabled": false,
           "open": true,
@@ -379,8 +379,8 @@
           "nameEn": "FlowM2 ()",
           "zone": "reef",
           "places": {
-            "right": 8,
-            "left": 11
+            "right": 7,
+            "left": 10
           },
           "disabled": false,
           "open": true,
@@ -394,7 +394,7 @@
           "nameEn": "Turns to Barrels",
           "zone": "reef",
           "places": {
-            "right": 5,
+            "right": 3,
             "left": 3
           },
           "disabled": false,
@@ -457,7 +457,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 4
+            "left": 3
           },
           "disabled": false,
           "open": true,
