@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-28T06:55:18.065Z",
+  "updatedAt": "2026-11-28T07:00:33.903Z",
   "source": "https://srfparktlv.co.il/sessions",
   "parserOk": true,
   "days": [
@@ -61,7 +61,7 @@
           "side": "left",
           "ageGroup": "adults",
           "places": {
-            "bay": 15
+            "bay": 14
           },
           "disabled": false,
           "open": true,
@@ -75,7 +75,7 @@
           "nameEn": "Secret Spot (New M3)",
           "zone": "reef",
           "places": {
-            "right": 0,
+            "right": 1,
             "left": 4
           },
           "disabled": false,
@@ -91,7 +91,7 @@
           "zone": "reef",
           "places": {
             "right": 2,
-            "left": 2
+            "left": 3
           },
           "disabled": false,
           "open": true,
@@ -107,10 +107,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 5
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -123,10 +123,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 10
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -138,7 +138,7 @@
           "zone": "reef",
           "places": {
             "right": 3,
-            "left": 5
+            "left": 4
           },
           "disabled": false,
           "open": true,
@@ -169,10 +169,10 @@
           "side": "right",
           "ageGroup": "children",
           "places": {
-            "bay": 18
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -185,10 +185,10 @@
           "side": "left",
           "ageGroup": "children",
           "places": {
-            "bay": 20
+            "bay": 0
           },
           "disabled": false,
-          "open": true,
+          "open": false,
           "special": false
         },
         {
@@ -229,7 +229,7 @@
           "nameEn": "Advanced (M4 Only)",
           "zone": "reef",
           "places": {
-            "right": 2,
+            "right": 1,
             "left": 0
           },
           "disabled": false,
@@ -294,7 +294,7 @@
           "nameEn": "T-Time Mega Turns (T1+T2)",
           "zone": "reef",
           "places": {
-            "right": 15,
+            "right": 14,
             "left": 14
           },
           "disabled": false,
